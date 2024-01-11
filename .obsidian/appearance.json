@@ -1,7 +1,7 @@
 {
   "accentColor": "",
   "cssTheme": "Typora-Vue",
-  "theme": "system",
+  "theme": "moonstone",
   "enabledCssSnippets": [
     "HideMarkdownEmbedTitle",
     "MultiColumn",
