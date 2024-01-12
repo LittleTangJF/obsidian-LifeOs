@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. 周期笔记/2024/2024.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-12.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. 周期笔记/2024/2024.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. 周期笔记/2024/2024.md"
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-12.md"
               }
             }
           },
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. 周期笔记/2024/2024.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,11 +185,13 @@
   },
   "active": "1ae82b8d469273d8",
   "lastOpenFiles": [
-    "1. 项目/react/react.README.md",
+    "0. 周期笔记/2024/Daily/01/2024-01-13.md",
+    "0. 周期笔记/2024/Daily/01/2024-01-12.md",
+    "0. 周期笔记/Templates/Daily.md",
     "0. 周期笔记/2024/2024.md",
+    "1. 项目/react/react.README.md",
     "0. 周期笔记/2023/2023.md",
     "README.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-12.md",
     "主页.canvas",
     "任务.md",
     "1. 项目/react/React task.md",
@@ -217,8 +219,6 @@
     "1. 项目/分享-2023 WOT 分享会/往届主题.md",
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "1. 项目/Template.md",
-    "1. 项目/README.md",
-    "0. 周期笔记/Templates/Monthly.md",
     "1. 项目/react",
     "0. 周期笔记/2023/Daily/12",
     "5. 表达",
