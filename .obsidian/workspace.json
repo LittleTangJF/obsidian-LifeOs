@@ -26,15 +26,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-15.md",
+                "file": "1. 项目/股票知识/股票技巧.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "a7bb379a4aa864ad",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "1. 项目/股票知识/股票图谱.canvas",
+                "viewState": {
+                  "x": -3.3090670839828658,
+                  "y": 126.80459906103852,
+                  "zoom": -0.15938388347625732
+                }
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-15.md",
+                "file": "1. 项目/股票知识/股票技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-15.md"
+                "file": "1. 项目/股票知识/股票技巧.md"
               }
             }
           },
@@ -133,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-15.md",
+                "file": "1. 项目/股票知识/股票技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,10 +199,18 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "da207066150abe6b",
+  "active": "a7bb379a4aa864ad",
   "lastOpenFiles": [
-    "1. 项目/react/React task.md",
+    "1. 项目/股票知识/股票知识.README.md",
+    "1. 项目/股票知识/做T基本技巧.md",
+    "1. 项目/股票知识/Pasted image 20240115170545.png",
+    "1. 项目/股票知识/股票技巧.md",
+    "1. 项目/股票知识/股票图谱.canvas",
+    "1. 项目/股票知识/股票的专业术语.md",
+    "1. 项目/股票知识/股票todolist.md",
     "0. 周期笔记/2024/Daily/01/2024-01-15.md",
+    "1. 项目/股票知识",
+    "1. 项目/react/React task.md",
     "1. 项目/react/react.README.md",
     "0. 周期笔记/2024/Daily/01/2024-01-12.md",
     "0. 周期笔记/2024/Daily/01/2024-01-13.md",
@@ -212,18 +235,11 @@
     "1. 项目/分享-2023 WOT 分享会/WOT.README.md",
     "0. 周期笔记/2023/Daily/06/2023-06-03.md",
     "1. 项目/分享-2023 WOT 分享会/PPT 大纲.md",
-    "1. 项目/分享-2023 WOT 分享会/ChatGPT/前端工程化的内容.md",
-    "1. 项目/分享-2023 WOT 分享会/ChatGPT/什么是前端工程化.md",
-    "1. 项目/分享-2023 WOT 分享会/ChatGPT/为什么前端工程化.md",
-    "1. 项目/react/react看板.md",
     "1. 项目/分享-2023 WOT 分享会/字节跳动的前端工程化实践.pdf",
-    "1. 项目/分享-2023 WOT 分享会/主题大纲.md",
-    "1. 项目/分享-2023 WOT 分享会/往届主题.md",
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "1. 项目/react",
     "0. 周期笔记/2023/Daily/12",
     "5. 表达",
-    "4. 存档/育儿-宝宝起名/program/package.json",
     "4. 存档/育儿-宝宝起名/林奕如.png",
     "4. 存档/育儿-宝宝起名/baby-name.png",
     "1. 项目/分享-2023 WOT 分享会/架构图/Polyrepo.svg",
@@ -232,7 +248,6 @@
     "1. 项目/分享-2023 WOT 分享会/Attachments/PPT 素材/rollup-logo.svg",
     "1. 项目/分享-2023 WOT 分享会/Attachments/PPT 素材/monitor.png",
     "1. 项目/分享-2023 WOT 分享会/Attachments/PPT 素材/repo-hero-logo-light.svg",
-    "1. 项目/分享-2023 WOT 分享会/Attachments/PPT 素材/monitor.svg",
     "HOME.canvas",
     "Templates/HOME.canvas",
     "hello/HOME.canvas",

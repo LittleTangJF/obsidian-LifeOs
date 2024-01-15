@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"59df78307e49dab5","type":"group","x":-250,"y":-129,"width":510,"height":549,"label":"股票初级"},
+		{"id":"616c7cb2493b3176","type":"file","file":"1. 项目/股票知识/股票的专业术语.md","x":-240,"y":-80,"width":243,"height":264},
+		{"id":"a6aba0264d6bf4f5","x":3,"y":-60,"width":400,"height":400,"type":"file","file":"1. 项目/股票知识/股票技巧.md"}
+	],
+	"edges":[]
+}
