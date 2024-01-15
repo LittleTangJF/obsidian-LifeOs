@@ -47,12 +47,12 @@
             }
           },
           {
-            "id": "4a1f070aaea78f8a",
+            "id": "c3be1267d068740c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/三层底仓滚动做T.md",
+                "file": "1. 项目/股票知识/7成底仓滚动做T.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/三层底仓滚动做T.md",
+                "file": "1. 项目/股票知识/7成底仓滚动做T.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/三层底仓滚动做T.md"
+                "file": "1. 项目/股票知识/7成底仓滚动做T.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/三层底仓滚动做T.md",
+                "file": "1. 项目/股票知识/7成底仓滚动做T.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,9 +210,10 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "4a1f070aaea78f8a",
+  "active": "c3be1267d068740c",
   "lastOpenFiles": [
     "1. 项目/股票知识/做T基本技巧.md",
+    "1. 项目/股票知识/7成底仓滚动做T.md",
     "1. 项目/股票知识/三层底仓滚动做T.md",
     "1. 项目/股票知识/半仓滚动做T.md",
     "1. 项目/股票知识/股票知识.README.md",
@@ -246,7 +247,6 @@
     "0. 周期笔记/2024/Daily",
     "0. 周期笔记/2024",
     "1. 项目/分享-2023 WOT 分享会/WOT.README.md",
-    "0. 周期笔记/2023/Daily/06/2023-06-03.md",
     "1. 项目/分享-2023 WOT 分享会/字节跳动的前端工程化实践.pdf",
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "1. 项目/react",
