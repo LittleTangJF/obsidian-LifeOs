@@ -37,14 +37,12 @@
             "id": "a7bb379a4aa864ad",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/股票图谱.canvas",
-                "viewState": {
-                  "x": -3.3090670839828658,
-                  "y": 126.80459906103852,
-                  "zoom": -0.15938388347625732
-                }
+                "file": "1. 项目/股票知识/做T基本技巧.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -126,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/股票技巧.md",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/股票技巧.md"
+                "file": "1. 项目/股票知识/做T基本技巧.md"
               }
             }
           },
@@ -148,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/股票技巧.md",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,10 +200,10 @@
   "active": "a7bb379a4aa864ad",
   "lastOpenFiles": [
     "1. 项目/股票知识/股票知识.README.md",
+    "1. 项目/股票知识/股票图谱.canvas",
     "1. 项目/股票知识/做T基本技巧.md",
     "1. 项目/股票知识/Pasted image 20240115170545.png",
     "1. 项目/股票知识/股票技巧.md",
-    "1. 项目/股票知识/股票图谱.canvas",
     "1. 项目/股票知识/股票的专业术语.md",
     "1. 项目/股票知识/股票todolist.md",
     "0. 周期笔记/2024/Daily/01/2024-01-15.md",
