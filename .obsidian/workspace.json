@@ -63,14 +63,12 @@
             "id": "13e1f1701b35c8d1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas",
-                "viewState": {
-                  "x": 283.42251829601446,
-                  "y": 101.9296875,
-                  "zoom": -1.2694761636853216
-                }
+                "file": "1. 项目/react/官网教程.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -152,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas",
+                "file": "1. 项目/react/官网教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas"
+                "file": "1. 项目/react/官网教程.md"
               }
             }
           },
@@ -174,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas",
+                "file": "1. 项目/react/官网教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,9 +225,9 @@
   },
   "active": "13e1f1701b35c8d1",
   "lastOpenFiles": [
+    "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Javascript/Javascript.README.md",
     "1. 项目/Javascript/javacript数组方法.md",
-    "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/react/官网教程.md",
     "1. 项目/Javascript",
     "1. 项目/react/React task.md",
