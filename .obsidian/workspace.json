@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/官网教程.md",
+                "file": "1. 项目/Javascript/javacript数组方法.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/官网教程.md",
+                "file": "1. 项目/Javascript/javacript数组方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/官网教程.md"
+                "file": "1. 项目/Javascript/javacript数组方法.md"
               }
             }
           },
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/官网教程.md",
+                "file": "1. 项目/Javascript/javacript数组方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,8 +225,12 @@
   },
   "active": "13e1f1701b35c8d1",
   "lastOpenFiles": [
-    "1. 项目/react/React task.md",
+    "1. 项目/Javascript/javascript图谱.canvas",
+    "1. 项目/Javascript/javacript数组方法.md",
+    "1. 项目/Javascript/Javascript.README.md",
     "1. 项目/react/官网教程.md",
+    "1. 项目/Javascript",
+    "1. 项目/react/React task.md",
     "0. 周期笔记/2024/Daily/01/2024-01-16.md",
     "0. 周期笔记/2024/Daily/01/2024-01-15.md",
     "1. 项目/股票知识/7成底仓滚动做T.md",
@@ -254,9 +258,6 @@
     "2. 领域/ceshi",
     "模板/TODO.md",
     "模板",
-    "0. 周期笔记/2024/Daily/01/2024-01-11.md",
-    "0. 周期笔记/Templates/Meeting_副本.md",
-    "0. 周期笔记/2023/Daily/06/2023-06-02.md",
     "0. 周期笔记/2024/Daily/01",
     "0. 周期笔记/2024/Daily",
     "0. 周期笔记/2024",
@@ -264,7 +265,6 @@
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "1. 项目/react",
     "0. 周期笔记/2023/Daily/12",
-    "5. 表达",
     "4. 存档/育儿-宝宝起名/林奕如.png",
     "4. 存档/育儿-宝宝起名/baby-name.png",
     "1. 项目/分享-2023 WOT 分享会/架构图/Polyrepo.svg",
