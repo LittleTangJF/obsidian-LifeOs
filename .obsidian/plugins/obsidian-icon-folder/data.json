@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiMarkdownLine",
       "RiJavascriptLine",
       "RiProjectorLine",
       "RiReactjsFill"
@@ -26,14 +27,18 @@
   },
   "1. 项目/react": {
     "iconName": "RiReactjsFill",
-    "inheritanceIcon": "RiReactjsLine"
+    "inheritanceIcon": "RiReactjsFill"
   },
   "1. 项目": {
-    "iconName": "RiProjectorLine",
-    "inheritanceIcon": "RiProjectorLine"
+    "iconName": "RiMarkdownLine",
+    "inheritanceIcon": "RiMarkdownLine"
   },
   "1. 项目/Javascript": {
     "iconName": "RiJavascriptLine",
     "inheritanceIcon": "RiJavascriptLine"
+  },
+  "1. 项目/股票知识": {
+    "iconName": null,
+    "inheritanceIcon": "RiMarkdownLine"
   }
 }
