@@ -1,2 +1,2 @@
-- <StrictMode>: [[react严格模式]]
+- \<StrictMode> [[react-严格模式]]
 	- 严格模式会渲染组件两次，用于检查react组件在给定props state context时必须返回相同的jsx，违反此规则会报错

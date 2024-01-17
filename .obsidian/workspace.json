@@ -52,7 +52,33 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "1. 项目/react/react.README.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1618df7cb855514e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "1. 项目/react/react-组件.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08b6d2fde10abee7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/react/react-严格模式.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -137,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/react-组件.md",
+                "file": "1. 项目/react/react-严格模式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/react-组件.md"
+                "file": "1. 项目/react/react-严格模式.md"
               }
             }
           },
@@ -159,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/react-组件.md",
+                "file": "1. 项目/react/react-严格模式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,12 +236,13 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "c3be1267d068740c",
+  "active": "08b6d2fde10abee7",
   "lastOpenFiles": [
-    "1. 项目/react/官网教程.md",
     "1. 项目/react/react-组件.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-17.md",
+    "1. 项目/react/官网教程.md",
+    "1. 项目/react/react-严格模式.md",
     "1. 项目/react/react.README.md",
+    "0. 周期笔记/2024/Daily/01/2024-01-17.md",
     "0. 周期笔记/2024/Daily/01/2024-01-16.md",
     "1. 项目/react/React task.md",
     "0. 周期笔记/2024/Daily/01/2024-01-15.md",
@@ -243,7 +270,6 @@
     "README.md",
     "主页.canvas",
     "任务.md",
-    "-1. 捕获/README.md",
     "2. 领域/ceshi",
     "模板",
     "0. 周期笔记/2024/Daily/01",
