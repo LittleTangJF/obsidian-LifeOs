@@ -1,0 +1,2 @@
+- <StrictMode>:严格模式
+	- 严格模式会渲染组件两次，用于检查react组件在给定props state context时必须返回
