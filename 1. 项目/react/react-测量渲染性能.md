@@ -1,0 +1,7 @@
+- 参数
+	- id：string
+	- onRender: 回调函数
+		- 参数
+			- id
+			- phase
+			- a'c't'u'a'l'D'u'r'a
