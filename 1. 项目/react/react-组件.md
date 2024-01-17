@@ -1,3 +1,6 @@
 - \<StrictMode>: [[react-严格模式]]
 	- 严格模式会渲染组件两次，用于检查react组件在给定props state context时必须返回相同的jsx，违反此规则会报错
 - \<Profiler> : [[react-测量渲染性能]]
+	- 性能分析会增加额外开销，在默认情况下，生产模式下是被禁用的
+- \<Suspense>: [[react-骨架屏]]
+	- 用于当内容正在加载时显示后备方案
