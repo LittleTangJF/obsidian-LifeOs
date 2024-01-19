@@ -97,9 +97,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "28d238e773544474",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-19.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dadb19b132af6ba7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/react/hooks/react-useRef.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -160,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.5
   },
   "right": {
     "id": "e909704c2c67d329",
@@ -176,7 +202,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-19.md",
+                "file": "1. 项目/react/hooks/react-useRef.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-19.md"
+                "file": "1. 项目/react/hooks/react-useRef.md"
               }
             }
           },
@@ -198,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/01/2024-01-19.md",
+                "file": "1. 项目/react/hooks/react-useRef.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,10 +275,13 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "5948c713381c9187",
+  "active": "318abbbcd7749f6f",
   "lastOpenFiles": [
-    "0. 周期笔记/2024/Daily/01/2024-01-18.md",
     "0. 周期笔记/2024/Daily/01/2024-01-19.md",
+    "1. 项目/react/hooks/react-useRef.md",
+    "1. 项目/react/hooks/react-useImmer.md",
+    "1. 项目/react/hooks",
+    "0. 周期笔记/2024/Daily/01/2024-01-18.md",
     "1. 项目/react/react-内容加载时的渲染组件.md",
     "1. 项目/react/react-严格模式.md",
     "1. 项目/react/react-测量渲染性能.md",
@@ -279,9 +308,7 @@
     "1. 项目/股票知识/Pasted image 20240115170545.png",
     "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/股票的专业术语.md",
-    "1. 项目/股票知识/股票todolist.md",
     "1. 项目/股票知识",
-    "0. 周期笔记/Templates/Daily.md",
     "主页.canvas",
     "2. 领域/ceshi",
     "模板",
@@ -291,7 +318,6 @@
     "1. 项目/分享-2023 WOT 分享会/字节跳动的前端工程化实践.pdf",
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "1. 项目/react",
-    "0. 周期笔记/2023/Daily/12",
     "4. 存档/育儿-宝宝起名/林奕如.png",
     "4. 存档/育儿-宝宝起名/baby-name.png",
     "1. 项目/分享-2023 WOT 分享会/架构图/Polyrepo.svg",
