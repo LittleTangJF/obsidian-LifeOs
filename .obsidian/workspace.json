@@ -215,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md",
+                "file": "0. 周期笔记/Templates/Daily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md"
+                "file": "0. 周期笔记/Templates/Daily.md"
               }
             }
           },
@@ -237,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md",
+                "file": "0. 周期笔记/Templates/Daily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
