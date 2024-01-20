@@ -130,7 +130,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-20.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -215,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md"
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-20.md"
               }
             }
           },
@@ -237,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/你可能不需要useEffect.md",
+                "file": "0. 周期笔记/2024/Daily/01/2024-01-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -290,9 +290,10 @@
   },
   "active": "f117eabd896d502c",
   "lastOpenFiles": [
+    "1. 项目/react/你可能不需要useEffect.md",
+    "0. 周期笔记/2024/Daily/01/2024-01-20.md",
     "0. 周期笔记/Templates/Daily.md",
     "0. 周期笔记/2024/Daily/01/2024-01-19.md",
-    "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/hooks/react-useRef.md",
     "1. 项目/react/hooks/react-useImmer.md",
     "1. 项目/react/hooks",
@@ -318,7 +319,6 @@
     "1. 项目/股票知识/做T基本技巧.md",
     "1. 项目/股票知识/三层底仓滚动做T.md",
     "1. 项目/股票知识/半仓滚动做T.md",
-    "1. 项目/股票知识/股票知识.README.md",
     "1. 项目/股票知识/股票图谱.canvas",
     "1. 项目/股票知识/Pasted image 20240115170545.png",
     "1. 项目/股票知识",
