@@ -4,6 +4,7 @@
 	- useImperativeHandle(ref, createHandle, dependencies)
 - 使用方法
 	- 暴露自己命名的方法
+	- 不想暴露全部的组件api，暴露少数的定制方法
 
 ## 参考
 
