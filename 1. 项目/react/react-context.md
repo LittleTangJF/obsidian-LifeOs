@@ -8,7 +8,7 @@
 ```jsx
 // 父组件
 export const Lcontext = createContext(默认值)
-// 
+// value是传递的值
 <Lcontext.Provider value={level}
 	{children}
 </ Lcontext.Provider>
@@ -16,3 +16,10 @@ export const Lcontext = createContext(默认值)
 // 子组件
 const l = useContext(Lcontext)
 ```
+
+## 特点
+
+- Context会穿透中间层级的组件
+- 可读性不是很好，层级不高更推荐props
+- 大多数路由组件库用Context来保存当前路由
+- 状态管理库也用他来实现状态管理 react-redux
