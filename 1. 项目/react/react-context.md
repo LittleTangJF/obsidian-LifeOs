@@ -7,7 +7,7 @@
 
 ```jsx
 // 父组件
-export const Lcontext = createContext(默认值)
+export const Lcontext = createContext(默认值) // 如果没有Provider就是默认值
 // value是传递的值
 <Lcontext.Provider value={level}
 	{children}
