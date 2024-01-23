@@ -264,5 +264,14 @@
       ],
       "key": "L"
     }
+  ],
+  "bookmarks:bookmark-current-view": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    }
   ]
 }
