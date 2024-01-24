@@ -9,7 +9,8 @@
 			- 必须是同步的函数
 - 用法
 	- 将状态更新标记为非阻塞的transition
-	- 
+	- [在transition中更新父组件](#在transition中更新父组件)
+	- [在transition期间显示待处理的视觉状态](#在transition期间显示待处理的视觉状态)
 
 
 
@@ -28,3 +29,11 @@ function selectTab(next){
 }
 ```
 
+## 在transition中更新父组件
+
+在上面的例子中，如何onClick事件是从父组件传入子组件，那么可以直接在子组件内用startTransition函数去包裹onClick，实现一样的效果
+
+## 在transition期间显示待处理的视觉状态
+
+- ispending：表示处于transition的状态
+	- true：可以显示pending的视觉状态
