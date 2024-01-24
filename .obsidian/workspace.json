@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/API/react.forwardRef.md",
+                "file": "1. 项目/react/API/react.startTransition.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/API/react.forwardRef.md",
+                "file": "1. 项目/react/API/react.startTransition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/API/react.forwardRef.md"
+                "file": "1. 项目/react/API/react.startTransition.md"
               }
             }
           },
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/API/react.forwardRef.md",
+                "file": "1. 项目/react/API/react.startTransition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,10 +170,15 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "1ce0f89944e76384",
+  "active": "318abbbcd7749f6f",
   "lastOpenFiles": [
-    "1. 项目/react/API/react.createContext.md",
+    "1. 项目/react/v18.2.0/hook",
+    "1. 项目/react/v18.2.0",
+    "1. 项目/react/API/react.memo.md",
+    "1. 项目/react/API/react.startTransition.md",
+    "1. 项目/react/API/react.lazy.md",
     "1. 项目/react/API/react.forwardRef.md",
+    "1. 项目/react/API/react.createContext.md",
     "0. 周期笔记/2024/Daily/01/2024-01-24.md",
     "1. 项目/react/hooks/react-context.md",
     "1. 项目/react/API",
@@ -196,11 +201,7 @@
     "1. 项目/股票知识/做T基本技巧.md",
     "1. 项目/react/react.README.md",
     "0. 周期笔记/2024/Daily/01/2024-01-19.md",
-    "1. 项目/react/hooks/react-useRef.md",
     "1. 项目/react/hooks",
-    "0. 周期笔记/2024/Daily/01/2024-01-18.md",
-    "1. 项目/react/组件/react-严格模式.md",
-    "1. 项目/react/组件/react-测量渲染性能.md",
     "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Javascript",
     "1. 项目/股票知识/股票图谱.canvas",
@@ -211,7 +212,6 @@
     "模板",
     "0. 周期笔记/2024/Daily/01",
     "0. 周期笔记/2024/Daily",
-    "0. 周期笔记/2024",
     "1. 项目/分享-2023 WOT 分享会/架构图/Monorepo.svg",
     "4. 存档/育儿-宝宝起名/林奕如.png",
     "4. 存档/育儿-宝宝起名/baby-name.png",

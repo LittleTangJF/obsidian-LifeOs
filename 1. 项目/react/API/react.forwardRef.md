@@ -13,4 +13,12 @@
 
 ## 暴露DOM节点
 
-比如
+比如获取子组件内的input
+
+## 在多个组件中转发ref
+
+比如在跨层级获取孙组件的input
+
+## 暴露命令式句柄
+
+配合[[react-useImperativeHandle]]使用，暴露命令式句柄
