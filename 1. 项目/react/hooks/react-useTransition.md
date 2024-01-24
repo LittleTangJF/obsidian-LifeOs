@@ -6,7 +6,7 @@
 	- ispending：告诉你是否存在待处理的transition
 	- startTransition函数：你可以使用此方法将状态标记为transition
 		- 参数：一个通过调用一个或者多个set函数更新状态的函数
-			- 必须是同步的函数
+			- 必须是**同步**的函数
 - 用法
 	- 将状态更新标记为非阻塞的transition
 	- [在transition中更新父组件](#在transition中更新父组件)
@@ -37,3 +37,4 @@ function selectTab(next){
 
 - ispending：表示处于transition的状态
 	- true：可以显示pending的视觉状态
+
