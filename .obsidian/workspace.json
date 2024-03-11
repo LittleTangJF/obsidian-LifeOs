@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "70ec8363d576255e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +181,7 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "1ce0f89944e76384",
+  "active": "70ec8363d576255e",
   "lastOpenFiles": [
     "1. 项目/react/hooks/react-useImperativeHandle.md",
     "0. 周期笔记/2024/Daily/01/2024-01-30.md",
