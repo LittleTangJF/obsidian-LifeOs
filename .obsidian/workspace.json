@@ -71,19 +71,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fe45113af15936e2",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.11"
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -233,7 +223,7 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "fe45113af15936e2",
+  "active": "473f774831aa8045",
   "lastOpenFiles": [
     "0. 周期笔记/2024/Daily/03/2024-03-27.md",
     "0. 周期笔记/2024/Daily/03/2024-03-28.md",
