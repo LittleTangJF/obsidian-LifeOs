@@ -8,72 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ce0f89944e76384",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-12.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b81fefdf28f9001",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-13.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0ebecb5981ff3dc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-15.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0de6fb0a4f3ad996",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-22.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "473f774831aa8045",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-28.md",
+                "file": "0. 周期笔记/2024/Daily/03/2024-03-29.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-28.md",
+                "file": "0. 周期笔记/2024/Daily/03/2024-03-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-28.md"
+                "file": "0. 周期笔记/2024/Daily/03/2024-03-29.md"
               }
             }
           },
@@ -172,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-28.md",
+                "file": "0. 周期笔记/2024/Daily/03/2024-03-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,13 +172,17 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
+    "任务.md",
+    "0. 周期笔记/2024/Daily/03/2024-03-29.md",
+    "0. 周期笔记/2024/2024.md",
+    "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
     "0. 周期笔记/2024/Daily/03/2024-03-27.md",
     "0. 周期笔记/2024/Daily/03/2024-03-28.md",
+    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
     "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327215651.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327214815.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327213703.png",
-    "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
     "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240326215454.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240326215309.png",
@@ -246,7 +197,6 @@
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240324163117.png",
     "1. 项目/股票知识/龙头股实战课程总结",
     "0. 周期笔记/2024/Daily/01/2024-01-20.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
     "0. 周期笔记/2024/Daily/03/2024-03-18.md",
     "0. 周期笔记/2024/Daily/03/2024-03-15.md",
     "0. 周期笔记/2024/Daily/03/2024-03-12.md",
@@ -260,9 +210,6 @@
     "0. 周期笔记/2024/Daily/01/2024-01-29.md",
     "0. 周期笔记/2024/Daily/01/2024-01-26.md",
     "0. 周期笔记/2024/Daily/01/2024-01-25.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-24.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-23.md",
-    "1. 项目/react/API/react.startTransition.md",
     "1. 项目/react/v18.2.0/hook",
     "1. 项目/react/v18.2.0",
     "1. 项目/react/API",
