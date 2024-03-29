@@ -8,98 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ce0f89944e76384",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-12.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b81fefdf28f9001",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-13.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0ebecb5981ff3dc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-15.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0de6fb0a4f3ad996",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. 周期笔记/2024/Daily/03/2024-03-22.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "473f774831aa8045",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7710c40c22fc3b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1. 项目/股票知识/龙头战法/第一课.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9e1b5ad426b9e40",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "1. 项目/部署知识/打镜像包.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +97,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "conflict-files-obsidian-git.md",
+=======
+                "file": "1. 项目/部署知识/打镜像包.md",
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +113,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "conflict-files-obsidian-git.md"
+=======
+                "file": "1. 项目/部署知识/打镜像包.md"
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
               }
             }
           },
@@ -198,7 +127,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "conflict-files-obsidian-git.md",
+=======
+                "file": "1. 项目/部署知识/打镜像包.md",
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -252,6 +185,7 @@
   },
   "active": "b9e1b5ad426b9e40",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "1. 项目/股票知识/龙头战法/第一课.md",
     "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/龙头战法/Pasted image 20240328224857.png",
@@ -261,13 +195,28 @@
     "1. 项目/股票知识/短线操盘/Pasted image 20240328221833.png",
     "1. 项目/股票知识/短线操盘/Pasted image 20240328221722.png",
     "1. 项目/股票知识/短线操盘",
+=======
+    "0. 周期笔记/2024/Daily/03/2024-03-29.md",
+    "1. 项目/部署知识/打镜像包.md",
+    "1. 项目/部署知识/未命名.md",
+    "1. 项目/部署知识",
+    "任务.md",
+    "0. 周期笔记/2024/2024.md",
+    "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
+    "0. 周期笔记/2024/Daily/03/2024-03-27.md",
+    "0. 周期笔记/2024/Daily/03/2024-03-28.md",
+    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
     "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
     "0. 周期笔记/2024/Daily/03/2024-03-28.md",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327225944.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327215651.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327214815.png",
     "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327213703.png",
+<<<<<<< HEAD
     "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
+=======
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
     "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
     "0. 周期笔记/2024/Daily/03/2024-03-27.md",
     "1. 项目/股票知识/龙头股实战课程总结/第四课.md",
@@ -279,7 +228,11 @@
     "1. 项目/股票知识/7成底仓滚动做T.md",
     "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
     "1. 项目/股票知识/龙头股实战课程总结",
+<<<<<<< HEAD
     "0. 周期笔记/2024/Daily/03/2024-03-22.md",
+=======
+    "0. 周期笔记/2024/Daily/01/2024-01-20.md",
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
     "0. 周期笔记/2024/Daily/03/2024-03-18.md",
     "0. 周期笔记/2024/Daily/03/2024-03-12.md",
     "0. 周期笔记/2024/Daily/03/2024-03-11.md",
@@ -290,7 +243,10 @@
     "1. 项目/react/hooks/react-useImperativeHandle.md",
     "0. 周期笔记/2024/Daily/01/2024-01-30.md",
     "0. 周期笔记/2024/Daily/01/2024-01-29.md",
+<<<<<<< HEAD
     "0. 周期笔记/2024/Daily/01/2024-01-26.md",
+=======
+>>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
     "1. 项目/react/v18.2.0/hook",
     "1. 项目/react/v18.2.0",
     "1. 项目/react/API",
