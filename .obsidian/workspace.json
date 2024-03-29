@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "37a4ece0ae44376a",
+    "id": "47a3828a36b54070",
     "type": "split",
     "children": [
       {
-        "id": "b4bc4da6fdbb2f41",
+        "id": "cccb6c5bd1012e97",
         "type": "tabs",
         "children": [
           {
-            "id": "473f774831aa8045",
+            "id": "1cea141cb4729370",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/部署知识/打镜像包.md",
+                "file": "1. 项目/股票知识/龙头战法/第二课.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,15 +26,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "033576a6b33dff69",
+    "id": "3511a8358a90ef8c",
     "type": "split",
     "children": [
       {
-        "id": "90362f6f602f507d",
+        "id": "66f82d393c0478b2",
         "type": "tabs",
         "children": [
           {
-            "id": "318abbbcd7749f6f",
+            "id": "e3942f040f39cb6a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "cc8540b919f4ee67",
+            "id": "aa8d66a7f4484b66",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,18 +59,7 @@
             }
           },
           {
-            "id": "9b78bc0e4508fc3f",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "e2f9ecf537a853a4",
+            "id": "8ebbac523aa2131f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,57 +70,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 300
   },
   "right": {
-    "id": "e909704c2c67d329",
+    "id": "83d6d64511d8a9a8",
     "type": "split",
     "children": [
       {
-        "id": "8d590967b738185b",
+        "id": "2728de142f3b56cf",
         "type": "tabs",
         "children": [
           {
-            "id": "bfe60a9c435028cc",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-<<<<<<< HEAD
-                "file": "conflict-files-obsidian-git.md",
-=======
-                "file": "1. 项目/部署知识/打镜像包.md",
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "6d086e2d3fce45ca",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "conflict-files-obsidian-git.md"
-=======
-                "file": "1. 项目/部署知识/打镜像包.md"
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-              }
-            }
-          },
-          {
-            "id": "fdf26b19b598132b",
+            "id": "098dd31155ef36d0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "conflict-files-obsidian-git.md",
-=======
-                "file": "1. 项目/部署知识/打镜像包.md",
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
+                "file": "1. 项目/股票知识/龙头战法/第二课.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +98,30 @@
             }
           },
           {
-            "id": "14a387d228e8b0a8",
+            "id": "c4b905c8767d6a34",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. 项目/股票知识/龙头战法/第二课.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed88de586d292c86",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6fe9ccaa873959aa",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -155,110 +133,38 @@
             }
           },
           {
-            "id": "9110575c83bff6ab",
+            "id": "e07f8b72093ea084",
             "type": "leaf",
             "state": {
-              "type": "periodic-para",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "1. 项目/股票知识/龙头战法/第二课.md"
+              }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 408.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "periodic-para:Periodic PARA": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
-      "workspaces:管理工作区布局": false,
-      "templater-obsidian:Templater": false,
-      "periodic-para:Periodic PARA": false
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "b9e1b5ad426b9e40",
+  "active": "1cea141cb4729370",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "1. 项目/股票知识/龙头战法/第一课.md",
-    "conflict-files-obsidian-git.md",
-    "1. 项目/股票知识/龙头战法/Pasted image 20240328224857.png",
-    "1. 项目/股票知识/龙头战法/Pasted image 20240328224405.png",
-    "1. 项目/股票知识/短线操盘/一类买点.md",
-    "1. 项目/股票知识/龙头战法",
-    "1. 项目/股票知识/短线操盘/Pasted image 20240328221833.png",
-    "1. 项目/股票知识/短线操盘/Pasted image 20240328221722.png",
-    "1. 项目/股票知识/短线操盘",
-=======
-    "0. 周期笔记/2024/Daily/03/2024-03-29.md",
-    "1. 项目/部署知识/打镜像包.md",
-    "1. 项目/部署知识/未命名.md",
-    "1. 项目/部署知识",
     "任务.md",
-    "0. 周期笔记/2024/2024.md",
-    "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-27.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-28.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-    "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-28.md",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327225944.png",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327215651.png",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327214815.png",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240327213703.png",
-<<<<<<< HEAD
-    "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
-=======
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-    "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-27.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第四课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240326215454.png",
-    "1. 项目/股票知识/龙头股实战课程总结/Pasted image 20240326215309.png",
-    "1. 项目/股票知识/龙头股实战课程总结/第三课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第一课.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-15.md",
-    "1. 项目/股票知识/7成底仓滚动做T.md",
-    "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
-    "1. 项目/股票知识/龙头股实战课程总结",
-<<<<<<< HEAD
-    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
-=======
-    "0. 周期笔记/2024/Daily/01/2024-01-20.md",
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-    "0. 周期笔记/2024/Daily/03/2024-03-18.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-12.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-11.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-13.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-14.md",
-    "1. 项目/react/hooks/react-useImmer.md",
-    "0. 周期笔记/2024/Daily/03",
-    "1. 项目/react/hooks/react-useImperativeHandle.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-30.md",
-    "0. 周期笔记/2024/Daily/01/2024-01-29.md",
-<<<<<<< HEAD
-    "0. 周期笔记/2024/Daily/01/2024-01-26.md",
-=======
->>>>>>> f3f96b1e4b19d653475accd53b058c8934b408c4
-    "1. 项目/react/v18.2.0/hook",
-    "1. 项目/react/v18.2.0",
-    "1. 项目/react/API",
-    "1. 项目/react/组件",
-    "1. 项目/react/hooks",
-    "1. 项目/Javascript/javascript图谱.canvas",
-    "1. 项目/Javascript",
-    "1. 项目/股票知识/股票图谱.canvas",
-    "主页.canvas",
-    "HOME.canvas",
-    "Templates/HOME.canvas",
-    "hello/HOME.canvas",
-    "hello/Templates/HOME.canvas"
+    "1. 项目/股票知识/龙头战法/第二课.md"
   ]
 }
