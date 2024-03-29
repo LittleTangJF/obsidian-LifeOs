@@ -149,7 +149,7 @@ var require_base64_js = __commonJS({
 var require_ieee754 = __commonJS({
   "node_modules/.pnpm/ieee754@1.2.1/node_modules/ieee754/index.js"(exports2) {
     init_polyfill_buffer();
-    exports2.read = function(buffer2, offset, isLE, mLen, nBytes) {
+    exports2.read = function (buffer2, offset, isLE, mLen, nBytes) {
       var e, m;
       var eLen = nBytes * 8 - mLen - 1;
       var eMax = (1 << eLen) - 1;
@@ -179,7 +179,7 @@ var require_ieee754 = __commonJS({
       }
       return (s ? -1 : 1) * m * Math.pow(2, e - mLen);
     };
-    exports2.write = function(buffer2, value, offset, isLE, mLen, nBytes) {
+    exports2.write = function (buffer2, value, offset, isLE, mLen, nBytes) {
       var e, m, c;
       var eLen = nBytes * 8 - mLen - 1;
       var eMax = (1 << eLen) - 1;
@@ -251,9 +251,11 @@ var require_buffer = __commonJS({
     function typedArraySupport() {
       try {
         const arr = new Uint8Array(1);
-        const proto = { foo: function() {
-          return 42;
-        } };
+        const proto = {
+          foo: function () {
+            return 42;
+          }
+        };
         Object.setPrototypeOf(proto, Uint8Array.prototype);
         Object.setPrototypeOf(arr, proto);
         return arr.foo() === 42;
@@ -263,7 +265,7 @@ var require_buffer = __commonJS({
     }
     Object.defineProperty(Buffer2.prototype, "parent", {
       enumerable: true,
-      get: function() {
+      get: function () {
         if (!Buffer2.isBuffer(this))
           return void 0;
         return this.buffer;
@@ -271,7 +273,7 @@ var require_buffer = __commonJS({
     });
     Object.defineProperty(Buffer2.prototype, "offset", {
       enumerable: true,
-      get: function() {
+      get: function () {
         if (!Buffer2.isBuffer(this))
           return void 0;
         return this.byteOffset;
@@ -334,7 +336,7 @@ var require_buffer = __commonJS({
         "The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type " + typeof value
       );
     }
-    Buffer2.from = function(value, encodingOrOffset, length) {
+    Buffer2.from = function (value, encodingOrOffset, length) {
       return from(value, encodingOrOffset, length);
     };
     Object.setPrototypeOf(Buffer2.prototype, Uint8Array.prototype);
@@ -356,17 +358,17 @@ var require_buffer = __commonJS({
       }
       return createBuffer(size);
     }
-    Buffer2.alloc = function(size, fill, encoding) {
+    Buffer2.alloc = function (size, fill, encoding) {
       return alloc(size, fill, encoding);
     };
     function allocUnsafe(size) {
       assertSize(size);
       return createBuffer(size < 0 ? 0 : checked(size) | 0);
     }
-    Buffer2.allocUnsafe = function(size) {
+    Buffer2.allocUnsafe = function (size) {
       return allocUnsafe(size);
     };
-    Buffer2.allocUnsafeSlow = function(size) {
+    Buffer2.allocUnsafeSlow = function (size) {
       return allocUnsafe(size);
     };
     function fromString2(string, encoding) {
@@ -553,7 +555,7 @@ var require_buffer = __commonJS({
       if (!mustMatch && len === 0)
         return 0;
       let loweredCase = false;
-      for (; ; ) {
+      for (; ;) {
         switch (encoding) {
           case "ascii":
           case "latin1":
@@ -935,7 +937,7 @@ var require_buffer = __commonJS({
       if (!encoding)
         encoding = "utf8";
       let loweredCase = false;
-      for (; ; ) {
+      for (; ;) {
         switch (encoding) {
           case "hex":
             return hexWrite(this, string, offset, length);
@@ -1282,7 +1284,7 @@ var require_buffer = __commonJS({
         boundsError(offset, this.length - 8);
       }
       const val = (first2 << 24) + // Overflow
-      this[++offset] * 2 ** 16 + this[++offset] * 2 ** 8 + this[++offset];
+        this[++offset] * 2 ** 16 + this[++offset] * 2 ** 8 + this[++offset];
       return (BigInt(val) << BigInt(32)) + BigInt(this[++offset] * 2 ** 24 + this[++offset] * 2 ** 16 + this[++offset] * 2 ** 8 + last2);
     });
     Buffer2.prototype.readFloatLE = function readFloatLE(offset, noAssert) {
@@ -1702,7 +1704,7 @@ var require_buffer = __commonJS({
     }
     E(
       "ERR_BUFFER_OUT_OF_BOUNDS",
-      function(name) {
+      function (name) {
         if (name) {
           return `${name} is outside of buffer bounds`;
         }
@@ -1712,14 +1714,14 @@ var require_buffer = __commonJS({
     );
     E(
       "ERR_INVALID_ARG_TYPE",
-      function(name, actual) {
+      function (name, actual) {
         return `The "${name}" argument must be of type number. Received type ${typeof actual}`;
       },
       TypeError
     );
     E(
       "ERR_OUT_OF_RANGE",
-      function(str, range, input) {
+      function (str, range, input) {
         let msg = `The value of "${str}" is out of range.`;
         let received = input;
         if (Number.isInteger(input) && Math.abs(input) > 2 ** 32) {
@@ -1905,7 +1907,7 @@ var require_buffer = __commonJS({
     function numberIsNaN(obj) {
       return obj !== obj;
     }
-    var hexSliceLookupTable = function() {
+    var hexSliceLookupTable = function () {
       const alphabet = "0123456789abcdef";
       const table = new Array(256);
       for (let i = 0; i < 16; ++i) {
@@ -1944,7 +1946,7 @@ var require_lib = __commonJS({
   "node_modules/.pnpm/async-lock@1.4.0/node_modules/async-lock/lib/index.js"(exports2, module2) {
     "use strict";
     init_polyfill_buffer();
-    var AsyncLock2 = function(opts) {
+    var AsyncLock2 = function (opts) {
       opts = opts || {};
       this.Promise = opts.Promise || Promise;
       this.queues = /* @__PURE__ */ Object.create(null);
@@ -1970,7 +1972,7 @@ var require_lib = __commonJS({
     AsyncLock2.DEFAULT_MAX_OCCUPATION_TIME = 0;
     AsyncLock2.DEFAULT_MAX_EXECUTION_TIME = 0;
     AsyncLock2.DEFAULT_MAX_PENDING = 1e3;
-    AsyncLock2.prototype.acquire = function(key2, fn, cb, opts) {
+    AsyncLock2.prototype.acquire = function (key2, fn, cb, opts) {
       if (Array.isArray(key2)) {
         return this._acquireBatch(key2, fn, cb, opts);
       }
@@ -1983,7 +1985,7 @@ var require_lib = __commonJS({
       if (typeof cb !== "function") {
         opts = cb;
         cb = null;
-        deferred2 = new this.Promise(function(resolve, reject) {
+        deferred2 = new this.Promise(function (resolve, reject) {
           deferredResolve = resolve;
           deferredReject = reject;
         });
@@ -1994,7 +1996,7 @@ var require_lib = __commonJS({
       var occupationTimer = null;
       var executionTimer = null;
       var self2 = this;
-      var done = function(locked, err, ret) {
+      var done = function (locked, err, ret) {
         if (occupationTimer) {
           clearTimeout(occupationTimer);
           occupationTimer = null;
@@ -2031,7 +2033,7 @@ var require_lib = __commonJS({
           }
         }
       };
-      var exec = function(locked) {
+      var exec = function (locked) {
         if (resolved) {
           return done(locked);
         }
@@ -2044,7 +2046,7 @@ var require_lib = __commonJS({
         }
         var maxExecutionTime = opts.maxExecutionTime || self2.maxExecutionTime;
         if (maxExecutionTime) {
-          executionTimer = setTimeout(function() {
+          executionTimer = setTimeout(function () {
             if (!!self2.queues[key2]) {
               done(locked, new Error("Maximum execution time is exceeded " + key2));
             }
@@ -2053,7 +2055,7 @@ var require_lib = __commonJS({
         if (fn.length === 1) {
           var called = false;
           try {
-            fn(function(err, ret) {
+            fn(function (err, ret) {
               if (!called) {
                 called = true;
                 done(locked, err, ret);
@@ -2066,11 +2068,11 @@ var require_lib = __commonJS({
             }
           }
         } else {
-          self2._promiseTry(function() {
+          self2._promiseTry(function () {
             return fn();
-          }).then(function(ret) {
+          }).then(function (ret) {
             done(locked, void 0, ret);
-          }, function(error) {
+          }, function (error) {
             done(locked, error);
           });
         }
@@ -2086,7 +2088,7 @@ var require_lib = __commonJS({
       } else if (self2.queues[key2].length >= self2.maxPending) {
         done(false, new Error("Too many pending tasks in queue " + key2));
       } else {
-        var taskFn = function() {
+        var taskFn = function () {
           exec(true);
         };
         if (opts.skipQueue) {
@@ -2096,7 +2098,7 @@ var require_lib = __commonJS({
         }
         var timeout = opts.timeout || self2.timeout;
         if (timeout) {
-          timer = setTimeout(function() {
+          timer = setTimeout(function () {
             timer = null;
             done(false, new Error("async-lock timed out in queue " + key2));
           }, timeout);
@@ -2104,7 +2106,7 @@ var require_lib = __commonJS({
       }
       var maxOccupationTime = opts.maxOccupationTime || self2.maxOccupationTime;
       if (maxOccupationTime) {
-        occupationTimer = setTimeout(function() {
+        occupationTimer = setTimeout(function () {
           if (!!self2.queues[key2]) {
             done(false, new Error("Maximum occupation time is exceeded in queue " + key2));
           }
@@ -2114,26 +2116,26 @@ var require_lib = __commonJS({
         return deferred2;
       }
     };
-    AsyncLock2.prototype._acquireBatch = function(keys, fn, cb, opts) {
+    AsyncLock2.prototype._acquireBatch = function (keys, fn, cb, opts) {
       if (typeof cb !== "function") {
         opts = cb;
         cb = null;
       }
       var self2 = this;
-      var getFn = function(key2, fn2) {
-        return function(cb2) {
+      var getFn = function (key2, fn2) {
+        return function (cb2) {
           self2.acquire(key2, fn2, cb2, opts);
         };
       };
-      var fnx = keys.reduceRight(function(prev, key2) {
+      var fnx = keys.reduceRight(function (prev, key2) {
         return getFn(key2, prev);
       }, fn);
       if (typeof cb === "function") {
         fnx(cb);
       } else {
-        return new this.Promise(function(resolve, reject) {
+        return new this.Promise(function (resolve, reject) {
           if (fnx.length === 1) {
-            fnx(function(err, ret) {
+            fnx(function (err, ret) {
               if (err) {
                 reject(err);
               } else {
@@ -2146,14 +2148,14 @@ var require_lib = __commonJS({
         });
       }
     };
-    AsyncLock2.prototype.isBusy = function(key2) {
+    AsyncLock2.prototype.isBusy = function (key2) {
       if (!key2) {
         return Object.keys(this.queues).length > 0;
       } else {
         return !!this.queues[key2];
       }
     };
-    AsyncLock2.prototype._promiseTry = function(fn) {
+    AsyncLock2.prototype._promiseTry = function (fn) {
       try {
         return this.Promise.resolve(fn());
       } catch (e) {
@@ -2195,7 +2197,7 @@ var require_inherits_browser = __commonJS({
       module2.exports = function inherits(ctor, superCtor) {
         if (superCtor) {
           ctor.super_ = superCtor;
-          var TempCtor = function() {
+          var TempCtor = function () {
           };
           TempCtor.prototype = superCtor.prototype;
           ctor.prototype = new TempCtor();
@@ -2228,13 +2230,13 @@ var require_safe_buffer = __commonJS({
     }
     SafeBuffer.prototype = Object.create(Buffer2.prototype);
     copyProps(Buffer2, SafeBuffer);
-    SafeBuffer.from = function(arg, encodingOrOffset, length) {
+    SafeBuffer.from = function (arg, encodingOrOffset, length) {
       if (typeof arg === "number") {
         throw new TypeError("Argument must not be a number");
       }
       return Buffer2(arg, encodingOrOffset, length);
     };
-    SafeBuffer.alloc = function(size, fill, encoding) {
+    SafeBuffer.alloc = function (size, fill, encoding) {
       if (typeof size !== "number") {
         throw new TypeError("Argument must be a number");
       }
@@ -2250,13 +2252,13 @@ var require_safe_buffer = __commonJS({
       }
       return buf;
     };
-    SafeBuffer.allocUnsafe = function(size) {
+    SafeBuffer.allocUnsafe = function (size) {
       if (typeof size !== "number") {
         throw new TypeError("Argument must be a number");
       }
       return Buffer2(size);
     };
-    SafeBuffer.allocUnsafeSlow = function(size) {
+    SafeBuffer.allocUnsafeSlow = function (size) {
       if (typeof size !== "number") {
         throw new TypeError("Argument must be a number");
       }
@@ -2276,7 +2278,7 @@ var require_hash = __commonJS({
       this._blockSize = blockSize;
       this._len = 0;
     }
-    Hash2.prototype.update = function(data, enc) {
+    Hash2.prototype.update = function (data, enc) {
       if (typeof data === "string") {
         enc = enc || "utf8";
         data = Buffer2.from(data, enc);
@@ -2285,7 +2287,7 @@ var require_hash = __commonJS({
       var blockSize = this._blockSize;
       var length = data.length;
       var accum = this._len;
-      for (var offset = 0; offset < length; ) {
+      for (var offset = 0; offset < length;) {
         var assigned = accum % blockSize;
         var remainder = Math.min(length - offset, blockSize - assigned);
         for (var i = 0; i < remainder; i++) {
@@ -2300,7 +2302,7 @@ var require_hash = __commonJS({
       this._len += length;
       return this;
     };
-    Hash2.prototype.digest = function(enc) {
+    Hash2.prototype.digest = function (enc) {
       var rem = this._len % this._blockSize;
       this._block[rem] = 128;
       this._block.fill(0, rem + 1);
@@ -2321,7 +2323,7 @@ var require_hash = __commonJS({
       var hash2 = this._hash();
       return enc ? hash2.toString(enc) : hash2;
     };
-    Hash2.prototype._update = function() {
+    Hash2.prototype._update = function () {
       throw new Error("_update must be implemented by subclass");
     };
     module2.exports = Hash2;
@@ -2348,7 +2350,7 @@ var require_sha1 = __commonJS({
       Hash2.call(this, 64, 56);
     }
     inherits(Sha1, Hash2);
-    Sha1.prototype.init = function() {
+    Sha1.prototype.init = function () {
       this._a = 1732584193;
       this._b = 4023233417;
       this._c = 2562383102;
@@ -2372,7 +2374,7 @@ var require_sha1 = __commonJS({
         return b & c | b & d | c & d;
       return b ^ c ^ d;
     }
-    Sha1.prototype._update = function(M) {
+    Sha1.prototype._update = function (M) {
       var W2 = this._w;
       var a = this._a | 0;
       var b = this._b | 0;
@@ -2398,7 +2400,7 @@ var require_sha1 = __commonJS({
       this._d = d + this._d | 0;
       this._e = e + this._e | 0;
     };
-    Sha1.prototype._hash = function() {
+    Sha1.prototype._hash = function () {
       var H = Buffer2.allocUnsafe(20);
       H.writeInt32BE(this._a | 0, 0);
       H.writeInt32BE(this._b | 0, 4);
@@ -2416,12 +2418,12 @@ var require_crc32 = __commonJS({
   "node_modules/.pnpm/crc-32@1.2.2/node_modules/crc-32/crc32.js"(exports2) {
     init_polyfill_buffer();
     var CRC32;
-    (function(factory) {
+    (function (factory) {
       if (typeof DO_NOT_EXPORT_CRC === "undefined") {
         if ("object" === typeof exports2) {
           factory(exports2);
         } else if ("function" === typeof define && define.amd) {
-          define(function() {
+          define(function () {
             var module3 = {};
             factory(module3);
             return module3;
@@ -2432,7 +2434,7 @@ var require_crc32 = __commonJS({
       } else {
         factory(CRC32 = {});
       }
-    })(function(CRC322) {
+    })(function (CRC322) {
       CRC322.version = "1.2.2";
       function signed_crc_table() {
         var c = 0, table = new Array(256);
@@ -2471,13 +2473,13 @@ var require_crc32 = __commonJS({
       var Tb = TT[10], Tc = TT[11], Td = TT[12], Te = TT[13], Tf = TT[14];
       function crc32_bstr(bstr, seed) {
         var C = seed ^ -1;
-        for (var i = 0, L = bstr.length; i < L; )
+        for (var i = 0, L = bstr.length; i < L;)
           C = C >>> 8 ^ T0[(C ^ bstr.charCodeAt(i++)) & 255];
         return ~C;
       }
       function crc32_buf(B, seed) {
         var C = seed ^ -1, L = B.length - 15, i = 0;
-        for (; i < L; )
+        for (; i < L;)
           C = Tf[B[i++] ^ C & 255] ^ Te[B[i++] ^ C >> 8 & 255] ^ Td[B[i++] ^ C >> 16 & 255] ^ Tc[B[i++] ^ C >>> 24] ^ Tb[B[i++]] ^ Ta[B[i++]] ^ T9[B[i++]] ^ T8[B[i++]] ^ T7[B[i++]] ^ T6[B[i++]] ^ T5[B[i++]] ^ T4[B[i++]] ^ T3[B[i++]] ^ T2[B[i++]] ^ T1[B[i++]] ^ T0[B[i++]];
         L += 15;
         while (i < L)
@@ -2486,7 +2488,7 @@ var require_crc32 = __commonJS({
       }
       function crc32_str(str, seed) {
         var C = seed ^ -1;
-        for (var i = 0, L = str.length, c = 0, d = 0; i < L; ) {
+        for (var i = 0, L = str.length, c = 0, d = 0; i < L;) {
           c = str.charCodeAt(i++);
           if (c < 128) {
             C = C >>> 8 ^ T0[(C ^ c) & 255];
@@ -2525,7 +2527,7 @@ var require_common = __commonJS({
     function _has(obj, key2) {
       return Object.prototype.hasOwnProperty.call(obj, key2);
     }
-    exports2.assign = function(obj) {
+    exports2.assign = function (obj) {
       var sources = Array.prototype.slice.call(arguments, 1);
       while (sources.length) {
         var source = sources.shift();
@@ -2543,7 +2545,7 @@ var require_common = __commonJS({
       }
       return obj;
     };
-    exports2.shrinkBuf = function(buf, size) {
+    exports2.shrinkBuf = function (buf, size) {
       if (buf.length === size) {
         return buf;
       }
@@ -2554,7 +2556,7 @@ var require_common = __commonJS({
       return buf;
     };
     var fnTyped = {
-      arraySet: function(dest, src, src_offs, len, dest_offs) {
+      arraySet: function (dest, src, src_offs, len, dest_offs) {
         if (src.subarray && dest.subarray) {
           dest.set(src.subarray(src_offs, src_offs + len), dest_offs);
           return;
@@ -2564,7 +2566,7 @@ var require_common = __commonJS({
         }
       },
       // Join array of chunks to single array.
-      flattenChunks: function(chunks) {
+      flattenChunks: function (chunks) {
         var i, l, len, pos, chunk, result;
         len = 0;
         for (i = 0, l = chunks.length; i < l; i++) {
@@ -2581,17 +2583,17 @@ var require_common = __commonJS({
       }
     };
     var fnUntyped = {
-      arraySet: function(dest, src, src_offs, len, dest_offs) {
+      arraySet: function (dest, src, src_offs, len, dest_offs) {
         for (var i = 0; i < len; i++) {
           dest[dest_offs + i] = src[src_offs + i];
         }
       },
       // Join array of chunks to single array.
-      flattenChunks: function(chunks) {
+      flattenChunks: function (chunks) {
         return [].concat.apply([], chunks);
       }
     };
-    exports2.setTyped = function(on) {
+    exports2.setTyped = function (on) {
       if (on) {
         exports2.Buf8 = Uint8Array;
         exports2.Buf16 = Uint16Array;
@@ -3545,7 +3547,7 @@ var require_deflate = __commonJS({
       if (max_block_size > s.pending_buf_size - 5) {
         max_block_size = s.pending_buf_size - 5;
       }
-      for (; ; ) {
+      for (; ;) {
         if (s.lookahead <= 1) {
           fill_window(s);
           if (s.lookahead === 0 && flush2 === Z_NO_FLUSH) {
@@ -3592,7 +3594,7 @@ var require_deflate = __commonJS({
     function deflate_fast(s, flush2) {
       var hash_head;
       var bflush;
-      for (; ; ) {
+      for (; ;) {
         if (s.lookahead < MIN_LOOKAHEAD) {
           fill_window(s);
           if (s.lookahead < MIN_LOOKAHEAD && flush2 === Z_NO_FLUSH) {
@@ -3661,7 +3663,7 @@ var require_deflate = __commonJS({
       var hash_head;
       var bflush;
       var max_insert;
-      for (; ; ) {
+      for (; ;) {
         if (s.lookahead < MIN_LOOKAHEAD) {
           fill_window(s);
           if (s.lookahead < MIN_LOOKAHEAD && flush2 === Z_NO_FLUSH) {
@@ -3748,7 +3750,7 @@ var require_deflate = __commonJS({
       var prev;
       var scan, strend;
       var _win = s.window;
-      for (; ; ) {
+      for (; ;) {
         if (s.lookahead <= MAX_MATCH) {
           fill_window(s);
           if (s.lookahead <= MAX_MATCH && flush2 === Z_NO_FLUSH) {
@@ -3807,7 +3809,7 @@ var require_deflate = __commonJS({
     }
     function deflate_huff(s, flush2) {
       var bflush;
-      for (; ; ) {
+      for (; ;) {
         if (s.lookahead === 0) {
           fill_window(s);
           if (s.lookahead === 0) {
@@ -4405,7 +4407,7 @@ var require_strings = __commonJS({
     }
     var q;
     _utf8len[254] = _utf8len[254] = 1;
-    exports2.string2buf = function(str) {
+    exports2.string2buf = function (str) {
       var buf, c, c2, m_pos, i, str_len = str.length, buf_len = 0;
       for (m_pos = 0; m_pos < str_len; m_pos++) {
         c = str.charCodeAt(m_pos);
@@ -4458,21 +4460,21 @@ var require_strings = __commonJS({
       }
       return result;
     }
-    exports2.buf2binstring = function(buf) {
+    exports2.buf2binstring = function (buf) {
       return buf2binstring(buf, buf.length);
     };
-    exports2.binstring2buf = function(str) {
+    exports2.binstring2buf = function (str) {
       var buf = new utils.Buf8(str.length);
       for (var i = 0, len = buf.length; i < len; i++) {
         buf[i] = str.charCodeAt(i);
       }
       return buf;
     };
-    exports2.buf2string = function(buf, max) {
+    exports2.buf2string = function (buf, max) {
       var i, out, c, c_len;
       var len = max || buf.length;
       var utf16buf = new Array(len * 2);
-      for (out = 0, i = 0; i < len; ) {
+      for (out = 0, i = 0; i < len;) {
         c = buf[i++];
         if (c < 128) {
           utf16buf[out++] = c;
@@ -4503,7 +4505,7 @@ var require_strings = __commonJS({
       }
       return buf2binstring(utf16buf, out);
     };
-    exports2.utf8border = function(buf, max) {
+    exports2.utf8border = function (buf, max) {
       var pos;
       max = max || buf.length;
       if (max > buf.length) {
@@ -4620,7 +4622,7 @@ var require_deflate2 = __commonJS({
         this._dict_set = true;
       }
     }
-    Deflate.prototype.push = function(data, mode) {
+    Deflate.prototype.push = function (data, mode) {
       var strm = this.strm;
       var chunkSize = this.options.chunkSize;
       var status2, _mode;
@@ -4670,10 +4672,10 @@ var require_deflate2 = __commonJS({
       }
       return true;
     };
-    Deflate.prototype.onData = function(chunk) {
+    Deflate.prototype.onData = function (chunk) {
       this.chunks.push(chunk);
     };
-    Deflate.prototype.onEnd = function(status2) {
+    Deflate.prototype.onEnd = function (status2) {
       if (status2 === Z_OK) {
         if (this.options.to === "string") {
           this.result = this.chunks.join("");
@@ -4762,169 +4764,169 @@ var require_inffast = __commonJS({
       lmask = (1 << state.lenbits) - 1;
       dmask = (1 << state.distbits) - 1;
       top:
-        do {
-          if (bits < 15) {
-            hold += input[_in++] << bits;
-            bits += 8;
-            hold += input[_in++] << bits;
-            bits += 8;
-          }
-          here = lcode[hold & lmask];
-          dolen:
-            for (; ; ) {
+      do {
+        if (bits < 15) {
+          hold += input[_in++] << bits;
+          bits += 8;
+          hold += input[_in++] << bits;
+          bits += 8;
+        }
+        here = lcode[hold & lmask];
+        dolen:
+        for (; ;) {
+          op = here >>> 24;
+          hold >>>= op;
+          bits -= op;
+          op = here >>> 16 & 255;
+          if (op === 0) {
+            output[_out++] = here & 65535;
+          } else if (op & 16) {
+            len = here & 65535;
+            op &= 15;
+            if (op) {
+              if (bits < op) {
+                hold += input[_in++] << bits;
+                bits += 8;
+              }
+              len += hold & (1 << op) - 1;
+              hold >>>= op;
+              bits -= op;
+            }
+            if (bits < 15) {
+              hold += input[_in++] << bits;
+              bits += 8;
+              hold += input[_in++] << bits;
+              bits += 8;
+            }
+            here = dcode[hold & dmask];
+            dodist:
+            for (; ;) {
               op = here >>> 24;
               hold >>>= op;
               bits -= op;
               op = here >>> 16 & 255;
-              if (op === 0) {
-                output[_out++] = here & 65535;
-              } else if (op & 16) {
-                len = here & 65535;
+              if (op & 16) {
+                dist = here & 65535;
                 op &= 15;
-                if (op) {
+                if (bits < op) {
+                  hold += input[_in++] << bits;
+                  bits += 8;
                   if (bits < op) {
                     hold += input[_in++] << bits;
                     bits += 8;
                   }
-                  len += hold & (1 << op) - 1;
-                  hold >>>= op;
-                  bits -= op;
                 }
-                if (bits < 15) {
-                  hold += input[_in++] << bits;
-                  bits += 8;
-                  hold += input[_in++] << bits;
-                  bits += 8;
+                dist += hold & (1 << op) - 1;
+                if (dist > dmax) {
+                  strm.msg = "invalid distance too far back";
+                  state.mode = BAD;
+                  break top;
                 }
-                here = dcode[hold & dmask];
-                dodist:
-                  for (; ; ) {
-                    op = here >>> 24;
-                    hold >>>= op;
-                    bits -= op;
-                    op = here >>> 16 & 255;
-                    if (op & 16) {
-                      dist = here & 65535;
-                      op &= 15;
-                      if (bits < op) {
-                        hold += input[_in++] << bits;
-                        bits += 8;
-                        if (bits < op) {
-                          hold += input[_in++] << bits;
-                          bits += 8;
-                        }
-                      }
-                      dist += hold & (1 << op) - 1;
-                      if (dist > dmax) {
-                        strm.msg = "invalid distance too far back";
-                        state.mode = BAD;
-                        break top;
-                      }
-                      hold >>>= op;
-                      bits -= op;
-                      op = _out - beg;
-                      if (dist > op) {
-                        op = dist - op;
-                        if (op > whave) {
-                          if (state.sane) {
-                            strm.msg = "invalid distance too far back";
-                            state.mode = BAD;
-                            break top;
-                          }
-                        }
-                        from = 0;
-                        from_source = s_window;
-                        if (wnext === 0) {
-                          from += wsize - op;
-                          if (op < len) {
-                            len -= op;
-                            do {
-                              output[_out++] = s_window[from++];
-                            } while (--op);
-                            from = _out - dist;
-                            from_source = output;
-                          }
-                        } else if (wnext < op) {
-                          from += wsize + wnext - op;
-                          op -= wnext;
-                          if (op < len) {
-                            len -= op;
-                            do {
-                              output[_out++] = s_window[from++];
-                            } while (--op);
-                            from = 0;
-                            if (wnext < len) {
-                              op = wnext;
-                              len -= op;
-                              do {
-                                output[_out++] = s_window[from++];
-                              } while (--op);
-                              from = _out - dist;
-                              from_source = output;
-                            }
-                          }
-                        } else {
-                          from += wnext - op;
-                          if (op < len) {
-                            len -= op;
-                            do {
-                              output[_out++] = s_window[from++];
-                            } while (--op);
-                            from = _out - dist;
-                            from_source = output;
-                          }
-                        }
-                        while (len > 2) {
-                          output[_out++] = from_source[from++];
-                          output[_out++] = from_source[from++];
-                          output[_out++] = from_source[from++];
-                          len -= 3;
-                        }
-                        if (len) {
-                          output[_out++] = from_source[from++];
-                          if (len > 1) {
-                            output[_out++] = from_source[from++];
-                          }
-                        }
-                      } else {
-                        from = _out - dist;
-                        do {
-                          output[_out++] = output[from++];
-                          output[_out++] = output[from++];
-                          output[_out++] = output[from++];
-                          len -= 3;
-                        } while (len > 2);
-                        if (len) {
-                          output[_out++] = output[from++];
-                          if (len > 1) {
-                            output[_out++] = output[from++];
-                          }
-                        }
-                      }
-                    } else if ((op & 64) === 0) {
-                      here = dcode[(here & 65535) + (hold & (1 << op) - 1)];
-                      continue dodist;
-                    } else {
-                      strm.msg = "invalid distance code";
+                hold >>>= op;
+                bits -= op;
+                op = _out - beg;
+                if (dist > op) {
+                  op = dist - op;
+                  if (op > whave) {
+                    if (state.sane) {
+                      strm.msg = "invalid distance too far back";
                       state.mode = BAD;
                       break top;
                     }
-                    break;
                   }
+                  from = 0;
+                  from_source = s_window;
+                  if (wnext === 0) {
+                    from += wsize - op;
+                    if (op < len) {
+                      len -= op;
+                      do {
+                        output[_out++] = s_window[from++];
+                      } while (--op);
+                      from = _out - dist;
+                      from_source = output;
+                    }
+                  } else if (wnext < op) {
+                    from += wsize + wnext - op;
+                    op -= wnext;
+                    if (op < len) {
+                      len -= op;
+                      do {
+                        output[_out++] = s_window[from++];
+                      } while (--op);
+                      from = 0;
+                      if (wnext < len) {
+                        op = wnext;
+                        len -= op;
+                        do {
+                          output[_out++] = s_window[from++];
+                        } while (--op);
+                        from = _out - dist;
+                        from_source = output;
+                      }
+                    }
+                  } else {
+                    from += wnext - op;
+                    if (op < len) {
+                      len -= op;
+                      do {
+                        output[_out++] = s_window[from++];
+                      } while (--op);
+                      from = _out - dist;
+                      from_source = output;
+                    }
+                  }
+                  while (len > 2) {
+                    output[_out++] = from_source[from++];
+                    output[_out++] = from_source[from++];
+                    output[_out++] = from_source[from++];
+                    len -= 3;
+                  }
+                  if (len) {
+                    output[_out++] = from_source[from++];
+                    if (len > 1) {
+                      output[_out++] = from_source[from++];
+                    }
+                  }
+                } else {
+                  from = _out - dist;
+                  do {
+                    output[_out++] = output[from++];
+                    output[_out++] = output[from++];
+                    output[_out++] = output[from++];
+                    len -= 3;
+                  } while (len > 2);
+                  if (len) {
+                    output[_out++] = output[from++];
+                    if (len > 1) {
+                      output[_out++] = output[from++];
+                    }
+                  }
+                }
               } else if ((op & 64) === 0) {
-                here = lcode[(here & 65535) + (hold & (1 << op) - 1)];
-                continue dolen;
-              } else if (op & 32) {
-                state.mode = TYPE;
-                break top;
+                here = dcode[(here & 65535) + (hold & (1 << op) - 1)];
+                continue dodist;
               } else {
-                strm.msg = "invalid literal/length code";
+                strm.msg = "invalid distance code";
                 state.mode = BAD;
                 break top;
               }
               break;
             }
-        } while (_in < last2 && _out < end);
+          } else if ((op & 64) === 0) {
+            here = lcode[(here & 65535) + (hold & (1 << op) - 1)];
+            continue dolen;
+          } else if (op & 32) {
+            state.mode = TYPE;
+            break top;
+          } else {
+            strm.msg = "invalid literal/length code";
+            state.mode = BAD;
+            break top;
+          }
+          break;
+        }
+      } while (_in < last2 && _out < end);
       len = bits >> 3;
       _in -= len;
       bits -= len << 3;
@@ -5189,7 +5191,7 @@ var require_inftrees = __commonJS({
       if (type === LENS && used > ENOUGH_LENS || type === DISTS && used > ENOUGH_DISTS) {
         return 1;
       }
-      for (; ; ) {
+      for (; ;) {
         here_bits = len - drop;
         if (work[sym] < end) {
           here_op = 0;
@@ -5549,307 +5551,415 @@ var require_inflate = __commonJS({
       _out = left;
       ret = Z_OK;
       inf_leave:
-        for (; ; ) {
-          switch (state.mode) {
-            case HEAD:
-              if (state.wrap === 0) {
-                state.mode = TYPEDO;
-                break;
-              }
-              while (bits < 16) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              if (state.wrap & 2 && hold === 35615) {
-                state.check = 0;
-                hbuf[0] = hold & 255;
-                hbuf[1] = hold >>> 8 & 255;
-                state.check = crc322(state.check, hbuf, 2, 0);
-                hold = 0;
-                bits = 0;
-                state.mode = FLAGS;
-                break;
-              }
-              state.flags = 0;
-              if (state.head) {
-                state.head.done = false;
-              }
-              if (!(state.wrap & 1) || /* check if zlib header allowed */
-              (((hold & 255) << 8) + (hold >> 8)) % 31) {
-                strm.msg = "incorrect header check";
-                state.mode = BAD;
-                break;
-              }
-              if ((hold & 15) !== Z_DEFLATED) {
-                strm.msg = "unknown compression method";
-                state.mode = BAD;
-                break;
-              }
-              hold >>>= 4;
-              bits -= 4;
-              len = (hold & 15) + 8;
-              if (state.wbits === 0) {
-                state.wbits = len;
-              } else if (len > state.wbits) {
-                strm.msg = "invalid window size";
-                state.mode = BAD;
-                break;
-              }
-              state.dmax = 1 << len;
-              strm.adler = state.check = 1;
-              state.mode = hold & 512 ? DICTID : TYPE;
-              hold = 0;
-              bits = 0;
+      for (; ;) {
+        switch (state.mode) {
+          case HEAD:
+            if (state.wrap === 0) {
+              state.mode = TYPEDO;
               break;
-            case FLAGS:
-              while (bits < 16) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              state.flags = hold;
-              if ((state.flags & 255) !== Z_DEFLATED) {
-                strm.msg = "unknown compression method";
-                state.mode = BAD;
-                break;
-              }
-              if (state.flags & 57344) {
-                strm.msg = "unknown header flags set";
-                state.mode = BAD;
-                break;
-              }
-              if (state.head) {
-                state.head.text = hold >> 8 & 1;
-              }
-              if (state.flags & 512) {
-                hbuf[0] = hold & 255;
-                hbuf[1] = hold >>> 8 & 255;
-                state.check = crc322(state.check, hbuf, 2, 0);
-              }
-              hold = 0;
-              bits = 0;
-              state.mode = TIME;
-            case TIME:
-              while (bits < 32) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              if (state.head) {
-                state.head.time = hold;
-              }
-              if (state.flags & 512) {
-                hbuf[0] = hold & 255;
-                hbuf[1] = hold >>> 8 & 255;
-                hbuf[2] = hold >>> 16 & 255;
-                hbuf[3] = hold >>> 24 & 255;
-                state.check = crc322(state.check, hbuf, 4, 0);
-              }
-              hold = 0;
-              bits = 0;
-              state.mode = OS;
-            case OS:
-              while (bits < 16) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              if (state.head) {
-                state.head.xflags = hold & 255;
-                state.head.os = hold >> 8;
-              }
-              if (state.flags & 512) {
-                hbuf[0] = hold & 255;
-                hbuf[1] = hold >>> 8 & 255;
-                state.check = crc322(state.check, hbuf, 2, 0);
-              }
-              hold = 0;
-              bits = 0;
-              state.mode = EXLEN;
-            case EXLEN:
-              if (state.flags & 1024) {
-                while (bits < 16) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                state.length = hold;
-                if (state.head) {
-                  state.head.extra_len = hold;
-                }
-                if (state.flags & 512) {
-                  hbuf[0] = hold & 255;
-                  hbuf[1] = hold >>> 8 & 255;
-                  state.check = crc322(state.check, hbuf, 2, 0);
-                }
-                hold = 0;
-                bits = 0;
-              } else if (state.head) {
-                state.head.extra = null;
-              }
-              state.mode = EXTRA2;
-            case EXTRA2:
-              if (state.flags & 1024) {
-                copy2 = state.length;
-                if (copy2 > have) {
-                  copy2 = have;
-                }
-                if (copy2) {
-                  if (state.head) {
-                    len = state.head.extra_len - state.length;
-                    if (!state.head.extra) {
-                      state.head.extra = new Array(state.head.extra_len);
-                    }
-                    utils.arraySet(
-                      state.head.extra,
-                      input,
-                      next,
-                      // extra field is limited to 65536 bytes
-                      // - no need for additional size check
-                      copy2,
-                      /*len + copy > state.head.extra_max - len ? state.head.extra_max : copy,*/
-                      len
-                    );
-                  }
-                  if (state.flags & 512) {
-                    state.check = crc322(state.check, input, copy2, next);
-                  }
-                  have -= copy2;
-                  next += copy2;
-                  state.length -= copy2;
-                }
-                if (state.length) {
-                  break inf_leave;
-                }
-              }
-              state.length = 0;
-              state.mode = NAME;
-            case NAME:
-              if (state.flags & 2048) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                copy2 = 0;
-                do {
-                  len = input[next + copy2++];
-                  if (state.head && len && state.length < 65536) {
-                    state.head.name += String.fromCharCode(len);
-                  }
-                } while (len && copy2 < have);
-                if (state.flags & 512) {
-                  state.check = crc322(state.check, input, copy2, next);
-                }
-                have -= copy2;
-                next += copy2;
-                if (len) {
-                  break inf_leave;
-                }
-              } else if (state.head) {
-                state.head.name = null;
-              }
-              state.length = 0;
-              state.mode = COMMENT;
-            case COMMENT:
-              if (state.flags & 4096) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                copy2 = 0;
-                do {
-                  len = input[next + copy2++];
-                  if (state.head && len && state.length < 65536) {
-                    state.head.comment += String.fromCharCode(len);
-                  }
-                } while (len && copy2 < have);
-                if (state.flags & 512) {
-                  state.check = crc322(state.check, input, copy2, next);
-                }
-                have -= copy2;
-                next += copy2;
-                if (len) {
-                  break inf_leave;
-                }
-              } else if (state.head) {
-                state.head.comment = null;
-              }
-              state.mode = HCRC;
-            case HCRC:
-              if (state.flags & 512) {
-                while (bits < 16) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                if (hold !== (state.check & 65535)) {
-                  strm.msg = "header crc mismatch";
-                  state.mode = BAD;
-                  break;
-                }
-                hold = 0;
-                bits = 0;
-              }
-              if (state.head) {
-                state.head.hcrc = state.flags >> 9 & 1;
-                state.head.done = true;
-              }
-              strm.adler = state.check = 0;
-              state.mode = TYPE;
-              break;
-            case DICTID:
-              while (bits < 32) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              strm.adler = state.check = zswap32(hold);
-              hold = 0;
-              bits = 0;
-              state.mode = DICT;
-            case DICT:
-              if (state.havedict === 0) {
-                strm.next_out = put;
-                strm.avail_out = left;
-                strm.next_in = next;
-                strm.avail_in = have;
-                state.hold = hold;
-                state.bits = bits;
-                return Z_NEED_DICT;
-              }
-              strm.adler = state.check = 1;
-              state.mode = TYPE;
-            case TYPE:
-              if (flush2 === Z_BLOCK || flush2 === Z_TREES) {
+            }
+            while (bits < 16) {
+              if (have === 0) {
                 break inf_leave;
               }
-            case TYPEDO:
-              if (state.last) {
-                hold >>>= bits & 7;
-                bits -= bits & 7;
-                state.mode = CHECK;
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if (state.wrap & 2 && hold === 35615) {
+              state.check = 0;
+              hbuf[0] = hold & 255;
+              hbuf[1] = hold >>> 8 & 255;
+              state.check = crc322(state.check, hbuf, 2, 0);
+              hold = 0;
+              bits = 0;
+              state.mode = FLAGS;
+              break;
+            }
+            state.flags = 0;
+            if (state.head) {
+              state.head.done = false;
+            }
+            if (!(state.wrap & 1) || /* check if zlib header allowed */
+              (((hold & 255) << 8) + (hold >> 8)) % 31) {
+              strm.msg = "incorrect header check";
+              state.mode = BAD;
+              break;
+            }
+            if ((hold & 15) !== Z_DEFLATED) {
+              strm.msg = "unknown compression method";
+              state.mode = BAD;
+              break;
+            }
+            hold >>>= 4;
+            bits -= 4;
+            len = (hold & 15) + 8;
+            if (state.wbits === 0) {
+              state.wbits = len;
+            } else if (len > state.wbits) {
+              strm.msg = "invalid window size";
+              state.mode = BAD;
+              break;
+            }
+            state.dmax = 1 << len;
+            strm.adler = state.check = 1;
+            state.mode = hold & 512 ? DICTID : TYPE;
+            hold = 0;
+            bits = 0;
+            break;
+          case FLAGS:
+            while (bits < 16) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            state.flags = hold;
+            if ((state.flags & 255) !== Z_DEFLATED) {
+              strm.msg = "unknown compression method";
+              state.mode = BAD;
+              break;
+            }
+            if (state.flags & 57344) {
+              strm.msg = "unknown header flags set";
+              state.mode = BAD;
+              break;
+            }
+            if (state.head) {
+              state.head.text = hold >> 8 & 1;
+            }
+            if (state.flags & 512) {
+              hbuf[0] = hold & 255;
+              hbuf[1] = hold >>> 8 & 255;
+              state.check = crc322(state.check, hbuf, 2, 0);
+            }
+            hold = 0;
+            bits = 0;
+            state.mode = TIME;
+          case TIME:
+            while (bits < 32) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if (state.head) {
+              state.head.time = hold;
+            }
+            if (state.flags & 512) {
+              hbuf[0] = hold & 255;
+              hbuf[1] = hold >>> 8 & 255;
+              hbuf[2] = hold >>> 16 & 255;
+              hbuf[3] = hold >>> 24 & 255;
+              state.check = crc322(state.check, hbuf, 4, 0);
+            }
+            hold = 0;
+            bits = 0;
+            state.mode = OS;
+          case OS:
+            while (bits < 16) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if (state.head) {
+              state.head.xflags = hold & 255;
+              state.head.os = hold >> 8;
+            }
+            if (state.flags & 512) {
+              hbuf[0] = hold & 255;
+              hbuf[1] = hold >>> 8 & 255;
+              state.check = crc322(state.check, hbuf, 2, 0);
+            }
+            hold = 0;
+            bits = 0;
+            state.mode = EXLEN;
+          case EXLEN:
+            if (state.flags & 1024) {
+              while (bits < 16) {
+                if (have === 0) {
+                  break inf_leave;
+                }
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
+              }
+              state.length = hold;
+              if (state.head) {
+                state.head.extra_len = hold;
+              }
+              if (state.flags & 512) {
+                hbuf[0] = hold & 255;
+                hbuf[1] = hold >>> 8 & 255;
+                state.check = crc322(state.check, hbuf, 2, 0);
+              }
+              hold = 0;
+              bits = 0;
+            } else if (state.head) {
+              state.head.extra = null;
+            }
+            state.mode = EXTRA2;
+          case EXTRA2:
+            if (state.flags & 1024) {
+              copy2 = state.length;
+              if (copy2 > have) {
+                copy2 = have;
+              }
+              if (copy2) {
+                if (state.head) {
+                  len = state.head.extra_len - state.length;
+                  if (!state.head.extra) {
+                    state.head.extra = new Array(state.head.extra_len);
+                  }
+                  utils.arraySet(
+                    state.head.extra,
+                    input,
+                    next,
+                    // extra field is limited to 65536 bytes
+                    // - no need for additional size check
+                    copy2,
+                    /*len + copy > state.head.extra_max - len ? state.head.extra_max : copy,*/
+                    len
+                  );
+                }
+                if (state.flags & 512) {
+                  state.check = crc322(state.check, input, copy2, next);
+                }
+                have -= copy2;
+                next += copy2;
+                state.length -= copy2;
+              }
+              if (state.length) {
+                break inf_leave;
+              }
+            }
+            state.length = 0;
+            state.mode = NAME;
+          case NAME:
+            if (state.flags & 2048) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              copy2 = 0;
+              do {
+                len = input[next + copy2++];
+                if (state.head && len && state.length < 65536) {
+                  state.head.name += String.fromCharCode(len);
+                }
+              } while (len && copy2 < have);
+              if (state.flags & 512) {
+                state.check = crc322(state.check, input, copy2, next);
+              }
+              have -= copy2;
+              next += copy2;
+              if (len) {
+                break inf_leave;
+              }
+            } else if (state.head) {
+              state.head.name = null;
+            }
+            state.length = 0;
+            state.mode = COMMENT;
+          case COMMENT:
+            if (state.flags & 4096) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              copy2 = 0;
+              do {
+                len = input[next + copy2++];
+                if (state.head && len && state.length < 65536) {
+                  state.head.comment += String.fromCharCode(len);
+                }
+              } while (len && copy2 < have);
+              if (state.flags & 512) {
+                state.check = crc322(state.check, input, copy2, next);
+              }
+              have -= copy2;
+              next += copy2;
+              if (len) {
+                break inf_leave;
+              }
+            } else if (state.head) {
+              state.head.comment = null;
+            }
+            state.mode = HCRC;
+          case HCRC:
+            if (state.flags & 512) {
+              while (bits < 16) {
+                if (have === 0) {
+                  break inf_leave;
+                }
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
+              }
+              if (hold !== (state.check & 65535)) {
+                strm.msg = "header crc mismatch";
+                state.mode = BAD;
                 break;
               }
+              hold = 0;
+              bits = 0;
+            }
+            if (state.head) {
+              state.head.hcrc = state.flags >> 9 & 1;
+              state.head.done = true;
+            }
+            strm.adler = state.check = 0;
+            state.mode = TYPE;
+            break;
+          case DICTID:
+            while (bits < 32) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            strm.adler = state.check = zswap32(hold);
+            hold = 0;
+            bits = 0;
+            state.mode = DICT;
+          case DICT:
+            if (state.havedict === 0) {
+              strm.next_out = put;
+              strm.avail_out = left;
+              strm.next_in = next;
+              strm.avail_in = have;
+              state.hold = hold;
+              state.bits = bits;
+              return Z_NEED_DICT;
+            }
+            strm.adler = state.check = 1;
+            state.mode = TYPE;
+          case TYPE:
+            if (flush2 === Z_BLOCK || flush2 === Z_TREES) {
+              break inf_leave;
+            }
+          case TYPEDO:
+            if (state.last) {
+              hold >>>= bits & 7;
+              bits -= bits & 7;
+              state.mode = CHECK;
+              break;
+            }
+            while (bits < 3) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            state.last = hold & 1;
+            hold >>>= 1;
+            bits -= 1;
+            switch (hold & 3) {
+              case 0:
+                state.mode = STORED;
+                break;
+              case 1:
+                fixedtables(state);
+                state.mode = LEN_;
+                if (flush2 === Z_TREES) {
+                  hold >>>= 2;
+                  bits -= 2;
+                  break inf_leave;
+                }
+                break;
+              case 2:
+                state.mode = TABLE;
+                break;
+              case 3:
+                strm.msg = "invalid block type";
+                state.mode = BAD;
+            }
+            hold >>>= 2;
+            bits -= 2;
+            break;
+          case STORED:
+            hold >>>= bits & 7;
+            bits -= bits & 7;
+            while (bits < 32) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if ((hold & 65535) !== (hold >>> 16 ^ 65535)) {
+              strm.msg = "invalid stored block lengths";
+              state.mode = BAD;
+              break;
+            }
+            state.length = hold & 65535;
+            hold = 0;
+            bits = 0;
+            state.mode = COPY_;
+            if (flush2 === Z_TREES) {
+              break inf_leave;
+            }
+          case COPY_:
+            state.mode = COPY;
+          case COPY:
+            copy2 = state.length;
+            if (copy2) {
+              if (copy2 > have) {
+                copy2 = have;
+              }
+              if (copy2 > left) {
+                copy2 = left;
+              }
+              if (copy2 === 0) {
+                break inf_leave;
+              }
+              utils.arraySet(output, input, next, copy2, put);
+              have -= copy2;
+              next += copy2;
+              left -= copy2;
+              put += copy2;
+              state.length -= copy2;
+              break;
+            }
+            state.mode = TYPE;
+            break;
+          case TABLE:
+            while (bits < 14) {
+              if (have === 0) {
+                break inf_leave;
+              }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            state.nlen = (hold & 31) + 257;
+            hold >>>= 5;
+            bits -= 5;
+            state.ndist = (hold & 31) + 1;
+            hold >>>= 5;
+            bits -= 5;
+            state.ncode = (hold & 15) + 4;
+            hold >>>= 4;
+            bits -= 4;
+            if (state.nlen > 286 || state.ndist > 30) {
+              strm.msg = "too many length or distance symbols";
+              state.mode = BAD;
+              break;
+            }
+            state.have = 0;
+            state.mode = LENLENS;
+          case LENLENS:
+            while (state.have < state.ncode) {
               while (bits < 3) {
                 if (have === 0) {
                   break inf_leave;
@@ -5858,276 +5968,28 @@ var require_inflate = __commonJS({
                 hold += input[next++] << bits;
                 bits += 8;
               }
-              state.last = hold & 1;
-              hold >>>= 1;
-              bits -= 1;
-              switch (hold & 3) {
-                case 0:
-                  state.mode = STORED;
-                  break;
-                case 1:
-                  fixedtables(state);
-                  state.mode = LEN_;
-                  if (flush2 === Z_TREES) {
-                    hold >>>= 2;
-                    bits -= 2;
-                    break inf_leave;
-                  }
-                  break;
-                case 2:
-                  state.mode = TABLE;
-                  break;
-                case 3:
-                  strm.msg = "invalid block type";
-                  state.mode = BAD;
-              }
-              hold >>>= 2;
-              bits -= 2;
+              state.lens[order[state.have++]] = hold & 7;
+              hold >>>= 3;
+              bits -= 3;
+            }
+            while (state.have < 19) {
+              state.lens[order[state.have++]] = 0;
+            }
+            state.lencode = state.lendyn;
+            state.lenbits = 7;
+            opts = { bits: state.lenbits };
+            ret = inflate_table(CODES, state.lens, 0, 19, state.lencode, 0, state.work, opts);
+            state.lenbits = opts.bits;
+            if (ret) {
+              strm.msg = "invalid code lengths set";
+              state.mode = BAD;
               break;
-            case STORED:
-              hold >>>= bits & 7;
-              bits -= bits & 7;
-              while (bits < 32) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              if ((hold & 65535) !== (hold >>> 16 ^ 65535)) {
-                strm.msg = "invalid stored block lengths";
-                state.mode = BAD;
-                break;
-              }
-              state.length = hold & 65535;
-              hold = 0;
-              bits = 0;
-              state.mode = COPY_;
-              if (flush2 === Z_TREES) {
-                break inf_leave;
-              }
-            case COPY_:
-              state.mode = COPY;
-            case COPY:
-              copy2 = state.length;
-              if (copy2) {
-                if (copy2 > have) {
-                  copy2 = have;
-                }
-                if (copy2 > left) {
-                  copy2 = left;
-                }
-                if (copy2 === 0) {
-                  break inf_leave;
-                }
-                utils.arraySet(output, input, next, copy2, put);
-                have -= copy2;
-                next += copy2;
-                left -= copy2;
-                put += copy2;
-                state.length -= copy2;
-                break;
-              }
-              state.mode = TYPE;
-              break;
-            case TABLE:
-              while (bits < 14) {
-                if (have === 0) {
-                  break inf_leave;
-                }
-                have--;
-                hold += input[next++] << bits;
-                bits += 8;
-              }
-              state.nlen = (hold & 31) + 257;
-              hold >>>= 5;
-              bits -= 5;
-              state.ndist = (hold & 31) + 1;
-              hold >>>= 5;
-              bits -= 5;
-              state.ncode = (hold & 15) + 4;
-              hold >>>= 4;
-              bits -= 4;
-              if (state.nlen > 286 || state.ndist > 30) {
-                strm.msg = "too many length or distance symbols";
-                state.mode = BAD;
-                break;
-              }
-              state.have = 0;
-              state.mode = LENLENS;
-            case LENLENS:
-              while (state.have < state.ncode) {
-                while (bits < 3) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                state.lens[order[state.have++]] = hold & 7;
-                hold >>>= 3;
-                bits -= 3;
-              }
-              while (state.have < 19) {
-                state.lens[order[state.have++]] = 0;
-              }
-              state.lencode = state.lendyn;
-              state.lenbits = 7;
-              opts = { bits: state.lenbits };
-              ret = inflate_table(CODES, state.lens, 0, 19, state.lencode, 0, state.work, opts);
-              state.lenbits = opts.bits;
-              if (ret) {
-                strm.msg = "invalid code lengths set";
-                state.mode = BAD;
-                break;
-              }
-              state.have = 0;
-              state.mode = CODELENS;
-            case CODELENS:
-              while (state.have < state.nlen + state.ndist) {
-                for (; ; ) {
-                  here = state.lencode[hold & (1 << state.lenbits) - 1];
-                  here_bits = here >>> 24;
-                  here_op = here >>> 16 & 255;
-                  here_val = here & 65535;
-                  if (here_bits <= bits) {
-                    break;
-                  }
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                if (here_val < 16) {
-                  hold >>>= here_bits;
-                  bits -= here_bits;
-                  state.lens[state.have++] = here_val;
-                } else {
-                  if (here_val === 16) {
-                    n = here_bits + 2;
-                    while (bits < n) {
-                      if (have === 0) {
-                        break inf_leave;
-                      }
-                      have--;
-                      hold += input[next++] << bits;
-                      bits += 8;
-                    }
-                    hold >>>= here_bits;
-                    bits -= here_bits;
-                    if (state.have === 0) {
-                      strm.msg = "invalid bit length repeat";
-                      state.mode = BAD;
-                      break;
-                    }
-                    len = state.lens[state.have - 1];
-                    copy2 = 3 + (hold & 3);
-                    hold >>>= 2;
-                    bits -= 2;
-                  } else if (here_val === 17) {
-                    n = here_bits + 3;
-                    while (bits < n) {
-                      if (have === 0) {
-                        break inf_leave;
-                      }
-                      have--;
-                      hold += input[next++] << bits;
-                      bits += 8;
-                    }
-                    hold >>>= here_bits;
-                    bits -= here_bits;
-                    len = 0;
-                    copy2 = 3 + (hold & 7);
-                    hold >>>= 3;
-                    bits -= 3;
-                  } else {
-                    n = here_bits + 7;
-                    while (bits < n) {
-                      if (have === 0) {
-                        break inf_leave;
-                      }
-                      have--;
-                      hold += input[next++] << bits;
-                      bits += 8;
-                    }
-                    hold >>>= here_bits;
-                    bits -= here_bits;
-                    len = 0;
-                    copy2 = 11 + (hold & 127);
-                    hold >>>= 7;
-                    bits -= 7;
-                  }
-                  if (state.have + copy2 > state.nlen + state.ndist) {
-                    strm.msg = "invalid bit length repeat";
-                    state.mode = BAD;
-                    break;
-                  }
-                  while (copy2--) {
-                    state.lens[state.have++] = len;
-                  }
-                }
-              }
-              if (state.mode === BAD) {
-                break;
-              }
-              if (state.lens[256] === 0) {
-                strm.msg = "invalid code -- missing end-of-block";
-                state.mode = BAD;
-                break;
-              }
-              state.lenbits = 9;
-              opts = { bits: state.lenbits };
-              ret = inflate_table(LENS, state.lens, 0, state.nlen, state.lencode, 0, state.work, opts);
-              state.lenbits = opts.bits;
-              if (ret) {
-                strm.msg = "invalid literal/lengths set";
-                state.mode = BAD;
-                break;
-              }
-              state.distbits = 6;
-              state.distcode = state.distdyn;
-              opts = { bits: state.distbits };
-              ret = inflate_table(DISTS, state.lens, state.nlen, state.ndist, state.distcode, 0, state.work, opts);
-              state.distbits = opts.bits;
-              if (ret) {
-                strm.msg = "invalid distances set";
-                state.mode = BAD;
-                break;
-              }
-              state.mode = LEN_;
-              if (flush2 === Z_TREES) {
-                break inf_leave;
-              }
-            case LEN_:
-              state.mode = LEN;
-            case LEN:
-              if (have >= 6 && left >= 258) {
-                strm.next_out = put;
-                strm.avail_out = left;
-                strm.next_in = next;
-                strm.avail_in = have;
-                state.hold = hold;
-                state.bits = bits;
-                inflate_fast(strm, _out);
-                put = strm.next_out;
-                output = strm.output;
-                left = strm.avail_out;
-                next = strm.next_in;
-                input = strm.input;
-                have = strm.avail_in;
-                hold = state.hold;
-                bits = state.bits;
-                if (state.mode === TYPE) {
-                  state.back = -1;
-                }
-                break;
-              }
-              state.back = 0;
-              for (; ; ) {
+            }
+            state.have = 0;
+            state.mode = CODELENS;
+          case CODELENS:
+            while (state.have < state.nlen + state.ndist) {
+              for (; ;) {
                 here = state.lencode[hold & (1 << state.lenbits) - 1];
                 here_bits = here >>> 24;
                 here_op = here >>> 16 & 255;
@@ -6142,74 +6004,156 @@ var require_inflate = __commonJS({
                 hold += input[next++] << bits;
                 bits += 8;
               }
-              if (here_op && (here_op & 240) === 0) {
-                last_bits = here_bits;
-                last_op = here_op;
-                last_val = here_val;
-                for (; ; ) {
-                  here = state.lencode[last_val + ((hold & (1 << last_bits + last_op) - 1) >> last_bits)];
-                  here_bits = here >>> 24;
-                  here_op = here >>> 16 & 255;
-                  here_val = here & 65535;
-                  if (last_bits + here_bits <= bits) {
+              if (here_val < 16) {
+                hold >>>= here_bits;
+                bits -= here_bits;
+                state.lens[state.have++] = here_val;
+              } else {
+                if (here_val === 16) {
+                  n = here_bits + 2;
+                  while (bits < n) {
+                    if (have === 0) {
+                      break inf_leave;
+                    }
+                    have--;
+                    hold += input[next++] << bits;
+                    bits += 8;
+                  }
+                  hold >>>= here_bits;
+                  bits -= here_bits;
+                  if (state.have === 0) {
+                    strm.msg = "invalid bit length repeat";
+                    state.mode = BAD;
                     break;
                   }
-                  if (have === 0) {
-                    break inf_leave;
+                  len = state.lens[state.have - 1];
+                  copy2 = 3 + (hold & 3);
+                  hold >>>= 2;
+                  bits -= 2;
+                } else if (here_val === 17) {
+                  n = here_bits + 3;
+                  while (bits < n) {
+                    if (have === 0) {
+                      break inf_leave;
+                    }
+                    have--;
+                    hold += input[next++] << bits;
+                    bits += 8;
                   }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
+                  hold >>>= here_bits;
+                  bits -= here_bits;
+                  len = 0;
+                  copy2 = 3 + (hold & 7);
+                  hold >>>= 3;
+                  bits -= 3;
+                } else {
+                  n = here_bits + 7;
+                  while (bits < n) {
+                    if (have === 0) {
+                      break inf_leave;
+                    }
+                    have--;
+                    hold += input[next++] << bits;
+                    bits += 8;
+                  }
+                  hold >>>= here_bits;
+                  bits -= here_bits;
+                  len = 0;
+                  copy2 = 11 + (hold & 127);
+                  hold >>>= 7;
+                  bits -= 7;
                 }
-                hold >>>= last_bits;
-                bits -= last_bits;
-                state.back += last_bits;
+                if (state.have + copy2 > state.nlen + state.ndist) {
+                  strm.msg = "invalid bit length repeat";
+                  state.mode = BAD;
+                  break;
+                }
+                while (copy2--) {
+                  state.lens[state.have++] = len;
+                }
               }
-              hold >>>= here_bits;
-              bits -= here_bits;
-              state.back += here_bits;
-              state.length = here_val;
-              if (here_op === 0) {
-                state.mode = LIT;
-                break;
-              }
-              if (here_op & 32) {
+            }
+            if (state.mode === BAD) {
+              break;
+            }
+            if (state.lens[256] === 0) {
+              strm.msg = "invalid code -- missing end-of-block";
+              state.mode = BAD;
+              break;
+            }
+            state.lenbits = 9;
+            opts = { bits: state.lenbits };
+            ret = inflate_table(LENS, state.lens, 0, state.nlen, state.lencode, 0, state.work, opts);
+            state.lenbits = opts.bits;
+            if (ret) {
+              strm.msg = "invalid literal/lengths set";
+              state.mode = BAD;
+              break;
+            }
+            state.distbits = 6;
+            state.distcode = state.distdyn;
+            opts = { bits: state.distbits };
+            ret = inflate_table(DISTS, state.lens, state.nlen, state.ndist, state.distcode, 0, state.work, opts);
+            state.distbits = opts.bits;
+            if (ret) {
+              strm.msg = "invalid distances set";
+              state.mode = BAD;
+              break;
+            }
+            state.mode = LEN_;
+            if (flush2 === Z_TREES) {
+              break inf_leave;
+            }
+          case LEN_:
+            state.mode = LEN;
+          case LEN:
+            if (have >= 6 && left >= 258) {
+              strm.next_out = put;
+              strm.avail_out = left;
+              strm.next_in = next;
+              strm.avail_in = have;
+              state.hold = hold;
+              state.bits = bits;
+              inflate_fast(strm, _out);
+              put = strm.next_out;
+              output = strm.output;
+              left = strm.avail_out;
+              next = strm.next_in;
+              input = strm.input;
+              have = strm.avail_in;
+              hold = state.hold;
+              bits = state.bits;
+              if (state.mode === TYPE) {
                 state.back = -1;
-                state.mode = TYPE;
+              }
+              break;
+            }
+            state.back = 0;
+            for (; ;) {
+              here = state.lencode[hold & (1 << state.lenbits) - 1];
+              here_bits = here >>> 24;
+              here_op = here >>> 16 & 255;
+              here_val = here & 65535;
+              if (here_bits <= bits) {
                 break;
               }
-              if (here_op & 64) {
-                strm.msg = "invalid literal/length code";
-                state.mode = BAD;
-                break;
+              if (have === 0) {
+                break inf_leave;
               }
-              state.extra = here_op & 15;
-              state.mode = LENEXT;
-            case LENEXT:
-              if (state.extra) {
-                n = state.extra;
-                while (bits < n) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                state.length += hold & (1 << state.extra) - 1;
-                hold >>>= state.extra;
-                bits -= state.extra;
-                state.back += state.extra;
-              }
-              state.was = state.length;
-              state.mode = DIST;
-            case DIST:
-              for (; ; ) {
-                here = state.distcode[hold & (1 << state.distbits) - 1];
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if (here_op && (here_op & 240) === 0) {
+              last_bits = here_bits;
+              last_op = here_op;
+              last_val = here_val;
+              for (; ;) {
+                here = state.lencode[last_val + ((hold & (1 << last_bits + last_op) - 1) >> last_bits)];
                 here_bits = here >>> 24;
                 here_op = here >>> 16 & 255;
                 here_val = here & 65535;
-                if (here_bits <= bits) {
+                if (last_bits + here_bits <= bits) {
                   break;
                 }
                 if (have === 0) {
@@ -6219,170 +6163,228 @@ var require_inflate = __commonJS({
                 hold += input[next++] << bits;
                 bits += 8;
               }
-              if ((here_op & 240) === 0) {
-                last_bits = here_bits;
-                last_op = here_op;
-                last_val = here_val;
-                for (; ; ) {
-                  here = state.distcode[last_val + ((hold & (1 << last_bits + last_op) - 1) >> last_bits)];
-                  here_bits = here >>> 24;
-                  here_op = here >>> 16 & 255;
-                  here_val = here & 65535;
-                  if (last_bits + here_bits <= bits) {
-                    break;
-                  }
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
+              hold >>>= last_bits;
+              bits -= last_bits;
+              state.back += last_bits;
+            }
+            hold >>>= here_bits;
+            bits -= here_bits;
+            state.back += here_bits;
+            state.length = here_val;
+            if (here_op === 0) {
+              state.mode = LIT;
+              break;
+            }
+            if (here_op & 32) {
+              state.back = -1;
+              state.mode = TYPE;
+              break;
+            }
+            if (here_op & 64) {
+              strm.msg = "invalid literal/length code";
+              state.mode = BAD;
+              break;
+            }
+            state.extra = here_op & 15;
+            state.mode = LENEXT;
+          case LENEXT:
+            if (state.extra) {
+              n = state.extra;
+              while (bits < n) {
+                if (have === 0) {
+                  break inf_leave;
                 }
-                hold >>>= last_bits;
-                bits -= last_bits;
-                state.back += last_bits;
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
               }
-              hold >>>= here_bits;
-              bits -= here_bits;
-              state.back += here_bits;
-              if (here_op & 64) {
-                strm.msg = "invalid distance code";
-                state.mode = BAD;
+              state.length += hold & (1 << state.extra) - 1;
+              hold >>>= state.extra;
+              bits -= state.extra;
+              state.back += state.extra;
+            }
+            state.was = state.length;
+            state.mode = DIST;
+          case DIST:
+            for (; ;) {
+              here = state.distcode[hold & (1 << state.distbits) - 1];
+              here_bits = here >>> 24;
+              here_op = here >>> 16 & 255;
+              here_val = here & 65535;
+              if (here_bits <= bits) {
                 break;
               }
-              state.offset = here_val;
-              state.extra = here_op & 15;
-              state.mode = DISTEXT;
-            case DISTEXT:
-              if (state.extra) {
-                n = state.extra;
-                while (bits < n) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                state.offset += hold & (1 << state.extra) - 1;
-                hold >>>= state.extra;
-                bits -= state.extra;
-                state.back += state.extra;
-              }
-              if (state.offset > state.dmax) {
-                strm.msg = "invalid distance too far back";
-                state.mode = BAD;
-                break;
-              }
-              state.mode = MATCH;
-            case MATCH:
-              if (left === 0) {
+              if (have === 0) {
                 break inf_leave;
               }
-              copy2 = _out - left;
-              if (state.offset > copy2) {
-                copy2 = state.offset - copy2;
-                if (copy2 > state.whave) {
-                  if (state.sane) {
-                    strm.msg = "invalid distance too far back";
-                    state.mode = BAD;
-                    break;
-                  }
+              have--;
+              hold += input[next++] << bits;
+              bits += 8;
+            }
+            if ((here_op & 240) === 0) {
+              last_bits = here_bits;
+              last_op = here_op;
+              last_val = here_val;
+              for (; ;) {
+                here = state.distcode[last_val + ((hold & (1 << last_bits + last_op) - 1) >> last_bits)];
+                here_bits = here >>> 24;
+                here_op = here >>> 16 & 255;
+                here_val = here & 65535;
+                if (last_bits + here_bits <= bits) {
+                  break;
                 }
-                if (copy2 > state.wnext) {
-                  copy2 -= state.wnext;
-                  from = state.wsize - copy2;
-                } else {
-                  from = state.wnext - copy2;
+                if (have === 0) {
+                  break inf_leave;
                 }
-                if (copy2 > state.length) {
-                  copy2 = state.length;
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
+              }
+              hold >>>= last_bits;
+              bits -= last_bits;
+              state.back += last_bits;
+            }
+            hold >>>= here_bits;
+            bits -= here_bits;
+            state.back += here_bits;
+            if (here_op & 64) {
+              strm.msg = "invalid distance code";
+              state.mode = BAD;
+              break;
+            }
+            state.offset = here_val;
+            state.extra = here_op & 15;
+            state.mode = DISTEXT;
+          case DISTEXT:
+            if (state.extra) {
+              n = state.extra;
+              while (bits < n) {
+                if (have === 0) {
+                  break inf_leave;
                 }
-                from_source = state.window;
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
+              }
+              state.offset += hold & (1 << state.extra) - 1;
+              hold >>>= state.extra;
+              bits -= state.extra;
+              state.back += state.extra;
+            }
+            if (state.offset > state.dmax) {
+              strm.msg = "invalid distance too far back";
+              state.mode = BAD;
+              break;
+            }
+            state.mode = MATCH;
+          case MATCH:
+            if (left === 0) {
+              break inf_leave;
+            }
+            copy2 = _out - left;
+            if (state.offset > copy2) {
+              copy2 = state.offset - copy2;
+              if (copy2 > state.whave) {
+                if (state.sane) {
+                  strm.msg = "invalid distance too far back";
+                  state.mode = BAD;
+                  break;
+                }
+              }
+              if (copy2 > state.wnext) {
+                copy2 -= state.wnext;
+                from = state.wsize - copy2;
               } else {
-                from_source = output;
-                from = put - state.offset;
+                from = state.wnext - copy2;
+              }
+              if (copy2 > state.length) {
                 copy2 = state.length;
               }
-              if (copy2 > left) {
-                copy2 = left;
-              }
-              left -= copy2;
-              state.length -= copy2;
-              do {
-                output[put++] = from_source[from++];
-              } while (--copy2);
-              if (state.length === 0) {
-                state.mode = LEN;
-              }
-              break;
-            case LIT:
-              if (left === 0) {
-                break inf_leave;
-              }
-              output[put++] = state.length;
-              left--;
+              from_source = state.window;
+            } else {
+              from_source = output;
+              from = put - state.offset;
+              copy2 = state.length;
+            }
+            if (copy2 > left) {
+              copy2 = left;
+            }
+            left -= copy2;
+            state.length -= copy2;
+            do {
+              output[put++] = from_source[from++];
+            } while (--copy2);
+            if (state.length === 0) {
               state.mode = LEN;
-              break;
-            case CHECK:
-              if (state.wrap) {
-                while (bits < 32) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold |= input[next++] << bits;
-                  bits += 8;
+            }
+            break;
+          case LIT:
+            if (left === 0) {
+              break inf_leave;
+            }
+            output[put++] = state.length;
+            left--;
+            state.mode = LEN;
+            break;
+          case CHECK:
+            if (state.wrap) {
+              while (bits < 32) {
+                if (have === 0) {
+                  break inf_leave;
                 }
-                _out -= left;
-                strm.total_out += _out;
-                state.total += _out;
-                if (_out) {
-                  strm.adler = state.check = /*UPDATE(state.check, put - _out, _out);*/
+                have--;
+                hold |= input[next++] << bits;
+                bits += 8;
+              }
+              _out -= left;
+              strm.total_out += _out;
+              state.total += _out;
+              if (_out) {
+                strm.adler = state.check = /*UPDATE(state.check, put - _out, _out);*/
                   state.flags ? crc322(state.check, output, _out, put - _out) : adler32(state.check, output, _out, put - _out);
-                }
-                _out = left;
-                if ((state.flags ? hold : zswap32(hold)) !== state.check) {
-                  strm.msg = "incorrect data check";
-                  state.mode = BAD;
-                  break;
-                }
-                hold = 0;
-                bits = 0;
               }
-              state.mode = LENGTH;
-            case LENGTH:
-              if (state.wrap && state.flags) {
-                while (bits < 32) {
-                  if (have === 0) {
-                    break inf_leave;
-                  }
-                  have--;
-                  hold += input[next++] << bits;
-                  bits += 8;
-                }
-                if (hold !== (state.total & 4294967295)) {
-                  strm.msg = "incorrect length check";
-                  state.mode = BAD;
-                  break;
-                }
-                hold = 0;
-                bits = 0;
+              _out = left;
+              if ((state.flags ? hold : zswap32(hold)) !== state.check) {
+                strm.msg = "incorrect data check";
+                state.mode = BAD;
+                break;
               }
-              state.mode = DONE;
-            case DONE:
-              ret = Z_STREAM_END;
-              break inf_leave;
-            case BAD:
-              ret = Z_DATA_ERROR;
-              break inf_leave;
-            case MEM:
-              return Z_MEM_ERROR;
-            case SYNC:
-            default:
-              return Z_STREAM_ERROR;
-          }
+              hold = 0;
+              bits = 0;
+            }
+            state.mode = LENGTH;
+          case LENGTH:
+            if (state.wrap && state.flags) {
+              while (bits < 32) {
+                if (have === 0) {
+                  break inf_leave;
+                }
+                have--;
+                hold += input[next++] << bits;
+                bits += 8;
+              }
+              if (hold !== (state.total & 4294967295)) {
+                strm.msg = "incorrect length check";
+                state.mode = BAD;
+                break;
+              }
+              hold = 0;
+              bits = 0;
+            }
+            state.mode = DONE;
+          case DONE:
+            ret = Z_STREAM_END;
+            break inf_leave;
+          case BAD:
+            ret = Z_DATA_ERROR;
+            break inf_leave;
+          case MEM:
+            return Z_MEM_ERROR;
+          case SYNC:
+          default:
+            return Z_STREAM_ERROR;
         }
+      }
       strm.next_out = put;
       strm.avail_out = left;
       strm.next_in = next;
@@ -6402,7 +6404,7 @@ var require_inflate = __commonJS({
       state.total += _out;
       if (state.wrap && _out) {
         strm.adler = state.check = /*UPDATE(state.check, strm.next_out - _out, _out);*/
-        state.flags ? crc322(state.check, output, _out, strm.next_out - _out) : adler32(state.check, output, _out, strm.next_out - _out);
+          state.flags ? crc322(state.check, output, _out, strm.next_out - _out) : adler32(state.check, output, _out, strm.next_out - _out);
       }
       strm.data_type = state.bits + (state.last ? 64 : 0) + (state.mode === TYPE ? 128 : 0) + (state.mode === LEN_ || state.mode === COPY_ ? 256 : 0);
       if ((_in === 0 && _out === 0 || flush2 === Z_FINISH) && ret === Z_OK) {
@@ -6608,7 +6610,7 @@ var require_inflate2 = __commonJS({
         }
       }
     }
-    Inflate.prototype.push = function(data, mode) {
+    Inflate.prototype.push = function (data, mode) {
       var strm = this.strm;
       var chunkSize = this.options.chunkSize;
       var dictionary = this.options.dictionary;
@@ -6684,10 +6686,10 @@ var require_inflate2 = __commonJS({
       }
       return true;
     };
-    Inflate.prototype.onData = function(chunk) {
+    Inflate.prototype.onData = function (chunk) {
       this.chunks.push(chunk);
     };
-    Inflate.prototype.onEnd = function(status2) {
+    Inflate.prototype.onEnd = function (status2) {
       if (status2 === c.Z_OK) {
         if (this.options.to === "string") {
           this.result = this.chunks.join("");
@@ -6739,7 +6741,7 @@ var require_pify = __commonJS({
   "node_modules/.pnpm/pify@4.0.1/node_modules/pify/index.js"(exports2, module2) {
     "use strict";
     init_polyfill_buffer();
-    var processFn = (fn, options) => function(...args) {
+    var processFn = (fn, options) => function (...args) {
       const P = options.promiseModule;
       return new P((resolve, reject) => {
         if (options.multiArgs) {
@@ -6785,7 +6787,7 @@ var require_pify = __commonJS({
       };
       let ret;
       if (objType === "function") {
-        ret = function(...args) {
+        ret = function (...args) {
           return options.excludeMain ? input(...args) : processFn(input, options).apply(this, args);
         };
       } else {
@@ -7212,10 +7214,10 @@ var require_lib2 = __commonJS({
 var require_onp = __commonJS({
   "node_modules/.pnpm/diff3@0.0.3/node_modules/diff3/onp.js"(exports2, module2) {
     init_polyfill_buffer();
-    module2.exports = function(a_, b_) {
+    module2.exports = function (a_, b_) {
       var a = a_, b = b_, m = a.length, n = b.length, reverse = false, ed = null, offset = m + 1, path2 = [], pathposi = [], ses = [], lcs = "", SES_DELETE = -1, SES_COMMON = 0, SES_ADD = 1;
       var tmp1, tmp2;
-      var init3 = function() {
+      var init3 = function () {
         if (m >= n) {
           tmp1 = a;
           tmp2 = m;
@@ -7227,20 +7229,20 @@ var require_onp = __commonJS({
           offset = m + 1;
         }
       };
-      var P = function(x, y, k) {
+      var P = function (x, y, k) {
         return {
           "x": x,
           "y": y,
           "k": k
         };
       };
-      var seselem = function(elem, t) {
+      var seselem = function (elem, t) {
         return {
           "elem": elem,
           "t": t
         };
       };
-      var snake = function(k, p, pp) {
+      var snake = function (k, p, pp) {
         var r, x, y;
         if (p > pp) {
           r = path2[k - 1 + offset];
@@ -7257,7 +7259,7 @@ var require_onp = __commonJS({
         pathposi[pathposi.length] = new P(x, y, r);
         return y;
       };
-      var recordseq = function(epc) {
+      var recordseq = function (epc) {
         var x_idx, y_idx, px_idx, py_idx, i;
         x_idx = y_idx = 1;
         px_idx = py_idx = 0;
@@ -7295,16 +7297,16 @@ var require_onp = __commonJS({
         SES_DELETE: -1,
         SES_COMMON: 0,
         SES_ADD: 1,
-        editdistance: function() {
+        editdistance: function () {
           return ed;
         },
-        getlcs: function() {
+        getlcs: function () {
           return lcs;
         },
-        getses: function() {
+        getses: function () {
           return ses;
         },
-        compose: function() {
+        compose: function () {
           var delta, size, fp, p, r, epc, i, k;
           delta = n - m;
           size = m + n + 3;
@@ -7419,7 +7421,7 @@ var require_diff3 = __commonJS({
       for (i = 0; i < m2.length; i++) {
         addHunk(m2[i], 2);
       }
-      hunks.sort(function(x, y) {
+      hunks.sort(function (x, y) {
         return x[0] - y[0];
       });
       var result = [];
@@ -7554,7 +7556,7 @@ var require_ms = __commonJS({
     var d = h * 24;
     var w = d * 7;
     var y = d * 365.25;
-    module2.exports = function(val, options) {
+    module2.exports = function (val, options) {
       options = options || {};
       var type = typeof val;
       if (type === "string" && val.length > 0) {
@@ -7929,10 +7931,10 @@ var require_browser = __commonJS({
         return false;
       }
       return typeof document !== "undefined" && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || // Is firebug? http://stackoverflow.com/a/398120/376773
-      typeof window !== "undefined" && window.console && (window.console.firebug || window.console.exception && window.console.table) || // Is firefox >= v31?
-      // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-      typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // Double check webkit in userAgent just in case we are in a worker
-      typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+        typeof window !== "undefined" && window.console && (window.console.firebug || window.console.exception && window.console.table) || // Is firefox >= v31?
+        // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+        typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // Double check webkit in userAgent just in case we are in a worker
+        typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
     }
     function formatArgs(args) {
       args[0] = (this.useColors ? "%c" : "") + this.namespace + (this.useColors ? " %c" : " ") + args[0] + (this.useColors ? "%c " : " ") + "+" + module2.exports.humanize(this.diff);
@@ -7985,7 +7987,7 @@ var require_browser = __commonJS({
     }
     module2.exports = require_common2()(exports2);
     var { formatters } = module2.exports;
-    formatters.j = function(v) {
+    formatters.j = function (v) {
       try {
         return JSON.stringify(v);
       } catch (error) {
@@ -8000,7 +8002,7 @@ var require_src = __commonJS({
   "node_modules/.pnpm/@kwsites+file-exists@1.1.1_supports-color@9.4.0/node_modules/@kwsites/file-exists/dist/src/index.js"(exports2) {
     "use strict";
     init_polyfill_buffer();
-    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+    var __importDefault = exports2 && exports2.__importDefault || function (mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
@@ -8370,7 +8372,7 @@ var require_css_unit_converter = __commonJS({
         "dppx": 1
       }
     };
-    module2.exports = function(value, sourceUnit, targetUnit, precision) {
+    module2.exports = function (value, sourceUnit, targetUnit, precision) {
       if (!conversions.hasOwnProperty(targetUnit))
         throw new Error("Cannot convert to " + targetUnit);
       if (!conversions[targetUnit].hasOwnProperty(sourceUnit))
@@ -8506,7 +8508,7 @@ var require_lib3 = __commonJS({
         return [0, 0, l * 100];
       }
       var s = delta / (1 - Math.abs(2 * l - 1));
-      var h = function() {
+      var h = function () {
         switch (cmax) {
           case rprim: {
             return (gprim - bprim) / delta % 6;
@@ -8528,7 +8530,7 @@ var require_lib3 = __commonJS({
       var c = (1 - Math.abs(2 * lprim - 1)) * sprim;
       var x = c * (1 - Math.abs(hprim % 2 - 1));
       var m = lprim - c / 2;
-      var _ref = function() {
+      var _ref = function () {
         if (hprim < 1)
           return [c, x, 0];
         if (hprim < 2)
@@ -8543,7 +8545,7 @@ var require_lib3 = __commonJS({
       }(), _ref2 = _slicedToArray(_ref, 3), rprim = _ref2[0], gprim = _ref2[1], bprim = _ref2[2];
       return [(rprim + m) * 255, (gprim + m) * 255, (bprim + m) * 255];
     }
-    var Color = /* @__PURE__ */ function() {
+    var Color = /* @__PURE__ */ function () {
       function Color2(_ref3) {
         var _ref4 = _slicedToArray(_ref3, 4), r = _ref4[0], g = _ref4[1], b = _ref4[2], a = _ref4[3];
         _classCallCheck(this, Color2);
@@ -8689,7 +8691,7 @@ var require_implementation = __commonJS({
       isArgs = require_isArguments();
       isEnumerable = Object.prototype.propertyIsEnumerable;
       hasDontEnumBug = !isEnumerable.call({ toString: null }, "toString");
-      hasProtoEnumBug = isEnumerable.call(function() {
+      hasProtoEnumBug = isEnumerable.call(function () {
       }, "prototype");
       dontEnums = [
         "toString",
@@ -8700,7 +8702,7 @@ var require_implementation = __commonJS({
         "propertyIsEnumerable",
         "constructor"
       ];
-      equalsConstructorPrototype = function(o) {
+      equalsConstructorPrototype = function (o) {
         var ctor = o.constructor;
         return ctor && ctor.prototype === o;
       };
@@ -8729,7 +8731,7 @@ var require_implementation = __commonJS({
         $webkitStorageInfo: true,
         $window: true
       };
-      hasAutomationEqualityBug = function() {
+      hasAutomationEqualityBug = function () {
         if (typeof window === "undefined") {
           return false;
         }
@@ -8748,7 +8750,7 @@ var require_implementation = __commonJS({
         }
         return false;
       }();
-      equalsConstructorPrototypeIfNotBuggy = function(o) {
+      equalsConstructorPrototypeIfNotBuggy = function (o) {
         if (typeof window === "undefined" || !hasAutomationEqualityBug) {
           return equalsConstructorPrototype(o);
         }
@@ -8824,7 +8826,7 @@ var require_object_keys = __commonJS({
     var originalKeys = Object.keys;
     keysShim.shim = function shimObjectKeys() {
       if (Object.keys) {
-        var keysWorksWithArguments = function() {
+        var keysWorksWithArguments = function () {
           var args = Object.keys(arguments);
           return args && args.length === arguments.length;
         }(1, 2);
@@ -8954,7 +8956,7 @@ var require_implementation2 = __commonJS({
       }
       var args = slice.call(arguments, 1);
       var bound;
-      var binder = function() {
+      var binder = function () {
         if (this instanceof bound) {
           var result = target.apply(
             this,
@@ -9018,7 +9020,7 @@ var require_get_intrinsic = __commonJS({
     var $SyntaxError = SyntaxError;
     var $Function = Function;
     var $TypeError = TypeError;
-    var getEvalledConstructor = function(expressionSyntax) {
+    var getEvalledConstructor = function (expressionSyntax) {
       try {
         return $Function('"use strict"; return (' + expressionSyntax + ").constructor;")();
       } catch (e) {
@@ -9032,10 +9034,10 @@ var require_get_intrinsic = __commonJS({
         $gOPD = null;
       }
     }
-    var throwTypeError = function() {
+    var throwTypeError = function () {
       throw new $TypeError();
     };
-    var ThrowTypeError = $gOPD ? function() {
+    var ThrowTypeError = $gOPD ? function () {
       try {
         arguments.callee;
         return throwTypeError;
@@ -9049,7 +9051,7 @@ var require_get_intrinsic = __commonJS({
     }() : throwTypeError;
     var hasSymbols = require_has_symbols()();
     var hasProto = require_has_proto()();
-    var getProto = Object.getPrototypeOf || (hasProto ? function(x) {
+    var getProto = Object.getPrototypeOf || (hasProto ? function (x) {
       return x.__proto__;
     } : null);
     var needsEval = {};
@@ -9225,7 +9227,7 @@ var require_get_intrinsic = __commonJS({
         throw new $SyntaxError("invalid intrinsic syntax, expected opening `%`");
       }
       var result = [];
-      $replace(string, rePropName, function(match, number, quote, subString) {
+      $replace(string, rePropName, function (match, number, quote, subString) {
         result[result.length] = quote ? $replace(subString, reEscapeChar, "$1") : number || match;
       });
       return result;
@@ -9359,12 +9361,12 @@ var require_define_properties = __commonJS({
     var toStr = Object.prototype.toString;
     var concat = Array.prototype.concat;
     var origDefineProperty = Object.defineProperty;
-    var isFunction2 = function(fn) {
+    var isFunction2 = function (fn) {
       return typeof fn === "function" && toStr.call(fn) === "[object Function]";
     };
     var hasPropertyDescriptors = require_has_property_descriptors()();
     var supportsDescriptors = origDefineProperty && hasPropertyDescriptors;
-    var defineProperty = function(object, name, value, predicate) {
+    var defineProperty = function (object, name, value, predicate) {
       if (name in object) {
         if (predicate === true) {
           if (object[name] === value) {
@@ -9385,7 +9387,7 @@ var require_define_properties = __commonJS({
         object[name] = value;
       }
     };
-    var defineProperties = function(object, map) {
+    var defineProperties = function (object, map) {
       var predicates = arguments.length > 2 ? arguments[2] : {};
       var props = keys(map);
       if (hasSymbols) {
@@ -9515,7 +9517,7 @@ var require_polyfill = __commonJS({
     "use strict";
     init_polyfill_buffer();
     var implementation = require_implementation3();
-    var lacksProperEnumerationOrder = function() {
+    var lacksProperEnumerationOrder = function () {
       if (!Object.assign) {
         return false;
       }
@@ -9532,7 +9534,7 @@ var require_polyfill = __commonJS({
       }
       return str !== actual;
     };
-    var assignHasPendingExceptions = function() {
+    var assignHasPendingExceptions = function () {
       if (!Object.assign || !Object.preventExtensions) {
         return false;
       }
@@ -9571,9 +9573,11 @@ var require_shim = __commonJS({
       define2(
         Object,
         { assign: polyfill },
-        { assign: function() {
-          return Object.assign !== polyfill;
-        } }
+        {
+          assign: function () {
+            return Object.assign !== polyfill;
+          }
+        }
       );
       return polyfill;
     };
@@ -9624,7 +9628,7 @@ var require_functions_have_names = __commonJS({
       if (!functionsHaveNames() || !gOPD) {
         return false;
       }
-      var desc = gOPD(function() {
+      var desc = gOPD(function () {
       }, "name");
       return !!desc && !!desc.configurable;
     };
@@ -9697,12 +9701,12 @@ var require_polyfill2 = __commonJS({
           var calls = "";
           var o = {};
           Object.defineProperty(o, "hasIndices", {
-            get: function() {
+            get: function () {
               calls += "d";
             }
           });
           Object.defineProperty(o, "sticky", {
-            get: function() {
+            get: function () {
               calls += "y";
             }
           });
@@ -9799,7 +9803,7 @@ var require_is_arguments = __commonJS({
       }
       return value !== null && typeof value === "object" && typeof value.length === "number" && value.length >= 0 && $toString(value) !== "[object Array]" && $toString(value.callee) === "[object Function]";
     };
-    var supportsStandardArguments = function() {
+    var supportsStandardArguments = function () {
       return isStandardArguments(arguments);
     }();
     isStandardArguments.isLegacyArguments = isLegacyArguments;
@@ -9851,7 +9855,7 @@ var require_object_inspect = __commonJS({
     var hasShammedSymbols = typeof Symbol === "function" && typeof Symbol.iterator === "object";
     var toStringTag = typeof Symbol === "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === hasShammedSymbols ? "object" : "symbol") ? Symbol.toStringTag : null;
     var isEnumerable = Object.prototype.propertyIsEnumerable;
-    var gPO = (typeof Reflect === "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(O) {
+    var gPO = (typeof Reflect === "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function (O) {
       return O.__proto__;
     } : null);
     function addNumericSeparator(num2, str) {
@@ -9995,7 +9999,7 @@ var require_object_inspect = __commonJS({
       if (isMap(obj)) {
         var mapParts = [];
         if (mapForEach) {
-          mapForEach.call(obj, function(value, key2) {
+          mapForEach.call(obj, function (value, key2) {
             mapParts.push(inspect(key2, obj, true) + " => " + inspect(value, obj));
           });
         }
@@ -10004,7 +10008,7 @@ var require_object_inspect = __commonJS({
       if (isSet(obj)) {
         var setParts = [];
         if (setForEach) {
-          setForEach.call(obj, function(value) {
+          setForEach.call(obj, function (value) {
             setParts.push(inspect(value, obj));
           });
         }
@@ -10104,7 +10108,7 @@ var require_object_inspect = __commonJS({
       }
       return false;
     }
-    var hasOwn = Object.prototype.hasOwnProperty || function(key2) {
+    var hasOwn = Object.prototype.hasOwnProperty || function (key2) {
       return key2 in this;
     };
     function has(obj, key2) {
@@ -10341,7 +10345,7 @@ var require_side_channel = __commonJS({
     var $mapGet = callBound("Map.prototype.get", true);
     var $mapSet = callBound("Map.prototype.set", true);
     var $mapHas = callBound("Map.prototype.has", true);
-    var listGetNode = function(list, key2) {
+    var listGetNode = function (list, key2) {
       for (var prev = list, curr; (curr = prev.next) !== null; prev = curr) {
         if (curr.key === key2) {
           prev.next = curr.next;
@@ -10351,11 +10355,11 @@ var require_side_channel = __commonJS({
         }
       }
     };
-    var listGet = function(objects, key2) {
+    var listGet = function (objects, key2) {
       var node = listGetNode(objects, key2);
       return node && node.value;
     };
-    var listSet = function(objects, key2, value) {
+    var listSet = function (objects, key2, value) {
       var node = listGetNode(objects, key2);
       if (node) {
         node.value = value;
@@ -10368,7 +10372,7 @@ var require_side_channel = __commonJS({
         };
       }
     };
-    var listHas = function(objects, key2) {
+    var listHas = function (objects, key2) {
       return !!listGetNode(objects, key2);
     };
     module2.exports = function getSideChannel() {
@@ -10376,12 +10380,12 @@ var require_side_channel = __commonJS({
       var $m;
       var $o;
       var channel = {
-        assert: function(key2) {
+        assert: function (key2) {
           if (!channel.has(key2)) {
             throw new $TypeError("Side channel does not contain " + inspect(key2));
           }
         },
-        get: function(key2) {
+        get: function (key2) {
           if ($WeakMap && key2 && (typeof key2 === "object" || typeof key2 === "function")) {
             if ($wm) {
               return $weakMapGet($wm, key2);
@@ -10396,7 +10400,7 @@ var require_side_channel = __commonJS({
             }
           }
         },
-        has: function(key2) {
+        has: function (key2) {
           if ($WeakMap && key2 && (typeof key2 === "object" || typeof key2 === "function")) {
             if ($wm) {
               return $weakMapHas($wm, key2);
@@ -10412,7 +10416,7 @@ var require_side_channel = __commonJS({
           }
           return false;
         },
-        set: function(key2, value) {
+        set: function (key2, value) {
           if ($WeakMap && key2 && (typeof key2 === "object" || typeof key2 === "function")) {
             if (!$wm) {
               $wm = new $WeakMap();
@@ -10446,7 +10450,7 @@ var require_internal_slot = __commonJS({
     var channel = require_side_channel()();
     var $TypeError = GetIntrinsic("%TypeError%");
     var SLOT = {
-      assert: function(O, slot) {
+      assert: function (O, slot) {
         if (!O || typeof O !== "object" && typeof O !== "function") {
           throw new $TypeError("`O` is not an object");
         }
@@ -10458,7 +10462,7 @@ var require_internal_slot = __commonJS({
           throw new $TypeError("`" + slot + "` is not present on `O`");
         }
       },
-      get: function(O, slot) {
+      get: function (O, slot) {
         if (!O || typeof O !== "object" && typeof O !== "function") {
           throw new $TypeError("`O` is not an object");
         }
@@ -10468,7 +10472,7 @@ var require_internal_slot = __commonJS({
         var slots = channel.get(O);
         return slots && slots["$" + slot];
       },
-      has: function(O, slot) {
+      has: function (O, slot) {
         if (!O || typeof O !== "object" && typeof O !== "function") {
           throw new $TypeError("`O` is not an object");
         }
@@ -10478,7 +10482,7 @@ var require_internal_slot = __commonJS({
         var slots = channel.get(O);
         return !!slots && has(slots, "$" + slot);
       },
-      set: function(O, slot, V) {
+      set: function (O, slot, V) {
         if (!O || typeof O !== "object" && typeof O !== "function") {
           throw new $TypeError("`O` is not an object");
         }
@@ -10545,7 +10549,7 @@ var require_isarray = __commonJS({
   "node_modules/.pnpm/isarray@2.0.5/node_modules/isarray/index.js"(exports2, module2) {
     init_polyfill_buffer();
     var toString = {}.toString;
-    module2.exports = Array.isArray || function(arr) {
+    module2.exports = Array.isArray || function (arr) {
       return toString.call(arr) == "[object Array]";
     };
   }
@@ -10770,7 +10774,7 @@ var require_es_get_iterator = __commonJS({
             }
             if ($mapForEach) {
               var entries = [];
-              $mapForEach(iterable, function(v, k) {
+              $mapForEach(iterable, function (v, k) {
                 $arrayPush(entries, [k, v]);
               });
               return getArrayIterator(entries);
@@ -10785,7 +10789,7 @@ var require_es_get_iterator = __commonJS({
             }
             if ($setForEach) {
               var values = [];
-              $setForEach(iterable, function(v) {
+              $setForEach(iterable, function (v) {
                 $arrayPush(values, v);
               });
               return getArrayIterator(values);
@@ -10827,7 +10831,7 @@ var require_implementation5 = __commonJS({
   "node_modules/.pnpm/object-is@1.1.5/node_modules/object-is/implementation.js"(exports2, module2) {
     "use strict";
     init_polyfill_buffer();
-    var numberIsNaN = function(value) {
+    var numberIsNaN = function (value) {
       return value !== value;
     };
     module2.exports = function is(a, b) {
@@ -10908,12 +10912,12 @@ var require_is_callable = __commonJS({
     if (typeof reflectApply === "function" && typeof Object.defineProperty === "function") {
       try {
         badArrayLike = Object.defineProperty({}, "length", {
-          get: function() {
+          get: function () {
             throw isCallableMarker;
           }
         });
         isCallableMarker = {};
-        reflectApply(function() {
+        reflectApply(function () {
           throw 42;
         }, null, badArrayLike);
       } catch (_) {
@@ -11149,7 +11153,7 @@ var require_which_typed_array = __commonJS({
     };
     var cache = { __proto__: null };
     if (hasToStringTag && gOPD && getPrototypeOf) {
-      forEach2(typedArrays, function(typedArray) {
+      forEach2(typedArrays, function (typedArray) {
         var arr = new g[typedArray]();
         if (Symbol.toStringTag in arr) {
           var proto = getPrototypeOf(arr);
@@ -11162,14 +11166,14 @@ var require_which_typed_array = __commonJS({
         }
       });
     } else {
-      forEach2(typedArrays, function(typedArray) {
+      forEach2(typedArrays, function (typedArray) {
         var arr = new g[typedArray]();
         cache["$" + typedArray] = callBind(arr.slice);
       });
     }
     var tryTypedArrays = function tryAllTypedArrays(value) {
       var found = false;
-      forEach2(cache, function(getter, typedArray) {
+      forEach2(cache, function (getter, typedArray) {
         if (!found) {
           try {
             if ("$" + getter(value) === typedArray) {
@@ -11183,7 +11187,7 @@ var require_which_typed_array = __commonJS({
     };
     var trySlices = function tryAllSlices(value) {
       var found = false;
-      forEach2(cache, function(getter, name) {
+      forEach2(cache, function (getter, name) {
         if (!found) {
           try {
             getter(value);
@@ -11309,7 +11313,7 @@ var require_is_regex = __commonJS({
       has = callBound("Object.prototype.hasOwnProperty");
       $exec = callBound("RegExp.prototype.exec");
       isRegexMarker = {};
-      throwRegexMarker = function() {
+      throwRegexMarker = function () {
         throw isRegexMarker;
       };
       badStringifier = {
@@ -12055,7 +12059,7 @@ var require_deep_equal = __commonJS({
 var require_sha256 = __commonJS({
   "node_modules/.pnpm/js-sha256@0.9.0/node_modules/js-sha256/src/sha256.js"(exports, module) {
     init_polyfill_buffer();
-    (function() {
+    (function () {
       "use strict";
       var ERROR = "input is invalid type";
       var WINDOW = typeof window === "object";
@@ -12145,29 +12149,29 @@ var require_sha256 = __commonJS({
       var OUTPUT_TYPES = ["hex", "array", "digest", "arrayBuffer"];
       var blocks = [];
       if (root.JS_SHA256_NO_NODE_JS || !Array.isArray) {
-        Array.isArray = function(obj) {
+        Array.isArray = function (obj) {
           return Object.prototype.toString.call(obj) === "[object Array]";
         };
       }
       if (ARRAY_BUFFER && (root.JS_SHA256_NO_ARRAY_BUFFER_IS_VIEW || !ArrayBuffer.isView)) {
-        ArrayBuffer.isView = function(obj) {
+        ArrayBuffer.isView = function (obj) {
           return typeof obj === "object" && obj.buffer && obj.buffer.constructor === ArrayBuffer;
         };
       }
-      var createOutputMethod = function(outputType, is2242) {
-        return function(message) {
+      var createOutputMethod = function (outputType, is2242) {
+        return function (message) {
           return new Sha256(is2242, true).update(message)[outputType]();
         };
       };
-      var createMethod = function(is2242) {
+      var createMethod = function (is2242) {
         var method2 = createOutputMethod("hex", is2242);
         if (NODE_JS) {
           method2 = nodeWrap(method2, is2242);
         }
-        method2.create = function() {
+        method2.create = function () {
           return new Sha256(is2242);
         };
-        method2.update = function(message) {
+        method2.update = function (message) {
           return method2.create().update(message);
         };
         for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
@@ -12176,11 +12180,11 @@ var require_sha256 = __commonJS({
         }
         return method2;
       };
-      var nodeWrap = function(method, is224) {
+      var nodeWrap = function (method, is224) {
         var crypto = eval("require('crypto')");
         var Buffer = eval("require('buffer').Buffer");
         var algorithm = is224 ? "sha224" : "sha256";
-        var nodeMethod = function(message) {
+        var nodeMethod = function (message) {
           if (typeof message === "string") {
             return crypto.createHash(algorithm).update(message, "utf8").digest("hex");
           } else {
@@ -12198,17 +12202,17 @@ var require_sha256 = __commonJS({
         };
         return nodeMethod;
       };
-      var createHmacOutputMethod = function(outputType, is2242) {
-        return function(key2, message) {
+      var createHmacOutputMethod = function (outputType, is2242) {
+        return function (key2, message) {
           return new HmacSha256(key2, is2242, true).update(message)[outputType]();
         };
       };
-      var createHmacMethod = function(is2242) {
+      var createHmacMethod = function (is2242) {
         var method2 = createHmacOutputMethod("hex", is2242);
-        method2.create = function(key2) {
+        method2.create = function (key2) {
           return new HmacSha256(key2, is2242);
         };
-        method2.update = function(key2, message) {
+        method2.update = function (key2, message) {
           return method2.create(key2).update(message);
         };
         for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
@@ -12248,7 +12252,7 @@ var require_sha256 = __commonJS({
         this.first = true;
         this.is224 = is2242;
       }
-      Sha256.prototype.update = function(message) {
+      Sha256.prototype.update = function (message) {
         if (this.finalized) {
           return;
         }
@@ -12318,7 +12322,7 @@ var require_sha256 = __commonJS({
         }
         return this;
       };
-      Sha256.prototype.finalize = function() {
+      Sha256.prototype.finalize = function () {
         if (this.finalized) {
           return;
         }
@@ -12338,7 +12342,7 @@ var require_sha256 = __commonJS({
         blocks2[15] = this.bytes << 3;
         this.hash();
       };
-      Sha256.prototype.hash = function() {
+      Sha256.prototype.hash = function () {
         var a = this.h0, b = this.h1, c = this.h2, d = this.h3, e = this.h4, f = this.h5, g = this.h6, h = this.h7, blocks2 = this.blocks, j, s0, s1, maj, t1, t2, ch, ab, da, cd, bc;
         for (j = 16; j < 64; ++j) {
           t1 = blocks2[j - 15];
@@ -12410,7 +12414,7 @@ var require_sha256 = __commonJS({
         this.h6 = this.h6 + g << 0;
         this.h7 = this.h7 + h << 0;
       };
-      Sha256.prototype.hex = function() {
+      Sha256.prototype.hex = function () {
         this.finalize();
         var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3, h4 = this.h4, h5 = this.h5, h6 = this.h6, h7 = this.h7;
         var hex = HEX_CHARS[h0 >> 28 & 15] + HEX_CHARS[h0 >> 24 & 15] + HEX_CHARS[h0 >> 20 & 15] + HEX_CHARS[h0 >> 16 & 15] + HEX_CHARS[h0 >> 12 & 15] + HEX_CHARS[h0 >> 8 & 15] + HEX_CHARS[h0 >> 4 & 15] + HEX_CHARS[h0 & 15] + HEX_CHARS[h1 >> 28 & 15] + HEX_CHARS[h1 >> 24 & 15] + HEX_CHARS[h1 >> 20 & 15] + HEX_CHARS[h1 >> 16 & 15] + HEX_CHARS[h1 >> 12 & 15] + HEX_CHARS[h1 >> 8 & 15] + HEX_CHARS[h1 >> 4 & 15] + HEX_CHARS[h1 & 15] + HEX_CHARS[h2 >> 28 & 15] + HEX_CHARS[h2 >> 24 & 15] + HEX_CHARS[h2 >> 20 & 15] + HEX_CHARS[h2 >> 16 & 15] + HEX_CHARS[h2 >> 12 & 15] + HEX_CHARS[h2 >> 8 & 15] + HEX_CHARS[h2 >> 4 & 15] + HEX_CHARS[h2 & 15] + HEX_CHARS[h3 >> 28 & 15] + HEX_CHARS[h3 >> 24 & 15] + HEX_CHARS[h3 >> 20 & 15] + HEX_CHARS[h3 >> 16 & 15] + HEX_CHARS[h3 >> 12 & 15] + HEX_CHARS[h3 >> 8 & 15] + HEX_CHARS[h3 >> 4 & 15] + HEX_CHARS[h3 & 15] + HEX_CHARS[h4 >> 28 & 15] + HEX_CHARS[h4 >> 24 & 15] + HEX_CHARS[h4 >> 20 & 15] + HEX_CHARS[h4 >> 16 & 15] + HEX_CHARS[h4 >> 12 & 15] + HEX_CHARS[h4 >> 8 & 15] + HEX_CHARS[h4 >> 4 & 15] + HEX_CHARS[h4 & 15] + HEX_CHARS[h5 >> 28 & 15] + HEX_CHARS[h5 >> 24 & 15] + HEX_CHARS[h5 >> 20 & 15] + HEX_CHARS[h5 >> 16 & 15] + HEX_CHARS[h5 >> 12 & 15] + HEX_CHARS[h5 >> 8 & 15] + HEX_CHARS[h5 >> 4 & 15] + HEX_CHARS[h5 & 15] + HEX_CHARS[h6 >> 28 & 15] + HEX_CHARS[h6 >> 24 & 15] + HEX_CHARS[h6 >> 20 & 15] + HEX_CHARS[h6 >> 16 & 15] + HEX_CHARS[h6 >> 12 & 15] + HEX_CHARS[h6 >> 8 & 15] + HEX_CHARS[h6 >> 4 & 15] + HEX_CHARS[h6 & 15];
@@ -12420,7 +12424,7 @@ var require_sha256 = __commonJS({
         return hex;
       };
       Sha256.prototype.toString = Sha256.prototype.hex;
-      Sha256.prototype.digest = function() {
+      Sha256.prototype.digest = function () {
         this.finalize();
         var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3, h4 = this.h4, h5 = this.h5, h6 = this.h6, h7 = this.h7;
         var arr = [
@@ -12459,7 +12463,7 @@ var require_sha256 = __commonJS({
         return arr;
       };
       Sha256.prototype.array = Sha256.prototype.digest;
-      Sha256.prototype.arrayBuffer = function() {
+      Sha256.prototype.arrayBuffer = function () {
         this.finalize();
         var buffer2 = new ArrayBuffer(this.is224 ? 28 : 32);
         var dataView = new DataView(buffer2);
@@ -12530,7 +12534,7 @@ var require_sha256 = __commonJS({
         this.sharedMemory = sharedMemory;
       }
       HmacSha256.prototype = new Sha256();
-      HmacSha256.prototype.finalize = function() {
+      HmacSha256.prototype.finalize = function () {
         Sha256.prototype.finalize.call(this);
         if (this.inner) {
           this.inner = false;
@@ -12552,7 +12556,7 @@ var require_sha256 = __commonJS({
         root.sha256 = exports.sha256;
         root.sha224 = exports.sha224;
         if (AMD) {
-          define(function() {
+          define(function () {
             return exports;
           });
         }
@@ -12565,7 +12569,7 @@ var require_sha256 = __commonJS({
 var require_compiler = __commonJS({
   "node_modules/.pnpm/hogan.js@3.0.2/node_modules/hogan.js/lib/compiler.js"(exports2) {
     init_polyfill_buffer();
-    (function(Hogan4) {
+    (function (Hogan4) {
       var rIsWhitespace = /\S/, rQuot = /\"/g, rNewline = /\n/g, rCr = /\r/g, rSlash = /\\/g, rLineSep = /\u2028/, rParagraphSep = /\u2029/;
       Hogan4.tags = {
         "#": 1,
@@ -12766,11 +12770,11 @@ var require_compiler = __commonJS({
         }
         return "partials: {" + partials.join(",") + "}, subs: " + stringifySubstitutions(codeObj.subs);
       }
-      Hogan4.stringify = function(codeObj, text2, options) {
+      Hogan4.stringify = function (codeObj, text2, options) {
         return "{code: function (c,p,i) { " + Hogan4.wrapMain(codeObj.code) + " }," + stringifyPartials(codeObj) + "}";
       };
       var serialNo = 0;
-      Hogan4.generate = function(tree, text2, options) {
+      Hogan4.generate = function (tree, text2, options) {
         serialNo = 0;
         var context = { code: "", subs: {}, partials: {} };
         Hogan4.walk(tree, context);
@@ -12779,16 +12783,16 @@ var require_compiler = __commonJS({
         }
         return this.makeTemplate(context, text2, options);
       };
-      Hogan4.wrapMain = function(code) {
+      Hogan4.wrapMain = function (code) {
         return 'var t=this;t.b(i=i||"");' + code + "return t.fl();";
       };
       Hogan4.template = Hogan4.Template;
-      Hogan4.makeTemplate = function(codeObj, text2, options) {
+      Hogan4.makeTemplate = function (codeObj, text2, options) {
         var template = this.makePartials(codeObj);
         template.code = new Function("c", "p", "i", this.wrapMain(codeObj.code));
         return new this.template(template, text2, this, options);
       };
-      Hogan4.makePartials = function(codeObj) {
+      Hogan4.makePartials = function (codeObj) {
         var key2, template = { subs: {}, partials: codeObj.partials, name: codeObj.name };
         for (key2 in template.partials) {
           template.partials[key2] = this.makePartials(template.partials[key2]);
@@ -12812,25 +12816,25 @@ var require_compiler = __commonJS({
         return sym;
       }
       Hogan4.codegen = {
-        "#": function(node, context) {
+        "#": function (node, context) {
           context.code += "if(t.s(t." + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,1),c,p,0,' + node.i + "," + node.end + ',"' + node.otag + " " + node.ctag + '")){t.rs(c,p,function(c,p,t){';
           Hogan4.walk(node.nodes, context);
           context.code += "});c.pop();}";
         },
-        "^": function(node, context) {
+        "^": function (node, context) {
           context.code += "if(!t.s(t." + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,1),c,p,1,0,0,"")){';
           Hogan4.walk(node.nodes, context);
           context.code += "};";
         },
         ">": createPartial,
-        "<": function(node, context) {
+        "<": function (node, context) {
           var ctx = { partials: {}, code: "", subs: {}, inPartial: true };
           Hogan4.walk(node.nodes, ctx);
           var template = context.partials[createPartial(node, context)];
           template.subs = ctx.subs;
           template.partials = ctx.partials;
         },
-        "$": function(node, context) {
+        "$": function (node, context) {
           var ctx = { subs: {}, code: "", partials: context.partials, prefix: node.n };
           Hogan4.walk(node.nodes, ctx);
           context.subs[node.n] = ctx.code;
@@ -12838,13 +12842,13 @@ var require_compiler = __commonJS({
             context.code += 't.sub("' + esc(node.n) + '",c,p,i);';
           }
         },
-        "\n": function(node, context) {
+        "\n": function (node, context) {
           context.code += write('"\\n"' + (node.last ? "" : " + i"));
         },
-        "_v": function(node, context) {
+        "_v": function (node, context) {
           context.code += "t.b(t.v(t." + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,0)));';
         },
-        "_t": function(node, context) {
+        "_t": function (node, context) {
           context.code += write('"' + esc(node.text) + '"');
         },
         "{": tripleStache,
@@ -12856,7 +12860,7 @@ var require_compiler = __commonJS({
       function write(s) {
         return "t.b(" + s + ");";
       }
-      Hogan4.walk = function(nodelist, context) {
+      Hogan4.walk = function (nodelist, context) {
         var func;
         for (var i = 0, l = nodelist.length; i < l; i++) {
           func = Hogan4.codegen[nodelist[i].tag];
@@ -12864,15 +12868,15 @@ var require_compiler = __commonJS({
         }
         return context;
       };
-      Hogan4.parse = function(tokens, text2, options) {
+      Hogan4.parse = function (tokens, text2, options) {
         options = options || {};
         return buildTree(tokens, "", [], options.sectionTags || []);
       };
       Hogan4.cache = {};
-      Hogan4.cacheKey = function(text2, options) {
+      Hogan4.cacheKey = function (text2, options) {
         return [text2, !!options.asString, !!options.disableLambda, options.delimiters, !!options.modelGet].join("||");
       };
-      Hogan4.compile = function(text2, options) {
+      Hogan4.compile = function (text2, options) {
         options = options || {};
         var key2 = Hogan4.cacheKey(text2, options);
         var template = this.cache[key2];
@@ -12895,8 +12899,8 @@ var require_template = __commonJS({
   "node_modules/.pnpm/hogan.js@3.0.2/node_modules/hogan.js/lib/template.js"(exports2) {
     init_polyfill_buffer();
     var Hogan4 = {};
-    (function(Hogan5) {
-      Hogan5.Template = function(codeObj, text2, compiler, options) {
+    (function (Hogan5) {
+      Hogan5.Template = function (codeObj, text2, compiler, options) {
         codeObj = codeObj || {};
         this.r = codeObj.code || this.r;
         this.c = compiler;
@@ -12908,7 +12912,7 @@ var require_template = __commonJS({
       };
       Hogan5.Template.prototype = {
         // render: replaced by generated code.
-        r: function(context, partials, indent2) {
+        r: function (context, partials, indent2) {
           return "";
         },
         // variable escaping
@@ -12919,11 +12923,11 @@ var require_template = __commonJS({
           return this.ri([context], partials || {}, indent2);
         },
         // render internal -- a hook for overrides that catches partials too
-        ri: function(context, partials, indent2) {
+        ri: function (context, partials, indent2) {
           return this.r(context, partials, indent2);
         },
         // ensurePartial
-        ep: function(symbol, partials) {
+        ep: function (symbol, partials) {
           var partial = this.partials[symbol];
           var template = partials[partial.name];
           if (partial.instance && partial.base == template) {
@@ -12960,7 +12964,7 @@ var require_template = __commonJS({
           return template;
         },
         // tries to find a partial in the current scope and render it
-        rp: function(symbol, context, partials, indent2) {
+        rp: function (symbol, context, partials, indent2) {
           var partial = this.ep(symbol, partials);
           if (!partial) {
             return "";
@@ -12968,7 +12972,7 @@ var require_template = __commonJS({
           return partial.ri(context, partials, indent2);
         },
         // render a section
-        rs: function(context, partials, section) {
+        rs: function (context, partials, section) {
           var tail = context[context.length - 1];
           if (!isArray(tail)) {
             section(context, partials, this);
@@ -12981,7 +12985,7 @@ var require_template = __commonJS({
           }
         },
         // maybe start a section
-        s: function(val, ctx, partials, inverted, start, end, tags) {
+        s: function (val, ctx, partials, inverted, start, end, tags) {
           var pass;
           if (isArray(val) && val.length === 0) {
             return false;
@@ -12996,7 +13000,7 @@ var require_template = __commonJS({
           return pass;
         },
         // find values with dotted names
-        d: function(key2, ctx, partials, returnFound) {
+        d: function (key2, ctx, partials, returnFound) {
           var found, names = key2.split("."), val = this.f(names[0], ctx, partials, returnFound), doModelGet = this.options.modelGet, cx = null;
           if (key2 === "." && isArray(ctx[ctx.length - 2])) {
             val = ctx[ctx.length - 1];
@@ -13022,7 +13026,7 @@ var require_template = __commonJS({
           return val;
         },
         // find values with normal names
-        f: function(key2, ctx, partials, returnFound) {
+        f: function (key2, ctx, partials, returnFound) {
           var val = false, v = null, found = false, doModelGet = this.options.modelGet;
           for (var i = ctx.length - 1; i >= 0; i--) {
             v = ctx[i];
@@ -13041,7 +13045,7 @@ var require_template = __commonJS({
           return val;
         },
         // higher order templates
-        ls: function(func, cx, partials, text2, tags) {
+        ls: function (func, cx, partials, text2, tags) {
           var oldTags = this.options.delimiters;
           this.options.delimiters = tags;
           this.b(this.ct(coerceToString(func.call(cx, text2)), cx, partials));
@@ -13049,23 +13053,23 @@ var require_template = __commonJS({
           return false;
         },
         // compile text
-        ct: function(text2, cx, partials) {
+        ct: function (text2, cx, partials) {
           if (this.options.disableLambda) {
             throw new Error("Lambda features disabled.");
           }
           return this.c.compile(text2, this.options).render(cx, partials);
         },
         // template result buffering
-        b: function(s) {
+        b: function (s) {
           this.buf += s;
         },
-        fl: function() {
+        fl: function () {
           var r = this.buf;
           this.buf = "";
           return r;
         },
         // method replace section
-        ms: function(func, ctx, partials, inverted, start, end, tags) {
+        ms: function (func, ctx, partials, inverted, start, end, tags) {
           var textSource, cx = ctx[ctx.length - 1], result = func.call(cx);
           if (typeof result == "function") {
             if (inverted) {
@@ -13078,7 +13082,7 @@ var require_template = __commonJS({
           return result;
         },
         // method replace variable
-        mv: function(func, ctx, partials) {
+        mv: function (func, ctx, partials) {
           var cx = ctx[ctx.length - 1];
           var result = func.call(cx);
           if (typeof result == "function") {
@@ -13086,7 +13090,7 @@ var require_template = __commonJS({
           }
           return result;
         },
-        sub: function(name, context, partials, indent2) {
+        sub: function (name, context, partials, indent2) {
           var f = this.subs[name];
           if (f) {
             this.activeSub = name;
@@ -13149,7 +13153,7 @@ var require_template = __commonJS({
         str = coerceToString(str);
         return hChars.test(str) ? str.replace(rAmp, "&amp;").replace(rLt, "&lt;").replace(rGt, "&gt;").replace(rApos, "&#39;").replace(rQuot, "&quot;") : str;
       }
-      var isArray = Array.isArray || function(a) {
+      var isArray = Array.isArray || function (a) {
         return Object.prototype.toString.call(a) === "[object Array]";
       };
     })(typeof exports2 !== "undefined" ? exports2 : Hogan4);
@@ -13180,10 +13184,10 @@ var require_feather = __commonJS({
         exports2["feather"] = factory();
       else
         root2["feather"] = factory();
-    })(typeof self !== "undefined" ? self : exports2, function() {
+    })(typeof self !== "undefined" ? self : exports2, function () {
       return (
         /******/
-        function(modules) {
+        function (modules) {
           var installedModules = {};
           function __webpack_require__(moduleId) {
             if (installedModules[moduleId]) {
@@ -13204,7 +13208,7 @@ var require_feather = __commonJS({
           }
           __webpack_require__.m = modules;
           __webpack_require__.c = installedModules;
-          __webpack_require__.d = function(exports3, name, getter) {
+          __webpack_require__.d = function (exports3, name, getter) {
             if (!__webpack_require__.o(exports3, name)) {
               Object.defineProperty(exports3, name, {
                 /******/
@@ -13217,10 +13221,10 @@ var require_feather = __commonJS({
               });
             }
           };
-          __webpack_require__.r = function(exports3) {
+          __webpack_require__.r = function (exports3) {
             Object.defineProperty(exports3, "__esModule", { value: true });
           };
-          __webpack_require__.n = function(module3) {
+          __webpack_require__.n = function (module3) {
             var getter = module3 && module3.__esModule ? (
               /******/
               function getDefault() {
@@ -13235,7 +13239,7 @@ var require_feather = __commonJS({
             __webpack_require__.d(getter, "a", getter);
             return getter;
           };
-          __webpack_require__.o = function(object, property) {
+          __webpack_require__.o = function (object, property) {
             return Object.prototype.hasOwnProperty.call(object, property);
           };
           __webpack_require__.p = "";
@@ -13248,7 +13252,7 @@ var require_feather = __commonJS({
               \*************************/
             /*! exports provided: activity, airplay, alert-circle, alert-octagon, alert-triangle, align-center, align-justify, align-left, align-right, anchor, aperture, archive, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, award, bar-chart-2, bar-chart, battery-charging, battery, bell-off, bell, bluetooth, bold, book-open, book, bookmark, box, briefcase, calendar, camera-off, camera, cast, check-circle, check-square, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, chrome, circle, clipboard, clock, cloud-drizzle, cloud-lightning, cloud-off, cloud-rain, cloud-snow, cloud, code, codepen, codesandbox, coffee, columns, command, compass, copy, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, cpu, credit-card, crop, crosshair, database, delete, disc, divide-circle, divide-square, divide, dollar-sign, download-cloud, download, dribbble, droplet, edit-2, edit-3, edit, external-link, eye-off, eye, facebook, fast-forward, feather, figma, file-minus, file-plus, file-text, file, film, filter, flag, folder-minus, folder-plus, folder, framer, frown, gift, git-branch, git-commit, git-merge, git-pull-request, github, gitlab, globe, grid, hard-drive, hash, headphones, heart, help-circle, hexagon, home, image, inbox, info, instagram, italic, key, layers, layout, life-buoy, link-2, link, linkedin, list, loader, lock, log-in, log-out, mail, map-pin, map, maximize-2, maximize, meh, menu, message-circle, message-square, mic-off, mic, minimize-2, minimize, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, mouse-pointer, move, music, navigation-2, navigation, octagon, package, paperclip, pause-circle, pause, pen-tool, percent, phone-call, phone-forwarded, phone-incoming, phone-missed, phone-off, phone-outgoing, phone, pie-chart, play-circle, play, plus-circle, plus-square, plus, pocket, power, printer, radio, refresh-ccw, refresh-cw, repeat, rewind, rotate-ccw, rotate-cw, rss, save, scissors, search, send, server, settings, share-2, share, shield-off, shield, shopping-bag, shopping-cart, shuffle, sidebar, skip-back, skip-forward, slack, slash, sliders, smartphone, smile, speaker, square, star, stop-circle, sun, sunrise, sunset, table, tablet, tag, target, terminal, thermometer, thumbs-down, thumbs-up, toggle-left, toggle-right, tool, trash-2, trash, trello, trending-down, trending-up, triangle, truck, tv, twitch, twitter, type, umbrella, underline, unlock, upload-cloud, upload, user-check, user-minus, user-plus, user-x, user, users, video-off, video, voicemail, volume-1, volume-2, volume-x, volume, watch, wifi-off, wifi, wind, x-circle, x-octagon, x-square, x, youtube, zap-off, zap, zoom-in, zoom-out, default */
             /***/
-            function(module3) {
+            function (module3) {
               module3.exports = { "activity": '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>', "airplay": '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>', "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>', "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>', "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>', "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>', "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>', "anchor": '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>', "aperture": '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>', "archive": '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>', "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>', "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>', "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>', "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>', "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>', "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>', "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>', "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>', "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>', "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>', "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>', "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>', "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>', "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>', "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>', "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>', "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>', "battery": '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>', "bell-off": '<path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "bell": '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>', "bluetooth": '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>', "bold": '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>', "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>', "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>', "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>', "box": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "briefcase": '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>', "calendar": '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>', "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>', "camera": '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>', "cast": '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line>', "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>', "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>', "check": '<polyline points="20 6 9 17 4 12"></polyline>', "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>', "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>', "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>', "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>', "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>', "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>', "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>', "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>', "chrome": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>', "circle": '<circle cx="12" cy="12" r="10"></circle>', "clipboard": '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>', "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>', "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>', "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line>', "cloud": '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>', "code": '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>', "codepen": '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>', "codesandbox": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "coffee": '<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>', "columns": '<path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>', "command": '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>', "compass": '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>', "copy": '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>', "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>', "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>', "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>', "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>', "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>', "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>', "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>', "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>', "cpu": '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>', "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>', "crop": '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>', "crosshair": '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>', "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>', "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>', "disc": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>', "divide-circle": '<line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line><circle cx="12" cy="12" r="10"></circle>', "divide-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line>', "divide": '<circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle>', "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>', "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>', "dribbble": '<circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>', "droplet": '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>', "edit-2": '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>', "edit-3": '<path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>', "edit": '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>', "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>', "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "eye": '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>', "facebook": '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>', "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>', "feather": '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>', "figma": '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>', "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>', "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>', "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>', "file": '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>', "film": '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>', "filter": '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>', "flag": '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>', "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>', "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>', "folder": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>', "framer": '<path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></path>', "frown": '<circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "gift": '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>', "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>', "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>', "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>', "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>', "github": '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>', "gitlab": '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>', "globe": '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>', "grid": '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>', "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>', "hash": '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>', "headphones": '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>', "heart": '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>', "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>', "hexagon": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>', "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>', "image": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>', "inbox": '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>', "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>', "instagram": '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>', "italic": '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>', "key": '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>', "layers": '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>', "layout": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>', "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>', "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>', "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>', "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>', "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>', "loader": '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>', "lock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>', "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>', "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>', "mail": '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>', "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>', "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>', "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "maximize": '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>', "meh": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "menu": '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>', "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>', "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>', "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "mic": '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "minimize": '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>', "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>', "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>', "minus": '<line x1="5" y1="12" x2="19" y2="12"></line>', "monitor": '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>', "moon": '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>', "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>', "mouse-pointer": '<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>', "move": '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>', "music": '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>', "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>', "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>', "octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>', "package": '<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "paperclip": '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>', "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>', "pause": '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>', "pen-tool": '<path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle>', "percent": '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>', "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>', "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone": '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>', "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>', "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>', "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus": '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>', "pocket": '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>', "power": '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>', "printer": '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>', "radio": '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>', "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>', "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>', "repeat": '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>', "rewind": '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>', "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>', "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>', "rss": '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>', "save": '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>', "scissors": '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>', "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>', "send": '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>', "server": '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line>', "settings": '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>', "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>', "share": '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>', "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>', "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>', "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>', "shuffle": '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>', "sidebar": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>', "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>', "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>', "slack": '<path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>', "slash": '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>', "sliders": '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>', "smartphone": '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "smile": '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "speaker": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line>', "square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>', "star": '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>', "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>', "sun": '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>', "sunrise": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>', "sunset": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>', "table": '<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path>', "tablet": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "tag": '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>', "target": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>', "terminal": '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>', "thermometer": '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>', "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>', "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>', "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>', "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>', "tool": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>', "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>', "trash": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>', "trello": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>', "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>', "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>', "triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>', "truck": '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>', "tv": '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>', "twitch": '<path d="M21 2H3v16h5v4l4-4h5l4-4V2zM11 11V7M16 11V7"></path>', "twitter": '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>', "type": '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>', "umbrella": '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>', "underline": '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>', "unlock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>', "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>', "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>', "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>', "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>', "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>', "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>', "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>', "users": '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "video": '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>', "voicemail": '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>', "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>', "volume": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>', "watch": '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>', "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wifi": '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wind": '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>', "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>', "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>', "youtube": '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>', "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>', "zap": '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>', "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>' };
             }
           ),
@@ -13259,11 +13263,11 @@ var require_feather = __commonJS({
               \*******************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-              (function() {
+              (function () {
                 "use strict";
-                var classNames = function() {
+                var classNames = function () {
                   function StorageObject() {
                   }
                   StorageObject.prototype = /* @__PURE__ */ Object.create(null);
@@ -13327,7 +13331,7 @@ var require_feather = __commonJS({
                 if (typeof module3 !== "undefined" && module3.exports) {
                   module3.exports = classNames;
                 } else if (true) {
-                  !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+                  !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
                     return classNames;
                   }.apply(exports3, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
                 } else {
@@ -13342,7 +13346,7 @@ var require_feather = __commonJS({
               \***********************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               __webpack_require__(
                 /*! ../../modules/es.string.iterator */
                 "./node_modules/core-js/modules/es.string.iterator.js"
@@ -13365,8 +13369,8 @@ var require_feather = __commonJS({
               \******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
-              module3.exports = function(it) {
+            function (module3, exports3) {
+              module3.exports = function (it) {
                 if (typeof it != "function") {
                   throw TypeError(String(it) + " is not a function");
                 }
@@ -13381,12 +13385,12 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var isObject2 = __webpack_require__(
                 /*! ../internals/is-object */
                 "./node_modules/core-js/internals/is-object.js"
               );
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 if (!isObject2(it)) {
                   throw TypeError(String(it) + " is not an object");
                 }
@@ -13401,7 +13405,7 @@ var require_feather = __commonJS({
               \******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var bind = __webpack_require__(
                 /*! ../internals/bind-context */
@@ -13471,7 +13475,7 @@ var require_feather = __commonJS({
               \**********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var toIndexedObject = __webpack_require__(
                 /*! ../internals/to-indexed-object */
                 "./node_modules/core-js/internals/to-indexed-object.js"
@@ -13484,8 +13488,8 @@ var require_feather = __commonJS({
                 /*! ../internals/to-absolute-index */
                 "./node_modules/core-js/internals/to-absolute-index.js"
               );
-              module3.exports = function(IS_INCLUDES) {
-                return function($this, el, fromIndex) {
+              module3.exports = function (IS_INCLUDES) {
+                return function ($this, el, fromIndex) {
                   var O = toIndexedObject($this);
                   var length = toLength(O.length);
                   var index2 = toAbsoluteIndex(fromIndex, length);
@@ -13514,34 +13518,34 @@ var require_feather = __commonJS({
               \********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var aFunction = __webpack_require__(
                 /*! ../internals/a-function */
                 "./node_modules/core-js/internals/a-function.js"
               );
-              module3.exports = function(fn, that, length) {
+              module3.exports = function (fn, that, length) {
                 aFunction(fn);
                 if (that === void 0)
                   return fn;
                 switch (length) {
                   case 0:
-                    return function() {
+                    return function () {
                       return fn.call(that);
                     };
                   case 1:
-                    return function(a) {
+                    return function (a) {
                       return fn.call(that, a);
                     };
                   case 2:
-                    return function(a, b) {
+                    return function (a, b) {
                       return fn.call(that, a, b);
                     };
                   case 3:
-                    return function(a, b, c) {
+                    return function (a, b, c) {
                       return fn.call(that, a, b, c);
                     };
                 }
-                return function() {
+                return function () {
                   return fn.apply(that, arguments);
                 };
               };
@@ -13554,12 +13558,12 @@ var require_feather = __commonJS({
               \****************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var anObject = __webpack_require__(
                 /*! ../internals/an-object */
                 "./node_modules/core-js/internals/an-object.js"
               );
-              module3.exports = function(iterator, fn, value, ENTRIES) {
+              module3.exports = function (iterator, fn, value, ENTRIES) {
                 try {
                   return ENTRIES ? fn(anObject(value)[0], value[1]) : fn(value);
                 } catch (error) {
@@ -13578,7 +13582,7 @@ var require_feather = __commonJS({
               \**************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var wellKnownSymbol = __webpack_require__(
                 /*! ../internals/well-known-symbol */
                 "./node_modules/core-js/internals/well-known-symbol.js"
@@ -13588,30 +13592,30 @@ var require_feather = __commonJS({
               try {
                 var called = 0;
                 var iteratorWithReturn = {
-                  next: function() {
+                  next: function () {
                     return { done: !!called++ };
                   },
-                  "return": function() {
+                  "return": function () {
                     SAFE_CLOSING = true;
                   }
                 };
-                iteratorWithReturn[ITERATOR] = function() {
+                iteratorWithReturn[ITERATOR] = function () {
                   return this;
                 };
-                Array.from(iteratorWithReturn, function() {
+                Array.from(iteratorWithReturn, function () {
                   throw 2;
                 });
               } catch (error) {
               }
-              module3.exports = function(exec, SKIP_CLOSING) {
+              module3.exports = function (exec, SKIP_CLOSING) {
                 if (!SKIP_CLOSING && !SAFE_CLOSING)
                   return false;
                 var ITERATION_SUPPORT = false;
                 try {
                   var object = {};
-                  object[ITERATOR] = function() {
+                  object[ITERATOR] = function () {
                     return {
-                      next: function() {
+                      next: function () {
                         return { done: ITERATION_SUPPORT = true };
                       }
                     };
@@ -13630,9 +13634,9 @@ var require_feather = __commonJS({
               \*******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               var toString = {}.toString;
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 return toString.call(it).slice(8, -1);
               };
             }
@@ -13644,7 +13648,7 @@ var require_feather = __commonJS({
               \***************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var classofRaw = __webpack_require__(
                 /*! ../internals/classof-raw */
                 "./node_modules/core-js/internals/classof-raw.js"
@@ -13654,16 +13658,16 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/well-known-symbol.js"
               );
               var TO_STRING_TAG = wellKnownSymbol("toStringTag");
-              var CORRECT_ARGUMENTS = classofRaw(function() {
+              var CORRECT_ARGUMENTS = classofRaw(function () {
                 return arguments;
               }()) == "Arguments";
-              var tryGet = function(it, key2) {
+              var tryGet = function (it, key2) {
                 try {
                   return it[key2];
                 } catch (error) {
                 }
               };
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 var O, tag2, result;
                 return it === void 0 ? "Undefined" : it === null ? "Null" : typeof (tag2 = tryGet(O = Object(it), TO_STRING_TAG)) == "string" ? tag2 : CORRECT_ARGUMENTS ? classofRaw(O) : (result = classofRaw(O)) == "Object" && typeof O.callee == "function" ? "Arguments" : result;
               };
@@ -13676,7 +13680,7 @@ var require_feather = __commonJS({
               \***********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var has = __webpack_require__(
                 /*! ../internals/has */
                 "./node_modules/core-js/internals/has.js"
@@ -13693,7 +13697,7 @@ var require_feather = __commonJS({
                 /*! ../internals/object-define-property */
                 "./node_modules/core-js/internals/object-define-property.js"
               );
-              module3.exports = function(target, source) {
+              module3.exports = function (target, source) {
                 var keys = ownKeys(source);
                 var defineProperty = definePropertyModule.f;
                 var getOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;
@@ -13712,12 +13716,12 @@ var require_feather = __commonJS({
               \********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var fails = __webpack_require__(
                 /*! ../internals/fails */
                 "./node_modules/core-js/internals/fails.js"
               );
-              module3.exports = !fails(function() {
+              module3.exports = !fails(function () {
                 function F() {
                 }
                 F.prototype.constructor = null;
@@ -13732,7 +13736,7 @@ var require_feather = __commonJS({
               \***********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var IteratorPrototype = __webpack_require__(
                 /*! ../internals/iterators-core */
@@ -13754,10 +13758,10 @@ var require_feather = __commonJS({
                 /*! ../internals/iterators */
                 "./node_modules/core-js/internals/iterators.js"
               );
-              var returnThis = function() {
+              var returnThis = function () {
                 return this;
               };
-              module3.exports = function(IteratorConstructor, NAME, next) {
+              module3.exports = function (IteratorConstructor, NAME, next) {
                 var TO_STRING_TAG = NAME + " Iterator";
                 IteratorConstructor.prototype = create(IteratorPrototype, { next: createPropertyDescriptor(1, next) });
                 setToStringTag(IteratorConstructor, TO_STRING_TAG, false, true);
@@ -13773,8 +13777,8 @@ var require_feather = __commonJS({
               \**********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
-              module3.exports = function(bitmap, value) {
+            function (module3, exports3) {
+              module3.exports = function (bitmap, value) {
                 return {
                   enumerable: !(bitmap & 1),
                   configurable: !(bitmap & 2),
@@ -13791,7 +13795,7 @@ var require_feather = __commonJS({
               \***********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var toPrimitive = __webpack_require__(
                 /*! ../internals/to-primitive */
@@ -13805,7 +13809,7 @@ var require_feather = __commonJS({
                 /*! ../internals/create-property-descriptor */
                 "./node_modules/core-js/internals/create-property-descriptor.js"
               );
-              module3.exports = function(object, key2, value) {
+              module3.exports = function (object, key2, value) {
                 var propertyKey = toPrimitive(key2);
                 if (propertyKey in object)
                   definePropertyModule.f(object, propertyKey, createPropertyDescriptor(0, value));
@@ -13821,7 +13825,7 @@ var require_feather = __commonJS({
               \***********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var $ = __webpack_require__(
                 /*! ../internals/export */
@@ -13873,12 +13877,12 @@ var require_feather = __commonJS({
               var KEYS = "keys";
               var VALUES = "values";
               var ENTRIES = "entries";
-              var returnThis = function() {
+              var returnThis = function () {
                 return this;
               };
-              module3.exports = function(Iterable, NAME, IteratorConstructor, next, DEFAULT, IS_SET, FORCED) {
+              module3.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, IS_SET, FORCED) {
                 createIteratorConstructor(IteratorConstructor, NAME, next);
-                var getIterationMethod = function(KIND) {
+                var getIterationMethod = function (KIND) {
                   if (KIND === DEFAULT && defaultIterator)
                     return defaultIterator;
                   if (!BUGGY_SAFARI_ITERATORS && KIND in IterablePrototype)
@@ -13897,7 +13901,7 @@ var require_feather = __commonJS({
                         return new IteratorConstructor(this, KIND);
                       };
                   }
-                  return function() {
+                  return function () {
                     return new IteratorConstructor(this);
                   };
                 };
@@ -13959,15 +13963,17 @@ var require_feather = __commonJS({
               \*******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var fails = __webpack_require__(
                 /*! ../internals/fails */
                 "./node_modules/core-js/internals/fails.js"
               );
-              module3.exports = !fails(function() {
-                return Object.defineProperty({}, "a", { get: function() {
-                  return 7;
-                } }).a != 7;
+              module3.exports = !fails(function () {
+                return Object.defineProperty({}, "a", {
+                  get: function () {
+                    return 7;
+                  }
+                }).a != 7;
               });
             }
           ),
@@ -13978,7 +13984,7 @@ var require_feather = __commonJS({
               \*******************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -13989,7 +13995,7 @@ var require_feather = __commonJS({
               );
               var document2 = global2.document;
               var exist = isObject2(document2) && isObject2(document2.createElement);
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 return exist ? document2.createElement(it) : {};
               };
             }
@@ -14001,7 +14007,7 @@ var require_feather = __commonJS({
               \*********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               module3.exports = [
                 "constructor",
                 "hasOwnProperty",
@@ -14020,7 +14026,7 @@ var require_feather = __commonJS({
               \**************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -14049,7 +14055,7 @@ var require_feather = __commonJS({
                 /*! ../internals/is-forced */
                 "./node_modules/core-js/internals/is-forced.js"
               );
-              module3.exports = function(options, source) {
+              module3.exports = function (options, source) {
                 var TARGET = options.target;
                 var GLOBAL = options.global;
                 var STATIC = options.stat;
@@ -14090,8 +14096,8 @@ var require_feather = __commonJS({
               \*************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
-              module3.exports = function(exec) {
+            function (module3, exports3) {
+              module3.exports = function (exec) {
                 try {
                   return !!exec();
                 } catch (error) {
@@ -14107,7 +14113,7 @@ var require_feather = __commonJS({
               \**************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var shared = __webpack_require__(
                 /*! ../internals/shared */
                 "./node_modules/core-js/internals/shared.js"
@@ -14122,7 +14128,7 @@ var require_feather = __commonJS({
               \***************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var classof = __webpack_require__(
                 /*! ../internals/classof */
                 "./node_modules/core-js/internals/classof.js"
@@ -14136,7 +14142,7 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/well-known-symbol.js"
               );
               var ITERATOR = wellKnownSymbol("iterator");
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 if (it != void 0)
                   return it[ITERATOR] || it["@@iterator"] || Iterators[classof(it)];
               };
@@ -14149,15 +14155,15 @@ var require_feather = __commonJS({
               \**************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
-              (function(global2) {
+            function (module3, exports3, __webpack_require__) {
+              (function (global2) {
                 var O = "object";
-                var check = function(it) {
+                var check = function (it) {
                   return it && it.Math == Math && it;
                 };
                 module3.exports = // eslint-disable-next-line no-undef
-                check(typeof globalThis == O && globalThis) || check(typeof window == O && window) || check(typeof self == O && self) || check(typeof global2 == O && global2) || // eslint-disable-next-line no-new-func
-                Function("return this")();
+                  check(typeof globalThis == O && globalThis) || check(typeof window == O && window) || check(typeof self == O && self) || check(typeof global2 == O && global2) || // eslint-disable-next-line no-new-func
+                  Function("return this")();
               }).call(this, __webpack_require__(
                 /*! ./../../webpack/buildin/global.js */
                 "./node_modules/webpack/buildin/global.js"
@@ -14171,9 +14177,9 @@ var require_feather = __commonJS({
               \***********************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               var hasOwnProperty = {}.hasOwnProperty;
-              module3.exports = function(it, key2) {
+              module3.exports = function (it, key2) {
                 return hasOwnProperty.call(it, key2);
               };
             }
@@ -14185,7 +14191,7 @@ var require_feather = __commonJS({
               \*******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               module3.exports = {};
             }
           ),
@@ -14196,7 +14202,7 @@ var require_feather = __commonJS({
               \************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var DESCRIPTORS = __webpack_require__(
                 /*! ../internals/descriptors */
                 "./node_modules/core-js/internals/descriptors.js"
@@ -14209,9 +14215,9 @@ var require_feather = __commonJS({
                 /*! ../internals/create-property-descriptor */
                 "./node_modules/core-js/internals/create-property-descriptor.js"
               );
-              module3.exports = DESCRIPTORS ? function(object, key2, value) {
+              module3.exports = DESCRIPTORS ? function (object, key2, value) {
                 return definePropertyModule.f(object, key2, createPropertyDescriptor(1, value));
-              } : function(object, key2, value) {
+              } : function (object, key2, value) {
                 object[key2] = value;
                 return object;
               };
@@ -14224,7 +14230,7 @@ var require_feather = __commonJS({
               \************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -14240,7 +14246,7 @@ var require_feather = __commonJS({
               \**********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var DESCRIPTORS = __webpack_require__(
                 /*! ../internals/descriptors */
                 "./node_modules/core-js/internals/descriptors.js"
@@ -14253,9 +14259,9 @@ var require_feather = __commonJS({
                 /*! ../internals/document-create-element */
                 "./node_modules/core-js/internals/document-create-element.js"
               );
-              module3.exports = !DESCRIPTORS && !fails(function() {
+              module3.exports = !DESCRIPTORS && !fails(function () {
                 return Object.defineProperty(createElement("div"), "a", {
-                  get: function() {
+                  get: function () {
                     return 7;
                   }
                 }).a != 7;
@@ -14269,7 +14275,7 @@ var require_feather = __commonJS({
               \**********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var fails = __webpack_require__(
                 /*! ../internals/fails */
                 "./node_modules/core-js/internals/fails.js"
@@ -14279,9 +14285,9 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/classof-raw.js"
               );
               var split = "".split;
-              module3.exports = fails(function() {
+              module3.exports = fails(function () {
                 return !Object("z").propertyIsEnumerable(0);
-              }) ? function(it) {
+              }) ? function (it) {
                 return classof(it) == "String" ? split.call(it, "") : Object(it);
               } : Object;
             }
@@ -14293,7 +14299,7 @@ var require_feather = __commonJS({
               \**********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var NATIVE_WEAK_MAP = __webpack_require__(
                 /*! ../internals/native-weak-map */
                 "./node_modules/core-js/internals/native-weak-map.js"
@@ -14324,11 +14330,11 @@ var require_feather = __commonJS({
               );
               var WeakMap2 = global2.WeakMap;
               var set, get, has;
-              var enforce = function(it) {
+              var enforce = function (it) {
                 return has(it) ? get(it) : set(it, {});
               };
-              var getterFor = function(TYPE) {
-                return function(it) {
+              var getterFor = function (TYPE) {
+                return function (it) {
                   var state;
                   if (!isObject2(it) || (state = get(it)).type !== TYPE) {
                     throw TypeError("Incompatible receiver, " + TYPE + " required");
@@ -14341,27 +14347,27 @@ var require_feather = __commonJS({
                 var wmget = store.get;
                 var wmhas = store.has;
                 var wmset = store.set;
-                set = function(it, metadata) {
+                set = function (it, metadata) {
                   wmset.call(store, it, metadata);
                   return metadata;
                 };
-                get = function(it) {
+                get = function (it) {
                   return wmget.call(store, it) || {};
                 };
-                has = function(it) {
+                has = function (it) {
                   return wmhas.call(store, it);
                 };
               } else {
                 var STATE = sharedKey("state");
                 hiddenKeys[STATE] = true;
-                set = function(it, metadata) {
+                set = function (it, metadata) {
                   hide(it, STATE, metadata);
                   return metadata;
                 };
-                get = function(it) {
+                get = function (it) {
                   return objectHas(it, STATE) ? it[STATE] : {};
                 };
-                has = function(it) {
+                has = function (it) {
                   return objectHas(it, STATE);
                 };
               }
@@ -14381,7 +14387,7 @@ var require_feather = __commonJS({
               \********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var wellKnownSymbol = __webpack_require__(
                 /*! ../internals/well-known-symbol */
                 "./node_modules/core-js/internals/well-known-symbol.js"
@@ -14392,7 +14398,7 @@ var require_feather = __commonJS({
               );
               var ITERATOR = wellKnownSymbol("iterator");
               var ArrayPrototype = Array.prototype;
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 return it !== void 0 && (Iterators.Array === it || ArrayPrototype[ITERATOR] === it);
               };
             }
@@ -14404,17 +14410,17 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var fails = __webpack_require__(
                 /*! ../internals/fails */
                 "./node_modules/core-js/internals/fails.js"
               );
               var replacement = /#|\.prototype\./;
-              var isForced = function(feature, detection) {
+              var isForced = function (feature, detection) {
                 var value = data[normalize2(feature)];
                 return value == POLYFILL ? true : value == NATIVE ? false : typeof detection == "function" ? fails(detection) : !!detection;
               };
-              var normalize2 = isForced.normalize = function(string) {
+              var normalize2 = isForced.normalize = function (string) {
                 return String(string).replace(replacement, ".").toLowerCase();
               };
               var data = isForced.data = {};
@@ -14430,8 +14436,8 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
-              module3.exports = function(it) {
+            function (module3, exports3) {
+              module3.exports = function (it) {
                 return typeof it === "object" ? it !== null : typeof it === "function";
               };
             }
@@ -14443,7 +14449,7 @@ var require_feather = __commonJS({
               \***************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               module3.exports = false;
             }
           ),
@@ -14454,7 +14460,7 @@ var require_feather = __commonJS({
               \**********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var getPrototypeOf = __webpack_require__(
                 /*! ../internals/object-get-prototype-of */
@@ -14478,7 +14484,7 @@ var require_feather = __commonJS({
               );
               var ITERATOR = wellKnownSymbol("iterator");
               var BUGGY_SAFARI_ITERATORS = false;
-              var returnThis = function() {
+              var returnThis = function () {
                 return this;
               };
               var IteratorPrototype, PrototypeOfArrayIteratorPrototype, arrayIterator;
@@ -14509,7 +14515,7 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               module3.exports = {};
             }
           ),
@@ -14520,12 +14526,12 @@ var require_feather = __commonJS({
               \*********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var fails = __webpack_require__(
                 /*! ../internals/fails */
                 "./node_modules/core-js/internals/fails.js"
               );
-              module3.exports = !!Object.getOwnPropertySymbols && !fails(function() {
+              module3.exports = !!Object.getOwnPropertySymbols && !fails(function () {
                 return !String(Symbol());
               });
             }
@@ -14537,7 +14543,7 @@ var require_feather = __commonJS({
               \***********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -14557,7 +14563,7 @@ var require_feather = __commonJS({
               \*********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var anObject = __webpack_require__(
                 /*! ../internals/an-object */
                 "./node_modules/core-js/internals/an-object.js"
@@ -14588,9 +14594,9 @@ var require_feather = __commonJS({
               );
               var IE_PROTO = sharedKey("IE_PROTO");
               var PROTOTYPE = "prototype";
-              var Empty = function() {
+              var Empty = function () {
               };
-              var createDict = function() {
+              var createDict = function () {
                 var iframe = documentCreateElement("iframe");
                 var length = enumBugKeys.length;
                 var lt = "<";
@@ -14631,7 +14637,7 @@ var require_feather = __commonJS({
               \********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var DESCRIPTORS = __webpack_require__(
                 /*! ../internals/descriptors */
                 "./node_modules/core-js/internals/descriptors.js"
@@ -14667,7 +14673,7 @@ var require_feather = __commonJS({
               \******************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var DESCRIPTORS = __webpack_require__(
                 /*! ../internals/descriptors */
                 "./node_modules/core-js/internals/descriptors.js"
@@ -14709,7 +14715,7 @@ var require_feather = __commonJS({
               \******************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var DESCRIPTORS = __webpack_require__(
                 /*! ../internals/descriptors */
                 "./node_modules/core-js/internals/descriptors.js"
@@ -14759,7 +14765,7 @@ var require_feather = __commonJS({
               \*************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var internalObjectKeys = __webpack_require__(
                 /*! ../internals/object-keys-internal */
                 "./node_modules/core-js/internals/object-keys-internal.js"
@@ -14781,7 +14787,7 @@ var require_feather = __commonJS({
               \***************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               exports3.f = Object.getOwnPropertySymbols;
             }
           ),
@@ -14792,7 +14798,7 @@ var require_feather = __commonJS({
               \*******************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var has = __webpack_require__(
                 /*! ../internals/has */
                 "./node_modules/core-js/internals/has.js"
@@ -14811,7 +14817,7 @@ var require_feather = __commonJS({
               );
               var IE_PROTO = sharedKey("IE_PROTO");
               var ObjectPrototype = Object.prototype;
-              module3.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function(O) {
+              module3.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O) {
                 O = toObject(O);
                 if (has(O, IE_PROTO))
                   return O[IE_PROTO];
@@ -14829,7 +14835,7 @@ var require_feather = __commonJS({
               \****************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var has = __webpack_require__(
                 /*! ../internals/has */
                 "./node_modules/core-js/internals/has.js"
@@ -14847,7 +14853,7 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/hidden-keys.js"
               );
               var arrayIndexOf = arrayIncludes(false);
-              module3.exports = function(object, names) {
+              module3.exports = function (object, names) {
                 var O = toIndexedObject(object);
                 var i = 0;
                 var result = [];
@@ -14869,7 +14875,7 @@ var require_feather = __commonJS({
               \*******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var internalObjectKeys = __webpack_require__(
                 /*! ../internals/object-keys-internal */
                 "./node_modules/core-js/internals/object-keys-internal.js"
@@ -14890,7 +14896,7 @@ var require_feather = __commonJS({
               \*************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var nativePropertyIsEnumerable = {}.propertyIsEnumerable;
               var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
@@ -14908,12 +14914,12 @@ var require_feather = __commonJS({
               \*******************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var validateSetPrototypeOfArguments = __webpack_require__(
                 /*! ../internals/validate-set-prototype-of-arguments */
                 "./node_modules/core-js/internals/validate-set-prototype-of-arguments.js"
               );
-              module3.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
+              module3.exports = Object.setPrototypeOf || ("__proto__" in {} ? function () {
                 var correctSetter = false;
                 var test = {};
                 var setter;
@@ -14941,7 +14947,7 @@ var require_feather = __commonJS({
               \****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -14973,7 +14979,7 @@ var require_feather = __commonJS({
               \************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               module3.exports = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -14987,7 +14993,7 @@ var require_feather = __commonJS({
               \****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -15019,10 +15025,10 @@ var require_feather = __commonJS({
               var getInternalState = InternalStateModule.get;
               var enforceInternalState = InternalStateModule.enforce;
               var TEMPLATE = String(nativeFunctionToString).split("toString");
-              shared("inspectSource", function(it) {
+              shared("inspectSource", function (it) {
                 return nativeFunctionToString.call(it);
               });
-              (module3.exports = function(O, key2, value, options) {
+              (module3.exports = function (O, key2, value, options) {
                 var unsafe = options ? !!options.unsafe : false;
                 var simple2 = options ? !!options.enumerable : false;
                 var noTargetGet = options ? !!options.noTargetGet : false;
@@ -15058,8 +15064,8 @@ var require_feather = __commonJS({
               \********************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
-              module3.exports = function(it) {
+            function (module3, exports3) {
+              module3.exports = function (it) {
                 if (it == void 0)
                   throw TypeError("Can't call method on " + it);
                 return it;
@@ -15073,7 +15079,7 @@ var require_feather = __commonJS({
               \******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -15082,7 +15088,7 @@ var require_feather = __commonJS({
                 /*! ../internals/hide */
                 "./node_modules/core-js/internals/hide.js"
               );
-              module3.exports = function(key2, value) {
+              module3.exports = function (key2, value) {
                 try {
                   hide(global2, key2, value);
                 } catch (error) {
@@ -15099,7 +15105,7 @@ var require_feather = __commonJS({
               \*************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var defineProperty = __webpack_require__(
                 /*! ../internals/object-define-property */
                 "./node_modules/core-js/internals/object-define-property.js"
@@ -15113,7 +15119,7 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/well-known-symbol.js"
               );
               var TO_STRING_TAG = wellKnownSymbol("toStringTag");
-              module3.exports = function(it, TAG, STATIC) {
+              module3.exports = function (it, TAG, STATIC) {
                 if (it && !has(it = STATIC ? it : it.prototype, TO_STRING_TAG)) {
                   defineProperty(it, TO_STRING_TAG, { configurable: true, value: TAG });
                 }
@@ -15127,7 +15133,7 @@ var require_feather = __commonJS({
               \******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var shared = __webpack_require__(
                 /*! ../internals/shared */
                 "./node_modules/core-js/internals/shared.js"
@@ -15137,7 +15143,7 @@ var require_feather = __commonJS({
                 "./node_modules/core-js/internals/uid.js"
               );
               var keys = shared("keys");
-              module3.exports = function(key2) {
+              module3.exports = function (key2) {
                 return keys[key2] || (keys[key2] = uid(key2));
               };
             }
@@ -15149,7 +15155,7 @@ var require_feather = __commonJS({
               \**************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -15164,7 +15170,7 @@ var require_feather = __commonJS({
               );
               var SHARED = "__core-js_shared__";
               var store = global2[SHARED] || setGlobal(SHARED, {});
-              (module3.exports = function(key2, value) {
+              (module3.exports = function (key2, value) {
                 return store[key2] || (store[key2] = value !== void 0 ? value : {});
               })("versions", []).push({
                 version: "3.1.3",
@@ -15180,7 +15186,7 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var toInteger = __webpack_require__(
                 /*! ../internals/to-integer */
                 "./node_modules/core-js/internals/to-integer.js"
@@ -15189,7 +15195,7 @@ var require_feather = __commonJS({
                 /*! ../internals/require-object-coercible */
                 "./node_modules/core-js/internals/require-object-coercible.js"
               );
-              module3.exports = function(that, pos, CONVERT_TO_STRING) {
+              module3.exports = function (that, pos, CONVERT_TO_STRING) {
                 var S = String(requireObjectCoercible(that));
                 var position = toInteger(pos);
                 var size = S.length;
@@ -15208,14 +15214,14 @@ var require_feather = __commonJS({
               \*************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var toInteger = __webpack_require__(
                 /*! ../internals/to-integer */
                 "./node_modules/core-js/internals/to-integer.js"
               );
               var max = Math.max;
               var min = Math.min;
-              module3.exports = function(index2, length) {
+              module3.exports = function (index2, length) {
                 var integer = toInteger(index2);
                 return integer < 0 ? max(integer + length, 0) : min(integer, length);
               };
@@ -15228,7 +15234,7 @@ var require_feather = __commonJS({
               \*************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var IndexedObject = __webpack_require__(
                 /*! ../internals/indexed-object */
                 "./node_modules/core-js/internals/indexed-object.js"
@@ -15237,7 +15243,7 @@ var require_feather = __commonJS({
                 /*! ../internals/require-object-coercible */
                 "./node_modules/core-js/internals/require-object-coercible.js"
               );
-              module3.exports = function(it) {
+              module3.exports = function (it) {
                 return IndexedObject(requireObjectCoercible(it));
               };
             }
@@ -15249,10 +15255,10 @@ var require_feather = __commonJS({
               \******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               var ceil = Math.ceil;
               var floor = Math.floor;
-              module3.exports = function(argument) {
+              module3.exports = function (argument) {
                 return isNaN(argument = +argument) ? 0 : (argument > 0 ? floor : ceil)(argument);
               };
             }
@@ -15264,13 +15270,13 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var toInteger = __webpack_require__(
                 /*! ../internals/to-integer */
                 "./node_modules/core-js/internals/to-integer.js"
               );
               var min = Math.min;
-              module3.exports = function(argument) {
+              module3.exports = function (argument) {
                 return argument > 0 ? min(toInteger(argument), 9007199254740991) : 0;
               };
             }
@@ -15282,12 +15288,12 @@ var require_feather = __commonJS({
               \*****************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var requireObjectCoercible = __webpack_require__(
                 /*! ../internals/require-object-coercible */
                 "./node_modules/core-js/internals/require-object-coercible.js"
               );
-              module3.exports = function(argument) {
+              module3.exports = function (argument) {
                 return Object(requireObjectCoercible(argument));
               };
             }
@@ -15299,12 +15305,12 @@ var require_feather = __commonJS({
               \********************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var isObject2 = __webpack_require__(
                 /*! ../internals/is-object */
                 "./node_modules/core-js/internals/is-object.js"
               );
-              module3.exports = function(it, S) {
+              module3.exports = function (it, S) {
                 if (!isObject2(it))
                   return it;
                 var fn, val;
@@ -15325,10 +15331,10 @@ var require_feather = __commonJS({
               \***********************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               var id = 0;
               var postfix = Math.random();
-              module3.exports = function(key2) {
+              module3.exports = function (key2) {
                 return "Symbol(".concat(key2 === void 0 ? "" : key2, ")_", (++id + postfix).toString(36));
               };
             }
@@ -15340,7 +15346,7 @@ var require_feather = __commonJS({
               \*******************************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var isObject2 = __webpack_require__(
                 /*! ../internals/is-object */
                 "./node_modules/core-js/internals/is-object.js"
@@ -15349,7 +15355,7 @@ var require_feather = __commonJS({
                 /*! ../internals/an-object */
                 "./node_modules/core-js/internals/an-object.js"
               );
-              module3.exports = function(O, proto) {
+              module3.exports = function (O, proto) {
                 anObject(O);
                 if (!isObject2(proto) && proto !== null) {
                   throw TypeError("Can't set " + String(proto) + " as a prototype");
@@ -15364,7 +15370,7 @@ var require_feather = __commonJS({
               \*************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var global2 = __webpack_require__(
                 /*! ../internals/global */
                 "./node_modules/core-js/internals/global.js"
@@ -15383,7 +15389,7 @@ var require_feather = __commonJS({
               );
               var Symbol2 = global2.Symbol;
               var store = shared("wks");
-              module3.exports = function(name) {
+              module3.exports = function (name) {
                 return store[name] || (store[name] = NATIVE_SYMBOL && Symbol2[name] || (NATIVE_SYMBOL ? Symbol2 : uid)("Symbol." + name));
               };
             }
@@ -15395,7 +15401,7 @@ var require_feather = __commonJS({
               \*******************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               var $ = __webpack_require__(
                 /*! ../internals/export */
                 "./node_modules/core-js/internals/export.js"
@@ -15408,7 +15414,7 @@ var require_feather = __commonJS({
                 /*! ../internals/check-correctness-of-iteration */
                 "./node_modules/core-js/internals/check-correctness-of-iteration.js"
               );
-              var INCORRECT_ITERATION = !checkCorrectnessOfIteration(function(iterable) {
+              var INCORRECT_ITERATION = !checkCorrectnessOfIteration(function (iterable) {
                 Array.from(iterable);
               });
               $({ target: "Array", stat: true, forced: INCORRECT_ITERATION }, {
@@ -15423,7 +15429,7 @@ var require_feather = __commonJS({
               \************************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var codePointAt = __webpack_require__(
                 /*! ../internals/string-at */
@@ -15440,7 +15446,7 @@ var require_feather = __commonJS({
               var STRING_ITERATOR = "String Iterator";
               var setInternalState = InternalStateModule.set;
               var getInternalState = InternalStateModule.getterFor(STRING_ITERATOR);
-              defineIterator(String, "String", function(iterated) {
+              defineIterator(String, "String", function (iterated) {
                 setInternalState(this, {
                   type: STRING_ITERATOR,
                   string: String(iterated),
@@ -15466,9 +15472,9 @@ var require_feather = __commonJS({
               \***********************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3) {
+            function (module3, exports3) {
               var g;
-              g = function() {
+              g = function () {
                 return this;
               }();
               try {
@@ -15487,7 +15493,7 @@ var require_feather = __commonJS({
               \********************************/
             /*! exports provided: xmlns, width, height, viewBox, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, default */
             /***/
-            function(module3) {
+            function (module3) {
               module3.exports = { "xmlns": "http://www.w3.org/2000/svg", "width": 24, "height": 24, "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round" };
             }
           ),
@@ -15498,12 +15504,12 @@ var require_feather = __commonJS({
               \*********************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               Object.defineProperty(exports3, "__esModule", {
                 value: true
               });
-              var _extends = Object.assign || function(target) {
+              var _extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                   var source = arguments[i];
                   for (var key2 in source) {
@@ -15514,7 +15520,7 @@ var require_feather = __commonJS({
                 }
                 return target;
               };
-              var _createClass = function() {
+              var _createClass = function () {
                 function defineProperties(target, props) {
                   for (var i = 0; i < props.length; i++) {
                     var descriptor = props[i];
@@ -15525,7 +15531,7 @@ var require_feather = __commonJS({
                     Object.defineProperty(target, descriptor.key, descriptor);
                   }
                 }
-                return function(Constructor, protoProps, staticProps) {
+                return function (Constructor, protoProps, staticProps) {
                   if (protoProps)
                     defineProperties(Constructor.prototype, protoProps);
                   if (staticProps)
@@ -15551,7 +15557,7 @@ var require_feather = __commonJS({
                   throw new TypeError("Cannot call a class as a function");
                 }
               }
-              var Icon = function() {
+              var Icon = function () {
                 function Icon2(name, contents) {
                   var tags = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : [];
                   _classCallCheck(this, Icon2);
@@ -15584,7 +15590,7 @@ var require_feather = __commonJS({
                 return Icon2;
               }();
               function attrsToString(attrs) {
-                return Object.keys(attrs).map(function(key2) {
+                return Object.keys(attrs).map(function (key2) {
                   return key2 + '="' + attrs[key2] + '"';
                 }).join(" ");
               }
@@ -15598,7 +15604,7 @@ var require_feather = __commonJS({
               \**********************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               Object.defineProperty(exports3, "__esModule", {
                 value: true
@@ -15621,9 +15627,9 @@ var require_feather = __commonJS({
               function _interopRequireDefault(obj) {
                 return obj && obj.__esModule ? obj : { default: obj };
               }
-              exports3.default = Object.keys(_icons2.default).map(function(key2) {
+              exports3.default = Object.keys(_icons2.default).map(function (key2) {
                 return new _icon2.default(key2, _icons2.default[key2], _tags2.default[key2]);
-              }).reduce(function(object, icon) {
+              }).reduce(function (object, icon) {
                 object[icon.name] = icon;
                 return object;
               }, {});
@@ -15636,7 +15642,7 @@ var require_feather = __commonJS({
               \**********************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               var _icons = __webpack_require__(
                 /*! ./icons */
@@ -15666,12 +15672,12 @@ var require_feather = __commonJS({
               \************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               Object.defineProperty(exports3, "__esModule", {
                 value: true
               });
-              var _extends = Object.assign || function(target) {
+              var _extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                   var source = arguments[i];
                   for (var key2 in source) {
@@ -15701,7 +15707,7 @@ var require_feather = __commonJS({
                   throw new Error("`feather.replace()` only works in a browser environment.");
                 }
                 var elementsToReplace = document.querySelectorAll("[data-feather]");
-                Array.from(elementsToReplace).forEach(function(element2) {
+                Array.from(elementsToReplace).forEach(function (element2) {
                   return replaceElement(element2, attrs);
                 });
               }
@@ -15716,7 +15722,7 @@ var require_feather = __commonJS({
                 element2.parentNode.replaceChild(svgElement, element2);
               }
               function getAttrs(element2) {
-                return Array.from(element2.attributes).reduce(function(attrs, attr2) {
+                return Array.from(element2.attributes).reduce(function (attrs, attr2) {
                   attrs[attr2.name] = attr2.value;
                   return attrs;
                 }, {});
@@ -15731,7 +15737,7 @@ var require_feather = __commonJS({
               \***********************/
             /*! exports provided: activity, airplay, alert-circle, alert-octagon, alert-triangle, align-center, align-justify, align-left, align-right, anchor, archive, at-sign, award, aperture, bar-chart, bar-chart-2, battery, battery-charging, bell, bell-off, bluetooth, book-open, book, bookmark, box, briefcase, calendar, camera, cast, chevron-down, chevron-up, circle, clipboard, clock, cloud-drizzle, cloud-lightning, cloud-rain, cloud-snow, cloud, codepen, codesandbox, code, coffee, columns, command, compass, copy, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, cpu, credit-card, crop, crosshair, database, delete, disc, dollar-sign, droplet, edit, edit-2, edit-3, eye, eye-off, external-link, facebook, fast-forward, figma, file-minus, file-plus, file-text, film, filter, flag, folder-minus, folder-plus, folder, framer, frown, gift, git-branch, git-commit, git-merge, git-pull-request, github, gitlab, globe, hard-drive, hash, headphones, heart, help-circle, hexagon, home, image, inbox, instagram, key, layers, layout, life-buoy, link, link-2, linkedin, list, lock, log-in, log-out, mail, map-pin, map, maximize, maximize-2, meh, menu, message-circle, message-square, mic-off, mic, minimize, minimize-2, minus, monitor, moon, more-horizontal, more-vertical, mouse-pointer, move, music, navigation, navigation-2, octagon, package, paperclip, pause, pause-circle, pen-tool, percent, phone-call, phone-forwarded, phone-incoming, phone-missed, phone-off, phone-outgoing, phone, play, pie-chart, play-circle, plus, plus-circle, plus-square, pocket, power, printer, radio, refresh-cw, refresh-ccw, repeat, rewind, rotate-ccw, rotate-cw, rss, save, scissors, search, send, settings, share-2, shield, shield-off, shopping-bag, shopping-cart, shuffle, skip-back, skip-forward, slack, slash, sliders, smartphone, smile, speaker, star, stop-circle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbs-down, thumbs-up, toggle-left, toggle-right, tool, trash, trash-2, triangle, truck, tv, twitch, twitter, type, umbrella, unlock, user-check, user-minus, user-plus, user-x, user, users, video-off, video, voicemail, volume, volume-1, volume-2, volume-x, watch, wifi-off, wifi, wind, x-circle, x-octagon, x-square, x, youtube, zap-off, zap, zoom-in, zoom-out, default */
             /***/
-            function(module3) {
+            function (module3) {
               module3.exports = { "activity": ["pulse", "health", "action", "motion"], "airplay": ["stream", "cast", "mirroring"], "alert-circle": ["warning", "alert", "danger"], "alert-octagon": ["warning", "alert", "danger"], "alert-triangle": ["warning", "alert", "danger"], "align-center": ["text alignment", "center"], "align-justify": ["text alignment", "justified"], "align-left": ["text alignment", "left"], "align-right": ["text alignment", "right"], "anchor": [], "archive": ["index", "box"], "at-sign": ["mention", "at", "email", "message"], "award": ["achievement", "badge"], "aperture": ["camera", "photo"], "bar-chart": ["statistics", "diagram", "graph"], "bar-chart-2": ["statistics", "diagram", "graph"], "battery": ["power", "electricity"], "battery-charging": ["power", "electricity"], "bell": ["alarm", "notification", "sound"], "bell-off": ["alarm", "notification", "silent"], "bluetooth": ["wireless"], "book-open": ["read", "library"], "book": ["read", "dictionary", "booklet", "magazine", "library"], "bookmark": ["read", "clip", "marker", "tag"], "box": ["cube"], "briefcase": ["work", "bag", "baggage", "folder"], "calendar": ["date"], "camera": ["photo"], "cast": ["chromecast", "airplay"], "chevron-down": ["expand"], "chevron-up": ["collapse"], "circle": ["off", "zero", "record"], "clipboard": ["copy"], "clock": ["time", "watch", "alarm"], "cloud-drizzle": ["weather", "shower"], "cloud-lightning": ["weather", "bolt"], "cloud-rain": ["weather"], "cloud-snow": ["weather", "blizzard"], "cloud": ["weather"], "codepen": ["logo"], "codesandbox": ["logo"], "code": ["source", "programming"], "coffee": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"], "columns": ["layout"], "command": ["keyboard", "cmd", "terminal", "prompt"], "compass": ["navigation", "safari", "travel", "direction"], "copy": ["clone", "duplicate"], "corner-down-left": ["arrow", "return"], "corner-down-right": ["arrow"], "corner-left-down": ["arrow"], "corner-left-up": ["arrow"], "corner-right-down": ["arrow"], "corner-right-up": ["arrow"], "corner-up-left": ["arrow"], "corner-up-right": ["arrow"], "cpu": ["processor", "technology"], "credit-card": ["purchase", "payment", "cc"], "crop": ["photo", "image"], "crosshair": ["aim", "target"], "database": ["storage", "memory"], "delete": ["remove"], "disc": ["album", "cd", "dvd", "music"], "dollar-sign": ["currency", "money", "payment"], "droplet": ["water"], "edit": ["pencil", "change"], "edit-2": ["pencil", "change"], "edit-3": ["pencil", "change"], "eye": ["view", "watch"], "eye-off": ["view", "watch", "hide", "hidden"], "external-link": ["outbound"], "facebook": ["logo", "social"], "fast-forward": ["music"], "figma": ["logo", "design", "tool"], "file-minus": ["delete", "remove", "erase"], "file-plus": ["add", "create", "new"], "file-text": ["data", "txt", "pdf"], "film": ["movie", "video"], "filter": ["funnel", "hopper"], "flag": ["report"], "folder-minus": ["directory"], "folder-plus": ["directory"], "folder": ["directory"], "framer": ["logo", "design", "tool"], "frown": ["emoji", "face", "bad", "sad", "emotion"], "gift": ["present", "box", "birthday", "party"], "git-branch": ["code", "version control"], "git-commit": ["code", "version control"], "git-merge": ["code", "version control"], "git-pull-request": ["code", "version control"], "github": ["logo", "version control"], "gitlab": ["logo", "version control"], "globe": ["world", "browser", "language", "translate"], "hard-drive": ["computer", "server", "memory", "data"], "hash": ["hashtag", "number", "pound"], "headphones": ["music", "audio", "sound"], "heart": ["like", "love", "emotion"], "help-circle": ["question mark"], "hexagon": ["shape", "node.js", "logo"], "home": ["house", "living"], "image": ["picture"], "inbox": ["email"], "instagram": ["logo", "camera"], "key": ["password", "login", "authentication", "secure"], "layers": ["stack"], "layout": ["window", "webpage"], "life-buoy": ["help", "life ring", "support"], "link": ["chain", "url"], "link-2": ["chain", "url"], "linkedin": ["logo", "social media"], "list": ["options"], "lock": ["security", "password", "secure"], "log-in": ["sign in", "arrow", "enter"], "log-out": ["sign out", "arrow", "exit"], "mail": ["email", "message"], "map-pin": ["location", "navigation", "travel", "marker"], "map": ["location", "navigation", "travel"], "maximize": ["fullscreen"], "maximize-2": ["fullscreen", "arrows", "expand"], "meh": ["emoji", "face", "neutral", "emotion"], "menu": ["bars", "navigation", "hamburger"], "message-circle": ["comment", "chat"], "message-square": ["comment", "chat"], "mic-off": ["record", "sound", "mute"], "mic": ["record", "sound", "listen"], "minimize": ["exit fullscreen", "close"], "minimize-2": ["exit fullscreen", "arrows", "close"], "minus": ["subtract"], "monitor": ["tv", "screen", "display"], "moon": ["dark", "night"], "more-horizontal": ["ellipsis"], "more-vertical": ["ellipsis"], "mouse-pointer": ["arrow", "cursor"], "move": ["arrows"], "music": ["note"], "navigation": ["location", "travel"], "navigation-2": ["location", "travel"], "octagon": ["stop"], "package": ["box", "container"], "paperclip": ["attachment"], "pause": ["music", "stop"], "pause-circle": ["music", "audio", "stop"], "pen-tool": ["vector", "drawing"], "percent": ["discount"], "phone-call": ["ring"], "phone-forwarded": ["call"], "phone-incoming": ["call"], "phone-missed": ["call"], "phone-off": ["call", "mute"], "phone-outgoing": ["call"], "phone": ["call"], "play": ["music", "start"], "pie-chart": ["statistics", "diagram"], "play-circle": ["music", "start"], "plus": ["add", "new"], "plus-circle": ["add", "new"], "plus-square": ["add", "new"], "pocket": ["logo", "save"], "power": ["on", "off"], "printer": ["fax", "office", "device"], "radio": ["signal"], "refresh-cw": ["synchronise", "arrows"], "refresh-ccw": ["arrows"], "repeat": ["loop", "arrows"], "rewind": ["music"], "rotate-ccw": ["arrow"], "rotate-cw": ["arrow"], "rss": ["feed", "subscribe"], "save": ["floppy disk"], "scissors": ["cut"], "search": ["find", "magnifier", "magnifying glass"], "send": ["message", "mail", "email", "paper airplane", "paper aeroplane"], "settings": ["cog", "edit", "gear", "preferences"], "share-2": ["network", "connections"], "shield": ["security", "secure"], "shield-off": ["security", "insecure"], "shopping-bag": ["ecommerce", "cart", "purchase", "store"], "shopping-cart": ["ecommerce", "cart", "purchase", "store"], "shuffle": ["music"], "skip-back": ["music"], "skip-forward": ["music"], "slack": ["logo"], "slash": ["ban", "no"], "sliders": ["settings", "controls"], "smartphone": ["cellphone", "device"], "smile": ["emoji", "face", "happy", "good", "emotion"], "speaker": ["audio", "music"], "star": ["bookmark", "favorite", "like"], "stop-circle": ["media", "music"], "sun": ["brightness", "weather", "light"], "sunrise": ["weather", "time", "morning", "day"], "sunset": ["weather", "time", "evening", "night"], "tablet": ["device"], "tag": ["label"], "target": ["logo", "bullseye"], "terminal": ["code", "command line", "prompt"], "thermometer": ["temperature", "celsius", "fahrenheit", "weather"], "thumbs-down": ["dislike", "bad", "emotion"], "thumbs-up": ["like", "good", "emotion"], "toggle-left": ["on", "off", "switch"], "toggle-right": ["on", "off", "switch"], "tool": ["settings", "spanner"], "trash": ["garbage", "delete", "remove", "bin"], "trash-2": ["garbage", "delete", "remove", "bin"], "triangle": ["delta"], "truck": ["delivery", "van", "shipping", "transport", "lorry"], "tv": ["television", "stream"], "twitch": ["logo"], "twitter": ["logo", "social"], "type": ["text"], "umbrella": ["rain", "weather"], "unlock": ["security"], "user-check": ["followed", "subscribed"], "user-minus": ["delete", "remove", "unfollow", "unsubscribe"], "user-plus": ["new", "add", "create", "follow", "subscribe"], "user-x": ["delete", "remove", "unfollow", "unsubscribe", "unavailable"], "user": ["person", "account"], "users": ["group"], "video-off": ["camera", "movie", "film"], "video": ["camera", "movie", "film"], "voicemail": ["phone"], "volume": ["music", "sound", "mute"], "volume-1": ["music", "sound"], "volume-2": ["music", "sound"], "volume-x": ["music", "sound", "mute"], "watch": ["clock", "time"], "wifi-off": ["disabled"], "wifi": ["connection", "signal", "wireless"], "wind": ["weather", "air"], "x-circle": ["cancel", "close", "delete", "remove", "times", "clear"], "x-octagon": ["delete", "stop", "alert", "warning", "times", "clear"], "x-square": ["cancel", "close", "delete", "remove", "times", "clear"], "x": ["cancel", "close", "delete", "remove", "times", "clear"], "youtube": ["logo", "video", "play"], "zap-off": ["flash", "camera", "lightning"], "zap": ["flash", "camera", "lightning"], "zoom-in": ["magnifying glass"], "zoom-out": ["magnifying glass"] };
             }
           ),
@@ -15742,7 +15748,7 @@ var require_feather = __commonJS({
               \***********************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               "use strict";
               Object.defineProperty(exports3, "__esModule", {
                 value: true
@@ -15776,7 +15782,7 @@ var require_feather = __commonJS({
               \**************************************************/
             /*! no static exports found */
             /***/
-            function(module3, exports3, __webpack_require__) {
+            function (module3, exports3, __webpack_require__) {
               __webpack_require__(
                 /*! core-js/es/array/from */
                 "./node_modules/core-js/es/array/from.js"
@@ -16365,7 +16371,7 @@ function dirname(path2) {
 }
 function flatFileListToDirectoryStructure(files) {
   const inodes = /* @__PURE__ */ new Map();
-  const mkdir = function(name) {
+  const mkdir = function (name) {
     if (!inodes.has(name)) {
       const dir = {
         type: "tree",
@@ -16381,7 +16387,7 @@ function flatFileListToDirectoryStructure(files) {
     }
     return inodes.get(name);
   };
-  const mkfile = function(name, metadata) {
+  const mkfile = function (name, metadata) {
     if (!inodes.has(name)) {
       const file = {
         type: "blob",
@@ -16423,7 +16429,7 @@ var GitWalkerIndex = class {
   constructor({ fs, gitdir, cache }) {
     this.treePromise = GitIndexManager.acquire(
       { fs, gitdir, cache },
-      async function(index2) {
+      async function (index2) {
         return flatFileListToDirectoryStructure(index2.entries);
       }
     );
@@ -16515,7 +16521,7 @@ var GitWalkSymbol = Symbol("GitWalkSymbol");
 function STAGE() {
   const o = /* @__PURE__ */ Object.create(null);
   Object.defineProperty(o, GitWalkSymbol, {
-    value: function({ fs, gitdir, cache }) {
+    value: function ({ fs, gitdir, cache }) {
       return new GitWalkerIndex({ fs, gitdir, cache });
     }
   });
@@ -18859,7 +18865,7 @@ var GitWalkerRepo = class {
 function TREE({ ref = "HEAD" } = {}) {
   const o = /* @__PURE__ */ Object.create(null);
   Object.defineProperty(o, GitWalkSymbol, {
-    value: function({ fs, gitdir, cache }) {
+    value: function ({ fs, gitdir, cache }) {
       return new GitWalkerRepo({ fs, gitdir, ref, cache });
     }
   });
@@ -18962,7 +18968,7 @@ var GitWalkerFs = class {
     if (entry._oid === false) {
       const { fs, gitdir, cache } = this;
       let oid;
-      await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+      await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
         const stage = index2.entriesMap.get(entry._fullpath);
         const stats = await entry.stat();
         if (!stage || compareStats(stats, stage)) {
@@ -18993,7 +18999,7 @@ var GitWalkerFs = class {
 function WORKDIR() {
   const o = /* @__PURE__ */ Object.create(null);
   Object.defineProperty(o, GitWalkSymbol, {
-    value: function({ fs, dir, gitdir, cache }) {
+    value: function ({ fs, dir, gitdir, cache }) {
       return new GitWalkerFs({ fs, dir, gitdir, cache });
     }
   });
@@ -19393,7 +19399,7 @@ async function abortMerge({
     const fs = new FileSystem(_fs);
     const trees = [TREE({ ref: commit2 }), WORKDIR(), STAGE()];
     let unmergedPaths = [];
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       unmergedPaths = index2.unmergedPaths;
     });
     const results = await _walk({
@@ -19402,7 +19408,7 @@ async function abortMerge({
       dir,
       gitdir,
       trees,
-      map: async function(path2, [head, workdir, index2]) {
+      map: async function (path2, [head, workdir, index2]) {
         const staged = !await modified(workdir, index2);
         const unmerged = unmergedPaths.includes(path2);
         const unmodified = !await modified(index2, head);
@@ -19421,7 +19427,7 @@ async function abortMerge({
           throw new IndexResetError(path2);
       }
     });
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       for (const entry of results) {
         if (entry === false)
           continue;
@@ -19682,7 +19688,7 @@ async function _commit({
   }
   return GitIndexManager.acquire(
     { fs, gitdir, cache, allowUnmerged: false },
-    async function(index2) {
+    async function (index2) {
       const inodes = flatFileListToDirectoryStructure(index2.entries);
       const inode = inodes.get(".");
       if (!tree) {
@@ -20276,11 +20282,11 @@ async function _checkout({
     }
     let count = 0;
     const total = ops.length;
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       await Promise.all(
         ops.filter(
           ([method2]) => method2 === "delete" || method2 === "delete-index"
-        ).map(async function([method2, fullpath]) {
+        ).map(async function ([method2, fullpath]) {
           const filepath = `${dir}/${fullpath}`;
           if (method2 === "delete") {
             await fs.rm(filepath);
@@ -20296,7 +20302,7 @@ async function _checkout({
         })
       );
     });
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       for (const [method2, fullpath] of ops) {
         if (method2 === "rmdir" || method2 === "rmdir-index") {
           const filepath = `${dir}/${fullpath}`;
@@ -20325,7 +20331,7 @@ async function _checkout({
       }
     });
     await Promise.all(
-      ops.filter(([method2]) => method2 === "mkdir" || method2 === "mkdir-index").map(async function([_, fullpath]) {
+      ops.filter(([method2]) => method2 === "mkdir" || method2 === "mkdir-index").map(async function ([_, fullpath]) {
         const filepath = `${dir}/${fullpath}`;
         await fs.mkdir(filepath);
         if (onProgress) {
@@ -20337,11 +20343,11 @@ async function _checkout({
         }
       })
     );
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       await Promise.all(
         ops.filter(
           ([method2]) => method2 === "create" || method2 === "create-index" || method2 === "update" || method2 === "mkdir-index"
-        ).map(async function([method2, fullpath, oid2, mode, chmod]) {
+        ).map(async function ([method2, fullpath, oid2, mode, chmod]) {
           const filepath = `${dir}/${fullpath}`;
           try {
             if (method2 !== "create-index" && method2 !== "mkdir-index") {
@@ -20418,7 +20424,7 @@ async function analyze({
     dir,
     gitdir,
     trees: [TREE({ ref }), WORKDIR(), STAGE()],
-    map: async function(fullpath, [commit2, workdir, stage]) {
+    map: async function (fullpath, [commit2, workdir, stage]) {
       if (fullpath === ".")
         return;
       if (filepaths && !filepaths.some((base) => worthWalking(fullpath, base))) {
@@ -20630,7 +20636,7 @@ async function analyze({
       }
     },
     // Modify the default flat mapping
-    reduce: async function(parent, children2) {
+    reduce: async function (parent, children2) {
       children2 = flat(children2);
       if (!parent) {
         return children2;
@@ -21081,7 +21087,7 @@ var GitShallowManager = class {
       lock$1 = new import_async_lock.default();
     const filepath = join(gitdir, "shallow");
     const oids = /* @__PURE__ */ new Set();
-    await lock$1.acquire(filepath, async function() {
+    await lock$1.acquire(filepath, async function () {
       const text2 = await fs.read(filepath, { encoding: "utf8" });
       if (text2 === null)
         return oids;
@@ -21097,13 +21103,13 @@ var GitShallowManager = class {
     const filepath = join(gitdir, "shallow");
     if (oids.size > 0) {
       const text2 = [...oids].join("\n") + "\n";
-      await lock$1.acquire(filepath, async function() {
+      await lock$1.acquire(filepath, async function () {
         await fs.write(filepath, text2, {
           encoding: "utf8"
         });
       });
     } else {
-      await lock$1.acquire(filepath, async function() {
+      await lock$1.acquire(filepath, async function () {
         await fs.rm(filepath);
       });
     }
@@ -21263,7 +21269,7 @@ var GitSideBand = class {
     const packetlines = new FIFO();
     const packfile = new FIFO();
     const progress = new FIFO();
-    const nextBit = async function() {
+    const nextBit = async function () {
       const line = await read();
       if (line === null)
         return nextBit();
@@ -22226,7 +22232,7 @@ async function mergeTree({
     dir,
     gitdir,
     trees: [ourTree, baseTree, theirTree],
-    map: async function(filepath, [ours, base, theirs]) {
+    map: async function (filepath, [ours, base, theirs]) {
       const path2 = basename(filepath);
       const ourChange = await modified(ours, base);
       const theirChange = await modified(theirs, base);
@@ -22323,7 +22329,7 @@ async function mergeTree({
         dir,
         gitdir,
         trees: [TREE({ ref: results.oid })],
-        map: async function(filepath, [entry]) {
+        map: async function (filepath, [entry]) {
           const path2 = `${dir}/${filepath}`;
           if (await entry.type() === "blob") {
             const mode = await entry.mode();
@@ -23165,7 +23171,7 @@ async function _listFiles({ fs, gitdir, ref, cache }) {
     });
     return filenames;
   } else {
-    return GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    return GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       return index2.entries.map((x) => x.path);
     });
   }
@@ -23447,7 +23453,7 @@ async function _resolveFileId({
   filepaths = [],
   parentPath = ""
 }) {
-  const walks = tree.entries().map(function(entry) {
+  const walks = tree.entries().map(function (entry) {
     let result;
     if (entry.oid === fileId) {
       result = join(parentPath, entry.path);
@@ -23458,7 +23464,7 @@ async function _resolveFileId({
         cache,
         gitdir,
         oid: entry.oid
-      }).then(function({ object }) {
+      }).then(function ({ object }) {
         return _resolveFileId({
           fs,
           cache,
@@ -24498,7 +24504,7 @@ async function remove({
     assertParameter("filepath", filepath);
     await GitIndexManager.acquire(
       { fs: new FileSystem(_fs), gitdir, cache },
-      async function(index2) {
+      async function (index2) {
         index2.delete({ filepath });
       }
     );
@@ -24724,7 +24730,7 @@ async function resetIndex({
         stats = await fs.lstat(join(dir, filepath));
       }
     }
-    await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       index2.delete({ filepath });
       if (oid) {
         index2.insert({ filepath, stats, oid });
@@ -24814,7 +24820,7 @@ async function status({
     });
     const indexEntry = await GitIndexManager.acquire(
       { fs, gitdir, cache },
-      async function(index2) {
+      async function (index2) {
         for (const entry of index2) {
           if (entry.path === filepath)
             return entry;
@@ -24838,7 +24844,7 @@ async function status({
         });
         if (I && indexEntry.oid === workdirOid) {
           if (stats.size !== -1) {
-            GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+            GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
               index2.insert({ filepath, stats, oid: workdirOid });
             });
           }
@@ -24937,7 +24943,7 @@ async function statusMatrix({
       dir,
       gitdir,
       trees: [TREE({ ref }), WORKDIR(), STAGE()],
-      map: async function(filepath, [head, workdir, stage]) {
+      map: async function (filepath, [head, workdir, stage]) {
         if (!head && !stage && workdir) {
           if (!shouldIgnore) {
             const isIgnored2 = await GitIgnoreManager.isIgnored({
@@ -25043,7 +25049,7 @@ async function updateIndex({
     if (remove3) {
       return await GitIndexManager.acquire(
         { fs, gitdir, cache },
-        async function(index2) {
+        async function (index2) {
           let fileStats2;
           if (!force) {
             fileStats2 = await fs.lstat(join(dir, filepath));
@@ -25074,7 +25080,7 @@ async function updateIndex({
         throw new InvalidFilepathError("directory");
       }
     }
-    return await GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+    return await GitIndexManager.acquire({ fs, gitdir, cache }, async function (index2) {
       if (!add2 && !index2.has({ filepath })) {
         throw new NotFoundError(
           `file at "${filepath}" in index and "add" not set`
@@ -26176,7 +26182,7 @@ function configFilePath(filePath) {
 }
 function* configParser(text2, requestedKey = null) {
   const lines = text2.split("\0");
-  for (let i = 0, max = lines.length - 1; i < max; ) {
+  for (let i = 0, max = lines.length - 1; i < max;) {
     const file = configFilePath(lines[i++]);
     let value = lines[i++];
     let key2 = requestedKey;
@@ -27145,8 +27151,8 @@ function lineBuilder(tokens, fields) {
 }
 function createListLogSummaryParser(splitter = SPLITTER, fields = defaultFieldNames, logFormat = "") {
   const parseDiffResult = getDiffParser(logFormat);
-  return function(stdOut) {
-    const all = toLinesWithContent(stdOut, true, START_BOUNDARY).map(function(item) {
+  return function (stdOut) {
+    const all = toLinesWithContent(stdOut, true, START_BOUNDARY).map(function (item) {
       const lineDetail = item.trim().split(COMMIT_BOUNDARY);
       const listLogLine = lineBuilder(lineDetail[0].trim().split(splitter), fields);
       if (lineDetail.length > 1 && !!lineDetail[1].trim()) {
@@ -27819,10 +27825,10 @@ var init_StatusSummary = __esm2({
         }
       ]
     ]);
-    parseStatusSummary = function(text2) {
+    parseStatusSummary = function (text2) {
       const lines = text2.split(NULL);
       const status2 = new StatusSummary();
-      for (let i = 0, l = lines.length; i < l; ) {
+      for (let i = 0, l = lines.length; i < l;) {
         let line = lines[i++].trim();
         if (!line) {
           continue;
@@ -28597,10 +28603,10 @@ var init_TagList = __esm2({
         this.latest = latest;
       }
     };
-    parseTagList = function(data, customSort = false) {
+    parseTagList = function (data, customSort = false) {
       const tags = data.split("\n").map(trimmed).filter(Boolean);
       if (!customSort) {
-        tags.sort(function(tagA, tagB) {
+        tags.sort(function (tagA, tagB) {
           const partsA = tagA.split(".");
           const partsB = tagB.split(".");
           if (partsA.length === 1 || partsB.length === 1) {
@@ -28714,11 +28720,11 @@ var require_git = __commonJS2({
       this._trimmed = options.trimmed;
     }
     (Git2.prototype = Object.create(SimpleGitApi2.prototype)).constructor = Git2;
-    Git2.prototype.customBinary = function(command) {
+    Git2.prototype.customBinary = function (command) {
       this._executor.binary = command;
       return this;
     };
-    Git2.prototype.env = function(name, value) {
+    Git2.prototype.env = function (name, value) {
       if (arguments.length === 1 && typeof name === "object") {
         this._executor.env = name;
       } else {
@@ -28726,7 +28732,7 @@ var require_git = __commonJS2({
       }
       return this;
     };
-    Git2.prototype.stashList = function(options) {
+    Git2.prototype.stashList = function (options) {
       return this._runTask(stashListTask2(trailingOptionsArgument2(arguments) || {}, filterArray2(options) && options || []), trailingFunctionArgument2(arguments));
     };
     function createCloneTask(api, task, repoPath, localPath) {
@@ -28735,69 +28741,69 @@ var require_git = __commonJS2({
       }
       return task(repoPath, filterType2(localPath, filterString2), getTrailingOptions2(arguments));
     }
-    Git2.prototype.clone = function() {
+    Git2.prototype.clone = function () {
       return this._runTask(createCloneTask("clone", cloneTask2, ...arguments), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.mirror = function() {
+    Git2.prototype.mirror = function () {
       return this._runTask(createCloneTask("mirror", cloneMirrorTask2, ...arguments), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.mv = function(from, to) {
+    Git2.prototype.mv = function (from, to) {
       return this._runTask(moveTask2(from, to), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.checkoutLatestTag = function(then) {
+    Git2.prototype.checkoutLatestTag = function (then) {
       var git = this;
-      return this.pull(function() {
-        git.tags(function(err, tags) {
+      return this.pull(function () {
+        git.tags(function (err, tags) {
           git.checkout(tags.latest, then);
         });
       });
     };
-    Git2.prototype.pull = function(remote, branch2, options, then) {
+    Git2.prototype.pull = function (remote, branch2, options, then) {
       return this._runTask(pullTask2(filterType2(remote, filterString2), filterType2(branch2, filterString2), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.fetch = function(remote, branch2) {
+    Git2.prototype.fetch = function (remote, branch2) {
       return this._runTask(fetchTask2(filterType2(remote, filterString2), filterType2(branch2, filterString2), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.silent = function(silence) {
+    Git2.prototype.silent = function (silence) {
       console.warn("simple-git deprecation notice: git.silent: logging should be configured using the `debug` library / `DEBUG` environment variable, this will be an error in version 3");
       return this;
     };
-    Git2.prototype.tags = function(options, then) {
+    Git2.prototype.tags = function (options, then) {
       return this._runTask(tagListTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.rebase = function() {
+    Git2.prototype.rebase = function () {
       return this._runTask(straightThroughStringTask2(["rebase", ...getTrailingOptions2(arguments)]), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.reset = function(mode) {
+    Git2.prototype.reset = function (mode) {
       return this._runTask(resetTask2(getResetMode2(mode), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.revert = function(commit2) {
+    Git2.prototype.revert = function (commit2) {
       const next = trailingFunctionArgument2(arguments);
       if (typeof commit2 !== "string") {
         return this._runTask(configurationErrorTask2("Commit must be a string"), next);
       }
       return this._runTask(straightThroughStringTask2(["revert", ...getTrailingOptions2(arguments, 0, true), commit2]), next);
     };
-    Git2.prototype.addTag = function(name) {
+    Git2.prototype.addTag = function (name) {
       const task = typeof name === "string" ? addTagTask2(name) : configurationErrorTask2("Git.addTag requires a tag name");
       return this._runTask(task, trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.addAnnotatedTag = function(tagName, tagMessage) {
+    Git2.prototype.addAnnotatedTag = function (tagName, tagMessage) {
       return this._runTask(addAnnotatedTagTask2(tagName, tagMessage), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.deleteLocalBranch = function(branchName, forceDelete, then) {
+    Git2.prototype.deleteLocalBranch = function (branchName, forceDelete, then) {
       return this._runTask(deleteBranchTask2(branchName, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.deleteLocalBranches = function(branchNames, forceDelete, then) {
+    Git2.prototype.deleteLocalBranches = function (branchNames, forceDelete, then) {
       return this._runTask(deleteBranchesTask2(branchNames, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.branch = function(options, then) {
+    Git2.prototype.branch = function (options, then) {
       return this._runTask(branchTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.branchLocal = function(then) {
+    Git2.prototype.branchLocal = function (then) {
       return this._runTask(branchLocalTask2(), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.raw = function(commands2) {
+    Git2.prototype.raw = function (commands2) {
       const createRestCommands = !Array.isArray(commands2);
       const command = [].slice.call(createRestCommands ? arguments : commands2, 0);
       for (let i = 0; i < command.length && createRestCommands; i++) {
@@ -28813,60 +28819,60 @@ var require_git = __commonJS2({
       }
       return this._runTask(straightThroughStringTask2(command, this._trimmed), next);
     };
-    Git2.prototype.submoduleAdd = function(repo, path2, then) {
+    Git2.prototype.submoduleAdd = function (repo, path2, then) {
       return this._runTask(addSubModuleTask2(repo, path2), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.submoduleUpdate = function(args, then) {
+    Git2.prototype.submoduleUpdate = function (args, then) {
       return this._runTask(updateSubModuleTask2(getTrailingOptions2(arguments, true)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.submoduleInit = function(args, then) {
+    Git2.prototype.submoduleInit = function (args, then) {
       return this._runTask(initSubModuleTask2(getTrailingOptions2(arguments, true)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.subModule = function(options, then) {
+    Git2.prototype.subModule = function (options, then) {
       return this._runTask(subModuleTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.listRemote = function() {
+    Git2.prototype.listRemote = function () {
       return this._runTask(listRemotesTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.addRemote = function(remoteName, remoteRepo, then) {
+    Git2.prototype.addRemote = function (remoteName, remoteRepo, then) {
       return this._runTask(addRemoteTask2(remoteName, remoteRepo, getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.removeRemote = function(remoteName, then) {
+    Git2.prototype.removeRemote = function (remoteName, then) {
       return this._runTask(removeRemoteTask2(remoteName), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.getRemotes = function(verbose, then) {
+    Git2.prototype.getRemotes = function (verbose, then) {
       return this._runTask(getRemotesTask2(verbose === true), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.remote = function(options, then) {
+    Git2.prototype.remote = function (options, then) {
       return this._runTask(remoteTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.tag = function(options, then) {
+    Git2.prototype.tag = function (options, then) {
       const command = getTrailingOptions2(arguments);
       if (command[0] !== "tag") {
         command.unshift("tag");
       }
       return this._runTask(straightThroughStringTask2(command), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.updateServerInfo = function(then) {
+    Git2.prototype.updateServerInfo = function (then) {
       return this._runTask(straightThroughStringTask2(["update-server-info"]), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.pushTags = function(remote, then) {
+    Git2.prototype.pushTags = function (remote, then) {
       const task = pushTagsTask2({ remote: filterType2(remote, filterString2) }, getTrailingOptions2(arguments));
       return this._runTask(task, trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.rm = function(files) {
+    Git2.prototype.rm = function (files) {
       return this._runTask(straightThroughStringTask2(["rm", "-f", ...asArray2(files)]), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.rmKeepLocal = function(files) {
+    Git2.prototype.rmKeepLocal = function (files) {
       return this._runTask(straightThroughStringTask2(["rm", "--cached", ...asArray2(files)]), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.catFile = function(options, then) {
+    Git2.prototype.catFile = function (options, then) {
       return this._catFile("utf-8", arguments);
     };
-    Git2.prototype.binaryCatFile = function() {
+    Git2.prototype.binaryCatFile = function () {
       return this._catFile("buffer", arguments);
     };
-    Git2.prototype._catFile = function(format, args) {
+    Git2.prototype._catFile = function (format, args) {
       var handler = trailingFunctionArgument2(args);
       var command = ["cat-file"];
       var options = args[0];
@@ -28879,31 +28885,31 @@ var require_git = __commonJS2({
       const task = format === "buffer" ? straightThroughBufferTask2(command) : straightThroughStringTask2(command);
       return this._runTask(task, handler);
     };
-    Git2.prototype.diff = function(options, then) {
+    Git2.prototype.diff = function (options, then) {
       const task = filterString2(options) ? configurationErrorTask2("git.diff: supplying options as a single string is no longer supported, switch to an array of strings") : straightThroughStringTask2(["diff", ...getTrailingOptions2(arguments)]);
       return this._runTask(task, trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.diffSummary = function() {
+    Git2.prototype.diffSummary = function () {
       return this._runTask(diffSummaryTask2(getTrailingOptions2(arguments, 1)), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.applyPatch = function(patches) {
+    Git2.prototype.applyPatch = function (patches) {
       const task = !filterStringOrStringArray2(patches) ? configurationErrorTask2(`git.applyPatch requires one or more string patches as the first argument`) : applyPatchTask2(asArray2(patches), getTrailingOptions2([].slice.call(arguments, 1)));
       return this._runTask(task, trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.revparse = function() {
+    Git2.prototype.revparse = function () {
       const commands2 = ["rev-parse", ...getTrailingOptions2(arguments, true)];
       return this._runTask(straightThroughStringTask2(commands2, true), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.show = function(options, then) {
+    Git2.prototype.show = function (options, then) {
       return this._runTask(straightThroughStringTask2(["show", ...getTrailingOptions2(arguments, 1)]), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.clean = function(mode, options, then) {
+    Git2.prototype.clean = function (mode, options, then) {
       const usingCleanOptionsArray = isCleanOptionsArray2(mode);
       const cleanMode = usingCleanOptionsArray && mode.join("") || filterType2(mode, filterString2) || "";
       const customArgs = getTrailingOptions2([].slice.call(arguments, usingCleanOptionsArray ? 1 : 0));
       return this._runTask(cleanWithOptionsTask2(cleanMode, customArgs), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.exec = function(then) {
+    Git2.prototype.exec = function (then) {
       const task = {
         commands: [],
         format: "utf-8",
@@ -28915,13 +28921,13 @@ var require_git = __commonJS2({
       };
       return this._runTask(task);
     };
-    Git2.prototype.clearQueue = function() {
+    Git2.prototype.clearQueue = function () {
       return this;
     };
-    Git2.prototype.checkIgnore = function(pathnames, then) {
+    Git2.prototype.checkIgnore = function (pathnames, then) {
       return this._runTask(checkIgnoreTask2(asArray2(filterType2(pathnames, filterStringOrStringArray2, []))), trailingFunctionArgument2(arguments));
     };
-    Git2.prototype.checkIsRepo = function(checkType, then) {
+    Git2.prototype.checkIsRepo = function (checkType, then) {
       return this._runTask(checkIsRepoTask2(filterType2(checkType, filterString2)), trailingFunctionArgument2(arguments));
     };
     module2.exports = Git2;
@@ -30227,7 +30233,7 @@ function parseBlame(blameOutputUnnormalized) {
     groupSizePerStartingLine: /* @__PURE__ */ new Map()
   };
   let line = 1;
-  for (let bi = 0; bi < blameLines.length; ) {
+  for (let bi = 0; bi < blameLines.length;) {
     if (startsWithNonWhitespace(blameLines[bi])) {
       const lineInfo = blameLines[bi].split(" ");
       const commitHash = parseLineInfoInto(lineInfo, line, result);
@@ -30409,7 +30415,7 @@ Diff.prototype = {
     var self2 = this;
     function done(value) {
       if (callback) {
-        setTimeout(function() {
+        setTimeout(function () {
           callback(void 0, value);
         }, 0);
         return true;
@@ -30469,7 +30475,7 @@ Diff.prototype = {
     }
     if (callback) {
       (function exec() {
-        setTimeout(function() {
+        setTimeout(function () {
           if (editLength > maxEditLength) {
             return callback();
           }
@@ -30551,7 +30557,7 @@ function buildValues(diff2, components, newString, oldString, useLongestToken) {
     if (!component.removed) {
       if (!component.added && useLongestToken) {
         var value = newString.slice(newPos, newPos + component.count);
-        value = value.map(function(value2, i) {
+        value = value.map(function (value2, i) {
           var oldValue = oldString[oldPos + i];
           return oldValue.length > value2.length ? oldValue : value2;
         });
@@ -30593,14 +30599,14 @@ function diffChars(oldStr, newStr, options) {
 var extendedWordChars = /^[A-Za-z\xC0-\u02C6\u02C8-\u02D7\u02DE-\u02FF\u1E00-\u1EFF]+$/;
 var reWhitespace = /\S/;
 var wordDiff = new Diff();
-wordDiff.equals = function(left, right) {
+wordDiff.equals = function (left, right) {
   if (this.options.ignoreCase) {
     left = left.toLowerCase();
     right = right.toLowerCase();
   }
   return left === right || this.options.ignoreWhitespace && !reWhitespace.test(left) && !reWhitespace.test(right);
 };
-wordDiff.tokenize = function(value) {
+wordDiff.tokenize = function (value) {
   var tokens = value.split(/([^\S\r\n]+|[()[\]{}'"\r\n]|\b)/);
   for (var i = 0; i < tokens.length - 1; i++) {
     if (!tokens[i + 1] && tokens[i + 2] && extendedWordChars.test(tokens[i]) && extendedWordChars.test(tokens[i + 2])) {
@@ -30615,7 +30621,7 @@ function diffWordsWithSpace(oldStr, newStr, options) {
   return wordDiff.diff(oldStr, newStr, options);
 }
 var lineDiff = new Diff();
-lineDiff.tokenize = function(value) {
+lineDiff.tokenize = function (value) {
   var retLines = [], linesAndNewlines = value.split(/(\n|\r\n)/);
   if (!linesAndNewlines[linesAndNewlines.length - 1]) {
     linesAndNewlines.pop();
@@ -30637,21 +30643,21 @@ function diffLines(oldStr, newStr, callback) {
   return lineDiff.diff(oldStr, newStr, callback);
 }
 var sentenceDiff = new Diff();
-sentenceDiff.tokenize = function(value) {
+sentenceDiff.tokenize = function (value) {
   return value.split(/(\S.+?[.!?])(?=\s+|$)/);
 };
 var cssDiff = new Diff();
-cssDiff.tokenize = function(value) {
+cssDiff.tokenize = function (value) {
   return value.split(/([{}:;,]|\s+)/);
 };
 function _typeof(obj) {
   "@babel/helpers - typeof";
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function(obj2) {
+    _typeof = function (obj2) {
       return typeof obj2;
     };
   } else {
-    _typeof = function(obj2) {
+    _typeof = function (obj2) {
       return obj2 && typeof Symbol === "function" && obj2.constructor === Symbol && obj2 !== Symbol.prototype ? "symbol" : typeof obj2;
     };
   }
@@ -30695,13 +30701,13 @@ var objectPrototypeToString = Object.prototype.toString;
 var jsonDiff = new Diff();
 jsonDiff.useLongestToken = true;
 jsonDiff.tokenize = lineDiff.tokenize;
-jsonDiff.castInput = function(value) {
-  var _this$options = this.options, undefinedReplacement = _this$options.undefinedReplacement, _this$options$stringi = _this$options.stringifyReplacer, stringifyReplacer = _this$options$stringi === void 0 ? function(k, v) {
+jsonDiff.castInput = function (value) {
+  var _this$options = this.options, undefinedReplacement = _this$options.undefinedReplacement, _this$options$stringi = _this$options.stringifyReplacer, stringifyReplacer = _this$options$stringi === void 0 ? function (k, v) {
     return typeof v === "undefined" ? undefinedReplacement : v;
   } : _this$options$stringi;
   return typeof value === "string" ? value : JSON.stringify(canonicalize(value, null, null, stringifyReplacer), stringifyReplacer, "  ");
 };
-jsonDiff.equals = function(left, right) {
+jsonDiff.equals = function (left, right) {
   return Diff.prototype.equals.call(jsonDiff, left.replace(/,([\r\n])/g, "$1"), right.replace(/,([\r\n])/g, "$1"));
 };
 function canonicalize(obj, stack, replacementStack, replacer, key2) {
@@ -30754,10 +30760,10 @@ function canonicalize(obj, stack, replacementStack, replacer, key2) {
   return canonicalizedObj;
 }
 var arrayDiff = new Diff();
-arrayDiff.tokenize = function(value) {
+arrayDiff.tokenize = function (value) {
   return value.slice();
 };
-arrayDiff.join = arrayDiff.removeEmpty = function(value) {
+arrayDiff.join = arrayDiff.removeEmpty = function (value) {
   return value;
 };
 function structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {
@@ -30776,7 +30782,7 @@ function structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, ne
     lines: []
   });
   function contextLines(lines) {
-    return lines.map(function(entry) {
+    return lines.map(function (entry) {
       return " " + entry;
     });
   }
@@ -30797,7 +30803,7 @@ function structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, ne
           newRangeStart -= curRange.length;
         }
       }
-      (_curRange = curRange).push.apply(_curRange, _toConsumableArray(lines.map(function(entry) {
+      (_curRange = curRange).push.apply(_curRange, _toConsumableArray(lines.map(function (entry) {
         return (current.added ? "+" : "-") + entry;
       })));
       if (current.added) {
@@ -31245,7 +31251,7 @@ var IsomorphicGit = class extends GitManager {
   }
   async status() {
     let notice;
-    const timeout = window.setTimeout(function() {
+    const timeout = window.setTimeout(function () {
       notice = new import_obsidian7.Notice(
         "This takes longer: Getting status",
         this.noticeLength
@@ -31827,7 +31833,7 @@ var IsomorphicGit = class extends GitManager {
       isomorphic_git_default.walk({
         ...this.getRepo(),
         trees: walkers,
-        map: async function(filepath, [A, B]) {
+        map: async function (filepath, [A, B]) {
           if (!worthWalking2(filepath, base)) {
             return null;
           }
@@ -31877,7 +31883,7 @@ var IsomorphicGit = class extends GitManager {
   }
   async getUnstagedFiles(base = ".") {
     let notice;
-    const timeout = window.setTimeout(function() {
+    const timeout = window.setTimeout(function () {
       notice = new import_obsidian7.Notice(
         "This takes longer: Getting status",
         this.noticeLength
@@ -31890,7 +31896,7 @@ var IsomorphicGit = class extends GitManager {
         isomorphic_git_default.walk({
           ...repo,
           trees: [isomorphic_git_default.WORKDIR(), isomorphic_git_default.STAGE()],
-          map: async function(filepath, [workdir, stage]) {
+          map: async function (filepath, [workdir, stage]) {
             if (!stage && workdir) {
               const isIgnored2 = await isomorphic_git_default.isIgnored({
                 ...repo,
@@ -33702,11 +33708,13 @@ function computeLineAuthoringGutterMarkersRangeSet(doc, blocksPerLine, settings,
       )
     );
   }
-  return { result: import_state3.RangeSet.of(
-    ranges,
-    /* sort = */
-    true
-  ), allowCache };
+  return {
+    result: import_state3.RangeSet.of(
+      ranges,
+      /* sort = */
+      true
+    ), allowCache
+  };
 }
 function computeLineMappingForUnsavedChanges(docLastLine, optLA) {
   if (!(optLA == null ? void 0 : optLA.lineOffsetsFromUnsavedChanges)) {
@@ -34371,7 +34379,7 @@ init_polyfill_buffer();
 // node_modules/.pnpm/diff2html@3.4.41/node_modules/diff2html/lib-esm/types.js
 init_polyfill_buffer();
 var LineType;
-(function(LineType2) {
+(function (LineType2) {
   LineType2["INSERT"] = "insert";
   LineType2["DELETE"] = "delete";
   LineType2["CONTEXT"] = "context";
@@ -35361,406 +35369,444 @@ var Hogan3 = __toESM(require_hogan());
 init_polyfill_buffer();
 var Hogan2 = __toESM(require_hogan());
 var defaultTemplates = {};
-defaultTemplates["file-summary-line"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<li class="d2h-file-list-line">');
-  t.b("\n" + i);
-  t.b('    <span class="d2h-file-name-wrapper">');
-  t.b("\n" + i);
-  t.b(t.rp("<fileIcon0", c, p, "      "));
-  t.b('      <a href="#');
-  t.b(t.v(t.f("fileHtmlId", c, p, 0)));
-  t.b('" class="d2h-file-name">');
-  t.b(t.v(t.f("fileName", c, p, 0)));
-  t.b("</a>");
-  t.b("\n" + i);
-  t.b('      <span class="d2h-file-stats">');
-  t.b("\n" + i);
-  t.b('          <span class="d2h-lines-added">');
-  t.b(t.v(t.f("addedLines", c, p, 0)));
-  t.b("</span>");
-  t.b("\n" + i);
-  t.b('          <span class="d2h-lines-deleted">');
-  t.b(t.v(t.f("deletedLines", c, p, 0)));
-  t.b("</span>");
-  t.b("\n" + i);
-  t.b("      </span>");
-  t.b("\n" + i);
-  t.b("    </span>");
-  t.b("\n" + i);
-  t.b("</li>");
-  return t.fl();
-}, partials: { "<fileIcon0": { name: "fileIcon", partials: {}, subs: {} } }, subs: {} });
-defaultTemplates["file-summary-wrapper"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<div class="d2h-file-list-wrapper">');
-  t.b("\n" + i);
-  t.b('    <div class="d2h-file-list-header">');
-  t.b("\n" + i);
-  t.b('        <span class="d2h-file-list-title">Files changed (');
-  t.b(t.v(t.f("filesNumber", c, p, 0)));
-  t.b(")</span>");
-  t.b("\n" + i);
-  t.b('        <a class="d2h-file-switch d2h-hide">hide</a>');
-  t.b("\n" + i);
-  t.b('        <a class="d2h-file-switch d2h-show">show</a>');
-  t.b("\n" + i);
-  t.b("    </div>");
-  t.b("\n" + i);
-  t.b('    <ol class="d2h-file-list">');
-  t.b("\n" + i);
-  t.b("    ");
-  t.b(t.t(t.f("files", c, p, 0)));
-  t.b("\n" + i);
-  t.b("    </ol>");
-  t.b("\n" + i);
-  t.b("</div>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["generic-block-header"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b("<tr>");
-  t.b("\n" + i);
-  t.b('    <td class="');
-  t.b(t.v(t.f("lineClass", c, p, 0)));
-  t.b(" ");
-  t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
-  t.b('"></td>');
-  t.b("\n" + i);
-  t.b('    <td class="');
-  t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b('        <div class="');
-  t.b(t.v(t.f("contentClass", c, p, 0)));
-  t.b('">');
-  if (t.s(t.f("blockHeader", c, p, 1), c, p, 0, 156, 173, "{{ }}")) {
-    t.rs(c, p, function(c2, p2, t2) {
-      t2.b(t2.t(t2.f("blockHeader", c2, p2, 0)));
-    });
-    c.pop();
-  }
-  if (!t.s(t.f("blockHeader", c, p, 1), c, p, 1, 0, 0, "")) {
-    t.b("&nbsp;");
-  }
-  ;
-  t.b("</div>");
-  t.b("\n" + i);
-  t.b("    </td>");
-  t.b("\n" + i);
-  t.b("</tr>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["generic-empty-diff"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b("<tr>");
-  t.b("\n" + i);
-  t.b('    <td class="');
-  t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b('        <div class="');
-  t.b(t.v(t.f("contentClass", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b("            File without changes");
-  t.b("\n" + i);
-  t.b("        </div>");
-  t.b("\n" + i);
-  t.b("    </td>");
-  t.b("\n" + i);
-  t.b("</tr>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["generic-file-path"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<span class="d2h-file-name-wrapper">');
-  t.b("\n" + i);
-  t.b(t.rp("<fileIcon0", c, p, "    "));
-  t.b('    <span class="d2h-file-name">');
-  t.b(t.v(t.f("fileDiffName", c, p, 0)));
-  t.b("</span>");
-  t.b("\n" + i);
-  t.b(t.rp("<fileTag1", c, p, "    "));
-  t.b("</span>");
-  t.b("\n" + i);
-  t.b('<label class="d2h-file-collapse">');
-  t.b("\n" + i);
-  t.b('    <input class="d2h-file-collapse-input" type="checkbox" name="viewed" value="viewed">');
-  t.b("\n" + i);
-  t.b("    Viewed");
-  t.b("\n" + i);
-  t.b("</label>");
-  return t.fl();
-}, partials: { "<fileIcon0": { name: "fileIcon", partials: {}, subs: {} }, "<fileTag1": { name: "fileTag", partials: {}, subs: {} } }, subs: {} });
-defaultTemplates["generic-line"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b("<tr>");
-  t.b("\n" + i);
-  t.b('    <td class="');
-  t.b(t.v(t.f("lineClass", c, p, 0)));
-  t.b(" ");
-  t.b(t.v(t.f("type", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b("      ");
-  t.b(t.t(t.f("lineNumber", c, p, 0)));
-  t.b("\n" + i);
-  t.b("    </td>");
-  t.b("\n" + i);
-  t.b('    <td class="');
-  t.b(t.v(t.f("type", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b('        <div class="');
-  t.b(t.v(t.f("contentClass", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  if (t.s(t.f("prefix", c, p, 1), c, p, 0, 162, 238, "{{ }}")) {
-    t.rs(c, p, function(c2, p2, t2) {
-      t2.b('            <span class="d2h-code-line-prefix">');
-      t2.b(t2.t(t2.f("prefix", c2, p2, 0)));
-      t2.b("</span>");
-      t2.b("\n" + i);
-    });
-    c.pop();
-  }
-  if (!t.s(t.f("prefix", c, p, 1), c, p, 1, 0, 0, "")) {
-    t.b('            <span class="d2h-code-line-prefix">&nbsp;</span>');
+defaultTemplates["file-summary-line"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<li class="d2h-file-list-line">');
     t.b("\n" + i);
-  }
-  ;
-  if (t.s(t.f("content", c, p, 1), c, p, 0, 371, 445, "{{ }}")) {
-    t.rs(c, p, function(c2, p2, t2) {
-      t2.b('            <span class="d2h-code-line-ctn">');
-      t2.b(t2.t(t2.f("content", c2, p2, 0)));
-      t2.b("</span>");
-      t2.b("\n" + i);
-    });
-    c.pop();
-  }
-  if (!t.s(t.f("content", c, p, 1), c, p, 1, 0, 0, "")) {
-    t.b('            <span class="d2h-code-line-ctn"><br></span>');
+    t.b('    <span class="d2h-file-name-wrapper">');
     t.b("\n" + i);
-  }
-  ;
-  t.b("        </div>");
-  t.b("\n" + i);
-  t.b("    </td>");
-  t.b("\n" + i);
-  t.b("</tr>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["generic-wrapper"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<div class="d2h-wrapper">');
-  t.b("\n" + i);
-  t.b("    ");
-  t.b(t.t(t.f("content", c, p, 0)));
-  t.b("\n" + i);
-  t.b("</div>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["icon-file-added"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<svg aria-hidden="true" class="d2h-icon d2h-added" height="16" title="added" version="1.1" viewBox="0 0 14 16"');
-  t.b("\n" + i);
-  t.b('     width="14">');
-  t.b("\n" + i);
-  t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM6 9H3V7h3V4h2v3h3v2H8v3H6V9z"></path>');
-  t.b("\n" + i);
-  t.b("</svg>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["icon-file-changed"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<svg aria-hidden="true" class="d2h-icon d2h-changed" height="16" title="modified" version="1.1"');
-  t.b("\n" + i);
-  t.b('     viewBox="0 0 14 16" width="14">');
-  t.b("\n" + i);
-  t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path>');
-  t.b("\n" + i);
-  t.b("</svg>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["icon-file-deleted"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<svg aria-hidden="true" class="d2h-icon d2h-deleted" height="16" title="removed" version="1.1"');
-  t.b("\n" + i);
-  t.b('     viewBox="0 0 14 16" width="14">');
-  t.b("\n" + i);
-  t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM11 9H3V7h8v2z"></path>');
-  t.b("\n" + i);
-  t.b("</svg>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["icon-file-renamed"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<svg aria-hidden="true" class="d2h-icon d2h-moved" height="16" title="renamed" version="1.1"');
-  t.b("\n" + i);
-  t.b('     viewBox="0 0 14 16" width="14">');
-  t.b("\n" + i);
-  t.b('    <path d="M6 9H3V7h3V4l5 4-5 4V9z m8-7v12c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h12c0.55 0 1 0.45 1 1z m-1 0H1v12h12V2z"></path>');
-  t.b("\n" + i);
-  t.b("</svg>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["icon-file"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<svg aria-hidden="true" class="d2h-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12">');
-  t.b("\n" + i);
-  t.b('    <path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path>');
-  t.b("\n" + i);
-  t.b("</svg>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["line-by-line-file-diff"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<div id="');
-  t.b(t.v(t.f("fileHtmlId", c, p, 0)));
-  t.b('" class="d2h-file-wrapper" data-lang="');
-  t.b(t.v(t.d("file.language", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b('    <div class="d2h-file-header">');
-  t.b("\n" + i);
-  t.b("    ");
-  t.b(t.t(t.f("filePath", c, p, 0)));
-  t.b("\n" + i);
-  t.b("    </div>");
-  t.b("\n" + i);
-  t.b('    <div class="d2h-file-diff">');
-  t.b("\n" + i);
-  t.b('        <div class="d2h-code-wrapper">');
-  t.b("\n" + i);
-  t.b('            <table class="d2h-diff-table">');
-  t.b("\n" + i);
-  t.b('                <tbody class="d2h-diff-tbody">');
-  t.b("\n" + i);
-  t.b("                ");
-  t.b(t.t(t.f("diffs", c, p, 0)));
-  t.b("\n" + i);
-  t.b("                </tbody>");
-  t.b("\n" + i);
-  t.b("            </table>");
-  t.b("\n" + i);
-  t.b("        </div>");
-  t.b("\n" + i);
-  t.b("    </div>");
-  t.b("\n" + i);
-  t.b("</div>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["line-by-line-numbers"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<div class="line-num1">');
-  t.b(t.v(t.f("oldNumber", c, p, 0)));
-  t.b("</div>");
-  t.b("\n" + i);
-  t.b('<div class="line-num2">');
-  t.b(t.v(t.f("newNumber", c, p, 0)));
-  t.b("</div>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["side-by-side-file-diff"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<div id="');
-  t.b(t.v(t.f("fileHtmlId", c, p, 0)));
-  t.b('" class="d2h-file-wrapper" data-lang="');
-  t.b(t.v(t.d("file.language", c, p, 0)));
-  t.b('">');
-  t.b("\n" + i);
-  t.b('    <div class="d2h-file-header">');
-  t.b("\n" + i);
-  t.b("      ");
-  t.b(t.t(t.f("filePath", c, p, 0)));
-  t.b("\n" + i);
-  t.b("    </div>");
-  t.b("\n" + i);
-  t.b('    <div class="d2h-files-diff">');
-  t.b("\n" + i);
-  t.b('        <div class="d2h-file-side-diff">');
-  t.b("\n" + i);
-  t.b('            <div class="d2h-code-wrapper">');
-  t.b("\n" + i);
-  t.b('                <table class="d2h-diff-table">');
-  t.b("\n" + i);
-  t.b('                    <tbody class="d2h-diff-tbody">');
-  t.b("\n" + i);
-  t.b("                    ");
-  t.b(t.t(t.d("diffs.left", c, p, 0)));
-  t.b("\n" + i);
-  t.b("                    </tbody>");
-  t.b("\n" + i);
-  t.b("                </table>");
-  t.b("\n" + i);
-  t.b("            </div>");
-  t.b("\n" + i);
-  t.b("        </div>");
-  t.b("\n" + i);
-  t.b('        <div class="d2h-file-side-diff">');
-  t.b("\n" + i);
-  t.b('            <div class="d2h-code-wrapper">');
-  t.b("\n" + i);
-  t.b('                <table class="d2h-diff-table">');
-  t.b("\n" + i);
-  t.b('                    <tbody class="d2h-diff-tbody">');
-  t.b("\n" + i);
-  t.b("                    ");
-  t.b(t.t(t.d("diffs.right", c, p, 0)));
-  t.b("\n" + i);
-  t.b("                    </tbody>");
-  t.b("\n" + i);
-  t.b("                </table>");
-  t.b("\n" + i);
-  t.b("            </div>");
-  t.b("\n" + i);
-  t.b("        </div>");
-  t.b("\n" + i);
-  t.b("    </div>");
-  t.b("\n" + i);
-  t.b("</div>");
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["tag-file-added"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<span class="d2h-tag d2h-added d2h-added-tag">ADDED</span>');
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["tag-file-changed"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<span class="d2h-tag d2h-changed d2h-changed-tag">CHANGED</span>');
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["tag-file-deleted"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<span class="d2h-tag d2h-deleted d2h-deleted-tag">DELETED</span>');
-  return t.fl();
-}, partials: {}, subs: {} });
-defaultTemplates["tag-file-renamed"] = new Hogan2.Template({ code: function(c, p, i) {
-  var t = this;
-  t.b(i = i || "");
-  t.b('<span class="d2h-tag d2h-moved d2h-moved-tag">RENAMED</span>');
-  return t.fl();
-}, partials: {}, subs: {} });
+    t.b(t.rp("<fileIcon0", c, p, "      "));
+    t.b('      <a href="#');
+    t.b(t.v(t.f("fileHtmlId", c, p, 0)));
+    t.b('" class="d2h-file-name">');
+    t.b(t.v(t.f("fileName", c, p, 0)));
+    t.b("</a>");
+    t.b("\n" + i);
+    t.b('      <span class="d2h-file-stats">');
+    t.b("\n" + i);
+    t.b('          <span class="d2h-lines-added">');
+    t.b(t.v(t.f("addedLines", c, p, 0)));
+    t.b("</span>");
+    t.b("\n" + i);
+    t.b('          <span class="d2h-lines-deleted">');
+    t.b(t.v(t.f("deletedLines", c, p, 0)));
+    t.b("</span>");
+    t.b("\n" + i);
+    t.b("      </span>");
+    t.b("\n" + i);
+    t.b("    </span>");
+    t.b("\n" + i);
+    t.b("</li>");
+    return t.fl();
+  }, partials: { "<fileIcon0": { name: "fileIcon", partials: {}, subs: {} } }, subs: {}
+});
+defaultTemplates["file-summary-wrapper"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<div class="d2h-file-list-wrapper">');
+    t.b("\n" + i);
+    t.b('    <div class="d2h-file-list-header">');
+    t.b("\n" + i);
+    t.b('        <span class="d2h-file-list-title">Files changed (');
+    t.b(t.v(t.f("filesNumber", c, p, 0)));
+    t.b(")</span>");
+    t.b("\n" + i);
+    t.b('        <a class="d2h-file-switch d2h-hide">hide</a>');
+    t.b("\n" + i);
+    t.b('        <a class="d2h-file-switch d2h-show">show</a>');
+    t.b("\n" + i);
+    t.b("    </div>");
+    t.b("\n" + i);
+    t.b('    <ol class="d2h-file-list">');
+    t.b("\n" + i);
+    t.b("    ");
+    t.b(t.t(t.f("files", c, p, 0)));
+    t.b("\n" + i);
+    t.b("    </ol>");
+    t.b("\n" + i);
+    t.b("</div>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["generic-block-header"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b("<tr>");
+    t.b("\n" + i);
+    t.b('    <td class="');
+    t.b(t.v(t.f("lineClass", c, p, 0)));
+    t.b(" ");
+    t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
+    t.b('"></td>');
+    t.b("\n" + i);
+    t.b('    <td class="');
+    t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b('        <div class="');
+    t.b(t.v(t.f("contentClass", c, p, 0)));
+    t.b('">');
+    if (t.s(t.f("blockHeader", c, p, 1), c, p, 0, 156, 173, "{{ }}")) {
+      t.rs(c, p, function (c2, p2, t2) {
+        t2.b(t2.t(t2.f("blockHeader", c2, p2, 0)));
+      });
+      c.pop();
+    }
+    if (!t.s(t.f("blockHeader", c, p, 1), c, p, 1, 0, 0, "")) {
+      t.b("&nbsp;");
+    }
+    ;
+    t.b("</div>");
+    t.b("\n" + i);
+    t.b("    </td>");
+    t.b("\n" + i);
+    t.b("</tr>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["generic-empty-diff"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b("<tr>");
+    t.b("\n" + i);
+    t.b('    <td class="');
+    t.b(t.v(t.d("CSSLineClass.INFO", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b('        <div class="');
+    t.b(t.v(t.f("contentClass", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b("            File without changes");
+    t.b("\n" + i);
+    t.b("        </div>");
+    t.b("\n" + i);
+    t.b("    </td>");
+    t.b("\n" + i);
+    t.b("</tr>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["generic-file-path"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<span class="d2h-file-name-wrapper">');
+    t.b("\n" + i);
+    t.b(t.rp("<fileIcon0", c, p, "    "));
+    t.b('    <span class="d2h-file-name">');
+    t.b(t.v(t.f("fileDiffName", c, p, 0)));
+    t.b("</span>");
+    t.b("\n" + i);
+    t.b(t.rp("<fileTag1", c, p, "    "));
+    t.b("</span>");
+    t.b("\n" + i);
+    t.b('<label class="d2h-file-collapse">');
+    t.b("\n" + i);
+    t.b('    <input class="d2h-file-collapse-input" type="checkbox" name="viewed" value="viewed">');
+    t.b("\n" + i);
+    t.b("    Viewed");
+    t.b("\n" + i);
+    t.b("</label>");
+    return t.fl();
+  }, partials: { "<fileIcon0": { name: "fileIcon", partials: {}, subs: {} }, "<fileTag1": { name: "fileTag", partials: {}, subs: {} } }, subs: {}
+});
+defaultTemplates["generic-line"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b("<tr>");
+    t.b("\n" + i);
+    t.b('    <td class="');
+    t.b(t.v(t.f("lineClass", c, p, 0)));
+    t.b(" ");
+    t.b(t.v(t.f("type", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b("      ");
+    t.b(t.t(t.f("lineNumber", c, p, 0)));
+    t.b("\n" + i);
+    t.b("    </td>");
+    t.b("\n" + i);
+    t.b('    <td class="');
+    t.b(t.v(t.f("type", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b('        <div class="');
+    t.b(t.v(t.f("contentClass", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    if (t.s(t.f("prefix", c, p, 1), c, p, 0, 162, 238, "{{ }}")) {
+      t.rs(c, p, function (c2, p2, t2) {
+        t2.b('            <span class="d2h-code-line-prefix">');
+        t2.b(t2.t(t2.f("prefix", c2, p2, 0)));
+        t2.b("</span>");
+        t2.b("\n" + i);
+      });
+      c.pop();
+    }
+    if (!t.s(t.f("prefix", c, p, 1), c, p, 1, 0, 0, "")) {
+      t.b('            <span class="d2h-code-line-prefix">&nbsp;</span>');
+      t.b("\n" + i);
+    }
+    ;
+    if (t.s(t.f("content", c, p, 1), c, p, 0, 371, 445, "{{ }}")) {
+      t.rs(c, p, function (c2, p2, t2) {
+        t2.b('            <span class="d2h-code-line-ctn">');
+        t2.b(t2.t(t2.f("content", c2, p2, 0)));
+        t2.b("</span>");
+        t2.b("\n" + i);
+      });
+      c.pop();
+    }
+    if (!t.s(t.f("content", c, p, 1), c, p, 1, 0, 0, "")) {
+      t.b('            <span class="d2h-code-line-ctn"><br></span>');
+      t.b("\n" + i);
+    }
+    ;
+    t.b("        </div>");
+    t.b("\n" + i);
+    t.b("    </td>");
+    t.b("\n" + i);
+    t.b("</tr>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["generic-wrapper"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<div class="d2h-wrapper">');
+    t.b("\n" + i);
+    t.b("    ");
+    t.b(t.t(t.f("content", c, p, 0)));
+    t.b("\n" + i);
+    t.b("</div>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["icon-file-added"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<svg aria-hidden="true" class="d2h-icon d2h-added" height="16" title="added" version="1.1" viewBox="0 0 14 16"');
+    t.b("\n" + i);
+    t.b('     width="14">');
+    t.b("\n" + i);
+    t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM6 9H3V7h3V4h2v3h3v2H8v3H6V9z"></path>');
+    t.b("\n" + i);
+    t.b("</svg>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["icon-file-changed"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<svg aria-hidden="true" class="d2h-icon d2h-changed" height="16" title="modified" version="1.1"');
+    t.b("\n" + i);
+    t.b('     viewBox="0 0 14 16" width="14">');
+    t.b("\n" + i);
+    t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path>');
+    t.b("\n" + i);
+    t.b("</svg>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["icon-file-deleted"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<svg aria-hidden="true" class="d2h-icon d2h-deleted" height="16" title="removed" version="1.1"');
+    t.b("\n" + i);
+    t.b('     viewBox="0 0 14 16" width="14">');
+    t.b("\n" + i);
+    t.b('    <path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM11 9H3V7h8v2z"></path>');
+    t.b("\n" + i);
+    t.b("</svg>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["icon-file-renamed"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<svg aria-hidden="true" class="d2h-icon d2h-moved" height="16" title="renamed" version="1.1"');
+    t.b("\n" + i);
+    t.b('     viewBox="0 0 14 16" width="14">');
+    t.b("\n" + i);
+    t.b('    <path d="M6 9H3V7h3V4l5 4-5 4V9z m8-7v12c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h12c0.55 0 1 0.45 1 1z m-1 0H1v12h12V2z"></path>');
+    t.b("\n" + i);
+    t.b("</svg>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["icon-file"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<svg aria-hidden="true" class="d2h-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12">');
+    t.b("\n" + i);
+    t.b('    <path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path>');
+    t.b("\n" + i);
+    t.b("</svg>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["line-by-line-file-diff"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<div id="');
+    t.b(t.v(t.f("fileHtmlId", c, p, 0)));
+    t.b('" class="d2h-file-wrapper" data-lang="');
+    t.b(t.v(t.d("file.language", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b('    <div class="d2h-file-header">');
+    t.b("\n" + i);
+    t.b("    ");
+    t.b(t.t(t.f("filePath", c, p, 0)));
+    t.b("\n" + i);
+    t.b("    </div>");
+    t.b("\n" + i);
+    t.b('    <div class="d2h-file-diff">');
+    t.b("\n" + i);
+    t.b('        <div class="d2h-code-wrapper">');
+    t.b("\n" + i);
+    t.b('            <table class="d2h-diff-table">');
+    t.b("\n" + i);
+    t.b('                <tbody class="d2h-diff-tbody">');
+    t.b("\n" + i);
+    t.b("                ");
+    t.b(t.t(t.f("diffs", c, p, 0)));
+    t.b("\n" + i);
+    t.b("                </tbody>");
+    t.b("\n" + i);
+    t.b("            </table>");
+    t.b("\n" + i);
+    t.b("        </div>");
+    t.b("\n" + i);
+    t.b("    </div>");
+    t.b("\n" + i);
+    t.b("</div>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["line-by-line-numbers"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<div class="line-num1">');
+    t.b(t.v(t.f("oldNumber", c, p, 0)));
+    t.b("</div>");
+    t.b("\n" + i);
+    t.b('<div class="line-num2">');
+    t.b(t.v(t.f("newNumber", c, p, 0)));
+    t.b("</div>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["side-by-side-file-diff"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<div id="');
+    t.b(t.v(t.f("fileHtmlId", c, p, 0)));
+    t.b('" class="d2h-file-wrapper" data-lang="');
+    t.b(t.v(t.d("file.language", c, p, 0)));
+    t.b('">');
+    t.b("\n" + i);
+    t.b('    <div class="d2h-file-header">');
+    t.b("\n" + i);
+    t.b("      ");
+    t.b(t.t(t.f("filePath", c, p, 0)));
+    t.b("\n" + i);
+    t.b("    </div>");
+    t.b("\n" + i);
+    t.b('    <div class="d2h-files-diff">');
+    t.b("\n" + i);
+    t.b('        <div class="d2h-file-side-diff">');
+    t.b("\n" + i);
+    t.b('            <div class="d2h-code-wrapper">');
+    t.b("\n" + i);
+    t.b('                <table class="d2h-diff-table">');
+    t.b("\n" + i);
+    t.b('                    <tbody class="d2h-diff-tbody">');
+    t.b("\n" + i);
+    t.b("                    ");
+    t.b(t.t(t.d("diffs.left", c, p, 0)));
+    t.b("\n" + i);
+    t.b("                    </tbody>");
+    t.b("\n" + i);
+    t.b("                </table>");
+    t.b("\n" + i);
+    t.b("            </div>");
+    t.b("\n" + i);
+    t.b("        </div>");
+    t.b("\n" + i);
+    t.b('        <div class="d2h-file-side-diff">');
+    t.b("\n" + i);
+    t.b('            <div class="d2h-code-wrapper">');
+    t.b("\n" + i);
+    t.b('                <table class="d2h-diff-table">');
+    t.b("\n" + i);
+    t.b('                    <tbody class="d2h-diff-tbody">');
+    t.b("\n" + i);
+    t.b("                    ");
+    t.b(t.t(t.d("diffs.right", c, p, 0)));
+    t.b("\n" + i);
+    t.b("                    </tbody>");
+    t.b("\n" + i);
+    t.b("                </table>");
+    t.b("\n" + i);
+    t.b("            </div>");
+    t.b("\n" + i);
+    t.b("        </div>");
+    t.b("\n" + i);
+    t.b("    </div>");
+    t.b("\n" + i);
+    t.b("</div>");
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["tag-file-added"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<span class="d2h-tag d2h-added d2h-added-tag">ADDED</span>');
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["tag-file-changed"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<span class="d2h-tag d2h-changed d2h-changed-tag">CHANGED</span>');
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["tag-file-deleted"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<span class="d2h-tag d2h-deleted d2h-deleted-tag">DELETED</span>');
+    return t.fl();
+  }, partials: {}, subs: {}
+});
+defaultTemplates["tag-file-renamed"] = new Hogan2.Template({
+  code: function (c, p, i) {
+    var t = this;
+    t.b(i = i || "");
+    t.b('<span class="d2h-tag d2h-moved d2h-moved-tag">RENAMED</span>');
+    return t.fl();
+  }, partials: {}, subs: {}
+});
 
 // node_modules/.pnpm/diff2html@3.4.41/node_modules/diff2html/lib-esm/hoganjs-utils.js
 var HoganJsUtils = class {
@@ -36052,7 +36098,7 @@ function get_root_for_style(node) {
     return document;
   const root2 = node.getRootNode ? node.getRootNode() : node.ownerDocument;
   if (root2 && /** @type {ShadowRoot} */
-  root2.host) {
+    root2.host) {
     return (
       /** @type {ShadowRoot} */
       root2
@@ -36105,7 +36151,7 @@ function listen(node, event, handler, options) {
   return () => node.removeEventListener(event, handler, options);
 }
 function stop_propagation(fn) {
-  return function(event) {
+  return function (event) {
     event.stopPropagation();
     return fn.call(this, event);
   };
@@ -36124,7 +36170,7 @@ function set_data(text2, data) {
   if (text2.data === data)
     return;
   text2.data = /** @type {string} */
-  data;
+    data;
 }
 function set_input_value(input, value) {
   input.value = value == null ? "" : value;
@@ -36428,7 +36474,7 @@ function create_bidirectional_transition(node, fn, params, intro) {
         }
       } else {
         original_inert_value = /** @type {HTMLElement} */
-        node.inert;
+          node.inert;
         node.inert = true;
       }
     }
@@ -36697,7 +36743,7 @@ if (typeof HTMLElement === "function") {
     async connectedCallback() {
       this.$$cn = true;
       if (!this.$$c) {
-        let create_slot = function(name) {
+        let create_slot = function (name) {
           return () => {
             let node;
             const obj = {
@@ -36910,11 +36956,11 @@ if (typeof window !== "undefined")
 init_polyfill_buffer();
 function __awaiter(thisArg, _arguments, P, generator) {
   function adopt(value) {
-    return value instanceof P ? value : new P(function(resolve) {
+    return value instanceof P ? value : new P(function (resolve) {
       resolve(value);
     });
   }
-  return new (P || (P = Promise))(function(resolve, reject) {
+  return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
         step(generator.next(value));
@@ -37079,11 +37125,11 @@ function create_fragment(ctx) {
       attr(div1, "class", "buttons");
       attr(span, "class", "type");
       attr(span, "data-type", span_data_type_value = /*diff*/
-      ctx[0].status);
+        ctx[0].status);
       attr(div2, "class", "git-tools");
       attr(div3, "class", "tree-item-self is-clickable nav-file-title svelte-1wbh8tp");
       attr(div3, "data-path", div3_data_path_value = /*diff*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       attr(
         div3,
         "aria-label-position",
@@ -37097,7 +37143,7 @@ function create_fragment(ctx) {
         ctx[3]
       );
       attr(div3, "aria-label", div3_aria_label_value = /*diff*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       toggle_class(
         div3,
         "is-active",
@@ -37144,18 +37190,18 @@ function create_fragment(ctx) {
     p(ctx2, [dirty]) {
       var _a2, _b;
       if (dirty & /*diff*/
-      1 && t0_value !== (t0_value = getDisplayPath(
-        /*diff*/
-        ctx2[0].vault_path
-      ) + ""))
-        set_data(t0, t0_value);
-      if (dirty & /*view, diff*/
-      3)
-        show_if = /*view*/
-        ctx2[1].app.vault.getAbstractFileByPath(
+        1 && t0_value !== (t0_value = getDisplayPath(
           /*diff*/
           ctx2[0].vault_path
-        );
+        ) + ""))
+        set_data(t0, t0_value);
+      if (dirty & /*view, diff*/
+        3)
+        show_if = /*view*/
+          ctx2[1].app.vault.getAbstractFileByPath(
+            /*diff*/
+            ctx2[0].vault_path
+          );
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -37169,21 +37215,21 @@ function create_fragment(ctx) {
         if_block = null;
       }
       if (dirty & /*diff*/
-      1 && t3_value !== (t3_value = /*diff*/
-      ctx2[0].status + ""))
+        1 && t3_value !== (t3_value = /*diff*/
+          ctx2[0].status + ""))
         set_data(t3, t3_value);
       if (dirty & /*diff*/
-      1 && span_data_type_value !== (span_data_type_value = /*diff*/
-      ctx2[0].status)) {
+        1 && span_data_type_value !== (span_data_type_value = /*diff*/
+          ctx2[0].status)) {
         attr(span, "data-type", span_data_type_value);
       }
       if (dirty & /*diff*/
-      1 && div3_data_path_value !== (div3_data_path_value = /*diff*/
-      ctx2[0].vault_path)) {
+        1 && div3_data_path_value !== (div3_data_path_value = /*diff*/
+          ctx2[0].vault_path)) {
         attr(div3, "data-path", div3_data_path_value);
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div3,
           "aria-label-position",
@@ -37192,7 +37238,7 @@ function create_fragment(ctx) {
         );
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div3,
           "data-tooltip-position",
@@ -37201,12 +37247,12 @@ function create_fragment(ctx) {
         );
       }
       if (dirty & /*diff*/
-      1 && div3_aria_label_value !== (div3_aria_label_value = /*diff*/
-      ctx2[0].vault_path)) {
+        1 && div3_aria_label_value !== (div3_aria_label_value = /*diff*/
+          ctx2[0].vault_path)) {
         attr(div3, "aria-label", div3_aria_label_value);
       }
       if (dirty & /*view, diff*/
-      3) {
+        3) {
         toggle_class(
           div3,
           "is-active",
@@ -37272,9 +37318,9 @@ function instance($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    2) {
+      2) {
       $:
-        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [diff2, view, buttons, side, open, showDiff, focus_handler, div_binding];
@@ -37326,10 +37372,10 @@ function create_else_block(ctx) {
     );
   }
   let if_block = !/*closed*/
-  ctx[4][
+    ctx[4][
     /*entity*/
     ctx[8].title
-  ] && create_if_block_1(ctx);
+    ] && create_if_block_1(ctx);
   return {
     c() {
       div4 = element("div");
@@ -37354,8 +37400,8 @@ function create_else_block(ctx) {
         "is-collapsed",
         /*closed*/
         ctx[4][
-          /*entity*/
-          ctx[8].title
+        /*entity*/
+        ctx[8].title
         ]
       );
       attr(div2, "class", "tree-item-inner nav-folder-title-content svelte-1lnl15d");
@@ -37373,15 +37419,15 @@ function create_else_block(ctx) {
         ctx[5]
       );
       attr(div3, "aria-label", div3_aria_label_value = /*entity*/
-      ctx[8].vaultPath);
+        ctx[8].vaultPath);
       attr(div4, "class", "tree-item nav-folder");
       toggle_class(
         div4,
         "is-collapsed",
         /*closed*/
         ctx[4][
-          /*entity*/
-          ctx[8].title
+        /*entity*/
+        ctx[8].title
         ]
       );
     },
@@ -37407,23 +37453,23 @@ function create_else_block(ctx) {
     p(new_ctx, dirty) {
       ctx = new_ctx;
       if (!current || dirty & /*closed, hierarchy*/
-      17) {
+        17) {
         toggle_class(
           div1,
           "is-collapsed",
           /*closed*/
           ctx[4][
-            /*entity*/
-            ctx[8].title
+          /*entity*/
+          ctx[8].title
           ]
         );
       }
       if ((!current || dirty & /*hierarchy*/
-      1) && t2_value !== (t2_value = /*entity*/
-      ctx[8].title + ""))
+        1) && t2_value !== (t2_value = /*entity*/
+          ctx[8].title + ""))
         set_data(t2, t2_value);
       if (!current || dirty & /*side*/
-      32) {
+        32) {
         attr(
           div3,
           "aria-label-position",
@@ -37432,7 +37478,7 @@ function create_else_block(ctx) {
         );
       }
       if (!current || dirty & /*side*/
-      32) {
+        32) {
         attr(
           div3,
           "data-tooltip-position",
@@ -37441,19 +37487,19 @@ function create_else_block(ctx) {
         );
       }
       if (!current || dirty & /*hierarchy*/
-      1 && div3_aria_label_value !== (div3_aria_label_value = /*entity*/
-      ctx[8].vaultPath)) {
+        1 && div3_aria_label_value !== (div3_aria_label_value = /*entity*/
+          ctx[8].vaultPath)) {
         attr(div3, "aria-label", div3_aria_label_value);
       }
       if (!/*closed*/
-      ctx[4][
+        ctx[4][
         /*entity*/
         ctx[8].title
-      ]) {
+        ]) {
         if (if_block) {
           if_block.p(ctx, dirty);
           if (dirty & /*closed, hierarchy*/
-          17) {
+            17) {
             transition_in(if_block, 1);
           }
         } else {
@@ -37470,14 +37516,14 @@ function create_else_block(ctx) {
         check_outros();
       }
       if (!current || dirty & /*closed, hierarchy*/
-      17) {
+        17) {
         toggle_class(
           div4,
           "is-collapsed",
           /*closed*/
           ctx[4][
-            /*entity*/
-            ctx[8].title
+          /*entity*/
+          ctx[8].title
           ]
         );
       }
@@ -37535,13 +37581,13 @@ function create_if_block2(ctx) {
     p(ctx2, dirty) {
       const logfilecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         logfilecomponent_changes.diff = /*entity*/
-        ctx2[8].data;
+          ctx2[8].data;
       if (dirty & /*view*/
-      4)
+        4)
         logfilecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       logfilecomponent.$set(logfilecomponent_changes);
     },
     i(local) {
@@ -37597,17 +37643,17 @@ function create_if_block_1(ctx) {
     p(ctx2, dirty) {
       const logtreecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         logtreecomponent_changes.hierarchy = /*entity*/
-        ctx2[8];
+          ctx2[8];
       if (dirty & /*plugin*/
-      2)
+        2)
         logtreecomponent_changes.plugin = /*plugin*/
-        ctx2[1];
+          ctx2[1];
       if (dirty & /*view*/
-      4)
+        4)
         logtreecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       logtreecomponent.$set(logtreecomponent_changes);
     },
     i(local) {
@@ -37750,7 +37796,7 @@ function create_fragment2(ctx) {
     },
     p(ctx2, [dirty]) {
       if (dirty & /*hierarchy, view, closed, plugin, side, fold*/
-      119) {
+        119) {
         each_value = ensure_array_like(
           /*hierarchy*/
           ctx2[0].children
@@ -37775,7 +37821,7 @@ function create_fragment2(ctx) {
         check_outros();
       }
       if (!current || dirty & /*topLevel*/
-      8) {
+        8) {
         toggle_class(
           main,
           "topLevel",
@@ -37830,9 +37876,9 @@ function instance2($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    4) {
+      4) {
       $:
-        $$invalidate(5, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(5, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [hierarchy, plugin, view, topLevel, closed, side, fold, click_handler];
@@ -37886,8 +37932,8 @@ function create_if_block_2(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & /*log*/
-      1 && t_value !== (t_value = /*log*/
-      ctx2[0].refs.join(", ") + ""))
+        1 && t_value !== (t_value = /*log*/
+          ctx2[0].refs.join(", ") + ""))
         set_data(t, t_value);
     },
     d(detaching) {
@@ -38014,7 +38060,7 @@ function create_else_block2(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & /*view, log*/
-      3) {
+        3) {
         each_value = ensure_array_like(
           /*log*/
           ctx2[0].diff.files
@@ -38093,17 +38139,17 @@ function create_if_block_12(ctx) {
     p(ctx2, dirty) {
       const logtreecomponent_changes = {};
       if (dirty & /*logsHierarchy*/
-      64)
+        64)
         logtreecomponent_changes.hierarchy = /*logsHierarchy*/
-        ctx2[6];
+          ctx2[6];
       if (dirty & /*plugin*/
-      8)
+        8)
         logtreecomponent_changes.plugin = /*plugin*/
-        ctx2[3];
+          ctx2[3];
       if (dirty & /*view*/
-      2)
+        2)
         logtreecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       logtreecomponent.$set(logtreecomponent_changes);
     },
     i(local) {
@@ -38147,13 +38193,13 @@ function create_each_block2(ctx) {
     p(ctx2, dirty) {
       const logfilecomponent_changes = {};
       if (dirty & /*view*/
-      2)
+        2)
         logfilecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       if (dirty & /*log*/
-      1)
+        1)
         logfilecomponent_changes.diff = /*file*/
-        ctx2[8];
+          ctx2[8];
       logfilecomponent.$set(logfilecomponent_changes);
     },
     i(local) {
@@ -38195,7 +38241,7 @@ function create_fragment3(ctx) {
     ctx[0].refs.length > 0 && create_if_block_2(ctx)
   );
   let if_block1 = !/*isCollapsed*/
-  ctx[4] && create_if_block3(ctx);
+    ctx[4] && create_if_block3(ctx);
   return {
     c() {
       main = element("main");
@@ -38222,7 +38268,7 @@ function create_fragment3(ctx) {
       );
       attr(div1, "class", "tree-item-inner nav-folder-title-content");
       attr(div1, "aria-label", div1_aria_label_value = /*log*/
-      ctx[0].message);
+        ctx[0].message);
       attr(
         div1,
         "aria-label-position",
@@ -38272,7 +38318,7 @@ function create_fragment3(ctx) {
     },
     p(ctx2, [dirty]) {
       if (!current || dirty & /*isCollapsed*/
-      16) {
+        16) {
         toggle_class(
           div0,
           "is-collapsed",
@@ -38296,16 +38342,16 @@ function create_fragment3(ctx) {
         if_block0 = null;
       }
       if ((!current || dirty & /*log*/
-      1) && t2_value !== (t2_value = /*log*/
-      ctx2[0].message + ""))
+        1) && t2_value !== (t2_value = /*log*/
+          ctx2[0].message + ""))
         set_data(t2, t2_value);
       if (!current || dirty & /*log*/
-      1 && div1_aria_label_value !== (div1_aria_label_value = /*log*/
-      ctx2[0].message)) {
+        1 && div1_aria_label_value !== (div1_aria_label_value = /*log*/
+          ctx2[0].message)) {
         attr(div1, "aria-label", div1_aria_label_value);
       }
       if (!current || dirty & /*side*/
-      32) {
+        32) {
         attr(
           div1,
           "aria-label-position",
@@ -38314,7 +38360,7 @@ function create_fragment3(ctx) {
         );
       }
       if (!current || dirty & /*side*/
-      32) {
+        32) {
         attr(
           div1,
           "data-tooltip-position",
@@ -38323,11 +38369,11 @@ function create_fragment3(ctx) {
         );
       }
       if (!/*isCollapsed*/
-      ctx2[4]) {
+        ctx2[4]) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
           if (dirty & /*isCollapsed*/
-          16) {
+            16) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -38344,7 +38390,7 @@ function create_fragment3(ctx) {
         check_outros();
       }
       if (!current || dirty & /*isCollapsed*/
-      16) {
+        16) {
         toggle_class(
           div4,
           "is-collapsed",
@@ -38397,19 +38443,19 @@ function instance3($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*plugin, log*/
-    9) {
+      9) {
       $:
-        $$invalidate(6, logsHierarchy = {
-          title: "",
-          path: "",
-          vaultPath: "",
-          children: plugin.gitManager.getTreeStructure(log2.diff.files)
-        });
+      $$invalidate(6, logsHierarchy = {
+        title: "",
+        path: "",
+        vaultPath: "",
+        children: plugin.gitManager.getTreeStructure(log2.diff.files)
+      });
     }
     if ($$self.$$.dirty & /*view*/
-    2) {
+      2) {
       $:
-        $$invalidate(5, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(5, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [log2, view, showTree, plugin, isCollapsed, side, logsHierarchy, click_handler];
@@ -38465,7 +38511,7 @@ function create_if_block4(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & /*view, showTree, logs, plugin*/
-      71) {
+        71) {
         each_value = ensure_array_like(
           /*logs*/
           ctx2[6]
@@ -38547,21 +38593,21 @@ function create_each_block3(ctx) {
     p(ctx2, dirty) {
       const logcomponent_changes = {};
       if (dirty & /*view*/
-      2)
+        2)
         logcomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       if (dirty & /*showTree*/
-      4)
+        4)
         logcomponent_changes.showTree = /*showTree*/
-        ctx2[2];
+          ctx2[2];
       if (dirty & /*logs*/
-      64)
+        64)
         logcomponent_changes.log = /*log*/
-        ctx2[11];
+          ctx2[11];
       if (dirty & /*plugin*/
-      1)
+        1)
         logcomponent_changes.plugin = /*plugin*/
-        ctx2[0];
+          ctx2[0];
       logcomponent.$set(logcomponent_changes);
     },
     i(local) {
@@ -38655,7 +38701,7 @@ function create_fragment4(ctx) {
     },
     p(ctx2, [dirty]) {
       if (!current || dirty & /*loading*/
-      16) {
+        16) {
         toggle_class(
           div1,
           "loading",
@@ -38670,7 +38716,7 @@ function create_fragment4(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
           if (dirty & /*logs*/
-          64) {
+            64) {
             transition_in(if_block, 1);
           }
         } else {
@@ -38767,7 +38813,7 @@ function instance4($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*layoutBtn, showTree*/
-    12) {
+      12) {
       $: {
         if (layoutBtn) {
           layoutBtn.empty();
@@ -39093,11 +39139,11 @@ function create_fragment5(ctx) {
       attr(div3, "class", "buttons");
       attr(div4, "class", "type");
       attr(div4, "data-type", div4_data_type_value = /*change*/
-      ctx[0].working_dir);
+        ctx[0].working_dir);
       attr(div5, "class", "git-tools");
       attr(div6, "class", "tree-item-self is-clickable nav-file-title svelte-1wbh8tp");
       attr(div6, "data-path", div6_data_path_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       attr(
         div6,
         "aria-label-position",
@@ -39111,7 +39157,7 @@ function create_fragment5(ctx) {
         ctx[3]
       );
       attr(div6, "aria-label", div6_aria_label_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       toggle_class(
         div6,
         "is-active",
@@ -39179,18 +39225,18 @@ function create_fragment5(ctx) {
     p(ctx2, [dirty]) {
       var _a2, _b, _c;
       if (dirty & /*change*/
-      1 && t0_value !== (t0_value = getDisplayPath(
-        /*change*/
-        ctx2[0].vault_path
-      ) + ""))
-        set_data(t0, t0_value);
-      if (dirty & /*view, change*/
-      3)
-        show_if = /*view*/
-        ctx2[1].app.vault.getAbstractFileByPath(
+        1 && t0_value !== (t0_value = getDisplayPath(
           /*change*/
           ctx2[0].vault_path
-        );
+        ) + ""))
+        set_data(t0, t0_value);
+      if (dirty & /*view, change*/
+        3)
+        show_if = /*view*/
+          ctx2[1].app.vault.getAbstractFileByPath(
+            /*change*/
+            ctx2[0].vault_path
+          );
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -39204,21 +39250,21 @@ function create_fragment5(ctx) {
         if_block = null;
       }
       if (dirty & /*change*/
-      1 && t5_value !== (t5_value = /*change*/
-      ctx2[0].working_dir + ""))
+        1 && t5_value !== (t5_value = /*change*/
+          ctx2[0].working_dir + ""))
         set_data(t5, t5_value);
       if (dirty & /*change*/
-      1 && div4_data_type_value !== (div4_data_type_value = /*change*/
-      ctx2[0].working_dir)) {
+        1 && div4_data_type_value !== (div4_data_type_value = /*change*/
+          ctx2[0].working_dir)) {
         attr(div4, "data-type", div4_data_type_value);
       }
       if (dirty & /*change*/
-      1 && div6_data_path_value !== (div6_data_path_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div6_data_path_value !== (div6_data_path_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div6, "data-path", div6_data_path_value);
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div6,
           "aria-label-position",
@@ -39227,7 +39273,7 @@ function create_fragment5(ctx) {
         );
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div6,
           "data-tooltip-position",
@@ -39236,12 +39282,12 @@ function create_fragment5(ctx) {
         );
       }
       if (dirty & /*change*/
-      1 && div6_aria_label_value !== (div6_aria_label_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div6_aria_label_value !== (div6_aria_label_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div6, "aria-label", div6_aria_label_value);
       }
       if (dirty & /*view, change*/
-      3) {
+        3) {
         toggle_class(
           div6,
           "is-active",
@@ -39348,9 +39394,9 @@ function instance5($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    2) {
+      2) {
       $:
-        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
@@ -39419,11 +39465,11 @@ function create_fragment6(ctx) {
       attr(div0, "class", "tree-item-inner nav-file-title-content");
       attr(span, "class", "type");
       attr(span, "data-type", span_data_type_value = /*change*/
-      ctx[0].working_dir);
+        ctx[0].working_dir);
       attr(div1, "class", "git-tools");
       attr(div2, "class", "tree-item-self is-clickable nav-file-title svelte-1wbh8tp");
       attr(div2, "data-path", div2_data_path_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       attr(
         div2,
         "aria-label-position",
@@ -39437,7 +39483,7 @@ function create_fragment6(ctx) {
         ctx[1]
       );
       attr(div2, "aria-label", div2_aria_label_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       attr(main, "class", "tree-item nav-file svelte-1wbh8tp");
     },
     m(target, anchor) {
@@ -39477,27 +39523,27 @@ function create_fragment6(ctx) {
     },
     p(ctx2, [dirty]) {
       if (dirty & /*change*/
-      1 && t0_value !== (t0_value = getDisplayPath(
-        /*change*/
-        ctx2[0].vault_path
-      ) + ""))
+        1 && t0_value !== (t0_value = getDisplayPath(
+          /*change*/
+          ctx2[0].vault_path
+        ) + ""))
         set_data(t0, t0_value);
       if (dirty & /*change*/
-      1 && t2_value !== (t2_value = /*change*/
-      ctx2[0].working_dir + ""))
+        1 && t2_value !== (t2_value = /*change*/
+          ctx2[0].working_dir + ""))
         set_data(t2, t2_value);
       if (dirty & /*change*/
-      1 && span_data_type_value !== (span_data_type_value = /*change*/
-      ctx2[0].working_dir)) {
+        1 && span_data_type_value !== (span_data_type_value = /*change*/
+          ctx2[0].working_dir)) {
         attr(span, "data-type", span_data_type_value);
       }
       if (dirty & /*change*/
-      1 && div2_data_path_value !== (div2_data_path_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div2_data_path_value !== (div2_data_path_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div2, "data-path", div2_data_path_value);
       }
       if (dirty & /*side*/
-      2) {
+        2) {
         attr(
           div2,
           "aria-label-position",
@@ -39506,7 +39552,7 @@ function create_fragment6(ctx) {
         );
       }
       if (dirty & /*side*/
-      2) {
+        2) {
         attr(
           div2,
           "data-tooltip-position",
@@ -39515,8 +39561,8 @@ function create_fragment6(ctx) {
         );
       }
       if (dirty & /*change*/
-      1 && div2_aria_label_value !== (div2_aria_label_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div2_aria_label_value !== (div2_aria_label_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div2, "aria-label", div2_aria_label_value);
       }
     },
@@ -39558,9 +39604,9 @@ function instance6($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    16) {
+      16) {
       $:
-        $$invalidate(1, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(1, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [change, side, hover, open, view, focus_handler];
@@ -39670,11 +39716,11 @@ function create_fragment7(ctx) {
       attr(div2, "class", "buttons");
       attr(div3, "class", "type");
       attr(div3, "data-type", div3_data_type_value = /*change*/
-      ctx[0].index);
+        ctx[0].index);
       attr(div4, "class", "git-tools");
       attr(div5, "class", "tree-item-self is-clickable nav-file-title svelte-1wbh8tp");
       attr(div5, "data-path", div5_data_path_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       attr(
         div5,
         "aria-label-position",
@@ -39688,7 +39734,7 @@ function create_fragment7(ctx) {
         ctx[3]
       );
       attr(div5, "aria-label", div5_aria_label_value = /*change*/
-      ctx[0].vault_path);
+        ctx[0].vault_path);
       toggle_class(
         div5,
         "is-active",
@@ -39749,18 +39795,18 @@ function create_fragment7(ctx) {
     p(ctx2, [dirty]) {
       var _a2, _b, _c;
       if (dirty & /*change*/
-      1 && t0_value !== (t0_value = getDisplayPath(
-        /*change*/
-        ctx2[0].vault_path
-      ) + ""))
-        set_data(t0, t0_value);
-      if (dirty & /*view, change*/
-      3)
-        show_if = /*view*/
-        ctx2[1].app.vault.getAbstractFileByPath(
+        1 && t0_value !== (t0_value = getDisplayPath(
           /*change*/
           ctx2[0].vault_path
-        );
+        ) + ""))
+        set_data(t0, t0_value);
+      if (dirty & /*view, change*/
+        3)
+        show_if = /*view*/
+          ctx2[1].app.vault.getAbstractFileByPath(
+            /*change*/
+            ctx2[0].vault_path
+          );
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -39774,21 +39820,21 @@ function create_fragment7(ctx) {
         if_block = null;
       }
       if (dirty & /*change*/
-      1 && t4_value !== (t4_value = /*change*/
-      ctx2[0].index + ""))
+        1 && t4_value !== (t4_value = /*change*/
+          ctx2[0].index + ""))
         set_data(t4, t4_value);
       if (dirty & /*change*/
-      1 && div3_data_type_value !== (div3_data_type_value = /*change*/
-      ctx2[0].index)) {
+        1 && div3_data_type_value !== (div3_data_type_value = /*change*/
+          ctx2[0].index)) {
         attr(div3, "data-type", div3_data_type_value);
       }
       if (dirty & /*change*/
-      1 && div5_data_path_value !== (div5_data_path_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div5_data_path_value !== (div5_data_path_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div5, "data-path", div5_data_path_value);
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div5,
           "aria-label-position",
@@ -39797,7 +39843,7 @@ function create_fragment7(ctx) {
         );
       }
       if (dirty & /*side*/
-      8) {
+        8) {
         attr(
           div5,
           "data-tooltip-position",
@@ -39806,12 +39852,12 @@ function create_fragment7(ctx) {
         );
       }
       if (dirty & /*change*/
-      1 && div5_aria_label_value !== (div5_aria_label_value = /*change*/
-      ctx2[0].vault_path)) {
+        1 && div5_aria_label_value !== (div5_aria_label_value = /*change*/
+          ctx2[0].vault_path)) {
         attr(div5, "aria-label", div5_aria_label_value);
       }
       if (dirty & /*view, change*/
-      3) {
+        3) {
         toggle_class(
           div5,
           "is-active",
@@ -39894,9 +39940,9 @@ function instance7($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    2) {
+      2) {
       $:
-        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
@@ -39967,10 +40013,10 @@ function create_else_block3(ctx) {
   let current_block_type = select_block_type_2(ctx, -1);
   let if_block0 = current_block_type(ctx);
   let if_block1 = !/*closed*/
-  ctx[5][
+    ctx[5][
     /*entity*/
     ctx[15].title
-  ] && create_if_block_4(ctx);
+    ] && create_if_block_4(ctx);
   function click_handler_3() {
     return (
       /*click_handler_3*/
@@ -40010,8 +40056,8 @@ function create_else_block3(ctx) {
         "is-collapsed",
         /*closed*/
         ctx[5][
-          /*entity*/
-          ctx[15].title
+        /*entity*/
+        ctx[15].title
         ]
       );
       attr(div2, "class", "tree-item-inner nav-folder-title-content");
@@ -40032,15 +40078,15 @@ function create_else_block3(ctx) {
         ctx[6]
       );
       attr(div6, "aria-label", div6_aria_label_value = /*entity*/
-      ctx[15].vaultPath);
+        ctx[15].vaultPath);
       attr(div7, "class", "tree-item nav-folder");
       toggle_class(
         div7,
         "is-collapsed",
         /*closed*/
         ctx[5][
-          /*entity*/
-          ctx[15].title
+        /*entity*/
+        ctx[15].title
         ]
       );
     },
@@ -40072,20 +40118,20 @@ function create_else_block3(ctx) {
     p(new_ctx, dirty) {
       ctx = new_ctx;
       if (!current || dirty & /*closed, hierarchy*/
-      33) {
+        33) {
         toggle_class(
           div1,
           "is-collapsed",
           /*closed*/
           ctx[5][
-            /*entity*/
-            ctx[15].title
+          /*entity*/
+          ctx[15].title
           ]
         );
       }
       if ((!current || dirty & /*hierarchy*/
-      1) && t2_value !== (t2_value = /*entity*/
-      ctx[15].title + ""))
+        1) && t2_value !== (t2_value = /*entity*/
+          ctx[15].title + ""))
         set_data(t2, t2_value);
       if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block0) {
         if_block0.p(ctx, dirty);
@@ -40098,7 +40144,7 @@ function create_else_block3(ctx) {
         }
       }
       if (!current || dirty & /*side*/
-      64) {
+        64) {
         attr(
           div6,
           "aria-label-position",
@@ -40107,7 +40153,7 @@ function create_else_block3(ctx) {
         );
       }
       if (!current || dirty & /*side*/
-      64) {
+        64) {
         attr(
           div6,
           "data-tooltip-position",
@@ -40116,19 +40162,19 @@ function create_else_block3(ctx) {
         );
       }
       if (!current || dirty & /*hierarchy*/
-      1 && div6_aria_label_value !== (div6_aria_label_value = /*entity*/
-      ctx[15].vaultPath)) {
+        1 && div6_aria_label_value !== (div6_aria_label_value = /*entity*/
+          ctx[15].vaultPath)) {
         attr(div6, "aria-label", div6_aria_label_value);
       }
       if (!/*closed*/
-      ctx[5][
+        ctx[5][
         /*entity*/
         ctx[15].title
-      ]) {
+        ]) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
           if (dirty & /*closed, hierarchy*/
-          33) {
+            33) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -40145,14 +40191,14 @@ function create_else_block3(ctx) {
         check_outros();
       }
       if (!current || dirty & /*closed, hierarchy*/
-      33) {
+        33) {
         toggle_class(
           div7,
           "is-collapsed",
           /*closed*/
           ctx[5][
-            /*entity*/
-            ctx[15].title
+          /*entity*/
+          ctx[15].title
           ]
         );
       }
@@ -40416,21 +40462,21 @@ function create_if_block_4(ctx) {
     p(ctx2, dirty) {
       const treecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         treecomponent_changes.hierarchy = /*entity*/
-        ctx2[15];
+          ctx2[15];
       if (dirty & /*plugin*/
-      2)
+        2)
         treecomponent_changes.plugin = /*plugin*/
-        ctx2[1];
+          ctx2[1];
       if (dirty & /*view*/
-      4)
+        4)
         treecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       if (dirty & /*fileType*/
-      8)
+        8)
         treecomponent_changes.fileType = /*fileType*/
-        ctx2[3];
+          ctx2[3];
       treecomponent.$set(treecomponent_changes);
     },
     i(local) {
@@ -40493,13 +40539,13 @@ function create_if_block_3(ctx) {
     p(ctx2, dirty) {
       const pulledfilecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         pulledfilecomponent_changes.change = /*entity*/
-        ctx2[15].data;
+          ctx2[15].data;
       if (dirty & /*view*/
-      4)
+        4)
         pulledfilecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       pulledfilecomponent.$set(pulledfilecomponent_changes);
     },
     i(local) {
@@ -40547,17 +40593,17 @@ function create_if_block_22(ctx) {
     p(ctx2, dirty) {
       const filecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         filecomponent_changes.change = /*entity*/
-        ctx2[15].data;
+          ctx2[15].data;
       if (dirty & /*plugin*/
-      2)
+        2)
         filecomponent_changes.manager = /*plugin*/
-        ctx2[1].gitManager;
+          ctx2[1].gitManager;
       if (dirty & /*view*/
-      4)
+        4)
         filecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       filecomponent.$set(filecomponent_changes);
     },
     i(local) {
@@ -40605,17 +40651,17 @@ function create_if_block_13(ctx) {
     p(ctx2, dirty) {
       const stagedfilecomponent_changes = {};
       if (dirty & /*hierarchy*/
-      1)
+        1)
         stagedfilecomponent_changes.change = /*entity*/
-        ctx2[15].data;
+          ctx2[15].data;
       if (dirty & /*plugin*/
-      2)
+        2)
         stagedfilecomponent_changes.manager = /*plugin*/
-        ctx2[1].gitManager;
+          ctx2[1].gitManager;
       if (dirty & /*view*/
-      4)
+        4)
         stagedfilecomponent_changes.view = /*view*/
-        ctx2[2];
+          ctx2[2];
       stagedfilecomponent.$set(stagedfilecomponent_changes);
     },
     i(local) {
@@ -40739,7 +40785,7 @@ function create_fragment8(ctx) {
     },
     p(ctx2, [dirty]) {
       if (dirty & /*hierarchy, plugin, view, fileType, closed, fold, side, unstage, stage, discard*/
-      2031) {
+        2031) {
         each_value = ensure_array_like(
           /*hierarchy*/
           ctx2[0].children
@@ -40764,7 +40810,7 @@ function create_fragment8(ctx) {
         check_outros();
       }
       if (!current || dirty & /*topLevel*/
-      16) {
+        16) {
         toggle_class(
           main,
           "topLevel",
@@ -40847,9 +40893,9 @@ function instance8($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*view*/
-    4) {
+      4) {
       $:
-        $$invalidate(6, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+      $$invalidate(6, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
@@ -41049,7 +41095,7 @@ function create_if_block8(ctx) {
         if_block2.c();
       attr(div0, "class", "tree-item-icon nav-folder-collapse-indicator collapse-icon");
       toggle_class(div0, "is-collapsed", !/*stagedOpen*/
-      ctx[13]);
+        ctx[13]);
       attr(div1, "class", "tree-item-inner nav-folder-title-content");
       attr(div2, "data-icon", "minus");
       attr(div2, "aria-label", "Unstage");
@@ -41060,10 +41106,10 @@ function create_if_block8(ctx) {
       attr(div6, "class", "tree-item-self is-clickable nav-folder-title svelte-1bvmxec");
       attr(div7, "class", "staged tree-item nav-folder");
       toggle_class(div7, "is-collapsed", !/*stagedOpen*/
-      ctx[13]);
+        ctx[13]);
       attr(div8, "class", "tree-item-icon nav-folder-collapse-indicator collapse-icon");
       toggle_class(div8, "is-collapsed", !/*changesOpen*/
-      ctx[12]);
+        ctx[12]);
       attr(div9, "class", "tree-item-inner nav-folder-title-content");
       attr(div10, "data-icon", "undo");
       attr(div10, "aria-label", "Discard");
@@ -41077,7 +41123,7 @@ function create_if_block8(ctx) {
       attr(div15, "class", "tree-item-self is-clickable nav-folder-title svelte-1bvmxec");
       attr(div16, "class", "changes tree-item nav-folder");
       toggle_class(div16, "is-collapsed", !/*changesOpen*/
-      ctx[12]);
+        ctx[12]);
       attr(div17, "class", "tree-item-children nav-folder-children");
       attr(div18, "class", "tree-item nav-folder mod-root");
     },
@@ -41155,13 +41201,13 @@ function create_if_block8(ctx) {
     },
     p(ctx2, dirty) {
       if (!current || dirty[0] & /*stagedOpen*/
-      8192) {
+        8192) {
         toggle_class(div0, "is-collapsed", !/*stagedOpen*/
-        ctx2[13]);
+          ctx2[13]);
       }
       if ((!current || dirty[0] & /*status*/
-      64) && t4_value !== (t4_value = /*status*/
-      ctx2[6].staged.length + ""))
+        64) && t4_value !== (t4_value = /*status*/
+          ctx2[6].staged.length + ""))
         set_data(t4, t4_value);
       if (
         /*stagedOpen*/
@@ -41170,7 +41216,7 @@ function create_if_block8(ctx) {
         if (if_block0) {
           if_block0.p(ctx2, dirty);
           if (dirty[0] & /*stagedOpen*/
-          8192) {
+            8192) {
             transition_in(if_block0, 1);
           }
         } else {
@@ -41187,18 +41233,18 @@ function create_if_block8(ctx) {
         check_outros();
       }
       if (!current || dirty[0] & /*stagedOpen*/
-      8192) {
+        8192) {
         toggle_class(div7, "is-collapsed", !/*stagedOpen*/
-        ctx2[13]);
+          ctx2[13]);
       }
       if (!current || dirty[0] & /*changesOpen*/
-      4096) {
+        4096) {
         toggle_class(div8, "is-collapsed", !/*changesOpen*/
-        ctx2[12]);
+          ctx2[12]);
       }
       if ((!current || dirty[0] & /*status*/
-      64) && t12_value !== (t12_value = /*status*/
-      ctx2[6].changed.length + ""))
+        64) && t12_value !== (t12_value = /*status*/
+          ctx2[6].changed.length + ""))
         set_data(t12, t12_value);
       if (
         /*changesOpen*/
@@ -41207,7 +41253,7 @@ function create_if_block8(ctx) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
           if (dirty[0] & /*changesOpen*/
-          4096) {
+            4096) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -41224,9 +41270,9 @@ function create_if_block8(ctx) {
         check_outros();
       }
       if (!current || dirty[0] & /*changesOpen*/
-      4096) {
+        4096) {
         toggle_class(div16, "is-collapsed", !/*changesOpen*/
-        ctx2[12]);
+          ctx2[12]);
       }
       if (
         /*lastPulledFiles*/
@@ -41235,7 +41281,7 @@ function create_if_block8(ctx) {
         if (if_block2) {
           if_block2.p(ctx2, dirty);
           if (dirty[0] & /*lastPulledFiles*/
-          128) {
+            128) {
             transition_in(if_block2, 1);
           }
         } else {
@@ -41400,7 +41446,7 @@ function create_else_block_2(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty[0] & /*status, view, plugin*/
-      67) {
+        67) {
         each_value_2 = ensure_array_like(
           /*status*/
           ctx2[6].staged
@@ -41480,17 +41526,17 @@ function create_if_block_7(ctx) {
     p(ctx2, dirty) {
       const treecomponent_changes = {};
       if (dirty[0] & /*stagedHierarchy*/
-      1024)
+        1024)
         treecomponent_changes.hierarchy = /*stagedHierarchy*/
-        ctx2[10];
+          ctx2[10];
       if (dirty[0] & /*plugin*/
-      1)
+        1)
         treecomponent_changes.plugin = /*plugin*/
-        ctx2[0];
+          ctx2[0];
       if (dirty[0] & /*view*/
-      2)
+        2)
         treecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       treecomponent.$set(treecomponent_changes);
     },
     i(local) {
@@ -41538,17 +41584,17 @@ function create_each_block_2(ctx) {
     p(ctx2, dirty) {
       const stagedfilecomponent_changes = {};
       if (dirty[0] & /*status*/
-      64)
+        64)
         stagedfilecomponent_changes.change = /*stagedFile*/
-        ctx2[45];
+          ctx2[45];
       if (dirty[0] & /*view*/
-      2)
+        2)
         stagedfilecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       if (dirty[0] & /*plugin*/
-      1)
+        1)
         stagedfilecomponent_changes.manager = /*plugin*/
-        ctx2[0].gitManager;
+          ctx2[0].gitManager;
       stagedfilecomponent.$set(stagedfilecomponent_changes);
     },
     i(local) {
@@ -41683,7 +41729,7 @@ function create_else_block_12(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty[0] & /*status, view, plugin*/
-      67) {
+        67) {
         each_value_1 = ensure_array_like(
           /*status*/
           ctx2[6].changed
@@ -41763,17 +41809,17 @@ function create_if_block_52(ctx) {
     p(ctx2, dirty) {
       const treecomponent_changes = {};
       if (dirty[0] & /*changeHierarchy*/
-      512)
+        512)
         treecomponent_changes.hierarchy = /*changeHierarchy*/
-        ctx2[9];
+          ctx2[9];
       if (dirty[0] & /*plugin*/
-      1)
+        1)
         treecomponent_changes.plugin = /*plugin*/
-        ctx2[0];
+          ctx2[0];
       if (dirty[0] & /*view*/
-      2)
+        2)
         treecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       treecomponent.$set(treecomponent_changes);
     },
     i(local) {
@@ -41822,17 +41868,17 @@ function create_each_block_1(ctx) {
     p(ctx2, dirty) {
       const filecomponent_changes = {};
       if (dirty[0] & /*status*/
-      64)
+        64)
         filecomponent_changes.change = /*change*/
-        ctx2[40];
+          ctx2[40];
       if (dirty[0] & /*view*/
-      2)
+        2)
         filecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       if (dirty[0] & /*plugin*/
-      1)
+        1)
         filecomponent_changes.manager = /*plugin*/
-        ctx2[0].gitManager;
+          ctx2[0].gitManager;
       filecomponent.$set(filecomponent_changes);
     },
     i(local) {
@@ -41892,7 +41938,7 @@ function create_if_block_14(ctx) {
       attr(div2, "class", "tree-item-self is-clickable nav-folder-title svelte-1bvmxec");
       attr(div3, "class", "pulled nav-folder");
       toggle_class(div3, "is-collapsed", !/*lastPulledFilesOpen*/
-      ctx[14]);
+        ctx[14]);
     },
     m(target, anchor) {
       insert(target, div3, anchor);
@@ -41919,8 +41965,8 @@ function create_if_block_14(ctx) {
     },
     p(ctx2, dirty) {
       if ((!current || dirty[0] & /*lastPulledFiles*/
-      128) && t3_value !== (t3_value = /*lastPulledFiles*/
-      ctx2[7].length + ""))
+        128) && t3_value !== (t3_value = /*lastPulledFiles*/
+          ctx2[7].length + ""))
         set_data(t3, t3_value);
       if (
         /*lastPulledFilesOpen*/
@@ -41929,7 +41975,7 @@ function create_if_block_14(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
           if (dirty[0] & /*lastPulledFilesOpen*/
-          16384) {
+            16384) {
             transition_in(if_block, 1);
           }
         } else {
@@ -41946,9 +41992,9 @@ function create_if_block_14(ctx) {
         check_outros();
       }
       if (!current || dirty[0] & /*lastPulledFilesOpen*/
-      16384) {
+        16384) {
         toggle_class(div3, "is-collapsed", !/*lastPulledFilesOpen*/
-        ctx2[14]);
+          ctx2[14]);
       }
     },
     i(local) {
@@ -42089,7 +42135,7 @@ function create_else_block4(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty[0] & /*lastPulledFiles, view*/
-      130) {
+        130) {
         each_value = ensure_array_like(
           /*lastPulledFiles*/
           ctx2[7]
@@ -42169,17 +42215,17 @@ function create_if_block_32(ctx) {
     p(ctx2, dirty) {
       const treecomponent_changes = {};
       if (dirty[0] & /*lastPulledFilesHierarchy*/
-      2048)
+        2048)
         treecomponent_changes.hierarchy = /*lastPulledFilesHierarchy*/
-        ctx2[11];
+          ctx2[11];
       if (dirty[0] & /*plugin*/
-      1)
+        1)
         treecomponent_changes.plugin = /*plugin*/
-        ctx2[0];
+          ctx2[0];
       if (dirty[0] & /*view*/
-      2)
+        2)
         treecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       treecomponent.$set(treecomponent_changes);
     },
     i(local) {
@@ -42224,13 +42270,13 @@ function create_each_block5(ctx) {
     p(ctx2, dirty) {
       const pulledfilecomponent_changes = {};
       if (dirty[0] & /*lastPulledFiles*/
-      128)
+        128)
         pulledfilecomponent_changes.change = /*change*/
-        ctx2[40];
+          ctx2[40];
       if (dirty[0] & /*view*/
-      2)
+        2)
         pulledfilecomponent_changes.view = /*view*/
-        ctx2[1];
+          ctx2[1];
       pulledfilecomponent.$set(pulledfilecomponent_changes);
     },
     i(local) {
@@ -42472,7 +42518,7 @@ function create_fragment9(ctx) {
     },
     p(ctx2, dirty) {
       if (!current || dirty[0] & /*loading*/
-      32) {
+        32) {
         toggle_class(
           div7,
           "loading",
@@ -42481,7 +42527,7 @@ function create_fragment9(ctx) {
         );
       }
       if (!current || dirty[0] & /*rows*/
-      32768) {
+        32768) {
         attr(
           textarea,
           "rows",
@@ -42490,7 +42536,7 @@ function create_fragment9(ctx) {
         );
       }
       if (dirty[0] & /*commitMessage*/
-      4) {
+        4) {
         set_input_value(
           textarea,
           /*commitMessage*/
@@ -42521,7 +42567,7 @@ function create_fragment9(ctx) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
           if (dirty[0] & /*status, stagedHierarchy, changeHierarchy*/
-          1600) {
+            1600) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -42800,7 +42846,7 @@ function instance9($$self, $$props, $$invalidate) {
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty[0] & /*layoutBtn, showTree*/
-    24) {
+      24) {
       $: {
         if (layoutBtn) {
           layoutBtn.empty();
@@ -42809,9 +42855,9 @@ function instance9($$self, $$props, $$invalidate) {
       }
     }
     if ($$self.$$.dirty[0] & /*commitMessage*/
-    4) {
+      4) {
       $:
-        $$invalidate(15, rows = (commitMessage.match(/\n/g) || []).length + 1 || 1);
+      $$invalidate(15, rows = (commitMessage.match(/\n/g) || []).length + 1 || 1);
     }
   };
   return [
@@ -44191,11 +44237,7 @@ var ObsidianGit = class extends import_obsidian30.Plugin {
 I strongly recommend to use "Source mode" for viewing the conflicted files. For simple conflicts, in each file listed above replace every occurrence of the following text blocks with the desired text.
 
 \`\`\`diff
-<<<<<<< HEAD
-    File changes in local repository
-=======
     File changes in remote repository
->>>>>>> origin/main
 \`\`\``
       ];
     }
