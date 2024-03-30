@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/龙头战法/第二课.md",
+                "file": "1. 项目/股票知识/龙头战法/第三课.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/龙头战法/第二课.md",
+                "file": "1. 项目/股票知识/龙头战法/第三课.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/龙头战法/第二课.md",
+                "file": "1. 项目/股票知识/龙头战法/第三课.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/龙头战法/第二课.md"
+                "file": "1. 项目/股票知识/龙头战法/第三课.md"
               }
             }
           }
@@ -164,10 +164,11 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
+    "1. 项目/股票知识/龙头战法/第二课.md",
+    "1. 项目/股票知识/龙头战法/第三课.md",
     "1. 项目/股票知识/龙头战法/Pasted image 20240330140020.png",
     "1. 项目/股票知识/龙头战法/Pasted image 20240330135638.png",
     "1. 项目/股票知识/龙头战法/Pasted image 20240330135310.png",
-    "任务.md",
-    "1. 项目/股票知识/龙头战法/第二课.md"
+    "任务.md"
   ]
 }
