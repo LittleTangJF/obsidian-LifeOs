@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/04/2024-04-01.md",
+                "file": "1. 项目/股票知识/龙头战法/第二课.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4412751929130a14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/react/hooks/react-context.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/04/2024-04-01.md",
+                "file": "1. 项目/react/hooks/react-context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/04/2024-04-01.md"
+                "file": "1. 项目/react/hooks/react-context.md"
               }
             }
           },
@@ -119,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. 周期笔记/2024/Daily/04/2024-04-01.md",
+                "file": "1. 项目/react/hooks/react-context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,10 +184,10 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "473f774831aa8045",
+  "active": "4412751929130a14",
   "lastOpenFiles": [
-    "1. 项目/部署知识/打镜像包.md",
     "0. 周期笔记/2024/Daily/04/2024-04-01.md",
+    "1. 项目/部署知识/打镜像包.md",
     "0. 周期笔记/2024/Daily/04",
     "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/龙头战法/第三课.md",
