@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"3b9b4dfef158fa98","type":"text","text":"### 龙头低吸战法\n\n- 三个涨停\n- 阴线阳线交替，当出现阳线时是买点","x":-480,"y":-220,"width":300,"height":210},
+		{"id":"f6c84d3acfb9ef61","type":"text","text":"### 反包涨停\n\n- 断板了分歧，出现真阳线十字\n- 放量\n- 第二天完全反包涨停\n\n>原理: 躲避政策,7板停牌和洗盘","x":-480,"y":20,"width":300,"height":240},
+		{"id":"0fbe5e18528bd6bf","type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240410235751.png","x":-160,"y":20,"width":260,"height":201},
+		{"id":"0b81f54fb0bb8343","type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240411000414.png","x":-160,"y":-220,"width":400,"height":163},
+		{"id":"d7765307bca0e3ae","type":"text","text":"实战案例","x":300,"y":-220,"width":250,"height":60},
+		{"id":"4db3e750bc5454fb","type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240411000900.png","x":300,"y":-115,"width":399,"height":135},
+		{"id":"1b3c0c6bc1f73aec","type":"text","text":"### 如何卖？\n\n- 涨停持股\n- 冲高减仓，设置保护位\n- 跌破止盈","x":300,"y":45,"width":253,"height":191},
+		{"id":"566af67167e983b2","type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240411001804.png","x":300,"y":280,"width":400,"height":143}
+	],
+	"edges":[]
+}

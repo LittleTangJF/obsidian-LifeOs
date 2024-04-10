@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"44efb3f31b040c1d","x":-200,"y":-220,"width":400,"height":141,"type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240410234859.png"},
-		{"id":"3b9b4dfef158fa98","x":-480,"y":-220,"width":245,"height":210,"type":"text","text":"### 龙头低吸战法\n\n- 三个涨停\n- 阴线阳线交替，当出现阳线时是买点"},
-		{"id":"f6c84d3acfb9ef61","x":-480,"y":20,"width":300,"height":201,"type":"text","text":"### 反包涨停\n\n- 断板了分歧，出现阳线十字\n- 第二天反包涨停\n\n>原理: 躲避政策,7板停牌和洗盘"},
-		{"id":"0fbe5e18528bd6bf","x":-160,"y":20,"width":260,"height":201,"type":"file","file":"1. 项目/股票知识/龙头战法/Pasted image 20240410235751.png"}
-	],
-	"edges":[]
-}
