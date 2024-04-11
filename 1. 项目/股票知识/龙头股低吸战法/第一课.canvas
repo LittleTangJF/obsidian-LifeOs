@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"0733825c55548950","type":"text","text":"## 凤还巢\n\n- 金凤凰\n- 银凤凰\n- 火凤凰\n\n1. 涨停时间：最后在上午封死\n2. 涨停位置：底部横屏\n3. 止跌K线：芝麻晨星，在1/2位（银）\n4. 量能缩量","x":-320,"y":-162,"width":240,"height":382},
+		{"id":"d8e6a627e3721f90","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411222657.png","x":0,"y":-311,"width":400,"height":244},
+		{"id":"d530974c8f71b7ab","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411222811.png","x":0,"y":-40,"width":400,"height":229},
+		{"id":"2accd839039ec0e0","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411223505.png","x":0,"y":220,"width":399,"height":194},
+		{"id":"28528d4a88484113","type":"text","text":"## 止损\n\n- 击穿长阳线底部","x":-320,"y":236,"width":240,"height":163},
+		{"id":"e73d82ea34d22906","type":"text","text":"## 双凤还巢\n\n","x":-325,"y":480,"width":250,"height":60},
+		{"id":"58a0083852f60951","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411223802.png","x":0,"y":480,"width":400,"height":211},
+		{"id":"5a1531d6df161d1f","type":"text","text":"## 止损\n\n- 跌穿第一根阳线的1/2\n- 跌穿第一根阳线的上1/2","x":-329,"y":691,"width":329,"height":122},
+		{"id":"b38e7d9f879d1c94","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411224348.png","x":0,"y":691,"width":322,"height":246},
+		{"id":"615969116b4fc9c5","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240411224243.png","x":322,"y":691,"width":200,"height":246}
+	],
+	"edges":[]
+}
