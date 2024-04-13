@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"6b645da19312c928","x":-393,"y":-237,"width":250,"height":60,"type":"text","text":">趋势龙头股特征"},
+		{"id":"20fd6d84101d0251","x":-60,"y":-280,"width":400,"height":245,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413174916.png"},
+		{"id":"25bff24d079e16db","x":-60,"y":0,"width":400,"height":136,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413175059.png"},
+		{"id":"0bd78ff8969b4f82","x":-393,"y":8,"width":250,"height":60,"type":"text","text":">案例：在平台低吸"}
+	],
+	"edges":[]
+}
