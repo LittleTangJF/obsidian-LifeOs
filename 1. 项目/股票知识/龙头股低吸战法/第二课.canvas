@@ -1,7 +1,8 @@
 {
 	"nodes":[
-		{"id":"2cb63210a0f35d4a","x":-357,"y":-279,"width":257,"height":179,"type":"text","text":"## 情绪龙头股\n相对于同行业板块的股票\n- 有影响和号召力的股票\n- 有引导和示范"},
-		{"id":"2c5717a336fa16ed","x":-60,"y":-279,"width":400,"height":192,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413130931.png"}
+		{"id":"2cb63210a0f35d4a","x":-357,"y":-279,"width":257,"height":459,"type":"text","text":"## 情绪龙头股\n相对于同行业板块的股票\n- 有影响和号召力的股票\n- 有引导和示范\n\n### 龙头股低吸打法\n\n>计算公式\n\n"},
+		{"id":"2c5717a336fa16ed","x":-60,"y":-279,"width":400,"height":192,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413130931.png"},
+		{"id":"aee9f34cb0eccec2","x":-60,"y":-20,"width":400,"height":167,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413141812.png"}
 	],
 	"edges":[]
 }
