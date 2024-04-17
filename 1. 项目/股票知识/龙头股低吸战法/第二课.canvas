@@ -3,11 +3,11 @@
 		{"id":"2cb63210a0f35d4a","type":"text","text":"## 情绪龙头股\n相对于同行业板块的股票\n- 有影响和号召力的股票\n- 有引导和示范\n- 5日线上涨的\n\n### 龙头股低吸打法\n\n一旦回到5日线、10日线附近，就可以开始抄底\n>计算公式\n\n提前一天去计算\n\n（1 + 2 + 3 + 4 + 5 )/  5 = 明日低吸点\n\n第五天收盘价= 4 * 1.1","x":-357,"y":-279,"width":257,"height":459},
 		{"id":"2c5717a336fa16ed","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413130931.png","x":-60,"y":-279,"width":399,"height":192},
 		{"id":"aee9f34cb0eccec2","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413141812.png","x":-60,"y":-20,"width":400,"height":167},
-		{"id":"6acd67cc21778e3c","x":-60,"y":180,"width":400,"height":112,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413153820.png"},
-		{"id":"dae55b229d715599","x":-351,"y":208,"width":251,"height":84,"type":"text","text":">第五日是未知的，用4*1.099"},
-		{"id":"5b7ae64ab7ea7dc8","x":-60,"y":320,"width":400,"height":145,"type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413160308.png"},
-		{"id":"f1596737c74c27f4","x":-350,"y":363,"width":250,"height":77,"type":"text","text":">所以在20.69附近坐地吸"},
-		{"id":"9e9301daccdee33e","x":-350,"y":500,"width":250,"height":120,"type":"text","text":">离场信号：收盘价跌破5日线  或者 瀑布杀（出货）"}
+		{"id":"6acd67cc21778e3c","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413153820.png","x":-60,"y":180,"width":400,"height":112},
+		{"id":"dae55b229d715599","type":"text","text":">第五日是未知的，用4*1.099","x":-351,"y":208,"width":251,"height":84},
+		{"id":"5b7ae64ab7ea7dc8","type":"file","file":"1. 项目/股票知识/龙头股低吸战法/Pasted image 20240413160308.png","x":-60,"y":320,"width":400,"height":145},
+		{"id":"f1596737c74c27f4","type":"text","text":">所以在20.69附近坐地吸","x":-350,"y":363,"width":250,"height":77},
+		{"id":"9e9301daccdee33e","type":"text","text":">离场信号：收盘价跌破5日线  或者 瀑布杀（出货）","x":-350,"y":500,"width":250,"height":120}
 	],
 	"edges":[]
 }
