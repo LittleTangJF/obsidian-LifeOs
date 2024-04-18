@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"386e0f863f073948","x":-541,"y":-475,"width":301,"height":215,"type":"text","text":"## 多维度信号买入\n\n1. K线信号+生命线+分时信号"},
+		{"id":"a775423efeece754","x":-120,"y":-475,"width":400,"height":182,"type":"file","file":"图片存放/Pasted image 20240417213907.png"},
+		{"id":"47f8395f2499d301","x":-120,"y":-260,"width":400,"height":219,"type":"file","file":"图片存放/Pasted image 20240417221049.png"},
+		{"id":"83cb59e780a4771e","x":320,"y":-260,"width":250,"height":60,"type":"text","text":">指标线 10ma 5ma"},
+		{"id":"ab736acb7b357343","x":-120,"y":5,"width":400,"height":166,"type":"file","file":"图片存放/Pasted image 20240417222345.png"},
+		{"id":"8979f0908dc82659","x":-515,"y":5,"width":250,"height":60,"type":"text","text":">检测主力"}
+	],
+	"edges":[]
+}

@@ -5,7 +5,7 @@
   "foldIndent": true,
   "defaultViewMode": "source",
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "图片存放",
   "legacyEditor": false,
   "livePreview": true,
   "promptDelete": false,
