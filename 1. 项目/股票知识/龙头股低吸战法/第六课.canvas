@@ -1,9 +1,9 @@
 {
 	"nodes":[
-		{"id":"f0749c6cfa8ae25c","x":-420,"y":-260,"width":488,"height":240,"type":"text","text":"## 关注市场热点\n\n将当下热点炒作的热点，**细分**\n\n比如：\n>AI:  算力、国产AI芯片、Ai应用、多模态、MR\n\n- 算力： 高新发展、中贝通信"},
-		{"id":"3442f00f92287853","x":120,"y":-260,"width":400,"height":139,"type":"file","file":"图片存放/Pasted image 20240421130227.png"},
-		{"id":"4dfd6fb5a79f4aed","x":-420,"y":60,"width":362,"height":162,"type":"text","text":"## 市场情绪周期"},
-		{"id":"7968eaee9e3b126a","x":120,"y":60,"width":400,"height":241,"type":"file","file":"图片存放/Pasted image 20240421131434.png"}
+		{"id":"f0749c6cfa8ae25c","type":"text","text":"## 关注市场热点\n\n将当下热点炒作的热点，**细分**\n\n比如：\n>AI:  算力、国产AI芯片、Ai应用、多模态、MR\n\n- 算力： 高新发展、中贝通信","x":-420,"y":-260,"width":488,"height":240},
+		{"id":"3442f00f92287853","type":"file","file":"图片存放/Pasted image 20240421130227.png","x":120,"y":-260,"width":400,"height":139},
+		{"id":"4dfd6fb5a79f4aed","type":"text","text":"## 市场情绪周期","x":-420,"y":60,"width":362,"height":162},
+		{"id":"7968eaee9e3b126a","type":"file","file":"图片存放/Pasted image 20240421131434.png","x":120,"y":60,"width":400,"height":241}
 	],
 	"edges":[]
 }
