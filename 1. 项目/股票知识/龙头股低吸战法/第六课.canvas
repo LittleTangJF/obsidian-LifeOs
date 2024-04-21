@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"id":"f0749c6cfa8ae25c","type":"text","text":"## 关注市场热点\n\n将当下热点炒作的热点，**细分**\n\n比如：\n>AI:  算力、国产AI芯片、Ai应用、多模态、MR\n\n- 算力： 高新发展、中贝通信","x":-420,"y":-260,"width":488,"height":240},
+		{"id":"f0749c6cfa8ae25c","type":"text","text":"## 关注市场热点\n\n将当下热点炒作的热点，**细分**\n\n比如：\n>AI:  算力、国产AI芯片、Ai应用、多模态、MR\n\n- 算力： 高新发展、中贝通信\n\n以龙头为轴心发散选股","x":-420,"y":-260,"width":480,"height":280},
 		{"id":"3442f00f92287853","type":"file","file":"图片存放/Pasted image 20240421130227.png","x":120,"y":-260,"width":400,"height":139},
-		{"id":"4dfd6fb5a79f4aed","type":"text","text":"## 市场情绪周期","x":-420,"y":60,"width":362,"height":162},
+		{"id":"4dfd6fb5a79f4aed","type":"text","text":"## 市场情绪周期\n\n一个龙头的死亡，是另一个龙头的启动阶段\n\n- 冰点期间：最高的板3-6个","x":-420,"y":60,"width":362,"height":162},
 		{"id":"7968eaee9e3b126a","type":"file","file":"图片存放/Pasted image 20240421131434.png","x":120,"y":60,"width":400,"height":241},
 		{"id":"f6c78d5efa41487a","x":120,"y":395,"width":400,"height":241,"type":"file","file":"图片存放/Pasted image 20240421165230.png"},
 		{"id":"ced7c342eb31ff99","x":-420,"y":395,"width":250,"height":60,"type":"text","text":"### 双龙取珠"},
