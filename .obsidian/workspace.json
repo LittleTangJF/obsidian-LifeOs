@@ -11,14 +11,12 @@
             "id": "473f774831aa8045",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/大A图鉴.canvas",
-                "viewState": {
-                  "x": -32.82360692615405,
-                  "y": 1291.198274411099,
-                  "zoom": -0.28124560678998706
-                }
+                "file": "1. 项目/股票知识/做T基本技巧.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -99,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/大A图鉴.canvas",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/大A图鉴.canvas"
+                "file": "1. 项目/股票知识/做T基本技巧.md"
               }
             }
           },
@@ -121,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/大A图鉴.canvas",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,6 +173,12 @@
   "active": "473f774831aa8045",
   "lastOpenFiles": [
     "1. 项目/股票知识/悟道.canvas",
+    "1. 项目/股票知识/三层底仓滚动做T.md",
+    "1. 项目/股票知识/股票todolist.md",
+    "1. 项目/股票知识/股票知识.README.md",
+    "1. 项目/股票知识/股票图谱.canvas",
+    "1. 项目/股票知识/股票技巧.md",
+    "1. 项目/股票知识/股票的专业术语.md",
     "1. 项目/股票知识/大A图鉴.canvas",
     "图片存放/Pasted image 20240423174332.png",
     "图片存放/Pasted image 20240423173818.png",
@@ -219,16 +223,9 @@
     "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
     "0. 周期笔记/2024/Daily/03/2024-03-27.md",
     "0. 周期笔记/2024/Daily/03/2024-03-28.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-22.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第四课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
     "1. 项目/股票知识/龙头股实战课程总结",
     "0. 周期笔记/2024/Daily/03",
     "1. 项目/react/v18.2.0/hook",
-    "1. 项目/react/v18.2.0",
-    "1. 项目/Javascript/javascript图谱.canvas",
-    "1. 项目/股票知识/股票图谱.canvas"
+    "1. 项目/react/v18.2.0"
   ]
 }

@@ -1,9 +1,9 @@
 {
 	"nodes":[
-		{"id":"5d73a401e732845d","x":-395,"y":-326,"width":395,"height":306,"type":"text","text":"## 洗盘结束标志\n\n>庄家是可以画线的\n- 在上涨行情中，往下画一根大阴线，然后放量，第二到第五天缩量阳线是---**洗盘**\n\t- 买点就是缩量阳线或者看第二天是不是真突破\n\n\n"},
-		{"id":"d8375dcfb1603fa5","x":60,"y":-326,"width":400,"height":384,"type":"file","file":"图片存放/Pasted image 20240423173818.png"},
-		{"id":"b344c4b67135d4ab","x":60,"y":100,"width":400,"height":389,"type":"file","file":"图片存放/Pasted image 20240423174332.png"},
-		{"id":"1ca6138ce6c1fba1","x":-395,"y":100,"width":395,"height":194,"type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌"}
+		{"id":"5d73a401e732845d","type":"text","text":"## 洗盘结束标志\n\n>庄家是可以画线的\n- 在上涨行情中，往下画一根大阴线，然后放量，第二到第五天缩量阳线是---**洗盘**\n\t- 买点就是缩量阳线或者看第二天是不是真突破\n\n\n","x":-395,"y":-326,"width":395,"height":306},
+		{"id":"d8375dcfb1603fa5","type":"file","file":"图片存放/Pasted image 20240423173818.png","x":60,"y":-326,"width":400,"height":384},
+		{"id":"b344c4b67135d4ab","type":"file","file":"图片存放/Pasted image 20240423174332.png","x":60,"y":100,"width":400,"height":389},
+		{"id":"1ca6138ce6c1fba1","type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌","x":-395,"y":100,"width":395,"height":194}
 	],
 	"edges":[]
 }
