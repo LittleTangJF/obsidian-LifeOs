@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/大A图鉴.canvas",
                 "viewState": {
-                  "x": -52.0800000000001,
-                  "y": 57.660000000000025,
-                  "zoom": -0.03827391559878985
+                  "x": -32.82360692615405,
+                  "y": 1291.198274411099,
+                  "zoom": -0.28124560678998706
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/大A图鉴.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas"
+                "file": "1. 项目/股票知识/大A图鉴.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/大A图鉴.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,10 +174,11 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
+    "1. 项目/股票知识/悟道.canvas",
+    "1. 项目/股票知识/大A图鉴.canvas",
     "图片存放/Pasted image 20240423174332.png",
     "图片存放/Pasted image 20240423173818.png",
     "0. 周期笔记/2024/Daily/04/2024-04-18.md",
-    "1. 项目/股票知识/悟道.canvas",
     "图片存放/Pasted image 20240421165427.png",
     "图片存放/Pasted image 20240421165230.png",
     "图片存放/Pasted image 20240421131434.png",
@@ -193,7 +194,6 @@
     "图片存放/Pasted image 20240417221049.png",
     "图片存放/Pasted image 20240417213907.png",
     "图片存放/Pasted image 20240417213201.png",
-    "图片存放/Pasted image 20240417212836.png",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
