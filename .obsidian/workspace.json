@@ -13,7 +13,7 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/高量柱战法.canvas",
+                "file": "1. 项目/股票知识/连阴高量战法.canvas",
                 "viewState": {
                   "x": 0,
                   "y": 0,
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 275.5
   },
   "right": {
     "id": "e909704c2c67d329",
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/高量柱战法.canvas",
+                "file": "1. 项目/股票知识/连阴高量战法.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/高量柱战法.canvas"
+                "file": "1. 项目/股票知识/连阴高量战法.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/高量柱战法.canvas",
+                "file": "1. 项目/股票知识/连阴高量战法.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,8 +174,12 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
-    "1. 项目/股票知识/做T基本技巧.md",
     "1. 项目/股票知识/高量柱战法.canvas",
+    "1. 项目/股票知识/连阴高量战法.canvas",
+    "图片存放/Pasted image 20240424115212.png",
+    "图片存放/Pasted image 20240424115150.png",
+    "图片存放/Pasted image 20240424114509.png",
+    "1. 项目/股票知识/做T基本技巧.md",
     "1. 项目/股票知识/悟道.canvas",
     "1. 项目/股票知识/三层底仓滚动做T.md",
     "1. 项目/股票知识/股票todolist.md",
@@ -199,9 +203,6 @@
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "conflict-files-obsidian-git.md",
     "图片存放/Pasted image 20240417222345.png",
-    "图片存放/Pasted image 20240417221049.png",
-    "图片存放/Pasted image 20240417213907.png",
-    "图片存放/Pasted image 20240417213201.png",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
@@ -225,7 +226,6 @@
     "0. 周期笔记/2024/2024.md",
     "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
     "0. 周期笔记/2024/Daily/03/2024-03-27.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-28.md",
     "1. 项目/股票知识/龙头股实战课程总结",
     "0. 周期笔记/2024/Daily/03",
     "1. 项目/react/v18.2.0/hook",
