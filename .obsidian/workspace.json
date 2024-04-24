@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/悟道.canvas",
                 "viewState": {
-                  "x": 292.604685771961,
-                  "y": 332.2226449184443,
-                  "zoom": -0.9892099507810338
+                  "x": -11.724634831460678,
+                  "y": 617.1094662921353,
+                  "zoom": -0.4015507025567976
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/悟道.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas"
+                "file": "1. 项目/股票知识/悟道.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/悟道.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,6 +174,7 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
+    "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
     "1. 项目/股票知识/高量柱战法.canvas",
     "图片存放/Pasted image 20240424150840.png",
     "图片存放/Pasted image 20240424150817.png",

@@ -3,7 +3,8 @@
 		{"id":"5d73a401e732845d","type":"text","text":"## 洗盘结束标志\n\n>庄家是可以画线的\n- 在上涨行情中，往下画一根大阴线，然后放量，第二到第五天缩量阳线是---**洗盘**\n\t- 买点就是缩量阳线或者看第二天是不是真突破\n\n\n","x":-395,"y":-326,"width":395,"height":306},
 		{"id":"d8375dcfb1603fa5","type":"file","file":"图片存放/Pasted image 20240423173818.png","x":60,"y":-326,"width":400,"height":384},
 		{"id":"b344c4b67135d4ab","type":"file","file":"图片存放/Pasted image 20240423174332.png","x":60,"y":100,"width":400,"height":389},
-		{"id":"1ca6138ce6c1fba1","type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌","x":-395,"y":100,"width":395,"height":194}
+		{"id":"1ca6138ce6c1fba1","type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌","x":-395,"y":100,"width":395,"height":194},
+		{"id":"2a59c3c7ac25d31f","x":-415,"y":540,"width":475,"height":271,"type":"text","text":"## 短线策略\n\n短线买入一只股票，满足以下条件，上涨的概率会很大，趋势向上属于热门板块或题材，均线在五日线以上，量比大于1，经过缩量回调的更好，外盘大于内盘，资金是流入的，当天[分时图](https://www.zhihu.com/search?q=%E5%88%86%E6%97%B6%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)强势，股价均线齐升，量增价升，量在价前。"}
 	],
 	"edges":[]
 }
