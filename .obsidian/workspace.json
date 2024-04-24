@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/连阴高量战法.canvas",
+                "file": "1. 项目/股票知识/高量柱战法.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
+                  "x": 129,
+                  "y": 65.5,
+                  "zoom": -0.34476467646522
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/连阴高量战法.canvas",
+                "file": "1. 项目/股票知识/高量柱战法.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/连阴高量战法.canvas"
+                "file": "1. 项目/股票知识/高量柱战法.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/连阴高量战法.canvas",
+                "file": "1. 项目/股票知识/高量柱战法.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,8 +174,11 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
-    "1. 项目/股票知识/高量柱战法.canvas",
+    "1. 项目/股票知识/大A图鉴.canvas",
     "1. 项目/股票知识/连阴高量战法.canvas",
+    "1. 项目/股票知识/高量柱战法.canvas",
+    "图片存放/Pasted image 20240424121632.png",
+    "图片存放/Pasted image 20240424121551.png",
     "图片存放/Pasted image 20240424115212.png",
     "图片存放/Pasted image 20240424115150.png",
     "图片存放/Pasted image 20240424114509.png",
@@ -187,14 +190,12 @@
     "1. 项目/股票知识/股票图谱.canvas",
     "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/股票的专业术语.md",
-    "1. 项目/股票知识/大A图鉴.canvas",
     "图片存放/Pasted image 20240423174332.png",
     "图片存放/Pasted image 20240423173818.png",
     "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放/Pasted image 20240421165427.png",
     "图片存放/Pasted image 20240421165230.png",
     "图片存放/Pasted image 20240421131434.png",
-    "图片存放/Pasted image 20240421130227.png",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "任务.md",
     "1. 项目/股票知识/龙头股低吸战法/第五课.canvas",
@@ -202,10 +203,8 @@
     "1. 项目/股票知识/龙头战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "conflict-files-obsidian-git.md",
-    "图片存放/Pasted image 20240417222345.png",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头战法/第二课.md",
     "0. 周期笔记/2024/Daily/04/2024-04-11.md",
     "1. 项目/股票知识/龙头股低吸战法",
