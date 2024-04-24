@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"e2ca5c6a2b0109d2","x":-341,"y":-199,"width":250,"height":60,"type":"text","text":"## 量价关系"},
+		{"id":"55fdcf50a4d38c83","x":-80,"y":-320,"width":280,"height":80,"type":"text","text":">滞涨量 : 量大实体小多半有人跑"},
+		{"id":"388f6ad9660391f9","x":-80,"y":-199,"width":280,"height":79,"type":"text","text":">分歧量：相对高位，量大 ，次日收阴，**铁压区**"},
+		{"id":"ab5d63c8a3e7ce51","x":200,"y":-481,"width":34,"height":241,"type":"file","file":"图片存放/Pasted image 20240424205025.png"}
+	],
+	"edges":[]
+}
