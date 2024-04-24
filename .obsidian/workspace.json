@@ -13,10 +13,10 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/量价关系.canvas",
+                "file": "1. 项目/股票知识/研修班/第一课.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": -139.5,
+                  "x": -20,
+                  "y": 49.5,
                   "zoom": 0
                 }
               }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/量价关系.canvas",
+                "file": "1. 项目/股票知识/研修班/第一课.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/量价关系.canvas",
+                "file": "1. 项目/股票知识/研修班/第一课.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/量价关系.canvas"
+                "file": "1. 项目/股票知识/研修班/第一课.canvas"
               }
             }
           }
@@ -166,9 +166,13 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
+    "图片存放/Pasted image 20240424213743.png",
+    "1. 项目/股票知识/量价关系.canvas",
+    "1. 项目/股票知识/研修班/第一课.canvas",
+    "图片存放/Pasted image 20240424213010.png",
+    "1. 项目/股票知识/研修班",
     "图片存放/Pasted image 20240424205025.png",
     "1. 项目/股票知识/悟道.canvas",
-    "1. 项目/股票知识/量价关系.canvas",
     "图片存放/Pasted image 20240424150840.png",
     "图片存放/Pasted image 20240424150817.png",
     "图片存放/Pasted image 20240424121632.png",
@@ -181,12 +185,9 @@
     "图片存放/Pasted image 20240423174332.png",
     "图片存放/Pasted image 20240423173818.png",
     "1. 项目/股票知识/大A图鉴.canvas",
-    "图片存放/Pasted image 20240421165427.png",
-    "图片存放/Pasted image 20240421165230.png",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
     "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/未命名.md",
