@@ -13,10 +13,10 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/研修班/第一课.canvas",
+                "file": "1. 项目/股票知识/量价关系.canvas",
                 "viewState": {
-                  "x": -20,
-                  "y": 49.5,
+                  "x": -53.5,
+                  "y": -257,
                   "zoom": 0
                 }
               }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/研修班/第一课.canvas",
+                "file": "1. 项目/股票知识/量价关系.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/研修班/第一课.canvas",
+                "file": "1. 项目/股票知识/量价关系.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/研修班/第一课.canvas"
+                "file": "1. 项目/股票知识/量价关系.canvas"
               }
             }
           }
@@ -166,9 +166,10 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
+    "1. 项目/股票知识/研修班/第一课.canvas",
+    "图片存放/Pasted image 20240424214634.png",
     "图片存放/Pasted image 20240424213743.png",
     "1. 项目/股票知识/量价关系.canvas",
-    "1. 项目/股票知识/研修班/第一课.canvas",
     "图片存放/Pasted image 20240424213010.png",
     "1. 项目/股票知识/研修班",
     "图片存放/Pasted image 20240424205025.png",
@@ -182,8 +183,6 @@
     "1. 项目/股票知识/高量柱战法.canvas",
     "1. 项目/股票知识/连阴高量战法.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
-    "图片存放/Pasted image 20240423174332.png",
-    "图片存放/Pasted image 20240423173818.png",
     "1. 项目/股票知识/大A图鉴.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",

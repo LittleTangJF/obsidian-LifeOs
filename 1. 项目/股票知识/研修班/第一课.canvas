@@ -3,7 +3,9 @@
 		{"id":"6fc9b93db562ee11","type":"text","text":"## 做主升浪\n\n理由：下跌的动能强，惯性大，盈利的可能性小\n\n- 下跌斜率在30°内可抄底","x":-420,"y":-300,"width":300,"height":300},
 		{"id":"18cff9897b3ea2e0","type":"text","text":">可以做的趋势\n\nc<a","x":-420,"y":60,"width":300,"height":140},
 		{"id":"58c336b31917e245","type":"file","file":"图片存放/Pasted image 20240424213010.png","x":-20,"y":-300,"width":399,"height":189},
-		{"id":"0e2a3d50a182f5ff","x":-21,"y":60,"width":400,"height":208,"type":"file","file":"图片存放/Pasted image 20240424213743.png"}
+		{"id":"0e2a3d50a182f5ff","x":-21,"y":60,"width":400,"height":208,"type":"file","file":"图片存放/Pasted image 20240424213743.png"},
+		{"id":"47f7b063e3a6b24e","x":-20,"y":344,"width":400,"height":220,"type":"file","file":"图片存放/Pasted image 20240424214634.png"},
+		{"id":"3cdb28939418c2c8","x":-420,"y":314,"width":300,"height":226,"type":"text","text":">启动买点\n\n- 启动当日涨幅越大越好\n- 10日均量的倍量\n- 上影越短越好，不超过实体1/3"}
 	],
 	"edges":[]
 }
