@@ -4,7 +4,9 @@
 		{"id":"d8375dcfb1603fa5","type":"file","file":"图片存放/Pasted image 20240423173818.png","x":60,"y":-326,"width":400,"height":384},
 		{"id":"b344c4b67135d4ab","type":"file","file":"图片存放/Pasted image 20240423174332.png","x":60,"y":100,"width":400,"height":389},
 		{"id":"1ca6138ce6c1fba1","type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌","x":-395,"y":100,"width":395,"height":194},
-		{"id":"2a59c3c7ac25d31f","x":-415,"y":540,"width":475,"height":271,"type":"text","text":"## 短线策略\n\n短线买入一只股票，满足以下条件，上涨的概率会很大，趋势向上属于热门板块或题材，均线在五日线以上，量比大于1，经过缩量回调的更好，外盘大于内盘，资金是流入的，当天[分时图](https://www.zhihu.com/search?q=%E5%88%86%E6%97%B6%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)强势，股价均线齐升，量增价升，量在价前。"}
+		{"id":"2a59c3c7ac25d31f","type":"text","text":"## 短线策略\n\n短线买入一只股票，满足以下条件，上涨的概率会很大，趋势向上属于热门板块或题材，均线在五日线以上，量比大于1，经过缩量回调的更好，外盘大于内盘，资金是流入的，当天[分时图](https://www.zhihu.com/search?q=%E5%88%86%E6%97%B6%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)强势，股价均线齐升，量增价升，量在价前。","x":-395,"y":320,"width":335,"height":271},
+		{"id":"d42e94bc60537f05","x":-392,"y":620,"width":392,"height":395,"type":"text","text":"## 分时图\n\n### 买入信号\n\n- 当macd水上时，macd绿柱最大时是买入点\n\n### 卖出信号 \n\n- 明确的信号：macd快线慢线同时进入水下\n- 计算的信号：预估今天的最高点，然后自行操作卖出"},
+		{"id":"d43298824b8d8e89","x":60,"y":620,"width":400,"height":335,"type":"file","file":"图片存放/Pasted image 20240425145323.png"}
 	],
 	"edges":[]
 }
