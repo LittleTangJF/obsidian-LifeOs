@@ -3,8 +3,9 @@
 		{"id":"e2ca5c6a2b0109d2","type":"text","text":"## 量价关系","x":-341,"y":-199,"width":250,"height":60},
 		{"id":"ab5d63c8a3e7ce51","type":"file","file":"图片存放/Pasted image 20240424205025.png","x":200,"y":-481,"width":34,"height":241},
 		{"id":"388f6ad9660391f9","type":"text","text":">分歧量：相对高位，量大 ，次日收阴，**铁压区**","x":-80,"y":-218,"width":280,"height":79},
-		{"id":"6160a0813d14894f","x":-80,"y":-120,"width":280,"height":87,"type":"text","text":">骗线量：量过高，价不过高"},
-		{"id":"55fdcf50a4d38c83","type":"text","text":">滞涨量 : 量大实体小多半有人跑","x":-80,"y":-320,"width":280,"height":80}
+		{"id":"6160a0813d14894f","type":"text","text":">骗线量：量过高，价不过高","x":-80,"y":-120,"width":280,"height":87},
+		{"id":"55fdcf50a4d38c83","type":"text","text":">滞涨量 : 量大实体小多半有人跑","x":-80,"y":-320,"width":280,"height":80},
+		{"id":"f1568f555f76c5c4","x":-80,"y":1,"width":280,"height":60,"type":"text","text":">锁仓量：量缩价升"}
 	],
 	"edges":[]
 }
