@@ -5,8 +5,16 @@
 		{"id":"b344c4b67135d4ab","type":"file","file":"图片存放/Pasted image 20240423174332.png","x":60,"y":100,"width":400,"height":389},
 		{"id":"1ca6138ce6c1fba1","type":"text","text":"## 下跌标志\n\n- 在顶部缩量下跌是真下跌","x":-395,"y":100,"width":395,"height":194},
 		{"id":"2a59c3c7ac25d31f","type":"text","text":"## 短线策略\n\n短线买入一只股票，满足以下条件，上涨的概率会很大，趋势向上属于热门板块或题材，均线在五日线以上，量比大于1，经过缩量回调的更好，外盘大于内盘，资金是流入的，当天[分时图](https://www.zhihu.com/search?q=%E5%88%86%E6%97%B6%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)强势，股价均线齐升，量增价升，量在价前。","x":-395,"y":320,"width":335,"height":271},
-		{"id":"d42e94bc60537f05","x":-392,"y":620,"width":392,"height":395,"type":"text","text":"## 分时图\n\n### 买入信号\n\n- 当macd水上时，macd绿柱最大时是买入点\n\n### 卖出信号 \n\n- 明确的信号：macd快线慢线同时进入水下\n- 计算的信号：预估今天的最高点，然后自行操作卖出"},
-		{"id":"d43298824b8d8e89","x":60,"y":620,"width":400,"height":335,"type":"file","file":"图片存放/Pasted image 20240425145323.png"}
+		{"id":"d42e94bc60537f05","type":"text","text":"## 分时图\n\n### 买入信号\n\n- 当macd水上时，macd绿柱最大时是买入点\n\n### 卖出信号 \n\n- 明确的信号：macd快线慢线同时进入水下\n- 计算的信号：预估今天的最高点，然后自行操作卖出","x":-392,"y":620,"width":392,"height":395},
+		{"id":"d43298824b8d8e89","type":"file","file":"图片存放/Pasted image 20240425145323.png","x":60,"y":620,"width":400,"height":335},
+		{"id":"14be45d403ed4e79","x":-392,"y":1100,"width":392,"height":280,"type":"text","text":"## 洗盘分时\n\n>手法\n\n1. 下杀，然后出现放量，尾盘拉回均价线\n\n原理：下杀制造恐慌，把散户筹码骗出来"},
+		{"id":"b0bb611b77ab3e30","x":120,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233229.png"},
+		{"id":"19865699421a5ae9","x":580,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233359.png"},
+		{"id":"4b7d8822f76aff4a","x":1040,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233435.png"},
+		{"id":"c8beb49458ebf01c","x":-392,"y":1480,"width":392,"height":326,"type":"text","text":"## 出货分时\n\n>手法\n\n1. 高位，拉升后，缓慢下跌，高点越来越低\n\n\n原理：尽量维持股价在高位，然后拆单出货"},
+		{"id":"82c37360c510cf23","x":120,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233911.png"},
+		{"id":"28399ee9c8fa92ed","x":580,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425234204.png"},
+		{"id":"9e6d257d51fb69fc","x":1040,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425235649.png"}
 	],
 	"edges":[]
 }
