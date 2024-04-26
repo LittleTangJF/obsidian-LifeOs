@@ -7,14 +7,20 @@
 		{"id":"2a59c3c7ac25d31f","type":"text","text":"## 短线策略\n\n短线买入一只股票，满足以下条件，上涨的概率会很大，趋势向上属于热门板块或题材，均线在五日线以上，量比大于1，经过缩量回调的更好，外盘大于内盘，资金是流入的，当天[分时图](https://www.zhihu.com/search?q=%E5%88%86%E6%97%B6%E5%9B%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)强势，股价均线齐升，量增价升，量在价前。","x":-395,"y":320,"width":335,"height":271},
 		{"id":"d42e94bc60537f05","type":"text","text":"## 分时图\n\n### 买入信号\n\n- 当macd水上时，macd绿柱最大时是买入点\n\n### 卖出信号 \n\n- 明确的信号：macd快线慢线同时进入水下\n- 计算的信号：预估今天的最高点，然后自行操作卖出","x":-392,"y":620,"width":392,"height":395},
 		{"id":"d43298824b8d8e89","type":"file","file":"图片存放/Pasted image 20240425145323.png","x":60,"y":620,"width":400,"height":335},
-		{"id":"14be45d403ed4e79","x":-392,"y":1100,"width":392,"height":280,"type":"text","text":"## 洗盘分时\n\n>手法\n\n1. 下杀，然后出现放量，尾盘拉回均价线\n\n原理：下杀制造恐慌，把散户筹码骗出来"},
-		{"id":"b0bb611b77ab3e30","x":120,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233229.png"},
-		{"id":"19865699421a5ae9","x":580,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233359.png"},
-		{"id":"4b7d8822f76aff4a","x":1040,"y":1100,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233435.png"},
-		{"id":"c8beb49458ebf01c","x":-392,"y":1480,"width":392,"height":326,"type":"text","text":"## 出货分时\n\n>手法\n\n1. 高位，拉升后，缓慢下跌，高点越来越低\n\n\n原理：尽量维持股价在高位，然后拆单出货"},
-		{"id":"82c37360c510cf23","x":120,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425233911.png"},
-		{"id":"28399ee9c8fa92ed","x":580,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425234204.png"},
-		{"id":"9e6d257d51fb69fc","x":1040,"y":1480,"width":400,"height":326,"type":"file","file":"图片存放/Pasted image 20240425235649.png"}
+		{"id":"14be45d403ed4e79","type":"text","text":"## 洗盘分时\n\n>手法\n\n1. 下杀，然后出现放量，尾盘拉回均价线\n\n原理：下杀制造恐慌，把散户筹码骗出来","x":-392,"y":1100,"width":392,"height":280},
+		{"id":"b0bb611b77ab3e30","type":"file","file":"图片存放/Pasted image 20240425233229.png","x":120,"y":1100,"width":400,"height":326},
+		{"id":"19865699421a5ae9","type":"file","file":"图片存放/Pasted image 20240425233359.png","x":580,"y":1100,"width":400,"height":326},
+		{"id":"4b7d8822f76aff4a","type":"file","file":"图片存放/Pasted image 20240425233435.png","x":1040,"y":1100,"width":400,"height":326},
+		{"id":"c8beb49458ebf01c","type":"text","text":"## 出货分时\n\n>手法\n\n1. 高位，拉升后，缓慢下跌，高点越来越低\n\n\n原理：尽量维持股价在高位，然后拆单出货","x":-392,"y":1480,"width":392,"height":326},
+		{"id":"82c37360c510cf23","type":"file","file":"图片存放/Pasted image 20240425233911.png","x":120,"y":1480,"width":400,"height":326},
+		{"id":"28399ee9c8fa92ed","type":"file","file":"图片存放/Pasted image 20240425234204.png","x":580,"y":1480,"width":400,"height":326},
+		{"id":"9e6d257d51fb69fc","type":"file","file":"图片存放/Pasted image 20240425235649.png","x":1040,"y":1480,"width":400,"height":326},
+		{"id":"cb95a86ad065fcf2","x":-392,"y":1933,"width":392,"height":367,"type":"text","text":"## 从量能看趋势\n\n原理： 如果量能能稳定在60均量上方，那么代表市场进场做多意愿强\n\n### 技巧\n\n- 周期共振\n- 放量阳包阴"},
+		{"id":"99305ecf1d8ca471","x":120,"y":1933,"width":280,"height":247,"type":"text","text":"##  周期共振-量价共振\n\n>5日线越过60均量线\n\n>均价上穿20日线"},
+		{"id":"0fbf044ad5b483fa","x":509,"y":1933,"width":731,"height":319,"type":"file","file":"图片存放/Pasted image 20240426201615.png"},
+		{"id":"5471760eb0f67c76","x":509,"y":2300,"width":731,"height":393,"type":"file","file":"图片存放/Pasted image 20240426201824.png"},
+		{"id":"5be69c38061d2573","x":120,"y":2300,"width":280,"height":170,"type":"text","text":"### 周期共振-放量阳包阴\n\n>出现阳包阴\n\n>放量"},
+		{"id":"ccbd5734ba34d6c4","x":1320,"y":2300,"width":400,"height":375,"type":"file","file":"图片存放/Pasted image 20240426202156.png"}
 	],
 	"edges":[]
 }
