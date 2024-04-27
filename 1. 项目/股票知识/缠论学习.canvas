@@ -1,9 +1,5 @@
 {
 	"nodes":[
-		{"id":"3d80c5a1f7a66146","x":-40,"y":-340,"width":120,"height":60,"type":"text","text":"### 分型"},
-		{"id":"6f8e750d940b5652","x":120,"y":-365,"width":400,"height":110,"type":"file","file":"图片存放/Pasted image 20240427100328.png"},
-		{"id":"48f63d8e9aaf834e","x":560,"y":-365,"width":208,"height":50,"type":"text","text":"#### 分型合并"},
-		{"id":"279375c55a2eb624","x":800,"y":-436,"width":400,"height":192,"type":"file","file":"图片存放/Pasted image 20240427100618.png"},
 		{"id":"2a591b4f1e03d405","x":430,"y":-255,"width":260,"height":148,"type":"file","file":"图片存放/Pasted image 20240427100840.png"},
 		{"id":"5d291f16e0440cd2","x":430,"y":-80,"width":260,"height":170,"type":"file","file":"图片存放/Pasted image 20240427100902.png"},
 		{"id":"f91b5479ac3bcf5f","x":120,"y":-200,"width":250,"height":60,"type":"text","text":"#### 上升笔"},
@@ -17,12 +13,21 @@
 		{"id":"6b85f2f886ee02a9","x":120,"y":465,"width":250,"height":120,"type":"text","text":"#### 上升中枢\n\n画法：高点里的最低，低点里的最高"},
 		{"id":"34fcb27931d0d330","x":-40,"y":560,"width":125,"height":50,"type":"text","text":"### 中枢"},
 		{"id":"c5ddf7d63a8113e3","x":800,"y":417,"width":400,"height":239,"type":"file","file":"图片存放/Pasted image 20240427102728.png"},
-		{"id":"b34575d424f2443e","x":120,"y":760,"width":250,"height":60,"type":"text","text":""},
 		{"id":"c67250e85144d5bb","x":430,"y":449,"width":260,"height":152,"type":"file","file":"图片存放/Pasted image 20240427102419.png"},
-		{"id":"7e3456b4d00eb0ed","x":120,"y":656,"width":250,"height":60,"type":"text","text":"#### 下降中枢"},
 		{"id":"e6d893a1af07bb87","x":-760,"y":324,"width":220,"height":100,"type":"text","text":"## 理论知识"},
 		{"id":"123f20d2727307f6","x":-102,"y":60,"width":250,"height":60,"color":"#ffffff","type":"text","text":"至少三笔组成线段"},
-		{"id":"761ca0623d670551","type":"text","text":"至少5线段组成中枢","x":-102,"y":394,"width":250,"height":60,"color":"#ffffff"}
+		{"id":"761ca0623d670551","type":"text","text":"至少5线段组成中枢","x":-102,"y":394,"width":250,"height":60,"color":"#ffffff"},
+		{"id":"48f63d8e9aaf834e","x":565,"y":-489,"width":208,"height":50,"type":"text","text":"#### 分型合并"},
+		{"id":"279375c55a2eb624","x":805,"y":-560,"width":400,"height":192,"type":"file","file":"图片存放/Pasted image 20240427100618.png"},
+		{"id":"6f8e750d940b5652","x":125,"y":-489,"width":400,"height":110,"type":"file","file":"图片存放/Pasted image 20240427100328.png"},
+		{"id":"3d80c5a1f7a66146","x":-35,"y":-464,"width":120,"height":60,"type":"text","text":"### 分型"},
+		{"id":"9e5ae9e7003a650a","type":"text","text":"至少5跟k线组成笔","x":-100,"y":-315,"width":250,"height":60,"color":"#ffffff"},
+		{"id":"b34575d424f2443e","x":-840,"y":880,"width":250,"height":50,"type":"text","text":""},
+		{"id":"fa111885a38fbfb7","x":-40,"y":720,"width":125,"height":50,"type":"text","text":"### 级别"},
+		{"id":"47cc1899a6ec4d97","x":120,"y":672,"width":400,"height":147,"type":"file","file":"图片存放/Pasted image 20240427104455.png"},
+		{"id":"7ba63030ae6ff777","x":120,"y":880,"width":320,"height":50,"type":"text","text":">macd红绿柱大小"},
+		{"id":"364d84b8bb3101ae","x":120,"y":955,"width":320,"height":68,"type":"text","text":">向上走的线段长度，越来越短"},
+		{"id":"f0ae51d75c520c1f","x":-40,"y":930,"width":125,"height":50,"type":"text","text":"### 背驰"}
 	],
 	"edges":[
 		{"id":"e98bf52dd15c204a","fromNode":"49d55fcffc06fbd3","fromSide":"right","toNode":"f91b5479ac3bcf5f","toSide":"left"},
@@ -41,6 +46,15 @@
 		{"id":"0053a54e0ad889aa","fromNode":"92b8f7c7dcd7c37b","fromSide":"right","toNode":"0b7587f77ce387ca","toSide":"left"},
 		{"id":"bf83ff6dfba5a67c","fromNode":"17eebd1a253bdad1","fromSide":"bottom","toNode":"34fcb27931d0d330","toSide":"top"},
 		{"id":"8967392195c7b715","fromNode":"49d55fcffc06fbd3","fromSide":"bottom","toNode":"17eebd1a253bdad1","toSide":"top"},
-		{"id":"b508f8fb3c15c2d5","fromNode":"3d80c5a1f7a66146","fromSide":"bottom","toNode":"49d55fcffc06fbd3","toSide":"top"}
+		{"id":"b508f8fb3c15c2d5","fromNode":"3d80c5a1f7a66146","fromSide":"bottom","toNode":"49d55fcffc06fbd3","toSide":"top"},
+		{"id":"bb8593f08b7a14e8","fromNode":"34fcb27931d0d330","fromSide":"right","toNode":"6b85f2f886ee02a9","toSide":"left"},
+		{"id":"0ea6000a35d05e43","fromNode":"6b85f2f886ee02a9","fromSide":"right","toNode":"c67250e85144d5bb","toSide":"left"},
+		{"id":"cad9c94e80a25e6b","fromNode":"c67250e85144d5bb","fromSide":"right","toNode":"c5ddf7d63a8113e3","toSide":"left"},
+		{"id":"c8daac85f860105b","fromNode":"e6d893a1af07bb87","fromSide":"right","toNode":"34fcb27931d0d330","toSide":"left"},
+		{"id":"eecb452bf402b715","fromNode":"e6d893a1af07bb87","fromSide":"right","toNode":"fa111885a38fbfb7","toSide":"left"},
+		{"id":"bdddadb219a0c428","fromNode":"fa111885a38fbfb7","fromSide":"right","toNode":"47cc1899a6ec4d97","toSide":"left"},
+		{"id":"5aeebe352940b4d9","fromNode":"e6d893a1af07bb87","fromSide":"right","toNode":"f0ae51d75c520c1f","toSide":"left"},
+		{"id":"6623f48c39c3f745","fromNode":"f0ae51d75c520c1f","fromSide":"right","toNode":"7ba63030ae6ff777","toSide":"left"},
+		{"id":"23a01f7664bff91e","fromNode":"f0ae51d75c520c1f","fromSide":"right","toNode":"364d84b8bb3101ae","toSide":"left"}
 	]
 }
