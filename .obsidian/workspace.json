@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/缠论学习.canvas",
                 "viewState": {
-                  "x": 914.8463628701236,
-                  "y": 2483.888993862037,
-                  "zoom": -0.7096134223990278
+                  "x": 298.6666259765625,
+                  "y": 332.9494789627655,
+                  "zoom": -1
                 }
               }
             }
@@ -72,7 +72,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 404.5,
+    "collapsed": true
   },
   "right": {
     "id": "83d6d64511d8a9a8",
@@ -88,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/缠论学习.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/缠论学习.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas"
+                "file": "1. 项目/股票知识/缠论学习.canvas"
               }
             }
           }
@@ -166,19 +167,21 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
+    "图片存放/Pasted image 20240427102728.png",
+    "图片存放/Pasted image 20240427102541.png",
+    "图片存放/Pasted image 20240427102419.png",
+    "图片存放/Pasted image 20240427101335.png",
+    "图片存放/Pasted image 20240427101301.png",
+    "图片存放/Pasted image 20240427100902.png",
+    "图片存放/Pasted image 20240427100840.png",
+    "图片存放/Pasted image 20240427100618.png",
+    "图片存放/Pasted image 20240427100328.png",
+    "1. 项目/股票知识/缠论学习.canvas",
     "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/悟道.canvas",
     "图片存放/Pasted image 20240426202156.png",
     "图片存放/Pasted image 20240426201824.png",
-    "图片存放/Pasted image 20240426201615.png",
-    "图片存放/Pasted image 20240425235649.png",
-    "图片存放/Pasted image 20240425234204.png",
-    "图片存放/Pasted image 20240425233911.png",
-    "图片存放/Pasted image 20240425233435.png",
-    "图片存放/Pasted image 20240425233359.png",
-    "图片存放/Pasted image 20240425233229.png",
     "1. 项目/股票知识/大A图鉴.canvas",
-    "图片存放/Pasted image 20240425145323.png",
     "1. 项目/股票知识/量价关系.canvas",
     "1. 项目/股票知识/研修班/第一课.canvas",
     "1. 项目/股票知识/研修班",
@@ -187,7 +190,6 @@
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
     "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/未命名.md",
