@@ -27,7 +27,8 @@
 		{"id":"47cc1899a6ec4d97","x":120,"y":672,"width":400,"height":147,"type":"file","file":"图片存放/Pasted image 20240427104455.png"},
 		{"id":"7ba63030ae6ff777","x":120,"y":880,"width":320,"height":50,"type":"text","text":">macd红绿柱大小"},
 		{"id":"364d84b8bb3101ae","x":120,"y":955,"width":320,"height":68,"type":"text","text":">向上走的线段长度，越来越短"},
-		{"id":"f0ae51d75c520c1f","x":-40,"y":930,"width":125,"height":50,"type":"text","text":"### 背驰"}
+		{"id":"f0ae51d75c520c1f","x":-40,"y":930,"width":125,"height":50,"type":"text","text":"### 背驰"},
+		{"id":"fe720ea6ec29a0b7","x":690,"y":851,"width":400,"height":276,"type":"file","file":"图片存放/Pasted image 20240427193215.png"}
 	],
 	"edges":[
 		{"id":"e98bf52dd15c204a","fromNode":"49d55fcffc06fbd3","fromSide":"right","toNode":"f91b5479ac3bcf5f","toSide":"left"},
