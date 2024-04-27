@@ -22,7 +22,6 @@
 		{"id":"6f8e750d940b5652","x":125,"y":-489,"width":400,"height":110,"type":"file","file":"图片存放/Pasted image 20240427100328.png"},
 		{"id":"3d80c5a1f7a66146","x":-35,"y":-464,"width":120,"height":60,"type":"text","text":"### 分型"},
 		{"id":"9e5ae9e7003a650a","type":"text","text":"至少5跟k线组成笔","x":-100,"y":-315,"width":250,"height":60,"color":"#ffffff"},
-		{"id":"b34575d424f2443e","x":-840,"y":880,"width":250,"height":50,"type":"text","text":""},
 		{"id":"fa111885a38fbfb7","x":-40,"y":720,"width":125,"height":50,"type":"text","text":"### 级别"},
 		{"id":"47cc1899a6ec4d97","x":120,"y":672,"width":400,"height":147,"type":"file","file":"图片存放/Pasted image 20240427104455.png"},
 		{"id":"7ba63030ae6ff777","x":120,"y":880,"width":320,"height":50,"type":"text","text":">macd红绿柱大小"},
