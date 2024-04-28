@@ -27,15 +27,15 @@
 		{"id":"7ba63030ae6ff777","type":"text","text":">macd红绿柱大小","x":120,"y":880,"width":320,"height":50},
 		{"id":"364d84b8bb3101ae","type":"text","text":">macd绿线越来越小，甚至到零轴","x":120,"y":955,"width":400,"height":50},
 		{"id":"f0ae51d75c520c1f","type":"text","text":"### 背驰","x":-40,"y":930,"width":125,"height":50},
-		{"id":"34cccea4aee0d2fd","x":150,"y":1280,"width":250,"height":60,"type":"text","text":">强的分型"},
-		{"id":"d79aaa6f47c81b31","x":155,"y":1147,"width":250,"height":60,"type":"text","text":">第二类买点"},
-		{"id":"59e5e1052e483d8f","x":-39,"y":1207,"width":125,"height":50,"type":"text","text":"### 买点"},
-		{"id":"ff7b51b611208691","x":690,"y":1340,"width":400,"height":378,"type":"file","file":"图片存放/Pasted image 20240428203026.png"},
-		{"id":"07f5c008ac74ecb9","x":690,"y":1177,"width":400,"height":60,"type":"text","text":"缩小到30分钟K线，找第一类买点"},
-		{"id":"a940c6b2eed6d4d8","x":1120,"y":783,"width":400,"height":294,"type":"file","file":"图片存放/Pasted image 20240428203625.png"},
+		{"id":"34cccea4aee0d2fd","type":"text","text":">强的分型","x":150,"y":1280,"width":250,"height":60},
+		{"id":"d79aaa6f47c81b31","type":"text","text":">第二类买点","x":155,"y":1147,"width":250,"height":60},
+		{"id":"59e5e1052e483d8f","type":"text","text":"### 买点","x":-39,"y":1207,"width":125,"height":50},
+		{"id":"ff7b51b611208691","type":"file","file":"图片存放/Pasted image 20240428203026.png","x":690,"y":1340,"width":400,"height":378},
+		{"id":"07f5c008ac74ecb9","type":"text","text":"缩小到30分钟K线，找第一类买点","x":690,"y":1177,"width":400,"height":60},
+		{"id":"a940c6b2eed6d4d8","type":"file","file":"图片存放/Pasted image 20240428203625.png","x":1120,"y":783,"width":400,"height":294},
 		{"id":"fe720ea6ec29a0b7","type":"file","file":"图片存放/Pasted image 20240427193215.png","x":600,"y":801,"width":400,"height":276},
-		{"id":"1817b6d26fc363c3","x":1280,"y":1134,"width":400,"height":352,"type":"file","file":"图片存放/Pasted image 20240428203123.png"},
-		{"id":"e732c3bccb4bd1de","x":2040,"y":1147,"width":909,"height":613,"type":"file","file":"图片存放/Pasted image 20240428204854.png"}
+		{"id":"1817b6d26fc363c3","type":"file","file":"图片存放/Pasted image 20240428203123.png","x":1280,"y":1134,"width":400,"height":352},
+		{"id":"e732c3bccb4bd1de","type":"file","file":"图片存放/Pasted image 20240428204854.png","x":2040,"y":1147,"width":909,"height":613}
 	],
 	"edges":[
 		{"id":"e98bf52dd15c204a","fromNode":"49d55fcffc06fbd3","fromSide":"right","toNode":"f91b5479ac3bcf5f","toSide":"left"},
