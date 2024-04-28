@@ -14,7 +14,6 @@
 		{"id":"c8beb49458ebf01c","type":"text","text":"## 出货分时\n\n>手法\n\n1. 高位，拉升后，缓慢下跌，高点越来越低\n\n\n原理：尽量维持股价在高位，然后拆单出货","x":-392,"y":1480,"width":392,"height":326},
 		{"id":"82c37360c510cf23","type":"file","file":"图片存放/Pasted image 20240425233911.png","x":120,"y":1480,"width":400,"height":326},
 		{"id":"28399ee9c8fa92ed","type":"file","file":"图片存放/Pasted image 20240425234204.png","x":580,"y":1480,"width":400,"height":326},
-<<<<<<< HEAD
 		{"id":"9e6d257d51fb69fc","type":"file","file":"图片存放/Pasted image 20240425235649.png","x":1040,"y":1480,"width":400,"height":326},
 		{"id":"cb95a86ad065fcf2","x":-392,"y":1933,"width":392,"height":367,"type":"text","text":"## 从量能看趋势\n\n原理： 如果量能能稳定在60均量上方，那么代表市场进场做多意愿强\n\n### 技巧\n\n- 周期共振\n- 放量阳包阴"},
 		{"id":"99305ecf1d8ca471","x":120,"y":1933,"width":280,"height":247,"type":"text","text":"##  周期共振-量价共振\n\n>5日线越过60均量线\n\n>均价上穿20日线"},
@@ -22,9 +21,6 @@
 		{"id":"5471760eb0f67c76","x":509,"y":2300,"width":731,"height":393,"type":"file","file":"图片存放/Pasted image 20240426201824.png"},
 		{"id":"5be69c38061d2573","x":120,"y":2300,"width":280,"height":170,"type":"text","text":"### 周期共振-放量阳包阴\n\n>出现阳包阴\n\n>放量"},
 		{"id":"ccbd5734ba34d6c4","x":1320,"y":2300,"width":400,"height":375,"type":"file","file":"图片存放/Pasted image 20240426202156.png"}
-=======
-		{"id":"9e6d257d51fb69fc","type":"file","file":"图片存放/Pasted image 20240425235649.png","x":1040,"y":1480,"width":400,"height":326}
->>>>>>> origin/main
 	],
 	"edges":[]
 }

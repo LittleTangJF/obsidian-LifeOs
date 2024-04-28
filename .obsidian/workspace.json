@@ -11,15 +11,8 @@
             "id": "1cea141cb4729370",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "1. 项目/股票知识/缠论学习.canvas",
-                "viewState": {
-                  "x": 1196.5625206413092,
-                  "y": 1248.6161049393281,
-                  "zoom": -1
-                }
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -72,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5,
-    "collapsed": true
+    "width": 404.5
   },
   "right": {
     "id": "83d6d64511d8a9a8",
@@ -89,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/缠论学习.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/缠论学习.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1. 项目/股票知识/缠论学习.canvas"
-              }
+              "state": {}
             }
           }
         ]
@@ -167,6 +155,11 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
+    "1. 项目/股票知识/悟道.canvas",
+    "1. 项目/股票知识/量价关系.canvas",
+    "1. 项目/股票知识/连阴高量战法.canvas",
+    "1. 项目/股票知识/高量柱战法.canvas",
+    "1. 项目/股票知识/缠论学习.canvas",
     "图片存放/Pasted image 20240428204854.png",
     "图片存放/Pasted image 20240428203625.png",
     "图片存放/Pasted image 20240428203123.png",
@@ -177,16 +170,10 @@
     "图片存放/Pasted image 20240427102541.png",
     "图片存放/Pasted image 20240427102419.png",
     "图片存放/Pasted image 20240427101335.png",
-    "图片存放/Pasted image 20240427101301.png",
-    "1. 项目/股票知识/缠论学习.canvas",
     "conflict-files-obsidian-git.md",
-    "1. 项目/股票知识/悟道.canvas",
     "1. 项目/股票知识/大A图鉴.canvas",
-    "1. 项目/股票知识/量价关系.canvas",
     "1. 项目/股票知识/研修班/第一课.canvas",
     "1. 项目/股票知识/研修班",
-    "1. 项目/股票知识/高量柱战法.canvas",
-    "1. 项目/股票知识/连阴高量战法.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",

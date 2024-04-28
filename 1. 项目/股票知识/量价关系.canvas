@@ -5,7 +5,7 @@
 		{"id":"388f6ad9660391f9","type":"text","text":">分歧量：相对高位，量大 ，次日收阴，**铁压区**","x":-80,"y":-218,"width":280,"height":79},
 		{"id":"6160a0813d14894f","type":"text","text":">骗线量：量过高，价不过高","x":-80,"y":-120,"width":280,"height":87},
 		{"id":"55fdcf50a4d38c83","type":"text","text":">滞涨量 : 量大实体小多半有人跑","x":-80,"y":-320,"width":280,"height":80},
-		{"id":"f1568f555f76c5c4","x":-80,"y":1,"width":280,"height":60,"type":"text","text":">锁仓量：量缩价升"}
+		{"id":"f1568f555f76c5c4","type":"text","text":">锁仓量：量缩价升","x":-80,"y":1,"width":280,"height":60}
 	],
 	"edges":[]
 }
