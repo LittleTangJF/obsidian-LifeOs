@@ -11,8 +11,15 @@
             "id": "1cea141cb4729370",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "canvas",
+              "state": {
+                "file": "1. 项目/股票知识/悟道.canvas",
+                "viewState": {
+                  "x": 969.2012534745186,
+                  "y": 2086.0031175694644,
+                  "zoom": -1.1856059114961806
+                }
+              }
             }
           }
         ]
@@ -81,6 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1. 项目/股票知识/悟道.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1. 项目/股票知识/悟道.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1. 项目/股票知识/悟道.canvas"
+              }
             }
           }
         ]
@@ -155,8 +166,12 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
-    "1. 项目/股票知识/悟道.canvas",
+    "1. 项目/股票知识/三层底仓滚动做T.md",
+    "1. 项目/股票知识/股票技巧.md",
+    "1. 项目/股票知识/股票的专业术语.md",
+    "1. 项目/股票知识/股票todolist.md",
     "1. 项目/股票知识/量价关系.canvas",
+    "1. 项目/股票知识/悟道.canvas",
     "1. 项目/股票知识/连阴高量战法.canvas",
     "1. 项目/股票知识/高量柱战法.canvas",
     "1. 项目/股票知识/缠论学习.canvas",
