@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"e96121a822c89620","x":-345,"y":-120,"width":250,"height":60,"type":"text","text":"夏天"},
+		{"id":"0e717bfc967a8fe6","x":-345,"y":-320,"width":250,"height":60,"type":"text","text":"春天"},
+		{"id":"5544deeb035cad57","x":0,"y":-200,"width":250,"height":60,"type":"text","text":"4月抄业绩财报高送转"},
+		{"id":"35851a78a364735e","x":0,"y":-90,"width":250,"height":60,"type":"text","text":"5月炒酒店旅游客运"},
+		{"id":"2f406c06b3911d97","x":0,"y":0,"width":250,"height":60,"type":"text","text":"6月炒中小股"},
+		{"id":"5801d7b62af05e2e","x":250,"y":-50,"width":138,"height":50,"color":"#ffffff","type":"text","text":"5穷6绝"},
+		{"id":"5e776b7854277bfa","x":0,"y":180,"width":250,"height":60,"type":"text","text":"8月炒科技板块"},
+		{"id":"cb658578e8c14efb","x":0,"y":260,"width":250,"height":60,"type":"text","text":"9月炒军工"},
+		{"id":"086bd7997bba580d","x":0,"y":100,"width":250,"height":60,"type":"text","text":"7翻身抓新概念"},
+		{"id":"1e979950ff4c81c2","x":-345,"y":180,"width":250,"height":60,"type":"text","text":"秋天"},
+		{"id":"a4d20c7ecd969782","x":1,"y":356,"width":250,"height":60,"type":"text","text":"10月餐饮、影视、娱乐"},
+		{"id":"32e98ad7310c2fc3","x":1,"y":460,"width":250,"height":60,"type":"text","text":"11月炒零售、物流"},
+		{"id":"05c67bf13e6319f9","x":0,"y":560,"width":250,"height":60,"type":"text","text":"12月炒煤炭燃气"},
+		{"id":"1e68ed39f591eec6","x":-345,"y":460,"width":250,"height":60,"type":"text","text":"冬天"}
+	],
+	"edges":[
+		{"id":"c72df5e735ee3853","fromNode":"35851a78a364735e","fromSide":"right","toNode":"2f406c06b3911d97","toSide":"right"},
+		{"id":"bb794c87eaa5f1e3","fromNode":"e96121a822c89620","fromSide":"right","toNode":"5544deeb035cad57","toSide":"left"},
+		{"id":"284e9b478f7037c5","fromNode":"e96121a822c89620","fromSide":"right","toNode":"35851a78a364735e","toSide":"left"},
+		{"id":"76fec032e1ad7142","fromNode":"e96121a822c89620","fromSide":"right","toNode":"2f406c06b3911d97","toSide":"left"},
+		{"id":"9b163737b34ad69b","fromNode":"1e979950ff4c81c2","fromSide":"right","toNode":"086bd7997bba580d","toSide":"left"},
+		{"id":"5b01893ff1f15c43","fromNode":"1e979950ff4c81c2","fromSide":"right","toNode":"5e776b7854277bfa","toSide":"left"},
+		{"id":"70dbd6229d1745a8","fromNode":"1e979950ff4c81c2","fromSide":"right","toNode":"cb658578e8c14efb","toSide":"left"},
+		{"id":"e30406c676cf2d60","fromNode":"1e68ed39f591eec6","fromSide":"right","toNode":"a4d20c7ecd969782","toSide":"left"},
+		{"id":"e0265d36c645ea6a","fromNode":"1e68ed39f591eec6","fromSide":"right","toNode":"32e98ad7310c2fc3","toSide":"left"},
+		{"id":"f616d3b85081b127","fromNode":"1e68ed39f591eec6","fromSide":"right","toNode":"05c67bf13e6319f9","toSide":"left"}
+	]
+}
