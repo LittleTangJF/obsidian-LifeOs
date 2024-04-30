@@ -1,12 +1,18 @@
 {
 	"nodes":[
 		{"id":"9cc8c2b1ab2541a8","x":80,"y":-267,"width":672,"height":454,"type":"group","label":"量过前高的两个场景"},
+		{"id":"65ae653cb69d5873","x":-491,"y":187,"width":571,"height":513,"type":"group","label":"裸K技巧"},
 		{"id":"12bcaa8053d5d16b","type":"group","x":-491,"y":-267,"width":491,"height":407,"label":"做T技巧"},
 		{"id":"23db87c245974a54","type":"text","text":"![[Pasted image 20240115170545.png]]","x":-460,"y":-240,"width":420,"height":340},
 		{"id":"0c0fee06d5a18790","x":112,"y":-233,"width":268,"height":158,"type":"text","text":">1. 放量突破前高\n\n\n说明前面抛压大，接下来大概率洗一波\n"},
 		{"id":"7a1a1f15dc69a1b9","x":112,"y":-33,"width":250,"height":144,"type":"text","text":">缩量过前高\n\n抛压小，后续继续看多"},
 		{"id":"ed51c1e72b5f74dc","x":469,"y":-233,"width":87,"height":177,"type":"file","file":"图片存放/Pasted image 20240430205003.png"},
-		{"id":"bbd94160fdd9685d","x":469,"y":-33,"width":87,"height":209,"type":"file","file":"图片存放/Pasted image 20240430205332.png"}
+		{"id":"bbd94160fdd9685d","x":469,"y":-33,"width":87,"height":209,"type":"file","file":"图片存放/Pasted image 20240430205332.png"},
+		{"id":"0f18d2f32dad1fe7","x":-480,"y":220,"width":250,"height":160,"type":"text","text":">完美K线\n\n有上下引线"},
+		{"id":"7cc9fa69754a65e7","x":-480,"y":440,"width":250,"height":133,"type":"text","text":">裸K\n\n没有上下引线，通常会补"},
+		{"id":"9c124663c2fedaf8","x":-160,"y":218,"width":94,"height":222,"type":"file","file":"图片存放/Pasted image 20240430212259.png"},
+		{"id":"4a8344520ea5214a","x":-185,"y":470,"width":238,"height":206,"type":"file","file":"图片存放/Pasted image 20240430212359.png"},
+		{"id":"e895523c0eea9db8","x":344,"y":380,"width":250,"height":60,"type":"text","text":""}
 	],
 	"edges":[]
 }
