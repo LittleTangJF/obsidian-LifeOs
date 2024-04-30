@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"87c36327beeea5ff","x":80,"y":260,"width":2160,"height":820,"type":"group","label":"内盘和外盘"},
+		{"id":"87c36327beeea5ff","x":80,"y":260,"width":2160,"height":980,"type":"group","label":"内盘和外盘"},
 		{"id":"9cc8c2b1ab2541a8","x":80,"y":-267,"width":672,"height":454,"type":"group","label":"量过前高的两个场景"},
 		{"id":"65ae653cb69d5873","x":-491,"y":187,"width":571,"height":513,"type":"group","label":"裸K技巧"},
 		{"id":"12bcaa8053d5d16b","type":"group","x":-491,"y":-267,"width":491,"height":407,"label":"做T技巧"},
@@ -14,12 +14,9 @@
 		{"id":"9c124663c2fedaf8","x":-160,"y":218,"width":94,"height":222,"type":"file","file":"图片存放/Pasted image 20240430212259.png"},
 		{"id":"4a8344520ea5214a","x":-185,"y":470,"width":238,"height":206,"type":"file","file":"图片存放/Pasted image 20240430212359.png"},
 		{"id":"e895523c0eea9db8","x":202,"y":366,"width":250,"height":60,"type":"text","text":"外部主动买入吃掉挂单"},
-		{"id":"e6b73e551f6374c8","x":600,"y":366,"width":250,"height":60,"type":"text","text":"外盘"},
+		{"id":"e6b73e551f6374c8","x":600,"y":366,"width":250,"height":60,"type":"text","text":"外盘：外部主动买入"},
 		{"id":"e9491868a1afaee2","x":202,"y":470,"width":250,"height":60,"type":"text","text":"内部主动卖出，吃掉买单"},
-		{"id":"acce20472b6776a3","x":600,"y":470,"width":250,"height":60,"type":"text","text":"内盘"},
-		{"id":"2e0ad01d11683742","x":202,"y":676,"width":250,"height":60,"type":"text","text":"看空"},
-		{"id":"76ffef60e216de6d","x":556,"y":616,"width":250,"height":90,"type":"text","text":"- 内盘大于外盘\n- 缩量下跌\n"},
-		{"id":"341f36a04114cd62","x":202,"y":840,"width":250,"height":60,"type":"text","text":"看多"},
+		{"id":"acce20472b6776a3","x":600,"y":470,"width":250,"height":60,"type":"text","text":"内盘：内部主动卖出"},
 		{"id":"bfd0b57b9637b949","x":940,"y":366,"width":250,"height":60,"type":"text","text":"资金流入流出"},
 		{"id":"c2eb4b973d0fef44","x":1260,"y":306,"width":250,"height":60,"type":"text","text":"大单买入-->净流入"},
 		{"id":"041e1901514694fd","x":1260,"y":440,"width":220,"height":60,"type":"text","text":"大单卖出-->净流出"},
@@ -27,14 +24,21 @@
 		{"id":"e8fba7e59b2a782d","x":1600,"y":556,"width":250,"height":60,"type":"text","text":"主力拆单卖"},
 		{"id":"4c03ac226ce0bd54","x":1600,"y":631,"width":250,"height":60,"type":"text","text":"主力挂一个大单，就显示金流入"},
 		{"id":"1efcd81c64c3d8e9","x":1920,"y":586,"width":250,"height":60,"type":"text","text":"股价下跌，主力出货，但净流入是正的"},
-		{"id":"725de5de9a12e852","x":556,"y":920,"width":250,"height":90,"type":"text","text":"- 外盘大于内盘\n- 量价齐升"},
-		{"id":"0297e2a0e0d0b371","x":580,"y":736,"width":250,"height":84,"type":"text","text":"外盘>内盘\n股价下跌\n高位出货"},
-		{"id":"c171a5b89a073b4e","x":580,"y":840,"width":250,"height":60,"type":"text","text":"上有压单，出现大量小买盘，股价下跌，主力吃货"}
+		{"id":"c171a5b89a073b4e","x":580,"y":900,"width":250,"height":60,"type":"text","text":"上有压单（卖二），出现大量小买盘，股价抑制"},
+		{"id":"725de5de9a12e852","x":580,"y":1120,"width":250,"height":90,"type":"text","text":"- 外盘大于内盘\n- 量价齐升"},
+		{"id":"97e52b1cdb9ea7c8","x":580,"y":1000,"width":250,"height":60,"type":"text","text":"内盘>外盘，股价反涨，主力吸筹"},
+		{"id":"341f36a04114cd62","x":202,"y":900,"width":250,"height":60,"type":"text","text":"看多"},
+		{"id":"fc16b199b0e94632","x":920,"y":900,"width":250,"height":60,"type":"text","text":"主力不想涨，低位吸筹"},
+		{"id":"2e0ad01d11683742","x":202,"y":631,"width":250,"height":60,"type":"text","text":"看空"},
+		{"id":"61dd233b7df40691","x":1370,"y":1060,"width":250,"height":60,"type":"text","text":"内盘>外盘"},
+		{"id":"7f3db318daeb472e","x":1370,"y":745,"width":250,"height":60,"type":"text","text":"外盘>内盘"},
+		{"id":"0297e2a0e0d0b371","x":580,"y":607,"width":250,"height":84,"type":"text","text":"外盘>内盘\n股价下跌\n高位出货"},
+		{"id":"85a6872e625314c4","x":580,"y":716,"width":250,"height":60,"type":"text","text":"下有拖单（买二），出现大量小卖盘，股价下跌，"},
+		{"id":"8b329280f080bd42","x":880,"y":619,"width":250,"height":60,"type":"text","text":"散户跟风买入，主力出货，股价下跌"}
 	],
 	"edges":[
 		{"id":"525dcb8d3c1bc336","fromNode":"e895523c0eea9db8","fromSide":"right","toNode":"e6b73e551f6374c8","toSide":"left"},
 		{"id":"09e7154e085f5fb7","fromNode":"e9491868a1afaee2","fromSide":"right","toNode":"acce20472b6776a3","toSide":"left"},
-		{"id":"e1d6740df66ec185","fromNode":"2e0ad01d11683742","fromSide":"right","toNode":"76ffef60e216de6d","toSide":"left"},
 		{"id":"708b40c2e628e0ca","fromNode":"341f36a04114cd62","fromSide":"right","toNode":"725de5de9a12e852","toSide":"left"},
 		{"id":"35480beb0be8e717","fromNode":"bfd0b57b9637b949","fromSide":"right","toNode":"c2eb4b973d0fef44","toSide":"left"},
 		{"id":"cf52206244104513","fromNode":"bfd0b57b9637b949","fromSide":"right","toNode":"041e1901514694fd","toSide":"left"},
@@ -44,6 +48,14 @@
 		{"id":"8bc0a313a23a18b2","fromNode":"e8fba7e59b2a782d","fromSide":"right","toNode":"1efcd81c64c3d8e9","toSide":"left"},
 		{"id":"7060c8a63be586f6","fromNode":"4c03ac226ce0bd54","fromSide":"right","toNode":"1efcd81c64c3d8e9","toSide":"left"},
 		{"id":"0a21bf65f099305d","fromNode":"2e0ad01d11683742","fromSide":"right","toNode":"0297e2a0e0d0b371","toSide":"left"},
-		{"id":"f20f5f40bfbacbf2","fromNode":"341f36a04114cd62","fromSide":"right","toNode":"c171a5b89a073b4e","toSide":"left"}
+		{"id":"f20f5f40bfbacbf2","fromNode":"341f36a04114cd62","fromSide":"right","toNode":"c171a5b89a073b4e","toSide":"left"},
+		{"id":"6978bb826fc872ab","fromNode":"0297e2a0e0d0b371","fromSide":"right","toNode":"8b329280f080bd42","toSide":"left"},
+		{"id":"9d3dd3156ebc508a","fromNode":"341f36a04114cd62","fromSide":"right","toNode":"97e52b1cdb9ea7c8","toSide":"left"},
+		{"id":"ad98acaff9bd8557","fromNode":"c171a5b89a073b4e","fromSide":"right","toNode":"fc16b199b0e94632","toSide":"left"},
+		{"id":"021b5c5efde1537b","fromNode":"85a6872e625314c4","fromSide":"right","toNode":"61dd233b7df40691","toSide":"left"},
+		{"id":"098216af576b522c","fromNode":"2e0ad01d11683742","fromSide":"right","toNode":"85a6872e625314c4","toSide":"left"},
+		{"id":"7975f5601b4bd937","fromNode":"725de5de9a12e852","fromSide":"right","toNode":"7f3db318daeb472e","toSide":"left"},
+		{"id":"b4df36c32e0f224b","fromNode":"97e52b1cdb9ea7c8","fromSide":"right","toNode":"61dd233b7df40691","toSide":"left"},
+		{"id":"1b38a7f67220aa1b","fromNode":"8b329280f080bd42","fromSide":"right","toNode":"7f3db318daeb472e","toSide":"left"}
 	]
 }
