@@ -11,14 +11,12 @@
             "id": "1cea141cb4729370",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
-                "viewState": {
-                  "x": 947.6101730552664,
-                  "y": 797.5165649374312,
-                  "zoom": -1
-                }
+                "file": "1. 项目/股票知识/做T基本技巧.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -88,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas",
+                "file": "1. 项目/股票知识/做T基本技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/悟道.canvas"
+                "file": "1. 项目/股票知识/做T基本技巧.md"
               }
             }
           }
@@ -166,12 +164,12 @@
   },
   "active": "1cea141cb4729370",
   "lastOpenFiles": [
-    "1. 项目/股票知识/股市周期.canvas",
+    "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/悟道.canvas",
+    "1. 项目/股票知识/股市周期.canvas",
     "1. 项目/股票知识/未命名.md",
     "1. 项目/股票知识/缠论学习.canvas",
     "1. 项目/股票知识/三层底仓滚动做T.md",
-    "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/股票的专业术语.md",
     "1. 项目/股票知识/股票todolist.md",
     "1. 项目/股票知识/量价关系.canvas",
@@ -193,7 +191,6 @@
     "1. 项目/股票知识/研修班",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法/未命名.md",
