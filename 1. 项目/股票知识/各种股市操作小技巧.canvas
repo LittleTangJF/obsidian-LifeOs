@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"87c36327beeea5ff","x":80,"y":260,"width":1900,"height":820,"type":"group","label":"内盘和外盘"},
 		{"id":"9cc8c2b1ab2541a8","x":80,"y":-267,"width":672,"height":454,"type":"group","label":"量过前高的两个场景"},
 		{"id":"65ae653cb69d5873","x":-491,"y":187,"width":571,"height":513,"type":"group","label":"裸K技巧"},
 		{"id":"12bcaa8053d5d16b","type":"group","x":-491,"y":-267,"width":491,"height":407,"label":"做T技巧"},
@@ -12,7 +13,26 @@
 		{"id":"7cc9fa69754a65e7","x":-480,"y":440,"width":250,"height":133,"type":"text","text":">裸K\n\n没有上下引线，通常会补"},
 		{"id":"9c124663c2fedaf8","x":-160,"y":218,"width":94,"height":222,"type":"file","file":"图片存放/Pasted image 20240430212259.png"},
 		{"id":"4a8344520ea5214a","x":-185,"y":470,"width":238,"height":206,"type":"file","file":"图片存放/Pasted image 20240430212359.png"},
-		{"id":"e895523c0eea9db8","x":344,"y":380,"width":250,"height":60,"type":"text","text":""}
+		{"id":"e895523c0eea9db8","x":202,"y":366,"width":250,"height":60,"type":"text","text":"外部主动买入吃掉挂单"},
+		{"id":"e6b73e551f6374c8","x":600,"y":366,"width":250,"height":60,"type":"text","text":"外盘"},
+		{"id":"e9491868a1afaee2","x":202,"y":470,"width":250,"height":60,"type":"text","text":"内部主动卖出，吃掉买单"},
+		{"id":"acce20472b6776a3","x":600,"y":470,"width":250,"height":60,"type":"text","text":"内盘"},
+		{"id":"2e0ad01d11683742","x":202,"y":676,"width":250,"height":60,"type":"text","text":"看空"},
+		{"id":"76ffef60e216de6d","x":556,"y":616,"width":250,"height":90,"type":"text","text":"- 内盘大于外盘\n- 缩量下跌\n"},
+		{"id":"341f36a04114cd62","x":202,"y":840,"width":250,"height":60,"type":"text","text":"看多"},
+		{"id":"725de5de9a12e852","x":580,"y":810,"width":250,"height":90,"type":"text","text":"- 外盘大于内盘\n- 量价齐升"},
+		{"id":"bfd0b57b9637b949","x":940,"y":366,"width":250,"height":60,"type":"text","text":" "},
+		{"id":"c2eb4b973d0fef44","x":1260,"y":306,"width":250,"height":60,"type":"text","text":"大单买入-->净流入"},
+		{"id":"041e1901514694fd","x":1260,"y":440,"width":220,"height":60,"type":"text","text":"大单卖出-->净流出"},
+		{"id":"e8fba7e59b2a782d","x":1606,"y":467,"width":250,"height":60,"type":"text","text":""},
+		{"id":"e208ceabcbb28990","x":1560,"y":380,"width":250,"height":60,"type":"text","text":"不统计的情况"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"525dcb8d3c1bc336","fromNode":"e895523c0eea9db8","fromSide":"right","toNode":"e6b73e551f6374c8","toSide":"left"},
+		{"id":"09e7154e085f5fb7","fromNode":"e9491868a1afaee2","fromSide":"right","toNode":"acce20472b6776a3","toSide":"left"},
+		{"id":"e1d6740df66ec185","fromNode":"2e0ad01d11683742","fromSide":"right","toNode":"76ffef60e216de6d","toSide":"left"},
+		{"id":"708b40c2e628e0ca","fromNode":"341f36a04114cd62","fromSide":"right","toNode":"725de5de9a12e852","toSide":"left"},
+		{"id":"35480beb0be8e717","fromNode":"bfd0b57b9637b949","fromSide":"right","toNode":"c2eb4b973d0fef44","toSide":"left"},
+		{"id":"cf52206244104513","fromNode":"bfd0b57b9637b949","fromSide":"right","toNode":"041e1901514694fd","toSide":"left"}
+	]
 }
