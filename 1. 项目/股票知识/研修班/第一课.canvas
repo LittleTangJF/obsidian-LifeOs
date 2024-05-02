@@ -5,7 +5,8 @@
 		{"id":"58c336b31917e245","type":"file","file":"图片存放/Pasted image 20240424213010.png","x":-20,"y":-300,"width":399,"height":189},
 		{"id":"0e2a3d50a182f5ff","type":"file","file":"图片存放/Pasted image 20240424213743.png","x":-21,"y":60,"width":400,"height":208},
 		{"id":"47f7b063e3a6b24e","type":"file","file":"图片存放/Pasted image 20240424214634.png","x":-20,"y":344,"width":399,"height":220},
-		{"id":"3cdb28939418c2c8","type":"text","text":">启动买点\n\n- 启动当日涨幅越大越好\n- 10日均量的倍量\n- 上影越短越好，不超过实体1/3","x":-420,"y":314,"width":300,"height":226}
+		{"id":"3cdb28939418c2c8","type":"text","text":">启动买点\n\n- 启动当日涨幅越大越好\n- 10日均量的倍量\n- 上影越短越好，不超过实体1/3","x":-420,"y":314,"width":300,"height":226},
+		{"id":"6625e39eb6996405","type":"text","text":">总结\n\n1. 根据缠论学-->背驰后\n2. 一个大阳线或者涨停板\n3. 金凤凰或者银凤凰买法","x":-420,"y":-580,"width":332,"height":200}
 	],
 	"edges":[]
 }
