@@ -1,6 +1,23 @@
 {
 	"nodes":[
-		{"id":"520beef8295d0155","x":-520,"y":-140,"width":250,"height":60,"type":"text","text":"实战记录"}
+		{"id":"f2b78520dceb0f06","type":"text","text":"#### 裸K战法","x":-290,"y":-190,"width":250,"height":60},
+		{"id":"a5cb8c9a4d0c8a50","type":"text","text":"#### 缠论战法","x":-290,"y":-60,"width":250,"height":60},
+		{"id":"8b799200b555ded1","type":"text","text":"#### 内外盘战法","x":-290,"y":60,"width":250,"height":60},
+		{"id":"c7a7cce3cf07a5d1","type":"text","text":"#### 揉搓线战法","x":-290,"y":180,"width":250,"height":60},
+		{"id":"665c70cf154caca2","type":"text","text":"#### 高亮柱战法","x":-290,"y":-320,"width":250,"height":60},
+		{"id":"dd2e940ea2570632","type":"text","text":"#### 筹码峰战法","x":-290,"y":280,"width":250,"height":60},
+		{"id":"b3f6382173d694ab","type":"text","text":"#### 金银凤凰战法","x":-290,"y":380,"width":250,"height":60},
+		{"id":"520beef8295d0155","type":"text","text":"### 实战记录","x":-700,"y":60,"width":250,"height":60},
+		{"id":"096d19ad6beaf42a","type":"text","text":"#### 特殊量价战法","x":-290,"y":480,"width":250,"height":60}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"9b2f930103e422c9","fromNode":"520beef8295d0155","fromSide":"right","toNode":"665c70cf154caca2","toSide":"left"},
+		{"id":"9e73354d60e03611","fromNode":"520beef8295d0155","fromSide":"right","toNode":"f2b78520dceb0f06","toSide":"left"},
+		{"id":"906ee416d1308f80","fromNode":"520beef8295d0155","fromSide":"right","toNode":"a5cb8c9a4d0c8a50","toSide":"left"},
+		{"id":"c3b6fd4acbffa36d","fromNode":"520beef8295d0155","fromSide":"right","toNode":"8b799200b555ded1","toSide":"left"},
+		{"id":"92a6ebbc81b64a83","fromNode":"520beef8295d0155","fromSide":"right","toNode":"c7a7cce3cf07a5d1","toSide":"left"},
+		{"id":"37ccee6c80fd2f9a","fromNode":"520beef8295d0155","fromSide":"right","toNode":"dd2e940ea2570632","toSide":"left"},
+		{"id":"7cd69306fc191fa9","fromNode":"520beef8295d0155","fromSide":"right","toNode":"b3f6382173d694ab","toSide":"left"},
+		{"id":"7a87c6cfc53dd323","fromNode":"520beef8295d0155","fromSide":"right","toNode":"096d19ad6beaf42a","toSide":"left"}
+	]
 }
