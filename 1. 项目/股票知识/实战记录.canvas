@@ -8,7 +8,8 @@
 		{"id":"dd2e940ea2570632","type":"text","text":"#### 筹码峰战法","x":-290,"y":280,"width":250,"height":60},
 		{"id":"b3f6382173d694ab","type":"text","text":"#### 金银凤凰战法","x":-290,"y":380,"width":250,"height":60},
 		{"id":"520beef8295d0155","type":"text","text":"### 实战记录","x":-700,"y":60,"width":250,"height":60},
-		{"id":"096d19ad6beaf42a","type":"text","text":"#### 特殊量价战法","x":-290,"y":480,"width":250,"height":60}
+		{"id":"096d19ad6beaf42a","type":"text","text":"#### 特殊量价战法","x":-290,"y":480,"width":250,"height":60},
+		{"id":"207c06922892e9e9","x":-1400,"y":-220,"width":670,"height":107,"type":"text","text":"- [ ] 2024-5-6: 长江电力，早盘诱多，25分翻绿放量，开盘下杀，理由：1、资金受大盘影响外流（概率大）2、主力强力洗盘（概率小）策略：明日高开马上跑，然后低吸，外部说24.8抄底，可以做参考"}
 	],
 	"edges":[
 		{"id":"9b2f930103e422c9","fromNode":"520beef8295d0155","fromSide":"right","toNode":"665c70cf154caca2","toSide":"left"},
