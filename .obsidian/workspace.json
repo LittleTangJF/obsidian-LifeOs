@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "viewState": {
-                  "x": 276.39269657236866,
-                  "y": 104.58378548946604,
-                  "zoom": -0.22850435167618122
+                  "x": -1360.7282711930475,
+                  "y": -100.95777370469452,
+                  "zoom": -1.0015810774014626
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas"
+                "file": "1. 项目/股票知识/实战记录.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,6 +174,7 @@
   },
   "active": "473f774831aa8045",
   "lastOpenFiles": [
+    "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第五课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第四课.canvas",
@@ -196,7 +197,6 @@
     "图片存放/Pasted image 20240428203625.png",
     "图片存放/Pasted image 20240428203123.png",
     "图片存放/Pasted image 20240428203026.png",
-    "1. 项目/股票知识/股市周期.canvas",
     "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/研修班",
     "1. 项目/股票知识/做T基本技巧.md",
