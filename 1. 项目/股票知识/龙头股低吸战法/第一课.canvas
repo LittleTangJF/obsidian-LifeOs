@@ -10,7 +10,7 @@
 		{"id":"28528d4a88484113","type":"text","text":"## 止损\n\n- 击穿长阳线底部","x":-325,"y":108,"width":240,"height":163},
 		{"id":"e73d82ea34d22906","type":"text","text":"## 双凤还巢\n\n","x":-335,"y":526,"width":250,"height":60},
 		{"id":"5a1531d6df161d1f","type":"text","text":"## 止损\n\n- 跌穿第一根阳线的1/2\n- 跌穿第一根阳线的上1/2","x":-369,"y":692,"width":329,"height":122},
-		{"id":"cad658af82eeb427","x":560,"y":108,"width":474,"height":186,"type":"text","text":">涨停后回调时间不能超过13个交易日，可以利用[斐波那契数列](https://www.zhihu.com/search?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)找关键时间节点，重点关注第3个交易日，第5个交易日与第8个交易日的尾盘低吸机会。（注意时间和尾盘交易）"}
+		{"id":"cad658af82eeb427","type":"text","text":">涨停后回调时间不能超过13个交易日，可以利用[斐波那契数列](https://www.zhihu.com/search?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22666811154%22%7D)找关键时间节点，重点关注第3个交易日，第5个交易日与第8个交易日的尾盘低吸机会。（注意时间和尾盘交易）","x":560,"y":108,"width":474,"height":186}
 	],
 	"edges":[]
 }
