@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b4bc4da6fdbb2f41",
+        "id": "da50de5f47bbcc8e",
         "type": "tabs",
         "children": [
           {
-            "id": "473f774831aa8045",
+            "id": "587fd8203dfbbe53",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "1. 项目/股票知识/实战记录.canvas",
                 "viewState": {
-                  "x": -1404.2949256598438,
-                  "y": 27.14257344488223,
-                  "zoom": -0.6917570752150055
+                  "x": -654.3404930890808,
+                  "y": -177.40855667694092,
+                  "zoom": -0.8106085441816442
                 }
               }
             }
@@ -173,8 +173,10 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "473f774831aa8045",
+  "active": "587fd8203dfbbe53",
   "lastOpenFiles": [
+    "1. 项目/股票知识/股市周期.canvas",
+    "1. 项目/股票知识/实战记录.canvas",
     "图片存放/Pasted image 20240512132051.png",
     "图片存放/Pasted image 20240512131847.png",
     "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
@@ -188,7 +190,6 @@
     "1. 项目/股票知识/股票知识.README.md",
     "1. 项目/股票知识/大A图鉴.canvas",
     "1. 项目/股票知识/高量柱战法.canvas",
-    "1. 项目/股票知识/实战记录.canvas",
     "图片存放/Pasted image 20240501202223.png",
     "图片存放/Pasted image 20240501201906.png",
     "图片存放/Pasted image 20240430212359.png",
@@ -197,7 +198,6 @@
     "图片存放/Pasted image 20240430205003.png",
     "图片存放/Pasted image 20240428204854.png",
     "图片存放/Pasted image 20240428203625.png",
-    "图片存放/Pasted image 20240428203123.png",
     "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/研修班",
     "1. 项目/股票知识/做T基本技巧.md",
