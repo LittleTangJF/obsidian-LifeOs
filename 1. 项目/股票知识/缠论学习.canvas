@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"c0af737a1b7e9656","x":-640,"y":2080,"width":1901,"height":1127,"type":"group","label":"悟道"},
+		{"id":"c0af737a1b7e9656","type":"group","x":-640,"y":2080,"width":1901,"height":1127,"label":"悟道"},
 		{"id":"2a591b4f1e03d405","type":"file","file":"图片存放/Pasted image 20240427100840.png","x":430,"y":-255,"width":260,"height":148},
 		{"id":"5d291f16e0440cd2","type":"file","file":"图片存放/Pasted image 20240427100902.png","x":430,"y":-80,"width":260,"height":170},
 		{"id":"f91b5479ac3bcf5f","type":"text","text":"#### 上升笔","x":120,"y":-200,"width":250,"height":60},
@@ -37,10 +37,10 @@
 		{"id":"fe720ea6ec29a0b7","type":"file","file":"图片存放/Pasted image 20240427193215.png","x":600,"y":801,"width":400,"height":276},
 		{"id":"1817b6d26fc363c3","type":"file","file":"图片存放/Pasted image 20240428203123.png","x":1280,"y":1134,"width":400,"height":352},
 		{"id":"e732c3bccb4bd1de","type":"file","file":"图片存放/Pasted image 20240428204854.png","x":2040,"y":1147,"width":909,"height":613},
-		{"id":"84d59a690a74eb8c","x":-600,"y":2120,"width":250,"height":60,"type":"text","text":"见顶信号"},
-		{"id":"59a93a3e9cbaa4ff","x":-300,"y":2120,"width":260,"height":153,"type":"file","file":"图片存放/Pasted image 20240512131847.png"},
-		{"id":"6c50c3125ff5c8b5","x":-600,"y":2360,"width":250,"height":60,"type":"text","text":"见底信号"},
-		{"id":"13b0783725453eb6","x":-300,"y":2360,"width":285,"height":200,"type":"file","file":"图片存放/Pasted image 20240512132051.png"}
+		{"id":"84d59a690a74eb8c","type":"text","text":"见顶信号","x":-600,"y":2120,"width":250,"height":60},
+		{"id":"6c50c3125ff5c8b5","type":"text","text":"见底信号","x":-600,"y":2360,"width":250,"height":60},
+		{"id":"59a93a3e9cbaa4ff","type":"file","file":"图片存放/Pasted image 20240512131847.png","x":-300,"y":2120,"width":260,"height":153},
+		{"id":"13b0783725453eb6","type":"file","file":"图片存放/Pasted image 20240512132051.png","x":-300,"y":2360,"width":285,"height":200}
 	],
 	"edges":[
 		{"id":"e98bf52dd15c204a","fromNode":"49d55fcffc06fbd3","fromSide":"right","toNode":"f91b5479ac3bcf5f","toSide":"left"},
