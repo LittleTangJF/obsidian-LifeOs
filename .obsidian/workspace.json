@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/股票知识/实战记录.canvas",
+                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
                 "viewState": {
-                  "x": -158.46343189398044,
-                  "y": 7230.455940236529,
-                  "zoom": -0.8106085441816442
+                  "x": -150,
+                  "y": -70,
+                  "zoom": 0
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/实战记录.canvas",
+                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/实战记录.canvas"
+                "file": "1. 项目/c桌面端/c基础语法/语法.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/实战记录.canvas",
+                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,6 +175,9 @@
   },
   "active": "587fd8203dfbbe53",
   "lastOpenFiles": [
+    "1. 项目/c桌面端/wpf界面开发/开发流程.canvas",
+    "1. 项目/c桌面端/c基础语法/语法.canvas",
+    "1. 项目/股票知识/实战记录.canvas",
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
     "1. 项目/c桌面端",
@@ -182,7 +185,6 @@
     "图片存放/Pasted image 20240518214839.png",
     "图片存放/Pasted image 20240518213811.png",
     "1. 项目/股票知识/股市周期.canvas",
-    "1. 项目/股票知识/实战记录.canvas",
     "图片存放/Pasted image 20240512132051.png",
     "图片存放/Pasted image 20240512131847.png",
     "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
@@ -194,7 +196,6 @@
     "1. 项目/股票知识/量价关系.canvas",
     "1. 项目/股票知识/连阴高量战法.canvas",
     "1. 项目/股票知识/股票知识.README.md",
-    "1. 项目/股票知识/大A图鉴.canvas",
     "图片存放/Pasted image 20240501202223.png",
     "图片存放/Pasted image 20240501201906.png",
     "图片存放/Pasted image 20240430212359.png",
@@ -229,7 +230,6 @@
     "1. 项目/部署知识",
     "0. 周期笔记/2024/2024.md",
     "0. 周期笔记/2024/Daily/03/大屏博鸿.md",
-    "0. 周期笔记/2024/Daily/03/2024-03-27.md",
-    "1. 项目/股票知识/龙头股实战课程总结"
+    "0. 周期笔记/2024/Daily/03/2024-03-27.md"
   ]
 }

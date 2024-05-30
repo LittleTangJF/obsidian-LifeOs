@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"d79df15262143fbf","type":"group","x":-460,"y":-340,"width":620,"height":540,"label":"基础语法"},
+		{"id":"9ef52706514e4cbe","type":"text","text":"简单描述\n1. 文件后缀 --> .cs\n2. 面向对象\n3. 在.NET上运行\n4. 命名空间-->包含类","x":-440,"y":-320,"width":240,"height":180}
+	],
+	"edges":[]
+}
