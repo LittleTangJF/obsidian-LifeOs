@@ -1,7 +1,11 @@
 {
 	"nodes":[
-		{"id":"d79df15262143fbf","type":"group","x":-460,"y":-340,"width":620,"height":540,"label":"基础语法"},
-		{"id":"9ef52706514e4cbe","type":"text","text":"简单描述\n1. 文件后缀 --> .cs\n2. 面向对象\n3. 在.NET上运行\n4. 命名空间-->包含类","x":-440,"y":-320,"width":240,"height":180}
+		{"id":"d79df15262143fbf","type":"group","x":-460,"y":-340,"width":1000,"height":780,"label":"基础语法"},
+		{"id":"9ef52706514e4cbe","type":"text","text":"简单描述\n1. 文件后缀 --> .cs\n2. 面向对象\n3. 在.NET上运行\n4. 命名空间-->包含类","x":-440,"y":-320,"width":240,"height":180},
+		{"id":"fa84084048f0b587","x":-440,"y":-100,"width":360,"height":460,"type":"text","text":"数据类型\n1. 有符号：int、long\n2. 无符号: uint、ulong\n3. unicode字符：char单一字符\n4. 浮点型：float 、double\n5. 布尔：bool\n6. 枚举：enum\n7. 结构类型： struct S {...}\n8. null: Nullable\n9. 元组 : （T1,T2）\n10. 类  object string\n11. 接口 interface\n12. 数组 int[] \n13. 委托类型： delegate int D(...)\n14. 指针 *\n\n"},
+		{"id":"46fb165fd909d382","x":20,"y":-100,"width":371,"height":251,"type":"text","text":"string：普通引号和@引号\n\n- 普通引号：支持常见的转义字符，比如 `\\n`（换行）、`\\t`（制表符）一些符号要转义\n- @引号：转义字符不会被处理：@\"C:\\Program Files\\MyApp\""}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"9c97ff08e68f715c","fromNode":"fa84084048f0b587","fromSide":"right","toNode":"46fb165fd909d382","toSide":"left"}
+	]
 }
