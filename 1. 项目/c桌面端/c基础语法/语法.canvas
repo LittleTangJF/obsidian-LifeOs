@@ -1,13 +1,17 @@
 {
 	"nodes":[
-		{"id":"d79df15262143fbf","type":"group","x":-460,"y":-340,"width":1000,"height":1300,"label":"基础语法"},
+		{"id":"d79df15262143fbf","type":"group","x":-460,"y":-340,"width":1280,"height":1300,"label":"基础语法"},
 		{"id":"9ef52706514e4cbe","type":"text","text":"简单描述\n1. 文件后缀 --> .cs\n2. 面向对象\n3. 在.NET上运行\n4. 命名空间-->包含类","x":-440,"y":-320,"width":240,"height":180},
 		{"id":"fa84084048f0b587","x":-440,"y":-100,"width":380,"height":540,"type":"text","text":"数据类型\n1. 有符号：int、long\n2. 无符号: uint、ulong\n3. unicode字符：char单一字符\n4. 浮点型：float 、double\n5. 布尔：bool\n6. 枚举：enum\n7. 结构类型： struct S {...}\n8. null: Nullable\n9. 元组 : （T1,T2）\n10. 类  object string\n11. 接口 interface\n12. 数组一维 int[]、多维 int[3, 3]、锯齿交错int[3]·[]\n13. 委托类型： delegate int D(...)\n14. 指针 *\n15. 单问号？（ 代替Nullable）和双问号??\n\n\n"},
 		{"id":"46fb165fd909d382","x":20,"y":-100,"width":371,"height":251,"type":"text","text":"string：普通引号和@引号\n\n- 普通引号：支持常见的转义字符，比如 `\\n`（换行）、`\\t`（制表符）一些符号要转义\n- @引号：转义字符不会被处理：@\"C:\\Program Files\\MyApp\""},
-		{"id":"525828bb0974c0c9","x":-440,"y":480,"width":380,"height":440,"type":"text","text":"函数和方法\n\n1. 引用传递（ref int value）: 会改变原始数据\n2. 值传递（int value)： 不会改变原始数据\n\n访问修饰符\n\n1. public： 公开，可以在命名空间外被访问\n2. private： 私有\n3. protected： 保护，子类可以继承\n4. protected internal 只能在命名空间内访问"}
+		{"id":"525828bb0974c0c9","x":-440,"y":480,"width":380,"height":440,"type":"text","text":"函数和方法\n\n1. 引用传递（ref int value）: 会改变原始数据\n2. 值传递（int value)： 不会改变原始数据\n\n访问修饰符\n\n1. public： 公开，可以在命名空间外被访问\n2. private： 私有\n3. protected： 保护，子类可以继承\n4. protected internal 只能在命名空间内访问"},
+		{"id":"d94409c593e2f6bd","x":31,"y":327,"width":269,"height":553,"type":"text","text":"结构体和类\n\n1. 前者是值类型，在栈上分配内存\n2. 后者是引用类型，在堆上分配内存\n3. 结构不能继承\n4. 不能声明默认构造函数\n5. 不能赋予默认初始值\n6. 可以不使用new实例化（但是要手动初始化）\n7. 类支撑多态\n8. 类默认值是null\n9. 结构体默认值是每个字段的默认值\n10. 结构体用于简单的数据结构（高性能，避免了堆内存分配和垃圾回收开销）\n11. 类用于复杂行为和方法的大对象"},
+		{"id":"f62adc6c6702a1f4","x":318,"y":174,"width":250,"height":246,"type":"text","text":"console.writeline()\n\n- $ :字符串插值（$）"}
 	],
 	"edges":[
 		{"id":"9c97ff08e68f715c","fromNode":"fa84084048f0b587","fromSide":"right","toNode":"46fb165fd909d382","toSide":"left"},
-		{"id":"4fb379cf5a01b514","fromNode":"fa84084048f0b587","fromSide":"bottom","toNode":"525828bb0974c0c9","toSide":"top"}
+		{"id":"4fb379cf5a01b514","fromNode":"fa84084048f0b587","fromSide":"bottom","toNode":"525828bb0974c0c9","toSide":"top"},
+		{"id":"d507cd6fbc78c8cd","fromNode":"fa84084048f0b587","fromSide":"right","toNode":"d94409c593e2f6bd","toSide":"left"},
+		{"id":"08f6ca25f9a0a9cc","fromNode":"fa84084048f0b587","fromSide":"right","toNode":"f62adc6c6702a1f4","toSide":"left"}
 	]
 }
