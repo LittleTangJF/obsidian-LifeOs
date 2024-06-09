@@ -1,12 +1,14 @@
 {
 	"nodes":[
-		{"id":"370640f0ff2e2fa9","type":"group","x":240,"y":-260,"width":1485,"height":1720,"label":"开发流程"},
+		{"id":"370640f0ff2e2fa9","type":"group","x":240,"y":-260,"width":2220,"height":1720,"label":"开发流程"},
 		{"id":"9f32992c4cd949a2","type":"text","text":"c#项目结构\n\n- 入口： .sln\n- 项目文件：`.csproj`\n- 命名空间和类：`.cs`\n- Properties 文件夹:项目版本信息定义，编译方式定义等\n- bin 文件夹：项目发布，生成文件夹\n\t- Debug 文件夹：调试版本输出，含有断电调试信息等\n\t- Release 文件夹：运行版本输出\n- obj 文件夹：vs开发编译缓存","x":265,"y":-216,"width":660,"height":340},
 		{"id":"5772ceeebdd242d5","x":305,"y":204,"width":320,"height":68,"type":"text","text":"### Window窗体的生命周期"},
 		{"id":"3d64ab690eac09fd","type":"text","text":"### Application的生命周期","x":705,"y":204,"width":320,"height":68},
 		{"id":"4452c921e54b7aa7","x":725,"y":320,"width":400,"height":383,"type":"file","file":"图片存放/Pasted image 20240609175343.png"},
 		{"id":"b917a428be3d80ad","x":305,"y":320,"width":358,"height":400,"type":"file","file":"图片存放/Pasted image 20240609175144.png"},
-		{"id":"e0f33cae5ce75603","x":305,"y":800,"width":937,"height":499,"type":"file","file":"图片存放/Pasted image 20240609180517.png"}
+		{"id":"e0f33cae5ce75603","x":305,"y":800,"width":937,"height":499,"type":"file","file":"图片存放/Pasted image 20240609180517.png"},
+		{"id":"9e8da16a67e129f7","x":1282,"y":190,"width":250,"height":60,"type":"text","text":"### 控件的父类"},
+		{"id":"bb3f54e1774d3605","x":1282,"y":306,"width":400,"height":397,"type":"file","file":"图片存放/Pasted image 20240609204805.png"}
 	],
 	"edges":[]
 }
