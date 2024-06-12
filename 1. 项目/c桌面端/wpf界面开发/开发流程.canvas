@@ -2,15 +2,15 @@
 	"nodes":[
 		{"id":"370640f0ff2e2fa9","type":"group","x":-300,"y":-120,"width":2220,"height":1720,"label":"开发流程"},
 		{"id":"9f32992c4cd949a2","type":"text","text":"c#项目结构\n\n- 入口： .sln\n- 项目文件：`.csproj`\n- 命名空间和类：`.cs`\n- Properties 文件夹:项目版本信息定义，编译方式定义等\n- bin 文件夹：项目发布，生成文件夹\n\t- Debug 文件夹：调试版本输出，含有断电调试信息等\n\t- Release 文件夹：运行版本输出\n- obj 文件夹：vs开发编译缓存","x":-275,"y":-76,"width":660,"height":340},
-		{"id":"5772ceeebdd242d5","x":-235,"y":344,"width":320,"height":68,"type":"text","text":"### Window窗体的生命周期"},
+		{"id":"5772ceeebdd242d5","type":"text","text":"### Window窗体的生命周期","x":-235,"y":344,"width":320,"height":68},
 		{"id":"3d64ab690eac09fd","type":"text","text":"### Application的生命周期","x":165,"y":344,"width":320,"height":68},
-		{"id":"4452c921e54b7aa7","x":185,"y":460,"width":400,"height":383,"type":"file","file":"图片存放/Pasted image 20240609175343.png"},
-		{"id":"b917a428be3d80ad","x":-235,"y":460,"width":358,"height":400,"type":"file","file":"图片存放/Pasted image 20240609175144.png"},
-		{"id":"e0f33cae5ce75603","x":-235,"y":940,"width":937,"height":499,"type":"file","file":"图片存放/Pasted image 20240609180517.png"},
-		{"id":"9e8da16a67e129f7","x":742,"y":330,"width":250,"height":60,"type":"text","text":"### 控件的父类"},
-		{"id":"bb3f54e1774d3605","x":742,"y":446,"width":498,"height":494,"type":"file","file":"图片存放/Pasted image 20240609204805.png"},
-		{"id":"70c8c43ef18bcdda","x":1351,"y":330,"width":349,"height":290,"type":"text","text":"### 进程\n\n- UI进程\n- 后台进程\n\n可以使用 `Thread`、`Task` 或 `BackgroundWorker` 等方式来实现后台操作，并使用 `Dispatcher` 来更新 UI 线程。"},
-		{"id":"5cefdcf59245d4ac","x":1351,"y":693,"width":400,"height":85,"type":"file","file":"图片存放/Pasted image 20240609210725.png"}
+		{"id":"b917a428be3d80ad","type":"file","file":"图片存放/Pasted image 20240609175144.png","x":-235,"y":460,"width":358,"height":400},
+		{"id":"bb3f54e1774d3605","type":"file","file":"图片存放/Pasted image 20240609204805.png","x":742,"y":446,"width":498,"height":494},
+		{"id":"e0f33cae5ce75603","type":"file","file":"图片存放/Pasted image 20240609180517.png","x":-235,"y":940,"width":936,"height":499},
+		{"id":"9e8da16a67e129f7","type":"text","text":"### 控件的父类","x":742,"y":330,"width":250,"height":60},
+		{"id":"70c8c43ef18bcdda","type":"text","text":"### 进程\n\n- UI进程\n- 后台进程\n\n可以使用 `Thread`、`Task` 或 `BackgroundWorker` 等方式来实现后台操作，并使用 `Dispatcher` 来更新 UI 线程。","x":1351,"y":330,"width":349,"height":290},
+		{"id":"5cefdcf59245d4ac","type":"file","file":"图片存放/Pasted image 20240609210725.png","x":1351,"y":693,"width":400,"height":85},
+		{"id":"4452c921e54b7aa7","type":"file","file":"图片存放/Pasted image 20240609175343.png","x":185,"y":460,"width":400,"height":383}
 	],
 	"edges":[]
 }
