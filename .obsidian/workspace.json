@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "viewState": {
-                  "x": 982.9637288503504,
-                  "y": 766.4927965388699,
-                  "zoom": 0
+                  "x": -994.1914656964971,
+                  "y": 1195.4019700786218,
+                  "zoom": -0.7480263458951858
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/c桌面端/c基础语法/语法.canvas"
+                "file": "1. 项目/股票知识/实战记录.canvas"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/c桌面端/c基础语法/语法.canvas",
+                "file": "1. 项目/股票知识/实战记录.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,8 +175,8 @@
   },
   "active": "587fd8203dfbbe53",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "1. 项目/c桌面端/c基础语法/语法.canvas",
+    "conflict-files-obsidian-git.md",
     "图片存放/Pasted image 20240609210725.png",
     "图片存放/Pasted image 20240609204805.png",
     "图片存放/Pasted image 20240609180517.png",
