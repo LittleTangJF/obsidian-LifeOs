@@ -21,8 +21,24 @@
                 }
               }
             }
+          },
+          {
+            "id": "ce69b88b13be7250",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "1. 项目/股票知识/缠论学习.canvas",
+                "viewState": {
+                  "x": 265.64900548444456,
+                  "y": 2478.7582801777976,
+                  "zoom": -1.5431069644206161
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
+                "file": "图片存放/Pasted image 20240723220945.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
+                "file": "图片存放/Pasted image 20240723220945.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/龙头股低吸战法/第二课.canvas"
+                "file": "图片存放/Pasted image 20240723220945.png"
               }
             }
           }
@@ -164,8 +180,10 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "1cea141cb4729370",
+  "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "图片存放/Pasted image 20240723220945.png",
+    "1. 项目/股票知识/悟道.canvas",
     "1. 项目/股票知识/股票todolist.md",
     "1. 项目/股票知识/股市周期.canvas",
     "1. 项目/股票知识/量价关系.canvas",
@@ -187,7 +205,6 @@
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第五课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第一课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
     "图片存放/Pasted image 20240609210725.png",
     "图片存放/Pasted image 20240609204805.png",
     "图片存放/Pasted image 20240609180517.png",
