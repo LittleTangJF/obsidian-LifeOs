@@ -43,10 +43,11 @@
 		{"id":"00fcf51a4fb1698d","type":"text","text":"开仓Tick","x":-616,"y":2734,"width":250,"height":60},
 		{"id":"5104a6f3f8b356a0","type":"file","file":"图片存放/Pasted image 20240723220945.png","x":-300,"y":2734,"width":400,"height":360},
 		{"id":"8061ba2f6f63f5b9","x":410,"y":2734,"width":250,"height":306,"type":"text","text":"**做多方法**\n\n1. 在超过第一根阳线的最高点做多\n2. 在第二个阳性的收盘做多\n3. 用盈亏比计算，回踩50%做多\n4. 突破回踩B"},
-		{"id":"95092918412621a8","x":840,"y":2734,"width":400,"height":225,"type":"file","file":"图片存放/Pasted image 20240724210641.png"},
 		{"id":"34cccea4aee0d2fd","type":"text","text":">强的分型","x":150,"y":1280,"width":250,"height":60},
 		{"id":"e732c3bccb4bd1de","type":"file","file":"图片存放/Pasted image 20240428204854.png","x":2040,"y":1147,"width":909,"height":613},
-		{"id":"07f5c008ac74ecb9","type":"text","text":"缩小到30分钟K线，找第一类买点","x":690,"y":1177,"width":400,"height":60}
+		{"id":"07f5c008ac74ecb9","type":"text","text":"缩小到30分钟K线，找第一类买点","x":690,"y":1177,"width":400,"height":60},
+		{"id":"95092918412621a8","x":760,"y":2509,"width":400,"height":225,"type":"file","file":"图片存放/Pasted image 20240724210641.png"},
+		{"id":"e5a3024a5836f16e","x":760,"y":2887,"width":400,"height":213,"type":"file","file":"图片存放/Pasted image 20240724223005.png"}
 	],
 	"edges":[
 		{"id":"e98bf52dd15c204a","fromNode":"49d55fcffc06fbd3","fromSide":"right","toNode":"f91b5479ac3bcf5f","toSide":"left"},
@@ -85,6 +86,7 @@
 		{"id":"dccfb1ed6f03b137","fromNode":"ff7b51b611208691","fromSide":"right","toNode":"e732c3bccb4bd1de","toSide":"left"},
 		{"id":"9f72501ac464f6cc","fromNode":"59a93a3e9cbaa4ff","fromSide":"right","toNode":"2b6aacc7fb4f2154","toSide":"left"},
 		{"id":"6260ccd5f5cc37a3","fromNode":"13b0783725453eb6","fromSide":"right","toNode":"25d92528b3b8a525","toSide":"left"},
-		{"id":"2ebafb2e041c1fd8","fromNode":"8061ba2f6f63f5b9","fromSide":"right","toNode":"95092918412621a8","toSide":"left"}
+		{"id":"2ebafb2e041c1fd8","fromNode":"8061ba2f6f63f5b9","fromSide":"right","toNode":"95092918412621a8","toSide":"left"},
+		{"id":"3a425da9c894e244","fromNode":"8061ba2f6f63f5b9","fromSide":"right","toNode":"e5a3024a5836f16e","toSide":"left"}
 	]
 }
