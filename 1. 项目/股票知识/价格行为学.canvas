@@ -1,7 +1,19 @@
 {
 	"nodes":[
 		{"id":"ee1038ef8f402ee2","x":-375,"y":-141,"width":355,"height":301,"type":"text","text":"**市场周期四个阶段**\n\n1. 突破\n2. 窄通道\n3. 宽通道\n4. 震荡区间\n"},
-		{"id":"0906c220cbdbf086","x":20,"y":-134,"width":649,"height":234,"type":"file","file":"图片存放/Pasted image 20240831152837.png"}
+		{"id":"0906c220cbdbf086","x":20,"y":-134,"width":649,"height":234,"type":"file","file":"图片存放/Pasted image 20240831152837.png"},
+		{"id":"387375c99fe1c296","x":80,"y":240,"width":395,"height":400,"type":"file","file":"图片存放/Pasted image 20240831155629.png"},
+		{"id":"03e80b6662da496c","x":-270,"y":260,"width":250,"height":180,"type":"text","text":"**宽通道**\n1. 50%回调\n2. 高点抬高\n3. 低点抬高"},
+		{"id":"fd7bc8f195fbbfa9","x":-270,"y":780,"width":250,"height":60,"type":"text","text":"**周期转变的信号**"},
+		{"id":"32c2d8cb0dd74ac5","x":120,"y":720,"width":250,"height":140,"type":"text","text":"下降趋势中，如果多头能赚钱，那么进入了一个向下的宽通道"},
+		{"id":"6abd1fc1feec7961","x":120,"y":900,"width":250,"height":60,"type":"text","text":"价格行为造就了这些信号"},
+		{"id":"62ce80cc4e08e190","x":-265,"y":988,"width":250,"height":60,"type":"text","text":"**三推楔形**"},
+		{"id":"b894fb9e38701a80","x":140,"y":1018,"width":400,"height":215,"type":"file","file":"图片存放/Pasted image 20240831161232.png"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"ec3c5157d03a8b52","fromNode":"03e80b6662da496c","fromSide":"right","toNode":"387375c99fe1c296","toSide":"left"},
+		{"id":"a11ee08afd5f5dcc","fromNode":"32c2d8cb0dd74ac5","fromSide":"top","toNode":"fd7bc8f195fbbfa9","toSide":"right"},
+		{"id":"83ff2792addc0471","fromNode":"fd7bc8f195fbbfa9","fromSide":"right","toNode":"6abd1fc1feec7961","toSide":"left"},
+		{"id":"52b0a28c5ebdee85","fromNode":"62ce80cc4e08e190","fromSide":"right","toNode":"b894fb9e38701a80","toSide":"left"}
+	]
 }
