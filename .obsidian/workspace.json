@@ -30,9 +30,9 @@
               "state": {
                 "file": "1. 项目/股票知识/价格行为学.canvas",
                 "viewState": {
-                  "x": 127.33331298828125,
-                  "y": 895.333251953125,
-                  "zoom": 0
+                  "x": 647.3330078125,
+                  "y": 175.25284212168935,
+                  "zoom": -1
                 }
               }
             }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "图片存放/Pasted image 20240831161232.png",
+                "file": "1. 项目/股票知识/价格行为学.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "图片存放/Pasted image 20240831161232.png",
+                "file": "1. 项目/股票知识/价格行为学.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "图片存放/Pasted image 20240831161232.png"
+                "file": "1. 项目/股票知识/价格行为学.canvas"
               }
             }
           }
@@ -182,6 +182,7 @@
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "图片存放/Pasted image 20240831180341.png",
     "图片存放/Pasted image 20240831161232.png",
     "图片存放/Pasted image 20240831155629.png",
     "图片存放/Pasted image 20240831152837.png",
@@ -215,7 +216,6 @@
     "图片存放/Pasted image 20240609204805.png",
     "图片存放/Pasted image 20240609180517.png",
     "图片存放/Pasted image 20240609175854.png",
-    "图片存放/Pasted image 20240609175343.png",
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
     "1. 项目/c桌面端",

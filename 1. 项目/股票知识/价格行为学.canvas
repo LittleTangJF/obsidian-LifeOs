@@ -4,16 +4,25 @@
 		{"id":"0906c220cbdbf086","x":20,"y":-134,"width":649,"height":234,"type":"file","file":"图片存放/Pasted image 20240831152837.png"},
 		{"id":"387375c99fe1c296","x":80,"y":240,"width":395,"height":400,"type":"file","file":"图片存放/Pasted image 20240831155629.png"},
 		{"id":"03e80b6662da496c","x":-270,"y":260,"width":250,"height":180,"type":"text","text":"**宽通道**\n1. 50%回调\n2. 高点抬高\n3. 低点抬高"},
-		{"id":"fd7bc8f195fbbfa9","x":-270,"y":780,"width":250,"height":60,"type":"text","text":"**周期转变的信号**"},
-		{"id":"32c2d8cb0dd74ac5","x":120,"y":720,"width":250,"height":140,"type":"text","text":"下降趋势中，如果多头能赚钱，那么进入了一个向下的宽通道"},
-		{"id":"6abd1fc1feec7961","x":120,"y":900,"width":250,"height":60,"type":"text","text":"价格行为造就了这些信号"},
-		{"id":"62ce80cc4e08e190","x":-265,"y":988,"width":250,"height":60,"type":"text","text":"**三推楔形**"},
-		{"id":"b894fb9e38701a80","x":140,"y":1018,"width":400,"height":215,"type":"file","file":"图片存放/Pasted image 20240831161232.png"}
+		{"id":"f423e5ecb18b52e7","x":812,"y":142,"width":250,"height":60,"type":"text","text":"**震荡区间**"},
+		{"id":"4b2e734bbda470bb","x":1217,"y":147,"width":268,"height":109,"type":"text","text":"当突破单空头也能赚钱的时候，这就变成了震荡区间"},
+		{"id":"40212bccc3e86c7a","x":1217,"y":291,"width":400,"height":137,"type":"file","file":"图片存放/Pasted image 20240831180341.png"},
+		{"id":"eaba5105ee9f3d5c","x":1217,"y":615,"width":292,"height":131,"type":"text","text":"连续的三根阳线以上，\n至少还能往上走的概率很大"},
+		{"id":"d481a6a3ed49059c","x":800,"y":620,"width":250,"height":60,"type":"text","text":"**突破**"},
+		{"id":"32c2d8cb0dd74ac5","x":1197,"y":-409,"width":250,"height":140,"type":"text","text":"下降趋势中，如果多头能赚钱，那么进入了一个向下的宽通道"},
+		{"id":"fd7bc8f195fbbfa9","x":807,"y":-349,"width":250,"height":60,"type":"text","text":"**周期转变的信号**"},
+		{"id":"6abd1fc1feec7961","x":1197,"y":-229,"width":250,"height":60,"type":"text","text":"价格行为造就了这些信号"},
+		{"id":"62ce80cc4e08e190","x":812,"y":-141,"width":250,"height":60,"type":"text","text":"**三推楔形**"},
+		{"id":"b894fb9e38701a80","x":1217,"y":-111,"width":400,"height":215,"type":"file","file":"图片存放/Pasted image 20240831161232.png"},
+		{"id":"68420020e7f47d39","x":-375,"y":-360,"width":866,"height":82,"type":"text","text":"**TIPS：在日K线是向下窄通道，但是周k线是向下的突破**"}
 	],
 	"edges":[
 		{"id":"ec3c5157d03a8b52","fromNode":"03e80b6662da496c","fromSide":"right","toNode":"387375c99fe1c296","toSide":"left"},
 		{"id":"a11ee08afd5f5dcc","fromNode":"32c2d8cb0dd74ac5","fromSide":"top","toNode":"fd7bc8f195fbbfa9","toSide":"right"},
 		{"id":"83ff2792addc0471","fromNode":"fd7bc8f195fbbfa9","fromSide":"right","toNode":"6abd1fc1feec7961","toSide":"left"},
-		{"id":"52b0a28c5ebdee85","fromNode":"62ce80cc4e08e190","fromSide":"right","toNode":"b894fb9e38701a80","toSide":"left"}
+		{"id":"52b0a28c5ebdee85","fromNode":"62ce80cc4e08e190","fromSide":"right","toNode":"b894fb9e38701a80","toSide":"left"},
+		{"id":"40804c044111943b","fromNode":"4b2e734bbda470bb","fromSide":"left","toNode":"f423e5ecb18b52e7","toSide":"right"},
+		{"id":"fda5cdbae6e99dc6","fromNode":"f423e5ecb18b52e7","fromSide":"right","toNode":"40212bccc3e86c7a","toSide":"left"},
+		{"id":"7d7a6cad8145c858","fromNode":"eaba5105ee9f3d5c","fromSide":"left","toNode":"d481a6a3ed49059c","toSide":"right"}
 	]
 }
