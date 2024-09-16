@@ -1,20 +1,24 @@
 {
 	"nodes":[
-		{"id":"ee1038ef8f402ee2","x":-375,"y":-141,"width":355,"height":301,"type":"text","text":"**市场周期四个阶段**\n\n1. 突破\n2. 窄通道\n3. 宽通道\n4. 震荡区间\n"},
-		{"id":"0906c220cbdbf086","x":20,"y":-134,"width":649,"height":234,"type":"file","file":"图片存放/Pasted image 20240831152837.png"},
-		{"id":"387375c99fe1c296","x":80,"y":240,"width":395,"height":400,"type":"file","file":"图片存放/Pasted image 20240831155629.png"},
-		{"id":"03e80b6662da496c","x":-270,"y":260,"width":250,"height":180,"type":"text","text":"**宽通道**\n1. 50%回调\n2. 高点抬高\n3. 低点抬高"},
-		{"id":"f423e5ecb18b52e7","x":812,"y":142,"width":250,"height":60,"type":"text","text":"**震荡区间**"},
-		{"id":"4b2e734bbda470bb","x":1217,"y":147,"width":268,"height":109,"type":"text","text":"当突破单空头也能赚钱的时候，这就变成了震荡区间"},
-		{"id":"40212bccc3e86c7a","x":1217,"y":291,"width":400,"height":137,"type":"file","file":"图片存放/Pasted image 20240831180341.png"},
-		{"id":"eaba5105ee9f3d5c","x":1217,"y":615,"width":292,"height":131,"type":"text","text":"连续的三根阳线以上，\n至少还能往上走的概率很大"},
-		{"id":"d481a6a3ed49059c","x":800,"y":620,"width":250,"height":60,"type":"text","text":"**突破**"},
-		{"id":"32c2d8cb0dd74ac5","x":1197,"y":-409,"width":250,"height":140,"type":"text","text":"下降趋势中，如果多头能赚钱，那么进入了一个向下的宽通道"},
-		{"id":"fd7bc8f195fbbfa9","x":807,"y":-349,"width":250,"height":60,"type":"text","text":"**周期转变的信号**"},
-		{"id":"6abd1fc1feec7961","x":1197,"y":-229,"width":250,"height":60,"type":"text","text":"价格行为造就了这些信号"},
-		{"id":"62ce80cc4e08e190","x":812,"y":-141,"width":250,"height":60,"type":"text","text":"**三推楔形**"},
-		{"id":"b894fb9e38701a80","x":1217,"y":-111,"width":400,"height":215,"type":"file","file":"图片存放/Pasted image 20240831161232.png"},
-		{"id":"68420020e7f47d39","x":-375,"y":-360,"width":866,"height":82,"type":"text","text":"**TIPS：在日K线是向下窄通道，但是周k线是向下的突破**"}
+		{"id":"ee1038ef8f402ee2","type":"text","text":"**市场周期四个阶段**\n\n1. 突破\n2. 窄通道\n3. 宽通道\n4. 震荡区间\n","x":-375,"y":-141,"width":355,"height":301},
+		{"id":"0906c220cbdbf086","type":"file","file":"图片存放/Pasted image 20240831152837.png","x":20,"y":-134,"width":649,"height":234},
+		{"id":"387375c99fe1c296","type":"file","file":"图片存放/Pasted image 20240831155629.png","x":80,"y":240,"width":395,"height":400},
+		{"id":"03e80b6662da496c","type":"text","text":"**宽通道**\n1. 50%回调\n2. 高点抬高\n3. 低点抬高","x":-270,"y":260,"width":250,"height":180},
+		{"id":"f423e5ecb18b52e7","type":"text","text":"**震荡区间**","x":812,"y":142,"width":250,"height":60},
+		{"id":"4b2e734bbda470bb","type":"text","text":"当突破单空头也能赚钱的时候，这就变成了震荡区间","x":1217,"y":147,"width":268,"height":109},
+		{"id":"40212bccc3e86c7a","type":"file","file":"图片存放/Pasted image 20240831180341.png","x":1217,"y":291,"width":399,"height":137},
+		{"id":"eaba5105ee9f3d5c","type":"text","text":"连续的三根阳线以上，\n至少还能往上走的概率很大","x":1217,"y":615,"width":292,"height":131},
+		{"id":"d481a6a3ed49059c","type":"text","text":"**突破**","x":800,"y":620,"width":250,"height":60},
+		{"id":"32c2d8cb0dd74ac5","type":"text","text":"下降趋势中，如果多头能赚钱，那么进入了一个向下的宽通道","x":1197,"y":-409,"width":250,"height":140},
+		{"id":"fd7bc8f195fbbfa9","type":"text","text":"**周期转变的信号**","x":807,"y":-349,"width":250,"height":60},
+		{"id":"6abd1fc1feec7961","type":"text","text":"价格行为造就了这些信号","x":1197,"y":-229,"width":250,"height":60},
+		{"id":"62ce80cc4e08e190","type":"text","text":"**三推楔形**","x":812,"y":-141,"width":250,"height":60},
+		{"id":"b894fb9e38701a80","type":"file","file":"图片存放/Pasted image 20240831161232.png","x":1217,"y":-111,"width":400,"height":215},
+		{"id":"68420020e7f47d39","type":"text","text":"**TIPS：在日K线是向下窄通道，但是周k线是向下的突破**","x":-375,"y":-360,"width":866,"height":82},
+		{"id":"6943d2f9bd69452b","x":-426,"y":806,"width":250,"height":314,"type":"text","text":"**高开的四种结果**\n\n1. 双底然后继续上涨\n2. 双顶，然后翻转向下\n3. 楔形底，回踩ema20，然后向上\n4. 楔形顶，然后向下"},
+		{"id":"f96852778b19f6e6","x":20,"y":806,"width":400,"height":223,"type":"file","file":"图片存放/Pasted image 20240916144628.png"},
+		{"id":"afc448a96ecc6e6b","x":676,"y":868,"width":250,"height":252,"type":"text","text":"**低开的四种结果**\n\n1. 双顶，打到ema20，然后向下\n2. 双底，然后向上翻转\n3. 楔形顶，打到ema20，然后向下\n4. 楔形底，然后向上"},
+		{"id":"bd15b3ad8f71ee6d","x":1163,"y":852,"width":400,"height":223,"type":"file","file":"图片存放/Pasted image 20240916144833.png"}
 	],
 	"edges":[
 		{"id":"ec3c5157d03a8b52","fromNode":"03e80b6662da496c","fromSide":"right","toNode":"387375c99fe1c296","toSide":"left"},
@@ -23,6 +27,8 @@
 		{"id":"52b0a28c5ebdee85","fromNode":"62ce80cc4e08e190","fromSide":"right","toNode":"b894fb9e38701a80","toSide":"left"},
 		{"id":"40804c044111943b","fromNode":"4b2e734bbda470bb","fromSide":"left","toNode":"f423e5ecb18b52e7","toSide":"right"},
 		{"id":"fda5cdbae6e99dc6","fromNode":"f423e5ecb18b52e7","fromSide":"right","toNode":"40212bccc3e86c7a","toSide":"left"},
-		{"id":"7d7a6cad8145c858","fromNode":"eaba5105ee9f3d5c","fromSide":"left","toNode":"d481a6a3ed49059c","toSide":"right"}
+		{"id":"7d7a6cad8145c858","fromNode":"eaba5105ee9f3d5c","fromSide":"left","toNode":"d481a6a3ed49059c","toSide":"right"},
+		{"id":"0d770b0fe572726b","fromNode":"6943d2f9bd69452b","fromSide":"right","toNode":"f96852778b19f6e6","toSide":"left"},
+		{"id":"2045e5174eef7d77","fromNode":"afc448a96ecc6e6b","fromSide":"right","toNode":"bd15b3ad8f71ee6d","toSide":"left"}
 	]
 }
