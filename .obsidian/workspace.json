@@ -28,17 +28,24 @@
             "id": "ce69b88b13be7250",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/股票知识/价格行为学.canvas",
-                "viewState": {
-                  "x": 1246.6467163114849,
-                  "y": 970.9310693707539,
-                  "zoom": 0
+                "file": "1. 项目/react/类组件生命周期.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "价格行为学"
+              "icon": "lucide-file",
+              "title": "类组件生命周期"
             }
           }
         ],
@@ -115,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/股票知识/价格行为学.canvas",
+                "file": "1. 项目/react/类组件生命周期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "价格行为学 的反向链接列表"
+              "title": "类组件生命周期 的反向链接列表"
             }
           },
           {
@@ -134,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/股票知识/价格行为学.canvas",
+                "file": "1. 项目/react/类组件生命周期.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "价格行为学 的出链列表"
+              "title": "类组件生命周期 的出链列表"
             }
           },
           {
@@ -177,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/价格行为学.canvas",
+                "file": "1. 项目/react/类组件生命周期.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "价格行为学 的大纲"
+              "title": "类组件生命周期 的大纲"
             }
           }
         ]
@@ -201,11 +208,22 @@
       "daily-notes:打开/创建今天的日记": false,
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "templater-obsidian:Templater": false,
+      "periodic-para:Periodic PARA": false
     }
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "1. 项目/react/react-组件.md",
+    "1. 项目/react/类组件生命周期.md",
+    "1. 项目/react/官网教程.md",
+    "2. 领域/Template.md",
+    "1. 项目/README.md",
+    "1. 项目/react/组件/react-严格模式.md",
+    "1. 项目/react/组件/react-内容加载时的渲染组件.md",
+    "1. 项目/react/组件/react-测量渲染性能.md",
+    "1. 项目/股票知识/价格行为学.canvas",
     "图片存放/Pasted image 20240916144833.png",
     "图片存放/Pasted image 20240916144628.png",
     "图片存放/Pasted image 20240831180341.png",
@@ -213,7 +231,6 @@
     "图片存放/Pasted image 20240831155629.png",
     "图片存放/Pasted image 20240831152837.png",
     "1. 项目/股票知识/缠论学习.canvas",
-    "1. 项目/股票知识/价格行为学.canvas",
     "1. 项目/股票知识/行为.md",
     "图片存放/Pasted image 20240724223005.png",
     "图片存放/Pasted image 20240724210641.png",
@@ -239,7 +256,6 @@
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
-    "图片存放/Pasted image 20240609204805.png",
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
     "1. 项目/c桌面端",
@@ -248,16 +264,9 @@
     "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/股票的专业术语.md",
     "1. 项目/股票知识/7成底仓滚动做T.md",
-    "1. 项目/股票知识/半仓滚动做T.md",
-    "1. 项目/股票知识/做T基本技巧.md",
-    "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/研修班",
-    "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放",
-    "1. 项目/股票知识/龙头股低吸战法/未命名.md",
     "1. 项目/股票知识/龙头股低吸战法",
-    "0. 周期笔记/2024/Daily/04/2024-04-11.md",
-    "1. 项目/股票知识/龙头战法/第六课.md",
     "0. 周期笔记/2024/Daily/04"
   ]
 }
