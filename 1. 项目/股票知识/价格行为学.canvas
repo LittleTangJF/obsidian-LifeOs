@@ -15,10 +15,10 @@
 		{"id":"62ce80cc4e08e190","type":"text","text":"**三推楔形**","x":812,"y":-141,"width":250,"height":60},
 		{"id":"b894fb9e38701a80","type":"file","file":"图片存放/Pasted image 20240831161232.png","x":1217,"y":-111,"width":400,"height":215},
 		{"id":"68420020e7f47d39","type":"text","text":"**TIPS：在日K线是向下窄通道，但是周k线是向下的突破**","x":-375,"y":-360,"width":866,"height":82},
-		{"id":"6943d2f9bd69452b","x":-426,"y":806,"width":250,"height":314,"type":"text","text":"**高开的四种结果**\n\n1. 双底然后继续上涨\n2. 双顶，然后翻转向下\n3. 楔形底，回踩ema20，然后向上\n4. 楔形顶，然后向下"},
-		{"id":"f96852778b19f6e6","x":20,"y":806,"width":400,"height":223,"type":"file","file":"图片存放/Pasted image 20240916144628.png"},
-		{"id":"afc448a96ecc6e6b","x":676,"y":868,"width":250,"height":252,"type":"text","text":"**低开的四种结果**\n\n1. 双顶，打到ema20，然后向下\n2. 双底，然后向上翻转\n3. 楔形顶，打到ema20，然后向下\n4. 楔形底，然后向上"},
-		{"id":"bd15b3ad8f71ee6d","x":1163,"y":852,"width":400,"height":223,"type":"file","file":"图片存放/Pasted image 20240916144833.png"}
+		{"id":"6943d2f9bd69452b","type":"text","text":"**高开的四种结果**\n\n1. 双底然后继续上涨\n2. 双顶，然后翻转向下\n3. 楔形底，回踩ema20，然后向上\n4. 楔形顶，然后向下","x":-426,"y":806,"width":250,"height":314},
+		{"id":"f96852778b19f6e6","type":"file","file":"图片存放/Pasted image 20240916144628.png","x":20,"y":806,"width":400,"height":223},
+		{"id":"afc448a96ecc6e6b","type":"text","text":"**低开的四种结果**\n\n1. 双顶，打到ema20，然后向下\n2. 双底，然后向上翻转\n3. 楔形顶，打到ema20，然后向下\n4. 楔形底，然后向上","x":676,"y":868,"width":250,"height":252},
+		{"id":"bd15b3ad8f71ee6d","type":"file","file":"图片存放/Pasted image 20240916144833.png","x":1163,"y":852,"width":400,"height":223}
 	],
 	"edges":[
 		{"id":"ec3c5157d03a8b52","fromNode":"03e80b6662da496c","fromSide":"right","toNode":"387375c99fe1c296","toSide":"left"},

@@ -19,7 +19,9 @@
                   "y": 332.39443235336836,
                   "zoom": 0.5620718245029972
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "第二课"
             }
           },
           {
@@ -34,7 +36,9 @@
                   "y": 970.9310693707539,
                   "zoom": 0
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "价格行为学"
             }
           }
         ],
@@ -57,8 +61,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -73,7 +80,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -81,7 +90,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -112,7 +123,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "价格行为学 的反向链接列表"
             }
           },
           {
@@ -124,7 +137,9 @@
                 "file": "1. 项目/股票知识/价格行为学.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "价格行为学 的出链列表"
             }
           },
           {
@@ -134,8 +149,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -147,7 +166,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           },
           {
@@ -156,8 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/股票知识/价格行为学.canvas"
-              }
+                "file": "1. 项目/股票知识/价格行为学.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "价格行为学 的大纲"
             }
           }
         ]
@@ -169,8 +195,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
-      "periodic-para:Periodic PARA": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
