@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/类组件生命周期.md",
+                "file": "1. 项目/react/react-组件.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,7 +45,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "类组件生命周期"
+              "title": "react-组件"
             }
           }
         ],
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. 项目/react/类组件生命周期.md",
+                "file": "1. 项目/react/react-组件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "类组件生命周期 的反向链接列表"
+              "title": "react-组件 的反向链接列表"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. 项目/react/类组件生命周期.md",
+                "file": "1. 项目/react/react-组件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "类组件生命周期 的出链列表"
+              "title": "react-组件 的出链列表"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. 项目/react/类组件生命周期.md",
+                "file": "1. 项目/react/react-组件.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "类组件生命周期 的大纲"
+              "title": "react-组件 的大纲"
             }
           }
         ]
@@ -215,7 +215,9 @@
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "1. 项目/react/hooks/react-useEffect.md",
     "1. 项目/react/react-组件.md",
+    "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/类组件生命周期.md",
     "1. 项目/react/官网教程.md",
     "2. 领域/Template.md",
@@ -262,8 +264,6 @@
     "1. 项目/股票知识/股票知识.README.md",
     "1. 项目/股票知识/三层底仓滚动做T.md",
     "1. 项目/股票知识/股票技巧.md",
-    "1. 项目/股票知识/股票的专业术语.md",
-    "1. 项目/股票知识/7成底仓滚动做T.md",
     "1. 项目/股票知识/研修班",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法",

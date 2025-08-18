@@ -1,6 +1,6 @@
 简介：分为函数组件和类组件
 ### 函数组件
-
+hooks  `useEffect`模拟生命周期[[react-useEffect]]
 `const Welcome = (props) => <h1>Hello, {props.name}</h1>;`
 ### 类组件
 含有生命周期 [[类组件生命周期]]
@@ -18,3 +18,9 @@
 	- 性能分析会增加额外开销，在默认情况下，生产模式下是被禁用的
 - \<Suspense>: [[react-内容加载时的渲染组件]]
 	- 用于当内容正在加载时显示后备方案
+
+## 性能优化
+
+`React.memo`：缓存函数组件。
+
+动态导入：`const LazyComponent = React.lazy(() => import('./Component'))`
