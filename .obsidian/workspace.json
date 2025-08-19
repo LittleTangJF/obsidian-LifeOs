@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/核心原理/react-fiber.md",
+                "file": "5. 表达/面试实战/react技术问答.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,7 +45,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react-fiber"
+              "title": "react技术问答"
             }
           }
         ],
@@ -215,9 +215,9 @@
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "1. 项目/react/核心原理/react-fiber.md",
     "5. 表达/面试实战/react技术问答.md",
     "5. 表达/面试实战/​react-fiber.md",
-    "1. 项目/react/核心原理/react-fiber.md",
     "1. 项目/react/核心原理",
     "1. 项目/react/react-组件.md",
     "5. 表达/面试实战",
