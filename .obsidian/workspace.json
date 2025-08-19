@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/react-组件.md",
+                "file": "1. 项目/react/核心原理/react-fiber.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,7 +45,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react-组件"
+              "title": "react-fiber"
             }
           }
         ],
@@ -215,8 +215,13 @@
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
-    "1. 项目/react/hooks/react-useEffect.md",
+    "5. 表达/面试实战/react技术问答.md",
+    "5. 表达/面试实战/​react-fiber.md",
+    "1. 项目/react/核心原理/react-fiber.md",
+    "1. 项目/react/核心原理",
     "1. 项目/react/react-组件.md",
+    "5. 表达/面试实战",
+    "1. 项目/react/hooks/react-useEffect.md",
     "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/类组件生命周期.md",
     "1. 项目/react/官网教程.md",
@@ -261,9 +266,6 @@
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
     "1. 项目/c桌面端",
-    "1. 项目/股票知识/股票知识.README.md",
-    "1. 项目/股票知识/三层底仓滚动做T.md",
-    "1. 项目/股票知识/股票技巧.md",
     "1. 项目/股票知识/研修班",
     "图片存放",
     "1. 项目/股票知识/龙头股低吸战法",
