@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 表达/面试实战/react技术问答.md",
+                "file": "1. 项目/react/性能优化/react-性能优化.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,23 +45,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react技术问答"
-            }
-          },
-          {
-            "id": "c0d697e958f032dd",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.10"
+              "title": "react-性能优化"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,15 +214,19 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "c0d697e958f032dd",
+  "active": "ce69b88b13be7250",
   "lastOpenFiles": [
-    "1. 项目/react/核心原理/react-fiber.md",
+    "1. 项目/react/react-组件.md",
+    "1. 项目/react/性能优化/react-性能优化.md",
+    "1. 项目/react/性能优化",
+    "1. 项目/react/hooks/react-useCallback.md",
+    "1. 项目/react/hooks/react-useMemo.md",
+    "1. 项目/react/hooks/react-useEffect.md",
     "5. 表达/面试实战/react技术问答.md",
+    "1. 项目/react/核心原理/react-fiber.md",
     "5. 表达/面试实战/​react-fiber.md",
     "1. 项目/react/核心原理",
-    "1. 项目/react/react-组件.md",
     "5. 表达/面试实战",
-    "1. 项目/react/hooks/react-useEffect.md",
     "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/类组件生命周期.md",
     "1. 项目/react/官网教程.md",
@@ -270,9 +262,6 @@
     "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
     "1. 项目/股票知识/龙头股实战课程总结/第一课.md",
     "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第四课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第三课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
