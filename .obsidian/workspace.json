@@ -47,9 +47,21 @@
               "icon": "lucide-file",
               "title": "react技术问答"
             }
+          },
+          {
+            "id": "c0d697e958f032dd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.10"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,6 +214,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -213,7 +226,7 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "ce69b88b13be7250",
+  "active": "c0d697e958f032dd",
   "lastOpenFiles": [
     "1. 项目/react/核心原理/react-fiber.md",
     "5. 表达/面试实战/react技术问答.md",
