@@ -7,4 +7,4 @@
 - 虚拟化长列表（react-window）第三方包
 - 服务端渲染（SSR）首屏加载优化
 - 代码分割（Dynamic Import）
-- 使用React 18的并发模式优化交互
+- 使用React 18的并发模式优化交互-可中断、lane优先级
