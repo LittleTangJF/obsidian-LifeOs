@@ -38,3 +38,8 @@ function selectTab(next){
 - ispending：表示处于transition的状态
 	- true：可以显示pending的视觉状态
 
+**场景​**​：搜索框输入、筛选器切换等高频交互。
+
+`const handleInput = (text) => { setQuery(text); // ✅ 高优先级：立即更新输入框 startTransition(() => { // ✅ 低优先级：延迟搜索 fetchResults(text).then(setResults); }); };`
+
+**优势​**​：替代防抖/节流，动态利用浏览器空闲时间执行任务

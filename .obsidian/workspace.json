@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/hooks/react-useTransition.md",
+                "file": "1. 项目/react/react和vue的虚拟dom差异.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react-useTransition"
+              "title": "react和vue的虚拟dom差异"
             }
           }
         ],
@@ -240,22 +240,26 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/react/你可能不需要useEffect.md",
+    "1. 项目/react/react-组件.md",
+    "1. 项目/react/核心原理/react-fiber.md",
+    "1. 项目/react/react和vue的虚拟dom差异.md",
+    "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/react-性能优化.md",
     "1. 项目/react/性能优化/路由懒加载.md",
+    "1. 项目/react/类组件生命周期.md",
+    "1. 项目/react/官网教程.md",
+    "1. 项目/react/hooks/react-useDefferredValue.md",
+    "1. 项目/react/hooks/react-useTransition.md",
     "1. 项目/react/API/react.memo.md",
-    "1. 项目/react/react-组件.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/hooks/react-useCallback.md",
     "1. 项目/react/hooks/react-useMemo.md",
     "1. 项目/react/hooks/react-useEffect.md",
     "5. 表达/面试实战/react技术问答.md",
-    "1. 项目/react/核心原理/react-fiber.md",
     "5. 表达/面试实战/​react-fiber.md",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
-    "1. 项目/react/你可能不需要useEffect.md",
-    "1. 项目/react/类组件生命周期.md",
-    "1. 项目/react/官网教程.md",
     "2. 领域/Template.md",
     "1. 项目/README.md",
     "1. 项目/react/组件/react-严格模式.md",
@@ -281,11 +285,7 @@
     "1. 项目/股票知识/研修班/第一课.canvas",
     "1. 项目/股票知识/龙头战法/第一课.md",
     "1. 项目/股票知识/龙头战法/第五课.md",
-    "1. 项目/股票知识/龙头战法/第四课.md",
-    "1. 项目/股票知识/龙头战法/第三课.md",
     "1. 项目/股票知识/龙头战法/第六课.canvas",
-    "1. 项目/股票知识/龙头战法/第二课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
