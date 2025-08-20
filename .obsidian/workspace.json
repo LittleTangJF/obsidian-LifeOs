@@ -47,9 +47,33 @@
               "icon": "lucide-file",
               "title": "react-性能优化"
             }
+          },
+          {
+            "id": "a738e0859ba27006",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/react/性能优化/路由懒加载.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "路由懒加载"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,10 +238,12 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "ce69b88b13be7250",
+  "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/react/react-组件.md",
     "1. 项目/react/性能优化/react-性能优化.md",
+    "1. 项目/react/性能优化/路由懒加载.md",
+    "1. 项目/react/API/react.memo.md",
+    "1. 项目/react/react-组件.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/hooks/react-useCallback.md",
     "1. 项目/react/hooks/react-useMemo.md",
@@ -260,8 +286,6 @@
     "1. 项目/股票知识/龙头战法/第六课.canvas",
     "1. 项目/股票知识/龙头战法/第二课.md",
     "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第一课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
