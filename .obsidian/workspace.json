@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/react和vue的虚拟dom差异.md",
+                "file": "1. 项目/react/react-redux.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react和vue的虚拟dom差异"
+              "title": "react-redux"
             }
           }
         ],
@@ -240,10 +240,11 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/react/react和vue的虚拟dom差异.md",
+    "1. 项目/react/react-redux.md",
     "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/react-组件.md",
     "1. 项目/react/核心原理/react-fiber.md",
-    "1. 项目/react/react和vue的虚拟dom差异.md",
     "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/react-性能优化.md",
     "1. 项目/react/性能优化/路由懒加载.md",
@@ -284,7 +285,6 @@
     "1. 项目/股票知识/实战记录.canvas",
     "1. 项目/股票知识/研修班/第一课.canvas",
     "1. 项目/股票知识/龙头战法/第一课.md",
-    "1. 项目/股票知识/龙头战法/第五课.md",
     "1. 项目/股票知识/龙头战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
