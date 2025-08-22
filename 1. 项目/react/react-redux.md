@@ -20,3 +20,20 @@
 
 **三大原则**
 - ​**​单一数据源​**​：整个应用状态存储在单一Store中
+- ​**​状态只读​**​：唯一修改方式是`dispatch(action)`
+- **纯函数修改​**​：Reducer必须是纯函数
+
+**中间件（Middleware）**
+
+- 扩展Redux能力（如异步操作、日志记录），拦截Action到Reducer的过程
+- **redux-thunk**
+```jsx
+// 中间件结构（三层柯里化） 
+const middleware = store => next => action => { console.log('Dispatching:', action); 
+// 前置逻辑 
+const result = next(action);
+ // 传递给下一个中间件或Reducer 
+ console.log('Next state:', store.getState()); 
+ // 后置逻辑 return result; 
+ };
+```

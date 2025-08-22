@@ -52,24 +52,17 @@
             "id": "a738e0859ba27006",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "1. 项目/react/react-redux.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "1. 项目/Javascript/javascript图谱.canvas",
+                "viewState": {
+                  "x": 280,
+                  "y": 145.5,
+                  "zoom": -0.10481490504376037
                 }
               },
-              "icon": "lucide-file",
-              "title": "react-redux"
+              "icon": "lucide-layout-dashboard",
+              "title": "javascript图谱"
             }
           }
         ],
@@ -238,10 +231,12 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "a738e0859ba27006",
+  "active": "e3942f040f39cb6a",
   "lastOpenFiles": [
-    "1. 项目/react/react和vue的虚拟dom差异.md",
+    "1. 项目/Typescript",
+    "1. 项目/react/react组件传递方式.md",
     "1. 项目/react/react-redux.md",
+    "1. 项目/react/react和vue的虚拟dom差异.md",
     "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/react-组件.md",
     "1. 项目/react/核心原理/react-fiber.md",
@@ -279,12 +274,10 @@
     "图片存放/Pasted image 20240724210641.png",
     "图片存放/Pasted image 20240723220945.png",
     "1. 项目/股票知识/悟道.canvas",
-    "1. 项目/股票知识/股票todolist.md",
     "1. 项目/股票知识/股市周期.canvas",
     "1. 项目/股票知识/量价关系.canvas",
     "1. 项目/股票知识/实战记录.canvas",
     "1. 项目/股票知识/研修班/第一课.canvas",
-    "1. 项目/股票知识/龙头战法/第一课.md",
     "1. 项目/股票知识/龙头战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
