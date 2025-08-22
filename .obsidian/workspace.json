@@ -52,17 +52,24 @@
             "id": "a738e0859ba27006",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas",
-                "viewState": {
-                  "x": 280,
-                  "y": 145.5,
-                  "zoom": -0.10481490504376037
+                "file": "1. 项目/Typescript/typescript主要面试题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "javascript图谱"
+              "icon": "lucide-file",
+              "title": "typescript主要面试题"
             }
           }
         ],
@@ -231,8 +238,10 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "e3942f040f39cb6a",
+  "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/Javascript/javascript图谱.canvas",
+    "1. 项目/Typescript/typescript主要面试题.md",
     "1. 项目/Typescript",
     "1. 项目/react/react组件传递方式.md",
     "1. 项目/react/react-redux.md",
@@ -269,7 +278,6 @@
     "图片存放/Pasted image 20240831155629.png",
     "图片存放/Pasted image 20240831152837.png",
     "1. 项目/股票知识/缠论学习.canvas",
-    "1. 项目/股票知识/行为.md",
     "图片存放/Pasted image 20240724223005.png",
     "图片存放/Pasted image 20240724210641.png",
     "图片存放/Pasted image 20240723220945.png",
@@ -287,7 +295,6 @@
     "1. 项目/c桌面端",
     "1. 项目/股票知识/研修班",
     "图片存放",
-    "1. 项目/股票知识/龙头股低吸战法",
-    "0. 周期笔记/2024/Daily/04"
+    "1. 项目/股票知识/龙头股低吸战法"
   ]
 }
