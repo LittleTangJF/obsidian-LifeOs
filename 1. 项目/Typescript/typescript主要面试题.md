@@ -1,5 +1,7 @@
 ### **基础语法与核心概念​**
 
+==TypeScript 的基础语法在 JavaScript 的基础上增加了​**​静态类型系统**==核心价值是==静态类型检查提升代码健壮性==
+
 #### **TypeScript 中 `interface`和 `type`的区别是什么？​**
 
 TypeScript 中 `interface`和 `type`均用于定义类型
@@ -58,4 +60,5 @@ TypeScript 中 `interface`和 `type`均用于定义类型
 
 **​TS 中的 `inter`关键字有什么作用？​**
 
-TypeScript 中的 `infer`关键字是​**​条件类型（Conditional Types）​**​的核心功能，用于在类型匹配过程中​**​动态推断并提取嵌套的类型信息​**​
+TypeScript 中的 `infer`关键字是​**​条件类型（Conditional Types）​**​的核心功能，用于在类型匹配过程中​**​动态推断并提取嵌套的类型信息​**
+- 它必须与 `extends`结合使用​

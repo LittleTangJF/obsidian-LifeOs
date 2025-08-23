@@ -52,24 +52,17 @@
             "id": "a738e0859ba27006",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "1. 项目/Typescript/typescript主要面试题.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "1. 项目/Javascript/javascript图谱.canvas",
+                "viewState": {
+                  "x": 280,
+                  "y": 145.5,
+                  "zoom": 0
                 }
               },
-              "icon": "lucide-file",
-              "title": "typescript主要面试题"
+              "icon": "lucide-layout-dashboard",
+              "title": "javascript图谱"
             }
           }
         ],
@@ -240,8 +233,8 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Typescript/typescript主要面试题.md",
+    "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Typescript",
     "1. 项目/react/react组件传递方式.md",
     "1. 项目/react/react-redux.md",
@@ -288,7 +281,6 @@
     "1. 项目/股票知识/研修班/第一课.canvas",
     "1. 项目/股票知识/龙头战法/第六课.canvas",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
