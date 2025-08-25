@@ -52,17 +52,24 @@
             "id": "a738e0859ba27006",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 项目/Javascript/javascript图谱.canvas",
-                "viewState": {
-                  "x": 280,
-                  "y": 145.5,
-                  "zoom": 0
+                "file": "1. 项目/Javascript/javascript面试题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "javascript图谱"
+              "icon": "lucide-file",
+              "title": "javascript面试题"
             }
           }
         ],
@@ -233,8 +240,10 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/Typescript/typescript主要面试题.md",
+    "1. 项目/Javascript/Javascript.README.md",
+    "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/Javascript/javascript图谱.canvas",
+    "1. 项目/Typescript/typescript主要面试题.md",
     "1. 项目/Typescript",
     "1. 项目/react/react组件传递方式.md",
     "1. 项目/react/react-redux.md",
@@ -262,7 +271,6 @@
     "1. 项目/README.md",
     "1. 项目/react/组件/react-严格模式.md",
     "1. 项目/react/组件/react-内容加载时的渲染组件.md",
-    "1. 项目/react/组件/react-测量渲染性能.md",
     "1. 项目/股票知识/价格行为学.canvas",
     "图片存放/Pasted image 20240916144833.png",
     "图片存放/Pasted image 20240916144628.png",
