@@ -52,3 +52,29 @@ console.log(Person.prototype.__proto__ === Object.prototype); // true
 console.log(Object.prototype.__proto__); // null
 console.log(alice.toString()); // 继承自 Object.prototype
 ```
+
+### **原型链与继承​**
+
+子类原型指向父类实例（`Child.prototype = new Parent()`），从而共享父类方法
+
+- ​**​原型链继承​**: 将子类的原型指向父类的实例（`Child.prototype = new Parent()`）但是无法传参
+- **构造函数继承（属性）​**：在子类构造函数中调用父类构造函数（`Parent.call(this)`），继承父类实例属性
+-   **​组合继承​**：结合原型链继承（方法）和构造函数继承（属性），是 ​**​ES5 最常用方式​**
+- **原型式继承​**：​基于已有对象创建新对象（`Object.create()`），无需构造函数
+-   **​寄生式继承​**：在原型式继承基础上增强对象，添加新方法
+- **寄生组合式继承​**：​**​最优 ES5 继承方案​**​，通过 `Object.create()`复制父类原型，避免调用父类构造函数
+
+```js
+function inheritPrototype(Child, Parent) {
+    const prototype = Object.create(Parent.prototype); // 复制父类原型
+    prototype.constructor = Child;
+    Child.prototype = prototype;
+}
+function Parent(name) { this.name = name; }
+function Child(name, age) {
+    Parent.call(this, name);
+    this.age = age;
+}
+inheritPrototype(Child, Parent); // 继承方法
+const child = new Child('Carol', 30);
+```
