@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/Electron/项目简介.md",
+                "file": "1. 项目/Electron/大屏简介.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "项目简介"
+              "title": "大屏简介"
             }
           }
         ],
@@ -240,9 +240,10 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/Electron/项目简介.md",
+    "1. 项目/Electron/大屏简介.md",
     "1. 项目/自我介绍.md",
     "未命名.md",
-    "1. 项目/Electron/项目简介.md",
     "1. 项目/Electron",
     "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/Javascript/Javascript.README.md",
@@ -271,7 +272,6 @@
     "5. 表达/面试实战/​react-fiber.md",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
-    "2. 领域/Template.md",
     "1. 项目/股票知识/价格行为学.canvas",
     "图片存放/Pasted image 20240916144833.png",
     "图片存放/Pasted image 20240916144628.png",
