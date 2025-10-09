@@ -11,11 +11,69 @@
             "id": "ae590d0a8904ca5d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "canvas",
+              "state": {
+                "file": "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
+                "viewState": {
+                  "x": 180.71711786417293,
+                  "y": 332.39443235336836,
+                  "zoom": 0.5620718245029972
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "第二课"
+            }
+          },
+          {
+            "id": "ce69b88b13be7250",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/react/性能优化/react-性能优化.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "react-性能优化"
+            }
+          },
+          {
+            "id": "a738e0859ba27006",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 项目/Javascript/javascript面试题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "javascript面试题"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -34,8 +92,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -50,7 +111,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -58,7 +121,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -81,6 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1. 项目/react/react-组件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +154,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "react-组件 的反向链接列表"
             }
           },
           {
@@ -97,9 +165,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1. 项目/react/react-组件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "react-组件 的出链列表"
             }
           },
           {
@@ -109,8 +180,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -122,7 +197,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           },
           {
@@ -130,7 +207,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1. 项目/react/react-组件.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "react-组件 的大纲"
             }
           }
         ]
@@ -142,71 +226,74 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
-      "periodic-para:Periodic PARA": false,
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "templater-obsidian:Templater": false,
+      "periodic-para:Periodic PARA": false
     }
   },
-  "active": "ae590d0a8904ca5d",
+  "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "未命名.md",
-    "1. 项目/股票知识/龙头股低吸战法/第二课.canvas",
+    "1. 项目/Javascript/Javascript.README.md",
+    "1. 项目/Javascript/javascript面试题.md",
+    "1. 项目/Javascript/javascript图谱.canvas",
+    "1. 项目/Typescript/typescript主要面试题.md",
+    "1. 项目/Typescript",
+    "1. 项目/react/react组件传递方式.md",
+    "1. 项目/react/react-redux.md",
+    "1. 项目/react/react和vue的虚拟dom差异.md",
+    "1. 项目/react/你可能不需要useEffect.md",
+    "1. 项目/react/react-组件.md",
+    "1. 项目/react/核心原理/react-fiber.md",
+    "1. 项目/react/核心原理/​​React事件代理机制.md",
+    "1. 项目/react/性能优化/react-性能优化.md",
+    "1. 项目/react/性能优化/路由懒加载.md",
+    "1. 项目/react/类组件生命周期.md",
+    "1. 项目/react/官网教程.md",
+    "1. 项目/react/hooks/react-useDefferredValue.md",
+    "1. 项目/react/hooks/react-useTransition.md",
+    "1. 项目/react/API/react.memo.md",
+    "1. 项目/react/性能优化",
+    "1. 项目/react/hooks/react-useCallback.md",
+    "1. 项目/react/hooks/react-useMemo.md",
+    "1. 项目/react/hooks/react-useEffect.md",
+    "5. 表达/面试实战/react技术问答.md",
+    "5. 表达/面试实战/​react-fiber.md",
+    "1. 项目/react/核心原理",
+    "5. 表达/面试实战",
+    "2. 领域/Template.md",
+    "1. 项目/README.md",
+    "1. 项目/react/组件/react-严格模式.md",
+    "1. 项目/react/组件/react-内容加载时的渲染组件.md",
+    "1. 项目/股票知识/价格行为学.canvas",
+    "图片存放/Pasted image 20240916144833.png",
+    "图片存放/Pasted image 20240916144628.png",
+    "图片存放/Pasted image 20240831180341.png",
+    "图片存放/Pasted image 20240831161232.png",
+    "图片存放/Pasted image 20240831155629.png",
+    "图片存放/Pasted image 20240831152837.png",
     "1. 项目/股票知识/缠论学习.canvas",
-    "1. 项目/股票知识/实战记录.canvas",
-    "1. 项目/股票知识/悟道.canvas",
     "图片存放/Pasted image 20240724223005.png",
     "图片存放/Pasted image 20240724210641.png",
     "图片存放/Pasted image 20240723220945.png",
-    "1. 项目/股票知识/股票todolist.md",
+    "1. 项目/股票知识/悟道.canvas",
     "1. 项目/股票知识/股市周期.canvas",
     "1. 项目/股票知识/量价关系.canvas",
     "1. 项目/股票知识/研修班/第一课.canvas",
-    "1. 项目/股票知识/龙头战法/第一课.md",
-    "1. 项目/股票知识/龙头战法/第五课.md",
-    "1. 项目/股票知识/龙头战法/第四课.md",
-    "1. 项目/股票知识/龙头战法/第三课.md",
     "1. 项目/股票知识/龙头战法/第六课.canvas",
-    "1. 项目/股票知识/龙头战法/第二课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第二课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第一课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第五课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第四课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第三课.md",
-    "1. 项目/股票知识/龙头股实战课程总结/第六课.md",
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
-    "1. 项目/股票知识/龙头股低吸战法/第三课.canvas",
     "图片存放/Pasted image 20240609210725.png",
-    "图片存放/Pasted image 20240609204805.png",
-    "图片存放/Pasted image 20240609180517.png",
-    "图片存放/Pasted image 20240609175854.png",
-    "图片存放/Pasted image 20240609175343.png",
-    "图片存放/Pasted image 20240609175144.png",
     "1. 项目/c桌面端/wpf界面开发",
     "1. 项目/c桌面端/c基础语法",
     "1. 项目/c桌面端",
-    "图片存放/Pasted image 20240518214929.png",
-    "1. 项目/股票知识/股票知识.README.md",
-    "1. 项目/股票知识/三层底仓滚动做T.md",
-    "1. 项目/股票知识/股票技巧.md",
-    "1. 项目/股票知识/股票的专业术语.md",
-    "1. 项目/股票知识/7成底仓滚动做T.md",
-    "1. 项目/股票知识/半仓滚动做T.md",
-    "1. 项目/股票知识/做T基本技巧.md",
-    "1. 项目/股票知识/未命名.md",
-    "conflict-files-obsidian-git.md",
     "1. 项目/股票知识/研修班",
-    "0. 周期笔记/2024/Daily/04/2024-04-18.md",
     "图片存放",
-    "1. 项目/股票知识/龙头股低吸战法/未命名.md",
-    "1. 项目/股票知识/龙头股低吸战法",
-    "0. 周期笔记/2024/Daily/04/2024-04-11.md",
-    "1. 项目/股票知识/龙头战法/第六课.md",
-    "0. 周期笔记/2024/Daily/04"
+    "1. 项目/股票知识/龙头股低吸战法"
   ]
 }

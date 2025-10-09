@@ -9,3 +9,12 @@
 const defferQuery = useDefferredValue(query)
 ```
 
+**场景​**​：大数据列表渲染、图表更新。
+
+```jsx 
+import { useDeferredValue } from "react"; 
+function DataGrid({ data }) { 
+const deferredData = useDeferredValue(data); // ✅ 延迟派生值 
+	return <HeavyGrid data={deferredData} />; // 避免渲染阻塞
+ }
+```
