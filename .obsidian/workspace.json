@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/Javascript/javascript面试题.md",
+                "file": "1. 项目/自我介绍.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "javascript面试题"
+              "title": "自我介绍"
             }
           }
         ],
@@ -240,8 +240,9 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/Javascript/Javascript.README.md",
     "1. 项目/Javascript/javascript面试题.md",
+    "1. 项目/自我介绍.md",
+    "1. 项目/Javascript/Javascript.README.md",
     "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Typescript/typescript主要面试题.md",
     "1. 项目/Typescript",
@@ -270,7 +271,6 @@
     "2. 领域/Template.md",
     "1. 项目/README.md",
     "1. 项目/react/组件/react-严格模式.md",
-    "1. 项目/react/组件/react-内容加载时的渲染组件.md",
     "1. 项目/股票知识/价格行为学.canvas",
     "图片存放/Pasted image 20240916144833.png",
     "图片存放/Pasted image 20240916144628.png",
