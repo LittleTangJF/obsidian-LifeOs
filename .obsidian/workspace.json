@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/Electron/大屏简介.md",
+                "file": "1. 项目/Electron/electron 项目简介.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "大屏简介"
+              "title": "electron 项目简介"
             }
           }
         ],
@@ -240,8 +240,8 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/Electron/项目简介.md",
     "1. 项目/Electron/大屏简介.md",
+    "1. 项目/Electron/electron 项目简介.md",
     "1. 项目/自我介绍.md",
     "未命名.md",
     "1. 项目/Electron",
