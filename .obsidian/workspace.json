@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/html/面试题.md",
+                "file": "1. 项目/css/面试题.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -240,8 +240,10 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
-    "1. 项目/自我介绍.md",
+    "1. 项目/css/参考.md",
+    "1. 项目/css/面试题.md",
     "1. 项目/html/面试题.md",
+    "1. 项目/自我介绍.md",
     "1. 项目/html",
     "1. 项目/css",
     "1. 项目/react/类组件生命周期.md",
@@ -270,8 +272,6 @@
     "1. 项目/react/API/react.memo.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/hooks/react-useCallback.md",
-    "1. 项目/react/hooks/react-useMemo.md",
-    "1. 项目/react/hooks/react-useEffect.md",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
     "1. 项目/股票知识/价格行为学.canvas",
