@@ -83,3 +83,6 @@ function Child(name, age) {
 inheritPrototype(Child, Parent); // 继承方法
 const child = new Child('Carol', 30);
 ```
+
+1.为什么0.1+0.2 ! == 0.3
+- 
