@@ -1,7 +1,7 @@
 
 ### 0. 数据类型
 八种Undefined、Null、Boolean、Number、String、Object、Symbol，BigInt
-- 原始数据类型（Undefined、Null、Boolean、Number、String）
+- 原始数据类型（Undefined、Null、Boolean、Number、String，Symbol，BigInt）
 - 引用数据类型（对象、数组和函数）
 ### 1.如何判断变量类型
 
