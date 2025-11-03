@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/Javascript/javascript面试题.md",
+                "file": "1. 项目/自我介绍.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "javascript面试题"
+              "title": "自我介绍"
             }
           }
         ],
@@ -240,6 +240,8 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "5. 表达/面试实战/react技术问答.md",
+    "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/css/面试题.md",
     "1. 项目/css/参考.md",
     "1. 项目/html/面试题.md",
@@ -252,7 +254,6 @@
     "1. 项目/Electron/大屏简介.md",
     "未命名.md",
     "1. 项目/Electron",
-    "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/Javascript/Javascript.README.md",
     "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Typescript/typescript主要面试题.md",
@@ -271,7 +272,6 @@
     "1. 项目/react/hooks/react-useTransition.md",
     "1. 项目/react/API/react.memo.md",
     "1. 项目/react/性能优化",
-    "1. 项目/react/hooks/react-useCallback.md",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
     "1. 项目/股票知识/价格行为学.canvas",
