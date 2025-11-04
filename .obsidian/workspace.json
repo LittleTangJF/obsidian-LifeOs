@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/自我介绍.md",
+                "file": "1. 项目/浏览器/登录JWT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "自我介绍"
+              "title": "登录JWT"
             }
           }
         ],
@@ -240,12 +240,14 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/自我介绍.md",
+    "1. 项目/浏览器/登录JWT.md",
     "5. 表达/面试实战/react技术问答.md",
     "1. 项目/Javascript/javascript面试题.md",
+    "1. 项目/浏览器",
     "1. 项目/css/面试题.md",
     "1. 项目/css/参考.md",
     "1. 项目/html/面试题.md",
-    "1. 项目/自我介绍.md",
     "1. 项目/html",
     "1. 项目/css",
     "1. 项目/react/类组件生命周期.md",
@@ -270,7 +272,6 @@
     "1. 项目/react/官网教程.md",
     "1. 项目/react/hooks/react-useDefferredValue.md",
     "1. 项目/react/hooks/react-useTransition.md",
-    "1. 项目/react/API/react.memo.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
@@ -294,7 +295,6 @@
     "1. 项目/股票知识/龙头股低吸战法/第六课.canvas",
     "图片存放/Pasted image 20240609210725.png",
     "1. 项目/c桌面端/wpf界面开发",
-    "1. 项目/c桌面端/c基础语法",
-    "1. 项目/c桌面端"
+    "1. 项目/c桌面端/c基础语法"
   ]
 }
