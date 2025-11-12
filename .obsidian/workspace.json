@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/大厂常见面试笔记.md",
+                "file": "1. 项目/浏览器/计算机网络.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "大厂常见面试笔记"
+              "title": "计算机网络"
             }
           }
         ],
@@ -238,18 +238,19 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "a738e0859ba27006",
+  "active": "e3942f040f39cb6a",
   "lastOpenFiles": [
-    "1. 项目/自我介绍.md",
+    "1. 项目/算法",
+    "1. 项目/html/面试题.md",
+    "1. 项目/css/面试题.md",
     "1. 项目/大厂常见面试笔记.md",
+    "1. 项目/自我介绍.md",
     "1. 项目/浏览器/计算机网络.md",
     "1. 项目/浏览器/登录JWT.md",
     "5. 表达/面试实战/react技术问答.md",
     "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/浏览器",
-    "1. 项目/css/面试题.md",
     "1. 项目/css/参考.md",
-    "1. 项目/html/面试题.md",
     "1. 项目/html",
     "1. 项目/css",
     "1. 项目/react/类组件生命周期.md",
@@ -271,7 +272,6 @@
     "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/react-性能优化.md",
     "1. 项目/react/性能优化/路由懒加载.md",
-    "1. 项目/react/官网教程.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
