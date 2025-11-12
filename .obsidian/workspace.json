@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/性能优化/react-性能优化.md",
+                "file": "1. 项目/react/性能优化/防抖节流.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react-性能优化"
+              "title": "防抖节流"
             }
           }
         ],
@@ -240,6 +240,8 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/react/性能优化/react-性能优化.md",
+    "1. 项目/react/性能优化/防抖节流.md",
     "1. 项目/react/你可能不需要useEffect.md",
     "1. 项目/react/react-组件.md",
     "1. 项目/react/react和vue的虚拟dom差异.md",
@@ -271,8 +273,6 @@
     "1. 项目/Javascript/javascript图谱.canvas",
     "1. 项目/Typescript/typescript主要面试题.md",
     "1. 项目/Typescript",
-    "1. 项目/react/react组件传递方式.md",
-    "1. 项目/react/性能优化/react-性能优化.md",
     "1. 项目/react/性能优化",
     "1. 项目/react/核心原理",
     "5. 表达/面试实战",
