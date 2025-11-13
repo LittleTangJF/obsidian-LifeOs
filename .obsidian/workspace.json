@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/自我介绍.md",
+                "file": "1. 项目/css/面试题.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,7 +69,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "自我介绍"
+              "title": "面试题"
             }
           }
         ],
@@ -240,9 +240,10 @@
   },
   "active": "a738e0859ba27006",
   "lastOpenFiles": [
+    "1. 项目/css/整体布局上下左右.md",
+    "1. 项目/自我介绍.md",
     "1. 项目/Javascript/javascript面试题.md",
     "1. 项目/README.md",
-    "1. 项目/自我介绍.md",
     "1. 项目/大厂常见面试笔记.md",
     "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/防抖节流.md",
@@ -265,7 +266,6 @@
     "1. 项目/react/hooks/react-useRef.md",
     "1. 项目/react/hooks/react-useEffect.md",
     "1. 项目/react/hooks/react-useCallback.md",
-    "1. 项目/react/hooks/react-context.md",
     "1. 项目/算法",
     "1. 项目/浏览器",
     "1. 项目/html",
