@@ -95,3 +95,14 @@ const child = new Child('Carol', 30);
 // 方法1：Set 去重 
 const unique = [...new Set(arr)];
 ```
+
+**深拷贝**
+
+```js
+function deepClone(obj) { 
+	if (obj==null || typeof obj !== 'object') return obj; const clone = Array.isArray(obj) ? [] : {}; 
+for (const key in obj) { 
+clone[key] = deepClone(obj[key]); } 
+return clone; 
+}
+```
