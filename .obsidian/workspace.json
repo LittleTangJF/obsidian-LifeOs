@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 项目/react/性能优化/react-性能优化.md",
+                "file": "6-主页/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,24 +45,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "react-性能优化"
-            }
-          },
-          {
-            "id": "a738e0859ba27006",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "6-主页/未命名 1.base",
-                "viewName": "表格"
-              },
-              "icon": "lucide-table",
-              "title": "未命名 1"
+              "title": "Home"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,21 +214,28 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "a738e0859ba27006",
+  "active": "ce69b88b13be7250",
   "lastOpenFiles": [
-    "未命名 1.md",
-    "6-主页/未命名 1.base",
-    "6-主页/未命名.base",
     "6-主页/MOC-投资.md",
-    "6-主页/未命名.md",
     "6-主页/MOC-前端开发.md",
     "6-主页/MOC-工作.md",
     "6-主页/Home.md",
-    "-1. 捕获/未命名 2.base",
-    "6-主页",
-    "-1. 捕获/未命名 1.base",
+    "1. 项目/算法/递归.md",
+    "1. 项目/react/性能优化/react-性能优化.md",
+    "-1. 捕获/测试快记.md",
+    "6-主页/未命名 1.md",
+    "6-主页/我今天测试了codex 去控制obsidian, 修复了快记功能.md",
+    "6-主页/未命名.md",
+    "6-主页/测试快记.md",
+    "-1. 捕获/随手记.md",
+    "6-主页/未命名.base",
+    "6-主页/未命名 1.base",
     "-1. 捕获/未命名.base",
     "-1. 捕获/README.md",
+    "-1. 捕获/未命名 2.base",
+    "-1. 捕获/未命名 1.base",
+    "未命名 1.md",
+    "6-主页",
     "模板/捕获模板.md",
     "任务.md",
     "1. 项目/Javascript/javascript面试题.md",
@@ -254,13 +248,6 @@
     "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/防抖节流.md",
     "1. 项目/react/性能优化/路由懒加载.md",
-    "1. 项目/react/性能优化/react-性能优化.md",
-    "1. 项目/react/API/react.lazy.md",
-    "1. 项目/react/API/react.forwardRef.md",
-    "1. 项目/react/API/react.memo.md",
-    "1. 项目/react/官网教程.md",
-    "1. 项目/react/类组件生命周期.md",
-    "1. 项目/react/react和vue的虚拟dom差异.md",
     "1. 项目/算法",
     "1. 项目/浏览器",
     "1. 项目/html",
