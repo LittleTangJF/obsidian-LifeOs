@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6-主页/Home.md",
+                "file": "3. 资源/Hermes Agent 多 Agent 协作入门指南.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,7 +45,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Hermes Agent 多 Agent 协作入门指南"
             }
           }
         ],
@@ -216,10 +216,11 @@
   },
   "active": "ce69b88b13be7250",
   "lastOpenFiles": [
+    "6-主页/Home.md",
+    "3. 资源/Hermes Agent 多 Agent 协作入门指南.md",
     "6-主页/MOC-投资.md",
     "6-主页/MOC-前端开发.md",
     "6-主页/MOC-工作.md",
-    "6-主页/Home.md",
     "1. 项目/算法/递归.md",
     "1. 项目/react/性能优化/react-性能优化.md",
     "-1. 捕获/测试快记.md",
@@ -247,7 +248,6 @@
     "1. 项目/README.md",
     "1. 项目/react/核心原理/​​React事件代理机制.md",
     "1. 项目/react/性能优化/防抖节流.md",
-    "1. 项目/react/性能优化/路由懒加载.md",
     "1. 项目/算法",
     "1. 项目/浏览器",
     "1. 项目/html",
