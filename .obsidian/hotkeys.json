@@ -290,5 +290,23 @@
       ],
       "key": "C"
     }
+  ],
+  "quickadd:choice:79c667b1-0ecc-4e56-9b4d-cfd9d6eb8be4": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "quickadd:choice:281803dd-77bc-4b25-959d-ca10f78e7433": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
   ]
 }
